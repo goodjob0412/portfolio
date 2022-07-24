@@ -1,0 +1,251 @@
+.container {
+    width: 100%;
+    padding-top: 20px;
+    /* z-index: -99; */
+}
+.detail_top {
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-top: 50px;
+    overflow: hidden;
+}
+/* 왼쪽 */
+.top_left {
+    width: 100%;
+    height: calc(80vw + 90px);
+    /* height: 700px; */
+    /* float: left; */
+    background: #fff;
+    position: relative;
+}
+.product {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* display: none; */
+}
+
+.product_img {
+    margin: 0 auto;
+    overflow: hidden;
+}
+.btn {
+    width: 10%;
+    height: 80vw;
+    line-height: 80vw;
+    text-align: center;
+    font-size: 50px;
+    float: left;
+}
+.btn_L {
+    background: url(../img/m_left.png) no-repeat center / contain;
+}
+.btn_R {
+    background: url(../img/m_right.png) no-repeat center / contain;
+}
+.p_img {
+    width: 80%;
+    /* height: 600px; */
+    height: 80vw;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.p_img_sec {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    /* left: 0; */
+    left: 100%;
+}
+.detail_list {
+    width: 100%;
+    height: 60px;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.detail_outer {
+    width: 100%;
+    height: 60px;
+    position: relative;
+}
+.detail_list_in {
+    width: 80%;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+}
+.detail_sec {
+    width: calc(100% / 6);
+    height: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: blue;
+    border-bottom: 2px solid #fff;
+    box-sizing: border-box;
+}
+.detail_sec:hover {
+    border-bottom: 2px dotted #000;
+    box-sizing: border-box;
+}
+
+.list_btn {
+    width: 10%;
+    height: 100%;
+    font-size: 40px;
+    text-align: center;
+    line-height: 60px;
+    position: absolute;
+}
+.list_btn_L {
+    top: 0;
+    left: 0;
+}
+.list_btn_R {
+    top: 0;
+    right: 0;
+}
+
+/* 오른쪽 */
+.top_right {
+    width: 100%;
+    height: auto;
+    float: right;
+    /* padding-left: 20px; */
+    padding: 20px 10px 0 10px;
+    box-sizing: border-box;
+    /* background: burlywood; */
+}
+.name {
+    font-size: 24px;
+    font-family: 'font_M';
+    font-weight: 600;
+}
+.code {
+    font-size: 13px;
+    font-family: 'font_M';
+    font-weight: 800;
+    color: #777;
+}
+.price {
+    font-family: 'font_M';
+    font-size: 18px;
+    font-weight: 800;
+    margin: 20px 0;
+}
+.mileage, .cash {
+    width: 100%;
+    overflow: hidden;
+}
+.gift {
+    margin-bottom: 30px;
+    line-height: 17px;
+}
+.g_icon {
+    width: 15px;
+    height: 15px;
+    background: #000;
+    color: #fff;
+    font-family: 'font_B';
+    font-size: 12px;
+    text-align: center;
+    line-height: 15px;
+    float: left;
+}
+.g_txt {
+    float: left;
+    margin-left: 5px;
+    font-size: 14px;
+    font-family: 'font_M';
+}
+.type {
+    height: 90px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 30px;
+    padding: 20px 0;
+}
+.color {
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.type_txt {
+    width: 60px;
+    float: left;
+    font-family: 'font_M';
+    font-weight: 600;
+    font-size: 15px;
+}
+.color_box, .size_box {
+    float: left;
+    overflow: hidden;
+}
+.c_img {
+    width: 60px;
+    height: 60px;
+    background: pink;
+    float: left;
+    margin-right: 5px;
+    text-indent: -99999px;
+    cursor: pointer;
+}
+.s_icon {
+    width: 50px;
+    text-align: center;
+    background: #eee;
+}
+.size_txt, .alarm {
+    float: right;
+    font-family: 'font_M';
+    font-size: 14px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.alarm {
+    float: none;
+    text-align: right;
+    margin-bottom: 10px;
+}
+.product_txt {
+    font-family: 'font_M';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+}
+.buy_btn {
+    display: block;
+    width: 200px;
+    height: 50px;
+    /* background: red; */
+    border: 2px solid red;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 18px;
+    line-height: 50px;
+    color: #000;
+    font-family: 'font_M';
+}
+.detail_bot {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.bot_img_box img {
+    width: 100%;
+}
+
+.inner_footer {
+    margin-top: 0;
+}

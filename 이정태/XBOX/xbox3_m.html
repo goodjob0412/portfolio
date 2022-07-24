@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/xbox/header_footer_m.css">
+    <link rel="stylesheet" href="css/xbox/index3_m.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="js/xbox3.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="header_box">
+                <div class="logo">
+                    <a href="xbox_m.html">엑박 로고</a>
+                </div>
+                <div class="seach_icon"></div>
+                <div class="login">
+                    <a href="xbox2_m.html">
+                        <div class="login_icon"></div>
+                    </a>
+                </div>
+                <div class="hamberg">
+                    <div class="line" id="line_top"></div>
+                    <div class="line" id="line_mid"></div>
+                    <div class="line" id="line_bot"></div>
+                </div>
+                <div class="nav">
+                    <div class="nav_box">
+                        <p>
+                            <a href="">Game Pass</a>
+                        </p>
+                    </div>
+                    <div class="nav_box">
+                        <p>
+                            <a href="">게임</a>
+                        </p>
+                    </div>
+                    <div class="nav_box">
+                        <p>
+                            <a href="">장치</a>
+                        </p>
+                    </div>
+                    <div class="nav_box">
+                        <p>
+                            <a href="">커뮤니티</a>
+                        </p>
+                    </div>
+                    <div class="nav_box">
+                        <p>
+                            <a href="">xbox지원</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="search_box">
+                <input type="search" id="search_game">
+                <input type="button" value="검색" class="btn_search">
+            </div>
+            <div class="search_box1">
+                <div class="box1_txt">
+                    <p>검색조건</p>
+                    <div class="box1_line"></div>
+                </div>
+                <div class="box2">
+                    <div class="box2_L">
+                        <div class="box2_txt3">
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="chk1">
+                                    <label for="chk1">PlayStation®4</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="chk2">
+                                    <label for="chk2">PlayStation®3</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="chk3">
+                                    <label for="chk3">PS Vita</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="chk4">
+                                    <label for="chk4">PSP®go</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="chk5">
+                                    <label for="chk5" class="lab">XBOX360</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="chk6">
+                                    <label for="chk6" class="lab">XBOX</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="box2_txt4">
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="chk7">
+                                    <label for="chk7">발매된 게임</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="chk8">
+                                    <label for="chk8">발매 예정 게임</label>
+                                </li>
+                                <li>
+                                    <select id="sel">
+                                        <option>1주일 이내</option>
+                                        <option>2주일 이내</option>
+                                        <option>1달(30일) 이내</option>
+                                        <option>2달(60일) 이내</option>
+                                        <option>3달(90일) 이내</option>
+                                        <option>전부</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="box2_txt4 txt3">
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="chk9">
+                                    <label for="chk9">무료플레이(F2P)</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="chk10">
+                                    <label for="chk10">BigHit</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="chk11">
+                                    <label for="chk11">UltraPOP</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="chk12">
+                                    <label for="chk12">minis</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="box2_txt4 txt4">
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="chk13">
+                                    <label for="chk13">Online 지원</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="chk14">
+                                    <label for="chk14">VR 대응</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="chk15">
+                                    <label for="chk15">3D 대응</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="chk16">
+                                    <label for="chk16">PS Move 대응</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="box2_txt4 txt5">
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="chk17">
+                                    <label for="chk17">패키지 발매</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="chk18">
+                                    <label for="chk18">PS Store 다운로드용</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="box2_R">
+                        <ul>
+                            <li>
+                                <span>언어(자막)</span>
+                                <select class="sel_1">
+                                    <option>언어(자막)</option>
+                                    <option>한국어</option>
+                                    <option>영어</option>
+                                    <option>일어</option>
+                                    <option>영어/일어</option>
+                                </select>
+                            </li>
+
+                            <li>
+                                <span>장르</span>
+                                <select class="sel_1">
+                                    <option>모든 장르</option>
+                                    <option>액션</option>
+                                    <option>레이싱</option>
+                                    <option>슈팅</option>
+                                    <option>스포츠</option>
+                                </select>
+                            </li>
+
+                            <li>
+                                <span>이용등급</span>
+                                <select class="sel_1">
+                                    <option>모든 이용등급</option>
+                                    <option>전체이용가</option>
+                                    <option>15세이용가</option>
+                                    <option>12세이용가</option>
+                                    <option>청소년 이용불가</option>
+                                </select>
+                            </li>
+
+                            <li>
+                                <span>배급사별</span>
+                                <select class="sel_1">
+                                    <option>모든 배급사</option>
+                                    <option>게임문화</option>
+                                    <option>2k Games</option>
+                                    <option>락스타 게임즈</option>
+                                    <option>한빛소프트</option>
+                                </select>
+                            </li>
+
+                            <li>
+                                <span>발매일</span>
+                                <select class="sel_2">
+                                    <option>년</option>
+                                    <option>2002</option>
+                                    <option>2003</option>
+                                    <option>2004</option>
+                                    <option>2005</option>
+                                    <option>2006</option>
+                                    <option>2007</option>
+                                    <option>2008</option>
+                                    <option>2009</option>
+                                    <option>2010</option>
+                                    <option>2011</option>
+                                    <option>2012</option>
+                                    <option>2013</option>
+                                    <option>2014</option>
+                                </select>
+                                <select class="sel_2">
+                                    <option>월</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                    <option>12</option>
+                                </select>
+                                <span>부터</span>
+                                <select class="sel_2">
+                                    <option>년</option>
+                                    <option>2002</option>
+                                    <option>2003</option>
+                                    <option>2004</option>
+                                    <option>2005</option>
+                                    <option>2006</option>
+                                    <option>2007</option>
+                                    <option>2008</option>
+                                    <option>2009</option>
+                                    <option>2010</option>
+                                    <option>2011</option>
+                                    <option>2012</option>
+                                    <option>2013</option>
+                                    <option>2014</option>
+                                </select>
+                                <select class="sel_2">
+                                    <option>월</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                    <option>12</option>
+                                </select>
+                                <span>까지</span>
+                            </li>
+
+                            <li>
+                                <div class="search_btn">
+                                    <span>선택한 조건으로 검색</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="main_box3">
+                <div class="box3_txt">
+                    <span>page 1/10</span>
+                </div>
+
+                <div class="box3_txt1">
+                    <span>정렬</span>
+                    <select id="sel_3">
+                        <option>최신발매일순</option>
+                        <option>정렬</option>
+                        <option>게임명순</option>
+                        <option>발매인순</option>
+                    </select>
+                </div>
+            </div>
+            <div class="main_box4">
+                <ul>
+                    <li>
+                        <div class="box4_img img1"></div>
+                        <div class="box4_icon">
+                            <img src="img/xbox_img/icn_ps4.gif" alt="플스4아이콘">
+                        </div>
+                        <p class="box4_p">TT 아일 오브 맨 2</p>
+                        <div class="box4_txt1">
+                            <p>장르 : 레이싱</p>
+                            <p>발매일: 2020-03-30</p>
+                            <p>언어(자막): 한국어</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box4_img img2"></div>
+                        <div class="box4_icon">
+                            <img src="img/xbox_img/icn_ps4.gif" alt="플스4아이콘">
+                        </div>
+                        <p class="box4_p">둠® 이터널™</p>
+                        <div class="box4_txt1">
+                            <p>장르 : 액션</p>
+                            <p>발매일: 2020-03-20</p>
+                            <p>언어(자막): 한국어</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box4_img img3"></div>
+                        <div class="box4_icon">
+                            <img src="img/xbox_img/icn_ps4.gif" alt="플스4아이콘">
+                        </div>
+                        <p class="box4_p">13기병방위권</p>
+                        <div class="box4_txt1">
+                            <p>장르 : 어드벤쳐</p>
+                            <p>발매일: 2020-03-19</p>
+                            <p>언어(자막): 한국어</p>
+                        </div>
+                    </li>
+                    <li class="mr_0">
+                        <div class="box4_img img4"></div>
+                        <div class="box4_icon">
+                            <img src="img/xbox_img/icn_ps4.gif" alt="플스4아이콘">
+                        </div>
+                        <p class="box4_p">칸다가와 제트 걸즈</p>
+                        <div class="box4_txt1">
+                            <p>장르 : 레이싱</p>
+                            <p>발매일: 2020-03-12</p>
+                            <p>언어(자막): 한국어</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box4_img img5"></div>
+                        <div class="box4_icon">
+                            <img src="img/xbox_img/icn_ps4.gif" alt="플스4아이콘">
+                        </div>
+                        <p class="box4_p">휴먼: 폴 플랫</p>
+                        <div class="box4_txt1">
+                            <p>장르 : 어드벤쳐</p>
+                            <p>발매일: 2020-03-02</p>
+                            <p>언어(자막): 한국어</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box4_img img6"></div>
+                        <div class="box4_icon">
+                            <img src="img/xbox_img/icn_ps4.gif" alt="플스4아이콘">
+                        </div>
+                        <p class="box4_p">오버패스</p>
+                        <div class="box4_txt1">
+                            <p>장르 : 레이싱</p>
+                            <p>발매일: 2020-02-28</p>
+                            <p>언어(자막): 한국어</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box4_img img7"></div>
+                        <div class="box4_icon">
+                            <img src="img/xbox_img/icn_ps4.gif" alt="플스4아이콘">
+                        </div>
+                        <p class="box4_p">페르소나 5 더 로열</p>
+                        <div class="box4_txt1">
+                            <p>장르 : RPG</p>
+                            <p>발매일: 2020-02-20</p>
+                            <p>언어(자막): 한국어</p>
+                        </div>
+                    </li>
+                    <li class="mr_0">
+                        <div class="box4_img img8"></div>
+                        <div class="box4_icon">
+                            <img src="img/xbox_img/icn_ps4.gif" alt="플스4아이콘">
+                        </div>
+                        <p class="box4_p">언더 나이트 인버스 엑셀레이트 클레어</p>
+                        <div class="box4_txt1">
+                            <p>장르 : 대전 격투</p>
+                            <p>발매일: 2020-02-20</p>
+                            <p>언어(자막): 한국어</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box4_img img9"></div>
+                        <div class="box4_icon">
+                            <img src="img/xbox_img/icn_ps4.gif" alt="플스4아이콘">
+                        </div>
+                        <p class="box4_p">다크사이더스 제네시스</p>
+                        <div class="box4_txt1">
+                            <p>장르 : 액션</p>
+                            <p>발매일: 2020-02-17</p>
+                            <p>언어(자막): 한국어</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box4_img img10"></div>
+                        <div class="box4_icon">
+                            <img src="img/xbox_img/icn_ps4.gif" alt="플스4아이콘">
+                        </div>
+                        <p class="box4_p">그랑블루 판타지 버서스</p>
+                        <div class="box4_txt1">
+                            <p>장르 : 대전 격투</p>
+                            <p>발매일: 2020-02-06</p>
+                            <p>언어(자막): 한국어</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box4_img img11"></div>
+                        <div class="box4_icon">
+                            <img src="img/xbox_img/icn_ps4.gif" alt="플스4아이콘">
+                        </div>
+                        <p class="box4_p">저니 투 더 새비지 플래닛</p>
+                        <div class="box4_txt1">
+                            <p>장르 : 액션</p>
+                            <p>발매일: 2020-02-03</p>
+                            <p>언어(자막): 한국어</p>
+                        </div>
+                    </li>
+                    <li class="mr_0">
+                        <div class="box4_img img12"></div>
+                        <div class="box4_icon">
+                            <img src="img/xbox_img/icn_ps4.gif" alt="플스4아이콘">
+                        </div>
+                        <p class="box4_p">코드 시프터</p>
+                        <div class="box4_txt1">
+                            <p>장르 : 액션</p>
+                            <p>발매일: 2020-01-30</p>
+                            <p>언어(자막): 한국어</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box4_img img13"></div>
+                        <div class="box4_icon">
+                            <img src="img/xbox_img/icn_ps4.gif" alt="플스4아이콘">
+                        </div>
+                        <p class="box4_p">용과 같이7 빛과 어둠의 행방</p>
+                        <div class="box4_txt1">
+                            <p>장르 : RPG</p>
+                            <p>발매일: 2020-01-16</p>
+                            <p>언어(자막): 한국어</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box4_img img14"></div>
+                        <div class="box4_icon">
+                            <img src="img/xbox_img/icn_ps4.gif" alt="플스4아이콘">
+                        </div>
+                        <p class="box4_p">삼국지14</p>
+                        <div class="box4_txt1">
+                            <p>장르 : 시뮬레이션</p>
+                            <p>발매일: 2020-01-16</p>
+                            <p>언어(자막): 한국어</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box4_img img15"></div>
+                        <div class="box4_icon">
+                            <img src="img/xbox_img/icn_ps4.gif" alt="플스4아이콘">
+                        </div>
+                        <p class="box4_p">라이자의 아틀리에 ~어둠의 여왕과 비밀의 은신처~</p>
+                        <div class="box4_txt1">
+                            <p>장르 : RPG</p>
+                            <p>발매일: 2020-01-19</p>
+                            <p>언어(자막): 한국어</p>
+                        </div>
+                    </li>
+                    <li class="mr_0">
+                        <div class="box4_img img16"></div>
+                        <div class="box4_icon">
+                            <img src="img/xbox_img/icn_ps4.gif" alt="플스4아이콘">
+                        </div>
+                        <p class="box4_p">무쌍OROCHI3 Ultimate</p>
+                        <div class="box4_txt1">
+                            <p>장르 : 액션</p>
+                            <p>발매일: 2019-12-19</p>
+                            <p>언어(자막): 한국어</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box4_img img17"></div>
+                        <div class="box4_icon">
+                            <img src="img/xbox_img/icn_ps4.gif" alt="플스4아이콘">
+                        </div>
+                        <p class="box4_p">피싱: 바렌츠해 - 컴플리트 에디션</p>
+                        <div class="box4_txt1">
+                            <p>장르 : 시뮬레이션</p>
+                            <p>발매일: 2019-12-16</p>
+                            <p>언어(자막): 한국어</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box4_img img18"></div>
+                        <div class="box4_icon">
+                            <img src="img/xbox_img/icn_ps4.gif" alt="플스4아이콘">
+                        </div>
+                        <p class="box4_p">신 사쿠라대전</p>
+                        <div class="box4_txt1">
+                            <p>장르 : 액션 어드벤쳐</p>
+                            <p>발매일: 2019-12-12</p>
+                            <p>언어(자막): 한국어</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box4_img img19"></div>
+                        <div class="box4_icon">
+                            <img src="img/xbox_img/icn_ps4.gif" alt="플스4아이콘">
+                        </div>
+                        <p class="box4_p">고스트버스터즈: 더 비디오 게임 리마스터드</p>
+                        <div class="box4_txt1">
+                            <p>장르 : 액션</p>
+                            <p>발매일: 2019-12-12</p>
+                            <p>언어(자막): 한국어</p>
+                        </div>
+                    </li>
+                    <li class="mr_0">
+                        <div class="box4_img img20"></div>
+                        <div class="box4_icon">
+                            <img src="img/xbox_img/icn_ps4.gif" alt="플스4아이콘">
+                        </div>
+                        <p class="box4_p">몬스터 보이와 저주받은 왕국</p>
+                        <div class="box4_txt1">
+                            <p>장르 : 액션 어드벤쳐</p>
+                            <p>발매일: 2019-12-12</p>
+                            <p>언어(자막): 한국어</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box4_img img21"></div>
+                        <div class="box4_icon">
+                            <img src="img/xbox_img/icn_ps4.gif" alt="플스4아이콘">
+                        </div>
+                        <p class="box4_p">문라이터</p>
+                        <div class="box4_txt1">
+                            <p>장르 : 액션 어드벤쳐</p>
+                            <p>발매일: 2019-12-05</p>
+                            <p>언어(자막): 한국어</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box4_img img22"></div>
+                        <div class="box4_icon">
+                            <img src="img/xbox_img/icn_ps4.gif" alt="플스4아이콘">
+                        </div>
+                        <p class="box4_p">엔드 오브 이터니티 4K/HD 에디션</p>
+                        <div class="box4_txt1">
+                            <p>장르 : RPG</p>
+                            <p>발매일: 2019-12-05</p>
+                            <p>언어(자막): 한국어</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box4_img img23"></div>
+                        <div class="box4_icon">
+                            <img src="img/xbox_img/icn_ps4.gif" alt="플스4아이콘">
+                        </div>
+                        <p class="box4_p">뱀파이어</p>
+                        <div class="box4_txt1">
+                            <p>장르 : RPG</p>
+                            <p>발매일: 2019-11-28</p>
+                            <p>언어(자막): 한국어</p>
+                        </div>
+                    </li>
+                    <li class="mr_0">
+                        <div class="box4_img img24"></div>
+                        <div class="box4_icon">
+                            <img src="img/xbox_img/icn_ps4.gif" alt="플스4아이콘">
+                        </div>
+                        <p class="box4_p">로스트 엠버</p>
+                        <div class="box4_txt1">
+                            <p>장르 : 어드벤쳐</p>
+                            <p>발매일: 2019-11-26</p>
+                            <p>언어(자막): 한국어</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="main_box5">
+                <div class="page_num">
+                    <div class="btn_num_L">
+                        <img src="img/xbox_img/btn_first.gif" alt="페이지맨앞으로이동">
+                        <img src="img/xbox_img/btn_prev.gif" alt="이전페이지이동">
+                    </div>
+                    <div class="num">
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>4</span>
+                        <span>5</span>
+                        <span>6</span>
+                        <span>7</span>
+                        <span>8</span>
+                        <span>9</span>
+                        <span>10</span>
+                    </div>
+                    <div class="btn_num_R">
+                        <img src="img/xbox_img/btn_next.gif" alt="다음페이지이동">
+                        <img src="img/xbox_img/btn_last.gif" alt="페이지맨뒤로이동">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer_box1">
+                <p>Xbox</p>
+                <p>고객 지원</p>
+                <p>광과민성 반응 경고</p>
+                <p>사용 규정</p>
+            </div>
+            <div class="footer_box2">
+                <div class="box2_txt1">한국어(대한민국)</div>
+                <div class="box2_txt2">
+                    <ul>
+                        <li>Microsoft에 문의</li>
+                        <li>개인정보처리방침</li>
+                        <li>사용약관</li>
+                        <li>상표</li>
+                        <li>광고 정보</li>
+                        <li>© Microsoft 2020</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="top_btn">
+            <a href="#">↑</a>
+        </div>
+    </div>
+</body>
+</html>

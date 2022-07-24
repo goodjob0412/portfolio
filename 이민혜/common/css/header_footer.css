@@ -1,0 +1,367 @@
+
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    /* font-family: 'GowunDodum-Regular'; */
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+h1, h2, h2, p  {
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.contents_area {
+    width: 1200px;
+    height: 100%;
+
+    margin: 0 auto;
+    position: relative;
+}
+
+.contents_area_1600 {
+
+    width: 1600px;
+    height: 100%;
+
+    margin: 0 auto;
+    position: relative;
+}
+
+/* -------------------------------------- 탑버튼 */
+.top_btn {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background: #c1c1c199;
+    border: 2px solid #222;
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    transform: rotate(90deg);
+    font-size: 20px;
+    color: #222;
+    font-weight: 700;
+
+    position: fixed;
+    bottom: 100px ;
+    right: 50px;
+    z-index: 9999;
+
+    transition: all 0.5s;
+
+    display: none;
+}
+.top_btn a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+.top_btn:hover {
+    border: 2px solid #ffa705;
+    color: #ffa705;
+    transition: all 0.5s;
+}
+
+/* -------------------------------------- 탑배너 */
+.top_banner {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background: #444;
+    position: relative;
+    overflow: hidden;
+}
+.top_banner_txt {
+    color: #fff;
+    font-weight: 300;
+    
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+}
+.top_name {
+    color: #ffa705;
+}
+.top_banner_close {
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* -------------------------------------- 헤더 */
+.header {
+    width: 100%;
+    background: #fdfbed;
+}
+.header_top {
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+}
+.logo {
+    width: 360px;
+    height: 100%;
+    background: url(../img/logo.png) no-repeat center / contain;
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.logo a {
+    width: 100%;
+    height: 100%;
+    display: block;
+
+    text-indent: -9999px;
+}
+.header_top_menu {
+    float: right;
+    margin-top: 20px;
+    display: flex;
+}
+.header_top_menu_li {
+    margin-left: 20px;
+    font-size: 13px;
+}
+.header_top_menu_li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.header_bottom {
+    width: 100%;
+    height: 70px;
+    /* line-height: 70px; */
+    background: #fff1d9;
+    border-top: 1px solid #ffa705;
+    border-bottom: 1px solid #ffa705;
+    box-sizing: border-box;
+
+    position: relative;
+    z-index: 9999;
+}
+/* ------------- */
+.header_bottom_move {
+    /* background: #ffa705; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* transition: background 0.5s; */
+}
+/* ------------- */
+.header_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_ul {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.nav_li {
+    height: 100%;
+    line-height: 70px;
+    padding: 0 20px;
+    font-weight: 700;
+    transition: all 0.5s;
+}
+.nav_li a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.nav_li:hover {
+    color: #ffa705;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.nav_li:first-child {
+    padding-left: 0;
+}
+.search {
+    width: 250px;
+    height: 40px;
+    border-bottom: 1px solid #444;
+    display: flex;
+    justify-content: space-between;
+
+}
+.search_txt {
+    width: 210px;
+    background: transparent;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    color: #444;
+    font-weight: 500;
+}
+.search_icon {
+    width: 40px;
+    height: 40px;
+    background: url(../img/icon/search.png) no-repeat center / 50%;
+}
+
+/* 하단메뉴 */
+.menu {
+    width: 100%;
+    height: 0;
+/* ///////////////////////// */
+    /* height: 300px; */
+    background: #ddd;
+    border-top: 1px solid #ffa705;
+
+    overflow: hidden;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    transition: height 0.3s;
+}
+/* ------------- */
+.menu_active {
+    height: 300px;
+    border-bottom: 1px solid #ffa705;
+}
+/* ------------- */
+.menu_ul {
+    height: 100%;
+}
+.menu_li {
+    width: 100%;
+    height: 100%;
+
+    padding: 30px 0;
+    box-sizing: border-box;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.menu_box_li {
+    margin: 10px 0;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+
+.menu_box {
+    width: 100%;
+    height: 100%;
+}
+.box_new {
+    width: 500px;
+    height: 100%;
+    border: 1px solid #ffa705;
+    background: url(../img/new_img.jpg);
+}
+.menu_li_box {
+    width: 310px;
+    height: 100%;
+    border: 1px solid #ffa705;
+    float: left;
+}
+.box_best1 {
+    background: url(../img/best_img1.jpg);
+    margin-right: 30px;
+}
+.box_best2 {
+    background: url(../img/best_img2.jpg);
+}
+.box_ops1 {
+    background: url(../img/ops_img1.jpg);
+    margin-right: 30px;
+}
+.box_ops2 {
+    background: url(../img/ops_img2.jpg);
+}
+
+
+
+
+
+
+
+/* ------------- */
+.menu_li_active {
+    display: block;
+}
+/* ------------- */
+.menu_box_bottom {
+    float: left;
+    margin-right: 100px;
+}
+/* -------------------------------------- 푸터 */
+.footer {
+    width: 100%;
+    height: auto;
+    background: #222;
+
+    color: #bfbfbf;
+    font-size: 13px;
+    font-weight: 100;
+
+    margin-top: 100px;
+    padding: 50px 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.footer_box {
+    height: 100%;
+    padding-left: 50px;
+    box-sizing: border-box;
+    float: left;
+}
+.footer_info {
+    width: 38%;
+}
+.customer_service {
+    width: 15%;
+}
+.bank_account {
+    width: 13%;
+}
+.regal {
+    width: 12%;
+}
+.official_sns {
+    width: 22%;
+}
+
+.footer_title {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.footer_title span {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #bfbfbf;
+}
+.footer_p {
+    margin: 8px 0;
+}
+.m_add {
+    margin: 20px 0;
+    color: #fff;
+}
+.footer_color_red {
+    color: #f59191;
+}

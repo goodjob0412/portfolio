@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>브랜드 소개</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main/header_footer.css">
+    <link rel="stylesheet" href="css/page2/index.css">
+    <link rel="stylesheet" href="css/main/commons.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="js/main/header_footer.js"></script>
+    <script src="js/page2/index.js"></script>
+    <script src="js/main/commons.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <style>
+       
+        * { font-family: 'Noto Sans KR', sans-serif !important;}
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <!-- 고정 팝업 -->
+        <div class="side_popup">
+            <div class="close_img"></div>
+            <div class="car_img"></div>
+        </div>
+        <!-- 헤더 -->
+        <div class="header">
+            <div class="top_header">
+                <div class="left_logo" onclick="main();"></div>
+            </div>
+            <div class="bot_header">
+                <div class="bot_logo" onclick="main();"></div>
+                <div class="mid_menu">
+                    <ul class="mid_menu_ul">
+                        <li class="mid_menu_li" onclick="brand();">ACHIO</li>
+                        <li class="mid_menu_li" onclick="cloths();">OUTER</li>
+                        <li class="mid_menu_li" onclick="cloths();">TOP</li>
+                        <li class="mid_menu_li" onclick="cloths();">BOTTOM</li>
+                        <li class="mid_menu_li" onclick="cloths();">ACC</li>
+                    </ul>
+                </div>
+                <div class="rig_menu">
+                    <ul>
+                        <li class="rig_menu_li">MY PAGE
+                            <div class="hover_pan">
+                                <div class="my_txt_box">회원정보</div>
+                                <div class="my_txt_box">주문내역</div>
+                                <div class="my_txt_box">관심상품</div>
+                                <div class="my_txt_box">적립금</div>
+                                <div class="my_txt_box">예치금</div>
+                                <div class="my_txt_box">쿠폰</div>
+                            </div>
+                        </li>
+                        <li class="rig_menu_li">LOGIN</li>
+                    </ul>
+                </div>
+                  <!-- 클릭하면 로그인 창 -->
+                  <div class="back_pan">
+                    <div class="login_pan">
+                        <div class="login_close"></div>
+                        <div class="login_title">로그인</div>
+                        <div class="top_login_box">
+                        <input type="text" placeholder="아이디" class="lo_txt_box">
+                        <input type="text" placeholder="비밀번호" class="lo_txt_box">
+                        <div class="login_btn">로그인</div>
+                        <div class="no_family_btn">비회원 구매</div>
+                        </div>
+                        <div class="btn_login_box">
+                            <ul>
+                                <li class="login_li">아이디찾기</li>
+                                <li class="login_li">비밀번호찾기</li>
+                                <li class="login_li">회원가입</li>
+                            </ul>
+                            <div class="btn_login naver">네이버 로그인</div>
+                            <div class="btn_login kakao">카카오계정 로그인</div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- 메뉴 내려오는 판 -->
+                <div class="menu_pan">
+                    <div class="menu_pan_rig">
+                        <ul class="pan_ul">
+                            <li class="pan_li" onclick="brand();">Brand</li>
+                            <li class="pan_li" onclick="brand();">About us</li>
+                            <li class="pan_li" onclick="brand();">Info</li>
+                            <li class="pan_li" onclick="brand();">Contact</li>
+                        </ul>
+                        <ul class="pan_ul">
+                            <li class="pan_li" onclick="cloths();">Jacket</li>
+                            <li class="pan_li" onclick="cloths();">Cardigan</li>
+                            <li class="pan_li" onclick="cloths();">Coat</li>
+                            <li class="pan_li" onclick="cloths();">Jumper</li>
+                            <li class="pan_li" onclick="cloths();">Padding</li>
+                        </ul>
+                        <ul class="pan_ul">
+                            <li class="pan_li" onclick="cloths();">Tea</li>
+                            <li class="pan_li" onclick="cloths();">Shirts</li>
+                            <li class="pan_li" onclick="cloths();">Blouses</li>
+                            <li class="pan_li" onclick="cloths();">Knit</li>
+                            <li class="pan_li" onclick="cloths();">Cardigan</li>
+                            <li class="pan_li" onclick="cloths();">Sleeve</li>
+                        </ul>
+                        <ul class="pan_ul">
+                            <li class="pan_li" onclick="cloths();">denim</li>
+                            <li class="pan_li" onclick="cloths();">Slacks</li>
+                            <li class="pan_li" onclick="cloths();">Pants</li>
+                            <li class="pan_li" onclick="cloths();">Skirt</li>
+                            <li class="pan_li" onclick="cloths();">OPS</li>
+                            <li class="pan_li" onclick="cloths();">short pants</li>
+
+                        </ul>
+                        <ul class="pan_ul">
+                            <li class="pan_li" onclick="cloths();">Jewelry</li>
+                            <li class="pan_li" onclick="cloths();">hair acc</li>
+                            <li class="pan_li" onclick="cloths();">Watch</li>
+                            <li class="pan_li" onclick="cloths();">Hat</li>
+                            <li class="pan_li" onclick="cloths();">socks</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 햄버거 -->
+            <div class="ham_menu">
+                  <!-- 햄버거 -->
+                <div class="hamberger">
+                    <div class="ham_line" id="line_top"></div>
+                    <div class="ham_line" id="line_mid"></div>
+                    <div class="ham_line" id="line_bot"></div>
+                </div>
+                <!-- 햄버거 메뉴판 -->
+                <div class="ham_menu_pan">
+                    <div class="ham_menu_pan_box">
+                        <div class="ham_icon_box">
+                            <div class="menu_icon ham_icon1"></div>
+                            <div class="menu_icon ham_icon2"></div>
+                            <div class="menu_icon ham_icon3"></div>
+                        </div>
+
+                        <div class="ham_sec">
+                            <ul class="ham_sec_pan_ul ham_bor_none">
+                                <li class="ham_li" onclick="brand();">ACHIO</li>
+                                <li class="sec_pan_li" onclick="brand();">Brand</li>
+                                <li class="sec_pan_li" onclick="brand();">About us</li>
+                                <li class="sec_pan_li" onclick="brand();">Info</li>
+                                <li class="sec_pan_li" onclick="brand();">Contact</li>
+                            </ul>
+                        </div>
+                        <div class="ham_sec">
+                            <ul class="ham_sec_pan_ul">
+                                <li class="ham_li" onclick="cloths();">OUTER</li>
+                                <li class="sec_pan_li" onclick="cloths();">Jacket</li>
+                                <li class="sec_pan_li" onclick="cloths();">Cardigan</li>
+                                <li class="sec_pan_li" onclick="cloths();">Coat</li>
+                                <li class="sec_pan_li" onclick="cloths();">Jumper</li>
+                                <li class="sec_pan_li" onclick="cloths();">Padding</li>
+                            </ul>
+                        </div>
+                        <div class="ham_sec">
+                            <ul class="ham_sec_pan_ul">
+                                <li class="ham_li" onclick="cloths();">TOP</li>
+                                <li class="sec_pan_li" onclick="cloths();">Tea</li>
+                                <li class="sec_pan_li" onclick="cloths();">Shirts</li>
+                                <li class="sec_pan_li" onclick="cloths();">Blouses</li>
+                                <li class="sec_pan_li" onclick="cloths();">Knit</li>
+                                <li class="sec_pan_li" onclick="cloths();">Cardigan</li>
+                                <li class="sec_pan_li" onclick="cloths();">Sleeve</li>
+                            </ul>
+                        </div>
+                        <div class="ham_sec">
+                            <ul class="ham_sec_pan_ul">
+                                <li class="ham_li" onclick="cloths();">BOTTOM</li>
+                                <li class="sec_pan_li" onclick="cloths();">denim</li>
+                                <li class="sec_pan_li" onclick="cloths();">Slacks</li>
+                                <li class="sec_pan_li" onclick="cloths();">Pants</li>
+                                <li class="sec_pan_li" onclick="cloths();">Skirt</li>
+                                <li class="sec_pan_li" onclick="cloths();">OPS</li>
+                                <li class="sec_pan_li" onclick="cloths();">short pants</li>
+                            </ul>
+                        </div>
+                        <div class="ham_sec">
+                            <ul class="ham_sec_pan_ul">
+                                <li class="ham_li" onclick="cloths();">ACC</li>
+                                <li class="sec_pan_li" onclick="cloths();">Jewelry</li>
+                                <li class="sec_pan_li" onclick="cloths();">hair acc</li>
+                                <li class="sec_pan_li" onclick="cloths();">Watch</li>
+                                <li class="sec_pan_li" onclick="cloths();">Hat</li>
+                                <li class="sec_pan_li" onclick="cloths();">socks</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 메인 배너 -->
+        <div class="top_big_banner"></div>
+        <div class="contents">
+            <!--타이틀 -->
+            <div class="title">
+                <div class="title_line"></div>
+                <h2>브랜드 소개</h2>
+            </div>
+            <!--상단 박스 -->
+            <div class="top_box">
+                <div class="top_lef_box">
+                    <div class="top_lef_logo"></div>
+                </div>
+                <div class="top_rig_txt">
+                    <div class="rig_txt1">
+                        <p class="rig_txt_p">ACHIO(아치오)는 지속 가능한 방식으로 만들어진</p>
+                        <p class="rig_txt_p">다양한 소재가 사용됩니다. 이 점을 고려해</p>
+                        <p class="rig_txt_p">신중하게 제품을 골라보세요.</p>
+                    </div>
+                    <div class="rig_txt2">
+                        <p class="rig_txt_p">‘지속 가능한 원단(sustainable fabric)’으로 불리려면</p>
+                        <p class="rig_txt_p">지속 가능한 섬유가 최소 50% 이상 포함되어야 합니다. </p>
+                        <p class="rig_txt_p">리사이클드, 리퍼포스드 섬유는 유일하게 예외가 적용되는 </p>
+                        <p class="rig_txt_p">원단이기 때문에, 전반적인 품질이 우리의 기준에</p>
+                        <p class="rig_txt_p">맞는지 확인하는 과정을 거칩니다.</p>
+                        <p class="rig_txt_p">우리는 옷을 이루는 재활용 섬유 비율을 더 높이기 위해</p>
+                        <p class="rig_txt_p">혁신적인 방법들을 연구하고 있으며, 매 순간 발전하고 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- ahout_us -->
+            <div class="mid_box">
+                <div class="mid_left_box">
+                    <div class="mid_left_txt">
+                        <h2>About us</h2>
+                        <div class="mid_line"></div>
+                        <div class="mid_about_txt">
+                            <p>ACHIO(아치오)는</p>
+                            <p>모든이들을 위한</p>
+                            <p>컨템포러리 브랜드 입니다.</p>
+                            <p>최상의 소재와 새로운</p>
+                            <p>색감의 조합으로</p>
+                            <p>아치오만의 스타일을</p>
+                            <p>나타냅니다</p>
+                        </div>
+                        <div class="mid_btn" onclick="cloths();">Go shopping!</div>
+                    </div>
+                </div>
+                <div class="mid_rig_box"></div>
+            </div>
+            <!--컬렉션 박스 -->
+            <div class="bot_box">
+                <div class="bot_lef_box"></div>
+                <div class="bot_rig_box">
+                    <div class="bot_rig_txt">
+                        <h2>NEW 20SS</h2>
+                        <h2>Capsule</h2>
+                        <h2>Collection</h2>
+                        <div class="bot_line"></div>
+                        <div class="bot_txt">
+                            <p>Achio(아치오)에서</p>
+                            <p>20 S/S 새로운 </p>
+                            <p>컬렉션을 만나보세요</p>
+                        </div>
+                        <div class="bot_btn" onclick="cloths();">Go shopping!</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 마지막 박스 -->
+        <div class="page2_last_box">
+            <div class="last_inner">
+                <div class="last_txt">
+                    <h2>A n  a f t e r n o o n</h2>
+                    <h2>c o l o r e d</h2>
+                    <h2>W i t h   f l o w e r s</h2>
+                    <div class="last_line"></div>
+                </div>
+                <div class="last_img">
+                    <div class="hov_box">
+                        <div class=" clo_img last1"></div>
+                    </div>
+                    <div class="hov_box">
+                        <div class=" clo_img last2"></div>
+                    </div>
+                    <div class="hov_box">
+                        <div class=" clo_img last3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 푸터 -->
+        <div class="footer">
+            <div class="top_btn"></div>
+            <div class="foot_inner">
+                <div class="foot_box">
+                    <h1 class="foot_title">고객지원 센터</h1>
+                    <h2 class="phone_num">1899-0000</h2>
+                    <div class="fot_line"></div>
+                    <div class="foot_bot_box">
+                        <h4>계좌안내</h4>
+                        <p>KB국민 000000-00-000000</p>
+                        <p>예금주 OOO(ACHIO)</p>
+                        <div class="fot_line_2"></div>
+                        <p>교환/반품 택배비 전용 계좌</p>
+                        <p>KB국민 000000-00-000000</p>
+                        <p>예금주 OOO(ACHIO)</p>
+                    </div>
+                </div>
+                <div class="foot_box">
+                    <h1 class="foot_title">SNS </h1>
+                    <div class="foot_icon">
+                        <div class="icon_img ins"></div>
+                        <div class="icon_img you"></div>
+                        <div class="icon_img talk"></div>
+                    </div>
+                    <div class="foot_bot_box">
+                        <h4>계좌안내</h4>
+                        <p>KB국민 000000-00-000000</p>
+                        <p>예금주 OOO(ACHIO)</p>
+                        <div class="fot_line_2"></div>
+                        <p>교환/반품 택배비 전용 계좌</p>
+                        <p>KB국민 000000-00-000000</p>
+                        <p>예금주 OOO(ACHIO)</p>
+                    </div>
+                </div>
+                <div class="foot_box3">
+                    <h1 class="foot_title">커뮤니티 / 소개</h1>
+                    <ul class="foot3_ul">
+                        <li class="foot3_li">전체</li>
+                        <li class="foot3_li">NOTICE</li>
+                        <li class="foot3_li">Q & A</li>
+                        <li class="foot3_li">입고지연</li>
+                        <li class="foot3_li">채용공고</li>
+                        <li class="foot3_li">홈</li>
+                        <li class="foot3_li">회사소개</li>
+                        <li class="foot3_li">이용약관</li>
+                        <li class="foot3_li">개인정보 정책</li>
+                        <li class="foot3_li">쇼핑가이드</li>
+                    </ul>
+                </div>
+                <div class="foot_box4">
+                    <h1 class="foot_title">회사정보</h1>
+                    <div class="foot_box4_inner">
+                        <p>회사: ACHIO 대표 : OOO</p>
+                        <p>사업자등록번호 : [ 000-00-00000 ]</p>
+                        <p>통신판매업신고 : 제2020-고양시-00000호 사업자정보확인</p>
+                        <p>개인정보관리책임자 : OOO / 123456@naver.com</p>
+                        <p>주소 : 경기도 고양시 일산서구  5층 501호 ACHIO</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>       

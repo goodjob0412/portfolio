@@ -1,0 +1,335 @@
+.main {
+    width: 980px;
+    overflow: hidden;
+    margin: 120px auto;
+    background: #fff;
+}
+.mr_0 {
+    margin-right: 0;
+}
+.search_box {
+    width: 100%;
+    overflow: hidden;
+}
+#search_game {
+    width: calc(70% - 10px);
+    height: 50px;
+    float: left;
+    margin-right: 10px;
+    font-size: 2em;
+    border: 1px solid #cecece;
+}
+.btn_search {
+    width: 30%;
+    height: 50px;
+    float: left;
+    border: none;
+    background: green;
+    color: #fff;
+    font-size: 16px;
+}
+.search_box1 {
+    width: 100%;
+    height: 460px;
+    /* background: goldenrod; */
+    margin: 30px 0;
+    border: 1px solid #cecece;
+}
+.box1_txt {
+    width: 100%;
+    height: 70px;
+}
+.box1_txt > p {
+    line-height: 70px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 27px;
+}
+.box1_line {
+    width: 100%;
+    height: 1px;
+    background: #cecece;
+}
+.box2 {
+    width: 100%;
+    height: 370px;
+    margin-top: 10px;
+}
+.box2_L {
+    width: 55%;
+    height: 100%;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    /* background: gray; */
+}
+.box2_R {
+    width: 45%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    float: right;
+    /* background: greenyellow; */
+}
+.box2_txt3 {
+    width: 100%;
+    height: 70px;
+    padding: 10px 0 10px 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #cecece;
+}
+.box2_txt3 > ul {
+    height: 100%;
+}
+.box2_txt3 > ul > li {
+    display: inline-block;
+    line-height: 1.5;
+    color: #333333;
+    font-size: 15px;
+    margin-right: 30px;
+}
+.box2_txt3 > ul > li > input {
+    margin: 3px;
+}
+.box2_txt3 > ul > li > label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.box2_txt4 {
+    width: 100%;
+    height: 70px;
+    padding: 25px 0 10px 0;
+    box-sizing: border-box;
+    border-bottom: 1px solid #cecece;
+}
+.box2_txt4 > ul {
+    height: 100%;
+}
+.box2_txt4 > ul > li {
+    display: inline-block;
+    line-height: 1.5;
+    color: #333333;
+    font-size: 15px;
+    margin-right: 20px;
+}
+.box2_txt4 > ul > li > input {
+    margin: 3px;
+}
+.box2_txt4 > ul > li > label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+#sel {
+    height: 25px;
+}
+.box2_R > ul {
+    height: 100%;
+}
+.box2_R > ul > li {
+    height: 21px;
+    display: block;
+    margin-bottom: 38px;
+}
+.box2_R > ul > li > span:nth-child(1) {
+    width: 20%;
+    height: 100%;
+    display: inline-block;
+    font-weight: 700;
+}
+.sel_1 {
+    width: 70%;
+    height: 100%;
+}
+.sel_2 {
+    height: 100%;
+}
+.search_btn {
+    width: 100%;
+    height: 58px;
+    background: green;
+    text-align: center;
+    line-height: 58px;
+    color: #fff;
+    cursor: pointer;
+}
+.main_box3 {
+    width: 100%;
+    height: 60px;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    border: 1px solid #cecece;
+}
+.box3_txt {
+    font-size: 12px;
+    float: left;
+    color: #333333;
+}
+.box3_txt1 {
+    float: right;
+}
+.box3_txt1 > span {
+    font-size: 13px;
+    font-weight: 700;
+}
+#sel_3 {
+    height: 21px;
+}
+.main_box4 {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 30px;
+}
+.main_box4 > ul {
+    width: 100%;
+}
+.main_box4 > ul > li {
+    width: calc((100% - (40px)) / 4);
+    height: 382px;
+    /* background: gray; */
+    float: left;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+    margin-right: 10px;
+}
+.box4_img {
+    width: 100%;
+    height: 189px;
+}
+.img1 {
+    background: url(../../img/xbox_img/158x158.jpg)no-repeat left / contain;
+}
+.img2 {
+    background: url(../../img/xbox_img/DOOM-Eternal_PS.png)no-repeat left / contain;
+}
+.img3 {
+    background: url(../../img/xbox_img/aVtjKjtgqTsp4Ds.jpg)no-repeat left / contain;
+}
+.img4 {
+    background: url(../../img/xbox_img/7Lm464uk6rCA7Jm.jpg)no-repeat left / contain;
+}
+.img5 {
+    background: url(../../img/xbox_img/158x158\ \(1\).jpg)no-repeat left / contain;
+}
+.img6 {
+    background: url(../../img/xbox_img/158x158\ \(2\).jpg)no-repeat left / contain;
+}
+.img7 {
+    background: url(../../img/xbox_img/aVtjKjtgqTsp4Ds\ \(1\).jpg)no-repeat left / contain;
+}
+.img8 {
+    background: url(../../img/xbox_img/VU5JY2wtclrjIDt.jpg)no-repeat left / contain;
+}
+.img9 {
+    background: url(../../img/xbox_img/packshot.jpg)no-repeat left / contain;
+}
+.img10 {
+    background: url(../../img/xbox_img/7Yyo7YKk7KeA7IO3.jpg)no-repeat left / contain;
+}
+.img11 {
+    background: url(../../img/xbox_img/packshot\ \(1\).jpg)no-repeat left / contain;
+}
+.img12 {
+    background: url(../../img/xbox_img/7L2U65Oc7Iuc7ZS.jpg)no-repeat left / contain;
+}
+.img13 {
+    background: url(../../img/xbox_img/PKGshot.jpg)no-repeat left / contain;
+}
+.img14 {
+    background: url(../../img/xbox_img/7IK86rWt7KeAMTR.jpg)no-repeat left / contain;
+}
+.img15 {
+    background: url(../../img/xbox_img/65287J207J6Q7J2.jpg)no-repeat left / contain;
+}
+.img16 {
+    background: url(../../img/xbox_img/66y07IyNT1JPQ0h.jpg)no-repeat left / contain;
+}
+.img17 {
+    background: url(../../img/xbox_img/fishing_barents.jpg)no-repeat left / contain;
+}
+.img18 {
+    background: url(../../img/xbox_img/7Yyo7YKk7KeA7IO3\ \(1\).jpg)no-repeat left / contain;
+}
+.img19 {
+    background: url(../../img/xbox_img/PackageImage_15.jpg)no-repeat left / contain;
+}
+.img20 {
+    background: url(../../img/xbox_img/66qs7Iqk7YSw67O.jpg)no-repeat left / contain;
+}
+.img21 {
+    background: url(../../img/xbox_img/moonlighter_pac.jpg)no-repeat left / contain;
+}
+.img22 {
+    background: url(../../img/xbox_img/7JeU65Oc7Jik67i.jpg)no-repeat left / contain;
+}
+.img23 {
+    background: url(../../img/xbox_img/vampyr_package_.jpg)no-repeat left / contain;
+}
+.img24 {
+    background: url(../../img/xbox_img/lost_ember_pack.jpg)no-repeat left / contain;
+}
+.box4_icon {
+    margin-top: 10px;
+}
+.box4_p {
+    font-size: 20px;
+    line-height: 25px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+.box4_txt1 {
+    width: 100%;
+    height: 75px;
+    padding-top: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    margin-top: 14px;
+    line-height: 17px;
+}
+.main_box5 {
+    width: 100%;
+    height: 100px;
+    margin-top: 50px;
+    padding-top: 30px;
+    box-sizing: border-box;
+    /* background: pink; */
+}
+.page_num {
+    width: 400px;
+    height: 50px;
+    margin: 0 auto;
+}
+.btn_num_L {
+    float: left;
+}
+.num {
+    width: 260px;
+    float: left;
+    text-align: center;
+    line-height: 30px;
+    /* background: saddlebrown; */
+}
+.num > span {
+    margin-right: 5px;
+}
+.num > span:nth-child(1) {
+    color: red;
+}
+.btn_num_R {
+    float: right;
+}
+.top_btn {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background: greenyellow;
+    text-align: center;
+    cursor: pointer;
+}
+.top_btn > a {
+    width: 100%;
+    height: 100%;
+    line-height: 50px;
+    font-size: 40px;
+}

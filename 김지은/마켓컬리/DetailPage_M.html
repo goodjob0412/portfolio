@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>국민상점/마켓컬리</title>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script defer src="./js/load_data.js"></script>
+    <script defer src="./js/h_f_M.js"></script>
+    <script defer src="./js/common_M.js"></script>
+    <script defer src="./js/DetailPage_M.js"></script>
+    
+    <link rel="stylesheet" href="./css/commom_M.css">
+    <link rel="stylesheet" href="./css/h_f_M.css">
+    <link rel="stylesheet" href="./css/DetailPage_M.css">
+</head>
+<body>
+    <div class="top_banner">
+    </div>
+    
+    <div class="wrap">
+        <div class="header">
+            <div class="header_in">
+                <div class="btn_ham">
+                    <div class="line" id="line_top"></div>
+                    <div class="line" id="line_mid"></div>
+                    <div class="line" id="line_bot"></div>
+                </div>
+                <div class="ham_pan">
+                    <div class="menu_ham">
+                        <ul class="menu_ul">
+                            <li class="menu_sec ham_menu_sec">
+                                <a href="./ListPage_M.html?cate_no=5&sec_no=0">
+                                    베스트
+                                </a>
+                            </li>
+                                
+                            <li class="menu_sec">
+                                
+                                <span> 채소 </span>
+                                <ul class="sub_menu ham_sub_menu">
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=0">
+                                        친환경
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=1">
+                                        고구마·감자·당근
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=2">
+                                            시금치·쌈채소·나물
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=3">
+                                            브로콜리·파프리카·양배추
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=4">
+                                            양파·대파·마늘·배추
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=5">
+                                            오이·호박·고추
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=0">
+                                            냉동·이색·간편채소
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=1">
+                                            콩나물·버섯
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu_sec">
+                                <span> 과일·견과·쌀 </span>
+                                <ul class="sub_menu">
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=0">
+                                        친환경
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=1">
+                                            제철과일
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=2">
+                                            국산과일
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=3">
+                                            수입과일
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=4">
+                                            간편과일
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=5">
+                                            냉동·건과일
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=0">
+                                            견과류
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=1">
+                                            쌀·잡곡
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu_sec">
+                                <span> 수산·해산·건어물 </span>
+                                <ul class="sub_menu">
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=0">
+                                            제철수산
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=1">
+                                            생선류
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=2">
+                                            굴비·반건류
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=3">
+                                            오징어·낙지·문어
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=4">
+                                            새우·게·랍스터
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=5">
+                                            해산물·조개류
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=0">
+                                            수산가공품
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=1">
+                                            김·미역·해조류
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=2">
+                                            건어물·다시팩
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu_sec">
+                                <span> 정육·계란 </span>
+                                <ul class="sub_menu">
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=0">
+                                            국내산 소고기
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=1">
+                                            수입산 소고기
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=2">
+                                            돼지고기
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=3">
+                                            계란류
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=4">
+                                            닭·오리고기
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=5">
+                                            양념육·돈까스
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=0">
+                                            양고기
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu_sec">
+                                <span> 국·반찬·메인요리 </span>
+                                <ul class="sub_menu">
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=0">
+                                            국·탕·찌개
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=1">
+                                            밀키트·메인요리
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=2">
+                                            밑반찬
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=3">
+                                            김치·젓갈·장류
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=4">
+                                            두부·어묵·부침개
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=5">
+                                            베이컨·햄·통조림
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu_sec">
+                                <span> 샐러드·간편식 </span>
+                                <ul class="sub_menu">
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=0">
+                                            샐러드·닭가슴살
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=1">
+                                            도시락·밥류
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=2">
+                                            파스타·면류
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=3">
+                                            떡볶이·튀김·순대
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=4">
+                                            피자·핫도그·만두
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=5">
+                                            폭립·떡갈비·안주
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=0">
+                                            죽·스프·카레
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=1">
+                                            선식·시리얼
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu_sec">
+                                <span> 면·양념·오일 </span>
+                                <ul class="sub_menu">
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=0">
+                                            파스타·면류
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=1">
+                                            식초·소스·드레싱
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=2">
+                                            양념·액젓·장류
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=3">
+                                            식용유·참기름·오일
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=4">
+                                            소금·설탕·향신료
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=5">
+                                            밀가루·가루·믹스
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu_sec">
+                                <span> 생수·음료·우유·커피 </span>
+                                <ul class="sub_menu">
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=0">
+                                            생수·탄산수
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=1">
+                                            음료·주스
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=2">
+                                            우유·두유·요거트
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=3">
+                                            차
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu_sec">
+                                <span> 간식·과자·떡 </span>
+                                <ul class="sub_menu">
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=0">
+                                            과자·스낵·쿠키
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=1">
+                                            초콜렛·젤리·캔디
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=2">
+                                            떡·한과
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=3">
+                                            아이스크림
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu_sec">
+                                <span> 베이커리·치즈·델리 </span>
+                                <ul class="sub_menu">
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=0">
+                                            식빵·빵류
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=1">
+                                            잼·버터·스프레드
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=2">
+                                            케이크·파이·디저트
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=3">
+                                            치즈
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=4">
+                                            델리
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=5">
+                                            올리브·피클
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu_sec">
+                                <span> 건강식품 </span>
+                                <ul class="sub_menu">
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=0">
+                                            영양제
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=1">
+                                            유산균
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=2">
+                                            홍삼·인삼·꿀
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=3">
+                                            건강즙·건강음료
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=4">
+                                            건강분말·건강환
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=5">
+                                            다이어트·이너뷰티
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=0">
+                                            유아동
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu_sec">
+                                <span> 생활용품·리빙·캠핑 </span>
+                                <ul class="sub_menu">
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=0">
+                                            휴지·티슈
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=1">
+                                            여성·위생용품
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=2">
+                                            세제·청소용품
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=3">
+                                            화훼·인테리어소품
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=4">
+                                            의약외품·마스크
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=5">
+                                            생활잡화·문구
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=0">
+                                            캠핑용품
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu_sec">
+                                <span> 스킨케어·메이크업 </span>
+                                <ul class="sub_menu">
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=0">
+                                            스킨·미스트·패드
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=1">
+                                            에센스·앰플·로션
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=2">
+                                            크림·오일
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=3">
+                                            클렌징
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=4">
+                                            마스크팩
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=5">
+                                            맨즈케어
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=0">
+                                            뷰티소품·기기
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu_sec">
+                                <span> 헤어·바디·구강 </span>
+                                <ul class="sub_menu">
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=0">
+                                            구강·면도
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=1">
+                                            샴푸·컨디셔너
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=2">
+                                            트리트먼트·팩
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=3">
+                                            헤어에센스·염모
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=4">
+                                            바디워시·스크럽
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=5">
+                                            바디로션·크림
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=0">
+                                            핸드·립·데오
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=1">
+                                            향수·디퓨저
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=2">
+                                            헤어·바디소품
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu_sec">
+                                <span> 주방용품 </span>
+                                <ul class="sub_menu">
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=0">
+                                            주방소모품·잡화
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=1">
+                                            주방·조리도구
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=2">
+                                            냄비·팬·솥
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=3">
+                                            보관용기·텀블러
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=4">
+                                            식기·테이블웨어
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ListPage_M.html?cate_no=5&sec_no=5">
+                                            컵·잔·커피도구
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+    
+                    </div>
+                </div>
+    
+                <div class="logo">
+                    <a href="index_M.html">로고</a>
+                </div>
+                    
+                <div class="menu_bottom_icon">
+                    <img src="img/icon/ico_heart.png" alt="">
+                    <img src="img/icon/buy.png" alt="">
+                
+                </div>
+            </div>
+            
+        </div>
+
+        <main>
+            <div class="w_480">
+                <div class="detail_area">
+                    <!-- <div class="item_big_img">
+                        <img src="img/item/soup/Soup_s/1.jpg" alt="">
+                    </div>
+
+                    <div class="item_info">
+                        <div class="B_title">[ 비비고 ]</div>
+                        <img src="img/icon/free-icon-share-1828960.png" alt="" class="I_img">
+                        <div class="I_title">노릇노릇 구운 주먹밥 4종</div>
+                        <div class="desc">
+                            담백한 차돌양지가 돋보이는 된장찌개
+                        </div>
+                        <div class="item_option">
+                            <div class ="item_ep1">
+                                <div class="item_ep">
+                                    <div class="item_info_title">소비자가</div>
+                                    <div class="item_desc">20000원</div>
+                                </div>
+                                <div class="item_ep item_ep_tt">
+                                    <div class="item_info_title">할인가</div>
+                                    <div class="item_desc1">7000원</div>
+                                    <div class="sale_n">20%</div>
+                                </div>
+                            
+                                <ul class="item_ep">
+                                    <li class="item_info_title">판매단위</li>
+                                    <li class="item_info_desc">1팩</li>
+                                </ul>
+                                <ul class="item_ep">
+                                    <li class="item_info_title">중량/용량</li>
+                                    <li class="item_info_desc">450g</li>
+                                </ul>
+                                <ul class="item_ep item_ep2">
+                                    <li class="item_info_title"><span>배송관련</span> </li>
+                                    <li class="item_info_exp">
+                                        <div class="item_IF"><span class="s_color">샛별배송</span> 오늘밤 주문해도 새벽이면 도착!</div>
+                                        <div class="item_IF"><span class="s_color">택배배송 </span> 오늘 주문하면 내일 도착! <br> <span class="s_color_s">샛별배송 불가 지역은 택배로 배송해드려요.</span> </div>
+                                    </li>
+                                    
+                                </ul>
+                                <ul class="item_ep">
+                                    <li class="item_info_title">포장타입</li>
+                                    <li class="item_info_desc">냉장/종이포장</li>
+                                </ul>
+                                <ul class="item_ep">
+                                    <li class="item_info_title">알레르기정보</li>
+                                    <li class="item_info_desc">- 우유, 대두, 밀, 닭고기, 쇠고기, 조개류,(바지락, 모시조개) 함유
+                                    <br>
+                                        
+                                    - 본 제품은 알류, 메밀, 땅콩, 고등어, 게, 새우, 돼지고기, 복숭아, 토마토, 아황산류, 호두, 오징어, 조개류(굴, 전복, 홍합 포함), 잣을 사용한 제품과 같은 제조시설에서 제조하고 있습니다. 
+                                    </li>
+                                </ul>
+                                <ul class="item_ep">
+                                    <li class="item_info_title">안내사항</li>
+                                    <li class="item_info_desc">-수령일 포함 165일 이상 남은 상품을 보내드립니다. (유통기한: 제조일로부터 1년)</li>
+                                </ul>
+                                <ul class="item_ep">
+                                    <li class="item_info_title">구매수량</li>
+                                    <li class="item_info_desc">
+                                        <div class="opt_qty">
+                                            <input type="button" class="btn_qty btn_minus" value="-">
+                                            <input type="text" class="txt_qty" value="1">
+                                            <input type="button" class="btn_qty btn_plus" value="+">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+    
+                            <div class="total_sec">
+                                <div class="total_price">
+                                    총 상품 금액: <span class="final_price">70,000원</span>
+                                </div>
+                                <div>
+                                    <span class="point">적립</span>
+                                    로그인 후, 적립혜택 제공
+                                </div>
+                            </div>
+                            
+    
+                            <div class="btn_buy_container">
+                                <div class="btn_add_cart">재입고 알림</div>
+                                <div class="btn_wish_list">장바구니 담기</div>
+                                <div class="btn_buy">구매하기</div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+
+                <div class="product_detail" id="product_detail">
+                    <div class="detail_menu_box">
+                        <ul class="detail_menu">
+                            <li class="d_M active">
+                                <a href="#product_detail" class="act">
+                                    상품설명
+                                </a>
+                            </li>
+                            <li class="d_M"><a href="#detail_exp" class="act">상세정보</a></li>
+                            <li class="d_M"><a href="#review" class="act">후기</a></li>
+                            <li class="d_M"><a href="#qna" class="act">문의</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="detail_box"> 
+                        <img src="img/detail/1.jpg" alt="">
+                        
+                        <div class="detail_sec_B">
+                            <div class="detail_txt">
+                                <div>
+                                    진짜 갈비로 우려낸 전통 갈비탕</div>
+                                <div>
+                                    [사미헌]갈비탕</div>
+                            </div>
+                            
+                            <div class="d_txt">
+                                부산 서면문화로 거리를 18년째 묵묵히 지키고 있는 한결같은 맛집이 있어요. 바로 부산의 대표 고깃집 사미헌인데요. 컬리는 진짜 갈비로 육수를 우려낸 사미헌 갈비탕을 가져왔어요. 사미헌은 오랜 세월 이어온 비법을 담아 육수를 끓이고 질 좋은 고기를 듬뿍 사용합니다. 엄선한 소갈비만을 사용하고, 직접 선별한 신선한 재료를 매일 아침 손질하여 육수를 고아내죠. 착색료(캐러멜 색소)를 넣지 않아 담백하고 시원한 맑은 육수와 살이 많은 갈비의 쫄깃함이 잘 어우러집니다. HACCP 인증 시설에서 만들어 위생적이고 안전하게 드실 수 있어요. 오늘은 뭐 먹을까 고민이 되는 직장인 또는 우리 아이 영양 식단으로 좋습니다.
+                            </div>
+
+                            <img src="img/detail/2-1.jpg" alt="" class="D_img">
+                            <img src="img/detail/3-1.jpg" alt="" class="D_img">
+                            <img src="img/detail/5-1.jpg" alt="" class="D_img">
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="detail_exp" id="detail_exp">
+                    <div class="detail_menu_box">
+                        <ul class="detail_menu">
+                            <li class="d_M">
+                                <a href="#product_detail" class="act">
+                                    상품설명
+                                </a>
+                            </li>
+                            <li class="d_M active"><a href="#detail_exp" class="act">상세정보</a></li>
+                            <li class="d_M"><a href="#review" class="act">후기</a></li>
+                            <li class="d_M"><a href="#qna" class="act">문의</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="detail_box"> 
+                        <img src="img/detail/6-1.jpg" alt="" class="D_img">
+                        <img src="img/detail/8-1.jpg" alt="" class="D_img">
+                        <div class="center_box">
+                            <div class="center">고객행복센터</div>
+                            <div class="center_txt">
+                                <span>궁금하신 점이나 서비스 이용에 불편한 점이 있으신가요?</span> <br>
+                                <span>
+                                    문제가 되는 부분을 사진으로 찍어 
+                                    아래 중 편하신 방법으로 접수해 주시면 
+                                    빠르게 도와드리겠습니다.</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="review" id="review">
+                    <div class="detail_menu_box">
+                        <ul class="detail_menu">
+                            <li class="d_M">
+                                <a href="#product_detail" class="act">
+                                    상품설명
+                                </a>
+                            </li>
+                            <li class="d_M"><a href="#detail_exp" class="act">상세정보</a></li>
+                            <li class="d_M active"><a href="#review" class="act">후기</a></li>
+                            <li class="d_M"><a href="#qna" class="act">문의</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="detail_box">
+                        <div class="center_box">
+                            <div class="center">PRODUCT REVIEW</div>
+                            <div class="center_txt">
+                                <div><span class="one">●</span>  상품에 대한 문의를 남기는 공간입니다. 해당 게시판의 성격과 다른 글은 사전동의 없이 담당 게시판으로 이동될 수 있습니다.</div>
+                                <div>
+                                    <span class="one">●</span> 배송관련, 주문(취소/교환/환불)관련 문의 및 요청사항은 마이컬리 내 1:1 문의에 남겨주세요.
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <div class="sel_title">
+                                    <span>
+                                        추천순리뷰
+                                    </span>
+                                    <span>
+                                        최신순
+                                    </span>
+                                    <span>
+                                        평점순
+                                    </span>
+                                </div>
+                                <div class="Re_thing">
+                                    <div class="Re_box">
+                                        <div class="R_sec">
+                                            <div>
+                                                <img src="img/icon/star.png" alt="" class="star">
+                                                <img src="img/icon/star.png" alt="" class="star">
+                                                <img src="img/icon/star.png" alt="" class="star">
+                                                <img src="img/icon/star.png" alt="" class="star">
+                                                <img src="img/icon/star.png" alt="" class="star">
+                                            </div>
+                                            <span class="day">2021.00.00</span>
+                                            <span class="day">작성자 - 홍길동</span>
+                                        </div>
+    
+                                        <div class="Re_txt_box">
+                                            <div class="Re_txt">
+                                                리뷰남기고 또 주문하려구요
+                                                고기들도 부드럽고 실해서 좋고,
+                                                국물맛도 끝내줘요!
+                                                매번 국물 한 방울 남기지 않고 먹는답니다!
+                                            </div>
+                                            <img src="img/black_week/2-1.jpg" alt="" class="L_img">
+                                            <img src="img/black_week/2-1.jpg" alt="" class="L_img">
+                                        </div>
+                                    </div>
+                                    <div class="Re_box">
+                                        <div class="R_sec">
+                                            <div>
+                                                <img src="img/icon/star.png" alt="" class="star">
+                                                <img src="img/icon/star.png" alt="" class="star">
+                                                <img src="img/icon/star.png" alt="" class="star">
+                                                <img src="img/icon/star.png" alt="" class="star">
+                                                <img src="img/icon/star.png" alt="" class="star">
+                                            </div>
+                                            <span class="day">2021.00.00</span>
+                                            <span class="day">작성자 - 홍길동</span>
+                                        </div>
+    
+                                        <div class="Re_txt_box">
+                                            <div class="Re_txt">
+                                                리뷰남기고 또 주문하려구요
+                                                고기들도 부드럽고 실해서 좋고,
+                                                국물맛도 끝내줘요!
+                                                매번 국물 한 방울 남기지 않고 먹는답니다!
+                                            </div>
+                                            <img src="img/black_week/2-1.jpg" alt="" class="L_img">
+                                            <img src="img/black_week/2-1.jpg" alt="" class="L_img">
+                                        </div>
+                                    </div>
+                                    <div class="Re_box">
+                                        <div class="R_sec">
+                                            <div>
+                                                <img src="img/icon/star.png" alt="" class="star">
+                                                <img src="img/icon/star.png" alt="" class="star">
+                                                <img src="img/icon/star.png" alt="" class="star">
+                                                <img src="img/icon/star.png" alt="" class="star">
+                                                <img src="img/icon/star.png" alt="" class="star">
+                                            </div>
+                                            <span class="day">2021.00.00</span>
+                                            <span class="day">작성자 - 홍길동</span>
+                                        </div>
+    
+                                        <div class="Re_txt_box">
+                                            <div class="Re_txt">
+                                                리뷰남기고 또 주문하려구요
+                                                고기들도 부드럽고 실해서 좋고,
+                                                국물맛도 끝내줘요!
+                                                매번 국물 한 방울 남기지 않고 먹는답니다!
+                                            </div>
+                                            <img src="img/black_week/2-1.jpg" alt="" class="L_img">
+                                            <img src="img/black_week/2-1.jpg" alt="" class="L_img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="qna" id="qna">
+                    <div class="detail_menu_box">
+                        <ul class="detail_menu">
+                            <li class="d_M">
+                                <a href="#product_detail" class="act">
+                                    상품설명
+                                </a>
+                            </li>
+                            <li class="d_M"><a href="#detail_exp" class="act">상세정보</a></li>
+                            <li class="d_M"><a href="#review" class="act">후기</a></li>
+                            <li class="d_M active"><a href="#qna" class="act">문의</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="detail_box"> 
+                        <table class="qna_box">
+                            <tbody class="qna_tbody">
+                                <tr class="qna_sec">
+                                    <td class="qna_N">번호</td>
+                                    <td class="qna_title">제목</td>
+                                    <td class="qna_name">작성자</td>
+                                    <td class="qna_ok">답변상태</td>
+                                </tr>
+                                <tr >
+                                    <td class="qna_N">1</td>
+                                    <td class="qna_title">냉동기간 유효기간</td>
+                                    <td class="qna_name">방*린</td>
+                                    <td class="qna_ok">답변완료</td>
+                                </tr>
+                                <tr >
+                                    <td class="qna_N">2</td>
+                                    <td class="qna_title">문의드립니다</td>
+                                    <td class="qna_name">홍*동</td>
+                                    <td class="qna_ok">답변완료</td>
+                                </tr>
+                            </tbody>
+                            
+                        </table>
+                    </div>
+                </div>
+                
+            </div>
+        </main>
+
+        <footer>
+            <div class="w_480 call_sec">
+                <div class="call_title">고객행복센터</div>
+                <div class="call">
+                    <div>
+                        <div>
+                            <div class="cell_p">1644-1107</div>
+                            <div class="kakao">
+                                <div class="call_txt">카카오톡</div>
+                                <div class="call_txt">1:1</div>
+                                <div class="call_txt">대량주문</div>
+                            </div>
+                            <img src="img/icon/ico_instagram.png" alt="" class="c_img">
+                            <img src="img/icon/ico_fb.png" alt="" class="c_img">
+                            <img src="img/icon/ico_blog.png" alt="" class="c_img">
+                            <img src="img/icon/ico_naverpost.png" alt="" class="c_img">
+                            <img src="img/icon/ico_youtube.png" alt="" class="c_img">
+                            
+                        </div>
+                        
+                        <div class="hour_box">
+                            <div class="hour">
+                                <span>365고객센터</span>
+                                <span>오전7시 - 오후7시</span>
+                            </div>
+                            <div>
+                                <span>24시간 접수 가능</span>
+                                <span>고객센터 운영시간에 순차적으로 답변해드리겠습니다.</span>
+                            </div>
+                            <span>비회원의 경우 메일로 문의 바랍니다.</span>
+                        </div>
+                    </div>
+
+                    <div class="footer_R">
+                        <div>
+                            <span>컬리소개</span>
+                            <span>컬리소개영상</span>
+                            <span>인재채용</span>
+                            <span>이용약관</span>
+                            <span>개인정보처리방침</span>
+                            <span>이용안내</span>
+                        </div>
+                        <div>
+                            <div>
+                                <span>법인명 (상호) : 주식회사 컬리</span>
+                                <span>사업자등록번호 : 261-81-23567 </span>
+                            </div>
+                            <div>
+                                <span>통신판매업 : 제 2018-서울강남-01646 호 </span>
+                                <span>개인정보보호책임자 : 이원준 </span>
+                            </div>
+                            <div>
+                                <span>주소 : 서울특별시 강남구 테헤란로 133, 18층(역삼동)</span>
+                                <span>대표이사 : 김슬아 </span>
+                            </div>
+                            <div>
+                                <span>입점문의 : 입점문의하기</span>
+                                <span>제휴문의 : business@kurlycorp.com</span>
+                            </div>
+                            <div>
+                                <span>채용문의 : recruit@kurlycorp.com</span>
+                            </div>
+                            <div>
+                                <span>팩스: 070 - 7500 - 6098</span>
+                                <span>이메일 : help@kurlycorp.com</span>
+                            </div>
+                            <div>
+                                <span>대량주문 문의 : kurlygift@kurlycorp.com</span>
+                            </div>
+                            <span>© KURLY CORP. ALL RIGHTS RESERVED</span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </footer>
+
+        <div class="box w_box">
+
+            <div class="btn_wish_list W_L">장바구니 담기</div>
+            <div class="btn_buy W_B">구매하기</div>
+
+        </div>
+
+        <img src="./img/icon/btn_pagetop_v2.png" alt="" class="top_button" id="top_btn">
+    </div>
+</body>
+</html>

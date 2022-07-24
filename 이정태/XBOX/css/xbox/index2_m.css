@@ -1,0 +1,90 @@
+.wrap {
+    width: 100%;
+    height: 100vh;
+    padding: 50px 0;
+    box-sizing: border-box;
+    background: green;
+    font-family: 'NotoSansKR-Regular-Alphabetic';
+}
+@font-face {
+    font-family: 'NotoSansKR-Regular-Alphabetic';
+    src: url('../../font/NotoSansKR-Regular-Alphabetic.eot');
+    src: url('../../font/NotoSansKR-Regular-Alphabetic.eot?#iefix') format('embedded-opentype'),
+         url('../../font/NotoSansKR-Regular-Alphabetic.ttf') format('truetype'),
+         url('../../font/NotoSansKR-Regular-Alphabetic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+.main {
+    width: 100%;
+    height: 400px;
+    padding: 0 10px 0 10px;
+    box-sizing: border-box;
+}
+.logo {
+    width: 182px;
+    height: 36px;
+    background: url(../../img/xbox_img/logo2.png)no-repeat center / contain;
+    margin: 0 auto;
+}
+.logo > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-indent: -9999px;
+}
+.login_box {
+    width: 100%;
+    height: 338px;
+    background: #fff;
+    margin-top: 15px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.bancher {
+    width: 108px;
+    height: 24px;
+    background: url(../../img/xbox_img/RE1Mu3b.png)no-repeat center / contain;
+}
+.login_box > p:nth-child(2) {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 20px 0;
+}
+.txt_box {
+    width: 70%;
+    float: left;
+}
+.txt {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+}
+.login {
+    width: 30%;
+    height: 80px;
+    float: right;
+    cursor: pointer;
+}
+.conment {
+    margin-top: 20px;
+    cursor: pointer;
+}
+.footer {
+    width: 100%;
+    height: 28px;
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    bottom: 0;
+}
+.footer_txt {
+    float: right;
+    color: #fff;
+    line-height: 28px;
+    margin-right: 10px;
+}
+.footer_txt > span {
+    margin-right: 10px;
+}

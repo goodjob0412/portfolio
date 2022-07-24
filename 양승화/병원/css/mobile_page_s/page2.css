@@ -1,0 +1,170 @@
+/* 메인배너 */
+.main_banner{
+    width: 100%;
+    height: 80px;
+    background: url(../../img/page3/main_banner2.jpg) no-repeat bottom / cover;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 25px;
+    text-align: center;
+    color: #333333;
+    line-height: 80px;
+
+    position: relative;
+}
+.contents{
+    width: 100%;
+    /* overflow: hidden; */
+    padding: 20px 10px;
+    box-sizing: border-box;
+}
+.contents > h1{
+    width: 100%;
+    height: 50px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    border-bottom: 5px solid #23507b;
+    font-size: 30px;
+    font-weight: 600;
+}
+iframe {
+    width: 100%;
+    height: 350px;
+}
+.come_box{
+    width: 100%;
+    /* overflow: hidden; */
+    margin-top: 10px;
+}
+/* 지하철 */
+.subway,
+.bus{
+    width: 100%;
+    /* height: 80px; */
+    /* border-bottom: 2px solid #23507b; */
+}
+.sub_left,
+.bus_left,
+.car_left{
+    width: 100%;
+    height: 80px;
+    border-bottom: 2px solid #23507b;
+}
+.sub_icon,
+.bus_icon,
+.car_icon{
+    width: 70px;
+    height: 70px;
+    background: url(../../img/page2/sub_icon.png) no-repeat center / cover;
+    float: left;
+}
+
+.sub_txt,
+.bus_txt,
+.car_txt{
+    width: calc(100% - 80px);
+    height: 100%;
+    font-size: 24px;
+    font-weight: 600;
+    /* float: left; */
+    line-height: 80px;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+.sub_rig{
+    width:100%;
+    height: 174px;
+    padding: 22px 10px;
+    box-sizing: border-box;
+    /* margin-left: 70px; */
+}
+.com_circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    float: left; 
+}
+.sub_circle1{
+    background: #ff7300;
+}
+.sub_cir_p1{
+    width: calc(100% - 60px);
+    height: 50px;
+    line-height: 40px;
+    font-size: 14px;
+    float: left;
+    margin-left: 10px;
+}
+.sub_circle2{
+    background: #19ccb9;
+    font-size: 10px;
+    margin-top: 20px;
+}
+.sub_cir_p2{
+    height: 50px;
+    line-height: 43px;
+    font-size: 14px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 20px;
+    
+}
+/* 버스 */
+.bus_icon{background: url(../../img/page2/bus_icon.png) no-repeat center / cover;}
+.bus_rig{
+    width: 100%;
+    height: 430px;
+    padding: 20px 10px ;
+    box-sizing: border-box;
+    /* margin-left: 70px; */
+}
+.bus_circle1{background: #50ae1c;}
+.bus_circle2{background: #ea5048;}
+.bus_circle3{background: #5c9dc5;}
+.bus_circle4{background: #12c7b5;}
+.ma_bus, .r_bus{
+    width: calc(100% - 50px);
+    height:96px;
+    float: left;
+}
+.bus_num_box{
+    width: calc(400px / 4);
+    height: 25px;
+    line-height: 25px;
+    float: left;
+    text-align: center;
+}
+.bus_num_box1{
+    width: calc(400px / 4);
+    height: 50px;
+    line-height: 50px;
+    float: left;
+    text-align: center;
+}
+/* 자동차 */
+.car{
+    width: 100%;
+    /* height: 80px;
+    border-bottom: 2px solid #23507b; */
+    clear: both;
+}
+.car_icon{
+    background: url(../../img/page2/car_icon.png) no-repeat center / cover;
+}
+.car_rig{
+    width: 100%;
+    /* height: 100px; */
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 15px;
+    /* margin-left: 70px; */
+    margin-top: 20px;
+    clear: both;
+}
+.car_rig > p{
+    line-height: 18px;
+}

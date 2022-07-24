@@ -1,0 +1,367 @@
+.banner {
+    width: 100%;
+    position: relative;
+    margin-top: 60px;
+}
+#movie {
+    width: 100%;
+}
+.video_icon {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    cursor: pointer;
+}
+#play {
+    background: url(../../img/xbox_img/play.png)no-repeat center / contain;
+}
+#stop {
+    display: none;
+    background: url(../../img/xbox_img/stop.png)no-repeat center / contain;
+}
+.s_nav {
+    width: 100%;
+    height: 120px;
+}
+.s_nav > ul {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+.s_nav > ul > li {
+    width: calc(100% / 3);
+    height: 100%;
+    float: left;
+    /* background: gray; */
+    text-align: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.s_nav > ul > li > a {
+    font-weight: bold;
+    color: green;
+}
+.s_nav > ul > li:hover > a {
+    font-size: 14px;
+    border-bottom: 3px solid green;
+}
+.icon {
+    width: 100%;
+    height: 45px;
+}
+.icon1 {
+    background: url(../../img/xbox_img/ee30f7bc-b3ea-4046-b49f-69aa2aab6fa8.png)no-repeat center / contain;
+}
+.icon2 {
+    background: url(../../img/xbox_img/1c606d1e-b2f7-477f-ab81-21cf9ce15f90.png)no-repeat center / contain;
+}
+.icon3 {
+    background: url(../../img/xbox_img/6211f0f8-ee91-4b1d-a19c-45d0155adcac.png)no-repeat center / contain;
+}
+.icon4 {
+    background: url(../../img/xbox_img/4858e165-9857-45b0-9cb6-0181545cb567.png)no-repeat center / contain;
+}
+.icon5 {
+    background: url(../../img/xbox_img/41aee2e2-0277-4d32-88ad-95540b836654.png)no-repeat center / contain;
+}
+.icon6 {
+    background: url(../../img/xbox_img/8ce47433-434b-4487-b8da-1bd32429d3ca.png)no-repeat center / contain;
+}
+.main {
+    width: 100%;
+    overflow: hidden;
+    padding: 0 10px 20px 10px;
+    box-sizing: border-box;
+}
+.main1 {
+    width: 100%;
+    overflow: hidden;
+}
+.main1 > ul {
+    width: 100%;
+}
+.main1 > ul > li {
+    width: 100%;
+}
+.main1 > ul > li:nth-child(1) {
+    height: 450px;
+    background: url(../../img/xbox_img/72330d18-73e3-41f0-8625-18f2b99855bf.jpg)no-repeat center / contain;
+    position: relative;
+    margin-bottom: 30px;
+}
+.main1_txt1 {
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+.main1_txt1 > p:nth-child(1) {
+    font-size: 30px;
+}
+.main1_txt1 > p:nth-child(2) {
+    font-size: 20px;
+    margin: 20px 0;
+}
+.main1_txt1 > p:nth-child(3) {
+    font-size: 15px;
+    font-weight: bold;
+}
+.main1 > ul > li:nth-child(2) {
+    height: 624px;
+    background: green;
+}
+.main1_txt2 {
+    width: 100%;
+    overflow: hidden;
+    padding: 30px;
+    box-sizing: border-box;
+    color: #fff;
+}
+.main1_txt2 > p:nth-child(1) {
+    font-size: 34px;
+}
+.main1_txt2 > p:nth-child(2) {
+    font-size: 20px;
+    margin: 20px 0;
+}
+.main1_txt2 > p:nth-child(3) {
+    font-size: 15px;
+}
+.main1_img2 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.main1_img2 > img {
+    width: 100%;
+    transform: scale(1);
+    transition: all 0.3s;
+}
+.main1_img2:hover > img {
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+.main1 > ul > li:nth-child(3) {
+    height: 450px;
+    background: url(../../img/xbox_img/e5413338-baca-4ed2-b29c-570071b621bb.jpg)no-repeat center / contain;
+    position: relative;
+}
+.main1_txt3 {
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+.main1_txt3 > p:nth-child(1) {
+    font-size: 25px;
+}
+.main1_txt3 > p:nth-child(2) {
+    font-size: 16px;
+    margin: 20px 0;
+}
+.main1_txt3 > p:nth-child(3) {
+    font-size: 15px;
+    font-weight: bold;
+}
+.main1 > ul > li:nth-child(4) {
+    height: 700px;
+    background: green;
+}
+.main1_img4 {
+    width: 100%;
+    overflow: hidden;
+}
+.main1_img4 > img {
+    transform: scale(1);
+    transition: all 0.3s;
+}
+.main1_img4:hover > img {
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+.main1_txt4 {
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    /* background: gray; */
+    color: #fff;
+}
+.main1_txt4 > p:nth-child(1) {
+    font-size: 25px;
+}
+.main1_txt4 > p:nth-child(2) {
+    font-size: 16px;
+    margin: 20px 0;
+}
+.main1_txt4 > p:nth-child(3) {
+    font-size: 15px;
+}
+.main2 {
+    width: 100%;
+    height: 400px;
+    background: #212025;
+    margin: 10px 0;
+}
+.main2 > img {
+    width: 100%;
+}
+.main2_txt {
+    width: 100%;
+    color: #fff;
+}
+.main2_txt > p:nth-child(1) {
+    font-size: 40px;
+}
+.main2_txt > p:nth-child(2) {
+    font-size: 20px;
+    margin: 40px 0;
+}
+.main2_txt > p:nth-child(3) {
+    font-size: 16px;
+}
+.main3 {
+    width: 100%;
+    overflow: hidden;
+}
+.main3_box {
+    width: 100%;
+    text-align: center;
+}
+.main3_box > p:nth-child(1) {
+    font-size: 18px;
+    color: #0070cc;
+}
+.main3_box > p:nth-child(2) {
+    margin-top: 10px;
+    font-size: 40px;
+}
+.main3_img_box {
+    width: 100%;
+    /* height: 616px; */
+    overflow: hidden;
+    margin-top: 50px;
+}
+.main3_img_box > ul {
+    width: 100%;
+}
+.main3_img_box > ul > li {
+    width: 100%;
+    height: 100%;
+    /* background: gray; */
+    margin-top: 30px;
+}
+.main3_img {
+    width: 100%;
+    height: 250px;
+}
+.img1 {
+    background: url(../../img/xbox_img/browsegames-imageblock-01-us-13sep19.png)no-repeat center / contain;
+}
+.img2 {
+    background: url(../../img/xbox_img/accessories-spotlight-01-ps4-us-06sep19.png)no-repeat center / contain;
+}
+.img3 {
+    background: url(../../img/xbox_img/psvr-bundle-playstation-vr-all-in-one-pack.png)no-repeat center / contain;
+}
+.main3_img_box > ul > li > p:nth-child(2) {
+    margin: 30px 0 10px 0;
+    font-size: 18px;
+    color: #0070cc;
+}
+.main3_img_box > ul > li > p:nth-child(3) {
+    font-size: 24px;
+}
+.main3_txt_box {
+    width: 149px;
+    height: 46px;
+    background: #0070cc;
+    margin: 70px auto 0;
+}
+.main3_txt_box > p {
+    color: #fff;
+    line-height: 46px;
+    text-align: center;
+    font-size: 15px;
+}
+.main4 {
+    width: 100%;
+    height: 265px;
+    background: url(../../img/xbox_img/marvels-avengers-homepage-marquee-desktop-01-ps4-13feb20.jpg)no-repeat center / cover;
+    margin-top: 50px;
+}
+.main4_box {
+    width: 100%;
+    height: 270px;
+    background: rgba(31, 31, 31, 0.85);
+    position: relative;
+}
+.main4_line {
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: -100%;
+    top: 0;
+    background: linear-gradient(270deg,rgba(0,0,0,0),#fff,rgba(0,0,0,0));
+    animation: line_move 4s infinite;
+}
+@keyframes line_move {
+    0% {left: -100%;}
+    100% {left: 100%;}
+}
+.main4_txt_box {
+    width: 100%;
+    overflow: hidden;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.main4_txt1 {
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 50px;
+    float: left;
+}
+.main4_txt2 {
+    width: 100%;
+    float: left;
+    line-height: 25px;
+    font-size: 20px;
+}
+.main4_txt3 {
+    width: 90%;
+    height: 46px;
+    background: #cd3d0f;
+    padding: 11px 20px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 10px auto 0;
+}
+.main4_txt3 > p {
+    font-size: 16px;
+    color: #fff;
+}
+.top_btn {
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background: greenyellow;
+    text-align: center;
+    cursor: pointer;
+    display: none;
+}
+.top_btn > a {
+    width: 100%;
+    height: 100%;
+    line-height: 30px;
+    font-size: 20px;
+}

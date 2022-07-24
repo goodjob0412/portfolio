@@ -1,0 +1,240 @@
+/* 메인배너 */
+.main_banner{
+    width: 100%;
+    height: 80px;
+    background: url(../../img/page3/main_banner.jpg) no-repeat bottom / cover;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 25px;
+    text-align: center;
+    color: #333333;
+    line-height: 80px;
+
+    position: relative;
+}
+.contents{
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 10px;
+    box-sizing: border-box;
+}
+/* 클릭하면 이동 */
+.click_box{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+}
+.click{
+    width: calc((100% - 4px) / 3 - 0.01px);
+    height: 100%;
+    font-size: 14px;
+    text-align: center;
+    line-height: 30px;
+    background: #999;
+    color: #fff;
+    float: left;
+    cursor: pointer;
+}
+.page1{
+    background: #23507b;
+    color: #fff;
+}
+.click:hover{
+    background: #23507b;
+    color: #fff;
+}
+.click:nth-of-type(2){
+    margin: 0 2px;
+}
+/* 설명 박스 */
+.text_box{
+    width: 100%;
+    height: 160px;
+    margin-top: 50px;
+    margin: 0 auto; 
+}
+.left_icon_box{
+    width: 90px;
+    height: 100%;
+    float: left;
+}
+.text_icon{
+    width: 90px;
+    height: 90px;
+    background: url(../../img/page3/com_icon.png) no-repeat center /cover;
+}
+.right_text{
+    width: calc(100% - 90px);
+    height: 100%;
+    padding: 23px 0;
+    box-sizing: border-box; 
+    float: right;
+    display: block;
+    line-height: 20px;
+}
+.right_text_online{
+    width: calc(100% - 90px);
+    height: 100%;
+    padding: 23px 0;
+    box-sizing: border-box; 
+    float: right;
+    display: none;
+}
+.right_text >h3,
+.right_text_online > h3{
+    width: 100%;
+    height: 23px;
+    font-size: 23px;
+    margin-bottom: 15px;                                     
+}
+.ri_text_p{
+    width: 100%;
+    height: 25px;
+    font-size: 13px;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+/* input box */
+.input_box{
+    width: 100%;
+    height: 400px;
+
+    position: relative;
+}
+.inp_box{
+    width: 100%;
+    height: 70px;
+    border-top: 1px solid #dbdada;
+    box-sizing: border-box;
+}
+.inp_box2{
+    width: 100%;
+    height: 100px;
+    border-top: 1px solid #dbdada;
+    border-bottom: 1px solid #dbdada;
+    box-sizing: border-box;
+}
+.inp_left_text{
+    width: calc(100% - 70%);
+    height: 100%;
+    font-size: 15px;
+    line-height: 70px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    float: left;
+    border-right: 1px solid #dbdada;
+}
+.inp_rig{
+    width: calc(100% - 30%);
+    height: 100%;
+    float: left;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+.inp_text{
+    /* width: 300px; */
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    border: 1px solid #dbdada;
+}
+.inp_text2{
+    /* width: 300px; */
+    width: 100%;
+    height: 32px;
+    box-sizing: border-box;
+    font-size: 15px;
+    margin-top: 10px;
+    border: 1px solid #dbdada;
+}
+#inp_text3{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #dbdada;
+    box-sizing: border-box;
+}
+/* 상담신청 버튼 */
+.sum_btn{
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    background: #23507b;
+    color: #fff;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+    transform: translateX(-50%);
+}
+.sum_btn:hover{
+    background:#497fb3;
+}
+.last_box{
+    width: 100%;
+    /* height: 200px; */
+    margin-top: 50px;
+}
+.last_box >h2{
+    width: 100%;
+    height: 28px;
+    font-size: 23px;
+    margin-bottom: 10px;
+    
+}
+.last_p{
+    width: 100%;
+    /* height: 150px; */
+    font-size: 16px;
+    background: #f8f8f8;
+    padding: 20px 10px;
+    box-sizing: border-box;
+}
+.last_p > p{
+    width: 100%;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+/* page 3_3 */
+.contents_box2{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    display: none;
+}
+.inner_con{
+    width: 100%;
+    height: 100px;
+    margin-bottom: 50px;
+}
+.left_icon{
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+.booking_icon1{background: url(../../img/page3/booking_img01.png);}
+.booking_icon2{background: url(../../img/page3/booking_img02.png);}
+.booking_icon3{background: url(../../img/page3/booking_img03.png);}
+.con_txt{
+    width: calc(100% - 100px);
+    height: 100%;
+    float: left;
+    margin-top: 20px;
+}
+.con_txt > h2{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.con_txt_p{
+    line-height: 20px;
+    font-size: 15px;
+    margin-bottom: 8px;
+}

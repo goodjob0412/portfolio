@@ -1,0 +1,731 @@
+
+/* ------------------- 메인배너 */
+.main_banner {
+    width: 100%;
+    padding-bottom: 150vw;
+    
+    position: relative;
+    overflow: hidden;
+}
+
+.banner {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: none;
+}
+.banner1 {
+    background: url(../img/banner/m_main_renewal01.jpg) no-repeat center / cover;
+}
+.banner2 {
+    background: url(../img/banner/m_main_renewal02.jpg) no-repeat center / cover;
+}
+.banner3 {
+    background: url(../img/banner/m_main_renewal03.jpg) no-repeat center / cover;
+}
+.banner4 {
+    background: url(../img/banner/m_main_renewal04.jpg) no-repeat center / cover;
+}
+.banner a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.btn_slide {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    z-index: 999;
+    opacity: 0.5;
+
+    transition: all 0.5s;
+}
+.btn_slide_active {
+    opacity: 1;
+}
+#btn_L {    
+    background: #ddd url(../img/icon/icon_prev_222.png) no-repeat center / 15px;
+    left: 15px;
+}
+#btn_R {
+    background: #ddd url(../img/icon/icon_next_222.png) no-repeat center  / 15px;
+    right: 15px;
+    
+}
+.indicater {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    z-index: 999;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 7px;
+}
+.indi_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 7px;
+}
+.indi {
+    width: 30px;
+    height: 7px;
+    border-radius: 4px;
+    background: #fff;
+}
+.indi_active {
+    background: #ffa705;
+}
+
+.stop_play {
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.play_btn {
+    width: 100%;
+    height: 100%;
+    background: url(../img/icon/play4.png) no-repeat center  / cover;
+}
+.stop_btn {
+    width: 100%;
+    height: 100%;
+    background: url(../img/icon/stop4.png) no-repeat center  / cover;
+}
+.btn_none {
+    display: none;
+}
+/* -------------------공통 */
+.item_sec {
+    margin: 50px auto;
+}
+.title {
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+
+}
+.title span {
+    padding: 0 30px;
+}
+
+.item_ul{
+    width: 100%;
+}
+.item_img {
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    font-size: 0;
+}
+.item_img img {
+    width: 100%;
+
+}
+.item_sub {
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+.item_title_en {
+    height: 20px;
+    overflow: hidden;
+    font-size: 14px;
+    font-weight: 300;
+    color: #888;
+}
+.item_title_kr {
+    height: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #444;
+    margin: 3px 0 5px;
+    word-break: keep-all;
+}
+
+.item_desc {
+    font-size: 14px;
+    color: #888;
+    word-break: keep-all;
+    margin: 10px 0;
+}
+.item_s_price {
+    font-size: 14px;
+    color: #999;
+    text-decoration: line-through;
+    margin: 10px 5px 10px 0;
+}
+.item_o_price {
+    color: #444;
+    font-size: 15px;
+    margin: 3px 0;
+}
+.sale_percent {
+    float: right;
+    color: #ff7205;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* 슬라이드 바 */ 
+
+.slide_btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 24px;
+    font-weight: 700;
+
+    opacity: 1;
+}
+.btn_prev {
+    background: #ddd url(../img/icon//icon_prev_1.png) no-repeat center /10px;
+    float: left;
+}
+
+.btn_next {
+    background: #ddd url(../img/icon/icon_next_1.png) no-repeat center /10px;
+    float: right;
+    text-align: right;
+}
+
+/* ------------------- 뉴 */
+.new_sec .title {
+    margin-bottom: 40px;
+}
+.new_sec .item_list {
+    overflow: hidden;
+    overflow-x: scroll;
+}
+.new_sec .item_ul {
+    width: 460%;
+    height: 100%;
+
+    overflow: hidden;
+}
+.new_sec .item_li {
+    box-sizing: border-box;
+    width: calc((100% - (15px * 9))/ 10);
+    margin-right: 15px;
+    float: left;
+}
+.new_sec .item_li:last-child {
+    margin-right: 0;
+}
+
+.new_img {
+    width: 100%;
+    height: 40vw;
+    max-height: 292px;
+}
+
+.new_sub {
+    text-align: center;
+
+}
+
+.new_sec .item_s_price {
+    color: #444;
+    margin: 10px 0;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+/* ------------------- md추천 */
+.ietm_tag {
+    margin-bottom: 50px;
+}
+.ietm_tag_ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.ietm_tag_li {
+    width: calc((100% - 40px) /2);
+    max-width: 250px;
+    background: #fff1d9;
+    border-radius: 20px;
+
+    padding: 10px 0;
+    margin: 0 10px 5px;
+
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+
+}
+.item_tag_active {
+    background: #ffa705;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////// */
+.md_sec .item_list {
+    height: 160vw;
+    max-height: 1200px;
+
+    position: relative;
+}
+.md_sec .item_ul {
+    width: 100%;
+
+    display: none;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* --------------- */
+.md_sec .item_ul:first-child {
+    display: block;
+}
+/* --------------- */
+.md_sec .item_li {
+    width: calc((100% - 5% )/ 2);
+    background: #fff;
+    float: left;
+    margin-right: 5%;
+    margin-bottom: 30px;
+}
+.md_sec .item_li:nth-child(2n){
+    margin-right: 0;
+}
+.md_sec .item_li:nth-child(3),
+.md_sec .item_li:nth-child(4) {
+    margin-bottom: 0px;
+}
+.md_sec .item_img {
+    position: relative;
+}
+.md_sec .item_s_price {
+    color: #444;
+    font-size: 15px;
+    text-decoration: none;
+    margin: 3px 0;
+
+}
+/* ------------------------------------------ 중간배너 */
+
+.m_banner {
+
+    width: 100%;
+    height: 400px;
+
+    text-align: center;
+    font-size: 18px;
+    padding: 230px 0 0;
+    box-sizing: border-box;
+
+    transition: all 0.5s;
+}
+.m_banner p {
+    color: #333;
+    margin: 7px auto;
+    text-shadow: 1px 1px 1px #ddd;
+}
+
+/* ------------------- 베스트 */
+
+
+.best_li {
+    font-size: 20px;
+}
+.best_li:last-child {
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+}
+
+.best_btn_title {
+    padding: 10px;
+
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
+    background: #fff;
+}
+.best_li:last-child .best_btn_title  {
+    border-bottom: none;
+}
+.add_sub_btn {
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin: 5px 20px;
+    position: relative;
+}
+.best_list_acc {
+    border-top: 1px solid #ddd;
+}
+.add_btn_line {
+    width: 100%;
+    height: 3px;
+    background: #777;
+    border-radius: 2px;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    transition: all 0.2s;
+}
+
+.add_btn_line_2 {
+    transform: translateY(-50%) rotate(90deg);
+    opacity: 1;
+}
+
+.add_active {
+    opacity: 0;
+}
+
+.baet_ul {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+
+    /* ============================== 버그 해결 */
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+
+}
+
+.best_list {
+    width: 100%;
+    user-select: none;
+    background: #eaeaea;
+    box-sizing: border-box;
+
+    overflow-x: scroll;
+    display: none;
+}
+
+
+.best_list_top {
+    padding: 0;
+}
+.best_list_bottom {
+    padding: 0;
+}
+.best_list_ops {
+    padding: 0;
+}
+.best_list_acc {
+
+    
+    padding: 0;
+}
+
+.best_sec .item_ul{
+    width: 460%;
+    background: #fff;
+}
+
+.best_sec .item_li {
+    width: calc((100% - (5px * 2 * 10))/ 10);
+    float: left;
+    margin:20px 5px;
+}
+
+
+.best_sec .item_li:nth-child(10n) {
+    margin-right: 0;
+}
+
+.best_sec .item_img {
+    padding: 0;
+
+    position: relative;
+}
+.ranking_no {
+    width: 40px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 0 0 5px 5px;
+    background: #ffa705;
+    
+    font-size: 20px;
+    font-weight: 700;
+
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+.line {
+    width: 40%;
+    height: 4px;
+    background: #ffa705;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+}
+
+/* ------------------- 인스타*/
+.sns_sec .item_list {
+    width: 100%;    
+    padding-bottom: 51%;
+
+    position: relative;
+}
+.sns_sec .item_ul { 
+    width: 85%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sns_sec .item_li {
+    width: calc((100% - 15px) / 2);
+    margin-right: 15px;
+    border-radius: 12px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.sns_sec .item_li:last-child {
+    margin-right: 0;
+}
+.sns_sec .item_img {
+    width: 100%;
+    height: 35vw;
+    max-height: 270px;
+    border-radius: 10px 10px 0 0;
+}
+.sns_sec .item_sub {
+    padding: 10px;
+    font-size: 13px;
+    border-radius: 0 0 10px 10px ;
+    background: #eaeaea;
+    word-break: keep-all;
+}
+.sns_sec .item_title_kr {
+    font-size: 15px;
+}
+.sns_sec .slide_btn {
+    position: absolute;
+    top: 50%;
+    z-index: 99;
+
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.sns_sec .btn_prev {
+    left: 0;
+}
+.sns_sec .btn_next {
+    right: 0;
+}
+
+
+/* 스크롤바 ---------------------------------- */
+
+/* 양 끝 화살표를 포함한 스크롤바 영역 */
+body ::-webkit-scrollbar {
+    /* 아래 thumb,track에 색을 주면 사라짐 */
+    background: transparent;
+    /* 스크롤바 가로 또는 세로중에 선택. 전체적인 스크롤바 사이즈 결정 */
+    height: 10px;
+}
+/* 스크롤바 알맹이 */
+body ::-webkit-scrollbar-thumb {
+    background: #ffa705;
+
+    /* 알맹이에 투명한 보더를 줘서 바탕과의 여백이 있어 보이게 하기 */
+    border: 3px solid transparent;
+    /* 박스사이징과 같다. 배경 이미지, 색을 box-sizing처럼 안쪽으로 가져오는 것 */
+    background-clip: padding-box;
+
+    border-radius: 5px;
+
+}
+/* 양 끝 화살표를 제외한 스크롤바 영역 */
+/* ::-webkit-scrollbar-track 을 안줄거면 배경색을 스크롤바에 주기 */
+body ::-webkit-scrollbar-track {
+    background: transparent;
+    /* background: red; */
+}
+
+
+
+
+
+
+/* white-sapce: nowrap;
+overflow : hidden;
+text-overflow: ellipsis; */
+
+/* ---------------------------------------------------------------미디어 쿼리 */
+@media screen and (max-width: 560px) {
+    
+    .md_sec .item_list {
+        height: 165vw;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .indicater {
+        bottom: 25px;
+    }
+
+    .item_title_kr {
+        font-size: 15px;
+        font-weight: 500;
+        margin: 3px 0 0;
+    }
+    .item_title_en {
+        font-size: 13px;
+    }
+
+    .item_s_price {
+    font-size: 13px;
+    }
+    .item_o_price {
+        font-size: 14px;
+    }
+    .sale_percent {
+        font-size: 16px;
+        float: none;
+    }
+
+    .new_sec .item_desc {
+        font-size: 13px;
+        margin: 5px 0;
+    }
+
+    .ietm_tag {
+        margin-bottom: 30px;
+    }
+    .md_sec .item_list {
+        height: 170vw;
+    }
+
+    .m_banner {
+        font-size: 15px;
+    }
+    .ietm_tag_li {
+        font-size: 14px;
+    }
+
+    .ranking_no {
+        width: 35px;
+        height: 40px;
+        line-height: 35px;
+
+        font-size: 15px;
+
+        left: 10px;
+    }
+
+    .sns_sec .item_list {
+        padding-bottom: 53%;
+    }
+    .sns_sec .item_sub {
+        text-align: center;
+        padding: 5px 10px;
+        height: 55px;
+    }
+} 
+
+@media screen and (max-width: 420px) {
+    
+    .md_sec .item_list {
+        height: 175vw;
+        position: relative;
+    }
+}
+@media screen and (max-width: 380px) {
+    .item_s_price {
+        font-size: 12px;
+        margin: 0;
+    }
+    .item_o_price {
+        font-size: 13px;
+    }
+    .sale_percent {
+        font-size: 13px;
+    }
+
+    .md_sec .item_list {
+        height: 180vw;
+        position: relative;
+    }
+
+
+    .sns_sec .item_list {
+        padding-bottom: 56%;
+    }
+    .sns_sec .item_sub {
+        padding: 5px;
+    }
+    
+    .sns_sec .item_title_kr {
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 360px) {
+    
+    .md_sec .item_list {
+        height: 185vw;
+        position: relative;
+    }
+}
+@media screen and (max-width: 320px) {
+    
+    .md_sec .item_list {
+        height: 190vw;
+        position: relative;
+    }
+
+
+    .m_banner {
+        font-size: 13px;
+    }
+    .item_s_price {
+        font-size: 10px;
+        margin: 0;
+    }
+    .sale_percent {
+        font-size: 12px;
+        float: none;
+    }
+
+    .ietm_tag_li {
+        font-size: 13px;
+        margin: 0 5px 5px;
+    }
+
+    .ranking_no {
+        width: 25px;
+        height: 30px;
+        line-height: 30px;
+
+        font-size: 15px;
+    }
+
+    .sns_sec .item_list {
+        padding-bottom: 59%;
+    }
+}
+
+

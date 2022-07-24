@@ -1,0 +1,96 @@
+/* 메인배너 */
+.main_banner{
+    width: 100%;
+    height: 80px;
+    background: url(../../img/page3/main_banner3.jpg) no-repeat bottom / cover;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 25px;
+    text-align: center;
+    color: #333333;
+    line-height: 80px;
+
+    position: relative;
+}
+.contents{
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 10px;
+    box-sizing: border-box;
+}
+
+/* 클릭하면 이동 */
+.click_box{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+}
+.click{
+    width: calc((100% - 4px) / 3 - 0.01px);
+    height: 100%;
+    font-size: 14px;
+    text-align: center;
+    line-height: 30px;
+    background: #999;
+    color: #fff;
+    float: left;
+    cursor: pointer;
+}
+.page1{
+    background: #23507b;
+    color: #fff;
+}
+.click:hover{
+    background: #23507b;
+    color: #fff;
+}
+.click:nth-of-type(2){
+    margin: 0 2px;
+}
+
+/* page_4 */
+.banner_img{
+    width: 100%;
+    height: 300px;
+    background: url(../../img/page4/mobile_banner.jpg) no-repeat center / cover;
+    margin-bottom: 20px;
+    display: block;
+}
+.banner_text_box{
+    width: 100%;
+    /* height: 360px; */
+    font-family: 'gmar_light';
+    display: block;
+    overflow: hidden;
+}
+.text_box1,
+.text_box2{
+    width: calc((100% - 30px) / 2);
+    /* height: 160px; */
+    float: left;
+    margin-right: 20px;
+    font-size: 15px;
+    color: #666;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+.text_box2{
+    margin-right: 0px;
+}
+.text_box2 + p{
+    width: 100%;
+    height: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: right;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+/* page_4_2 */
+.jo_box{
+    width: 100%;
+    height: 300px;
+    background: url(../../img/page4/mobile_jo_box.jpg)no-repeat center / contain;
+    margin-top: 50px;
+    display: none;
+}

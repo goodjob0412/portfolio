@@ -1,0 +1,11 @@
+/* 구글 폰트 얇은거 */
+@font-face {
+    font-family: 'google1';
+    src: local('../../fonts/google_fonts1');
+    src: url('../../fonts/google_fonts1/NotoSansKR-Light-Alphabetic.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/google_fonts1/NotoSansKR-Light-Alphabetic.ttf') format('truetype'),
+         url('../../fonts/google_fonts1/NotoSansKR-Light-Alphabetic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>page_5_2</title>
+    <link rel="stylesheet" href="../css/header_footer.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/page5/index.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="../js/main/index.js"></script>
+    <script src="../js/main/commons.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <style>
+       
+        * { font-family: 'Noto Sans KR', sans-serif !important;}
+    </style>
+</head>
+<body>
+<div class="wrap">
+ <div class="big_container">
+        <!-- 상단 메뉴바  -->
+        <div class="header">
+        <div class="logo">
+            <a href="index.html">대학병원</a>
+        </div> 
+        <div class="menu">
+            <ul class="menu_ul">
+                <li class="menu_li">
+                    <a href="page_4.html">병원안내</a>
+                    <ul class="hover_menu_ul" >
+                        <li onclick="page4()">병원장 인사말</li>
+                        <li onclick="page4()">비전</li>
+                        <li onclick="page4()">연혁</li>
+                        <li onclick="page4()">병원소식</li>
+                        <li onclick="page4()">공지사항</li>
+                    </ul>
+                </li>
+                <li class="menu_li">
+                        <a href="page5_1.html">진료안내</a>
+                        <ul class="hover_menu_ul">
+                            <li onclick="page5_1()">진료과</li>
+                            <li onclick="page5_2()">전문센터</li>
+                            <li onclick="page5_3()">특수클리닉</li>
+                        </ul>
+                </li>
+                <li class="menu_li">
+                        <a href="page_2.html">이용안내</a>
+                        <ul class="hover_menu_ul">
+                            <li onclick="map()">위치안내</li>
+                            <li onclick="map()">오시는길</li>
+                            <li onclick="map()">편의시설</li>
+                            <li onclick="map()">주차안내</li>
+                           
+                        </ul>
+                </li>
+                <li class="menu_li">
+                        <a href="page_3_1.html">예약/조회/발급</a>
+                        <ul class="hover_menu_ul">
+                        <li onclick="page3()">예약안내</li>
+                        <li onclick="page3()">온라인예약</li>
+                        <li onclick="page3()">예약/조회/취소</li>
+                        <li onclick="page3()">증명서발급</li>
+                    </ul>
+                </li>
+                <li class="menu_li">
+                    <a href="#">고객서비스</a>
+                   <ul class="hover_menu_ul">
+                       <li onclick="page3()">고객의 소리</li>
+                       <li onclick="page3()">자원봉사</li>
+                       <li onclick="page3()">발전기금</li>
+                   </ul>
+           </li>
+            </ul>
+            <div class="menu_pan"></div>
+        </div>
+        <div class="search_bar">
+            <div class="box">
+                <input type="text">
+            </div>
+            <div class="search_icon"></div>
+        </div>
+        </div>
+        <!-- 메인배너 -->
+        <div class="main_banner">
+            <h1>진료과 안내</h1>
+        </div>
+        <!-- 컨텐츠 -->
+        <div class="contents">
+            <!-- 클릭하면 이동 -->
+            <div class="click_box">
+                <div class="click" onclick="page5_1()">진료과</div>
+                <div class="click page3_2" onclick="page5_2()">전문센터</div>
+                <div class="click" onclick="page5_3()">특수클리닉</div>
+            </div>
+            <!-- 진료과 선택 -->
+            <div class="click_sick_box">
+                <div class="click_sick">
+                    <div class="sick_img sick_img16"></div>
+                    <div class="click_sick_txt">간센터</div>
+                    <div class="sick_hover">
+                        <div class="sick_title">간센터</div>
+
+                        <div class="sick_hover_inner">
+                            <div class="sick_top_icon icon_1"></div>
+                            <div class="bot_txt">소개</div>
+                        </div>
+                        <div class="sick_hover_inner">
+                            <div class="sick_top_icon icon_2"></div>
+                            <div class="bot_txt">의료진</div>
+                        </div>
+                    </div>
+                    <div class="doc_clik_Box">
+                        <div class="doc_click doc_click">
+                            <div class="doc_click_close"></div>
+                            <div class="doc_btn">
+                                <div class="doc_btn_inner doc_btn_left" onclick="page3()">진료예약</div>
+                                <div class="doc_btn_inner doc_btn_rig" onclick="page3()">1 : 1 상담</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="click_sick">
+                    <div class="sick_img sick_img17"></div>
+                    <div class="click_sick_txt">감마나이프센터</div>
+                     <div class="sick_hover">
+                        <div class="sick_title">감마나이프센터</div>
+
+                        <div class="sick_hover_inner">
+                            <div class="sick_top_icon icon_1"></div>
+                            <div class="bot_txt">소개</div>
+                        </div>
+                        <div class="sick_hover_inner">
+                            <div class="sick_top_icon icon_2"></div>
+                            <div class="bot_txt">의료진</div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="click_sick">
+                    <div class="sick_img sick_img18"></div>
+                    <div class="click_sick_txt">갑상선암센터</div>
+                     <div class="sick_hover">
+                        <div class="sick_title">갑상선암센터</div>
+
+                        <div class="sick_hover_inner">
+                            <div class="sick_top_icon icon_1"></div>
+                            <div class="bot_txt">소개</div>
+                        </div>
+                        <div class="sick_hover_inner">
+                            <div class="sick_top_icon icon_2"></div>
+                            <div class="bot_txt">의료진</div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="click_sick">
+                    <div class="sick_img sick_img19"></div>
+                    <div class="click_sick_txt">뇌졸중센터</div>
+                     <div class="sick_hover">
+                        <div class="sick_title">뇌졸중센터</div>
+
+                        <div class="sick_hover_inner">
+                            <div class="sick_top_icon icon_1"></div>
+                            <div class="bot_txt">소개</div>
+                        </div>
+                        <div class="sick_hover_inner">
+                            <div class="sick_top_icon icon_2"></div>
+                            <div class="bot_txt">의료진</div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="click_sick">
+                    <div class="sick_img sick_img20"></div>
+                    <div class="click_sick_txt">대동맥혈관센터</div>
+                     <div class="sick_hover">
+                        <div class="sick_title">대동맥혈관센터</div>
+
+                        <div class="sick_hover_inner">
+                            <div class="sick_top_icon icon_1"></div>
+                            <div class="bot_txt">소개</div>
+                        </div>
+                        <div class="sick_hover_inner">
+                            <div class="sick_top_icon icon_2"></div>
+                            <div class="bot_txt">의료진</div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="click_sick">
+                    <div class="sick_img sick_img21"></div>
+                    <div class="click_sick_txt">대장암센터</div>
+                     <div class="sick_hover">
+                        <div class="sick_title">대장암센터</div>
+
+                        <div class="sick_hover_inner">
+                            <div class="sick_top_icon icon_1"></div>
+                            <div class="bot_txt">소개</div>
+                        </div>
+                        <div class="sick_hover_inner">
+                            <div class="sick_top_icon icon_2"></div>
+                            <div class="bot_txt">의료진</div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="click_sick">
+                    <div class="sick_img sick_img22"></div>
+                    <div class="click_sick_txt">로봇수술센터</div>
+                     <div class="sick_hover">
+                        <div class="sick_title">로봇수술센터</div>
+
+                        <div class="sick_hover_inner">
+                            <div class="sick_top_icon icon_1"></div>
+                            <div class="bot_txt">소개</div>
+                        </div>
+                        <div class="sick_hover_inner">
+                            <div class="sick_top_icon icon_2"></div>
+                            <div class="bot_txt">의료진</div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="click_sick">
+                    <div class="sick_img sick_img23"></div>
+                    <div class="click_sick_txt">무릎관절센터</div>
+                     <div class="sick_hover">
+                        <div class="sick_title">무릎관절센터</div>
+
+                        <div class="sick_hover_inner">
+                            <div class="sick_top_icon icon_1"></div>
+                            <div class="bot_txt">소개</div>
+                        </div>
+                        <div class="sick_hover_inner">
+                            <div class="sick_top_icon icon_2"></div>
+                            <div class="bot_txt">의료진</div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="click_sick">
+                    <div class="sick_img sick_img24"></div>
+                    <div class="click_sick_txt">소화기병센터</div>
+                     <div class="sick_hover">
+                        <div class="sick_title">소화기병센터</div>
+
+                        <div class="sick_hover_inner">
+                            <div class="sick_top_icon icon_1"></div>
+                            <div class="bot_txt">소개</div>
+                        </div>
+                        <div class="sick_hover_inner">
+                            <div class="sick_top_icon icon_2"></div>
+                            <div class="bot_txt">의료진</div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="click_sick">
+                    <div class="sick_img sick_img25"></div>
+                    <div class="click_sick_txt">수면센터</div>
+                     <div class="sick_hover">
+                        <div class="sick_title">수면센터</div>
+
+                        <div class="sick_hover_inner">
+                            <div class="sick_top_icon icon_1"></div>
+                            <div class="bot_txt">소개</div>
+                        </div>
+                        <div class="sick_hover_inner">
+                            <div class="sick_top_icon icon_2"></div>
+                            <div class="bot_txt">의료진</div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="click_sick">
+                    <div class="sick_img sick_img26"></div>
+                    <div class="click_sick_txt">스포츠의학센터</div>
+                     <div class="sick_hover">
+                        <div class="sick_title">스포츠의학센터</div>
+
+                        <div class="sick_hover_inner">
+                            <div class="sick_top_icon icon_1"></div>
+                            <div class="bot_txt">소개</div>
+                        </div>
+                        <div class="sick_hover_inner">
+                            <div class="sick_top_icon icon_2"></div>
+                            <div class="bot_txt">의료진</div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="click_sick">
+                    <div class="sick_img sick_img27"></div>
+                    <div class="click_sick_txt">심장혈관센터</div>
+                     <div class="sick_hover">
+                        <div class="sick_title">심장혈관센터</div>
+
+                        <div class="sick_hover_inner">
+                            <div class="sick_top_icon icon_1"></div>
+                            <div class="bot_txt">소개</div>
+                        </div>
+                        <div class="sick_hover_inner">
+                            <div class="sick_top_icon icon_2"></div>
+                            <div class="bot_txt">의료진</div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="click_sick">
+                    <div class="sick_img sick_img28"></div>
+                    <div class="click_sick_txt">어깨팔꿈치관절센터</div>
+                     <div class="sick_hover">
+                        <div class="sick_title">어깨팔꿈치관절센터</div>
+
+                        <div class="sick_hover_inner">
+                            <div class="sick_top_icon icon_1"></div>
+                            <div class="bot_txt">소개</div>
+                        </div>
+                        <div class="sick_hover_inner">
+                            <div class="sick_top_icon icon_2"></div>
+                            <div class="bot_txt">의료진</div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="click_sick">
+                    <div class="sick_img sick_img29"></div>
+                    <div class="click_sick_txt">여성부인종양센터</div>
+                     <div class="sick_hover">
+                        <div class="sick_title">여성부인종양센터</div>
+
+                        <div class="sick_hover_inner">
+                            <div class="sick_top_icon icon_1"></div>
+                            <div class="bot_txt">소개</div>
+                        </div>
+                        <div class="sick_hover_inner">
+                            <div class="sick_top_icon icon_2"></div>
+                            <div class="bot_txt">의료진</div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="click_sick">
+                    <div class="sick_img sick_img30"></div>
+                    <div class="click_sick_txt">위암센터</div>
+                     <div class="sick_hover">
+                        <div class="sick_title">위암센터</div>
+
+                        <div class="sick_hover_inner">
+                            <div class="sick_top_icon icon_1"></div>
+                            <div class="bot_txt">소개</div>
+                        </div>
+                        <div class="sick_hover_inner">
+                            <div class="sick_top_icon icon_2"></div>
+                            <div class="bot_txt">의료진</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 푸터 -->
+        <div class="footer">
+            <div class="footer_logo"></div>
+            <div class="footer_soild"></div>
+            <p>주소 : 05030 서울특별시 광진구 능동로 120-1(화양동) 대학병원 대표전화 : 1588-0000 사업자등록번호 : 000-00-000000 대학병</p>
+            <p>© 2020  University Medical Center. All rights reserved.해외전화 : 82-0-0000-0000</p>
+        </div>
+    </div>
+    
+</div>
+
+</body>
+</html>

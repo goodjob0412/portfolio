@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2021 CORVETTE STINGRAY</title>
+    
+    <script defer src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script defer src="js/common.js"></script>
+    <script defer src="js/h_f.js"></script>
+    <script defer src="js/index.js"></script>
+    <script type="module" src="js/3d.js"></script>
+    
+
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/h_f.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <link rel="icon" type="image/x-icon" href="corvette_img/favicon.ico">
+</head>
+<body>
+    <div class="wrap">
+        <!-- header -->
+        <div class="header">
+            <div class="h_bg_pan"></div>
+            <ul class="h_menu_ul">
+                <!-- <li class="slide_menu_open">AUTO</li> -->
+                <li><a href="auto.html">AUTO</a></li>
+                <li>RACING
+                    <div class="h_act_line"></div>
+                </li>
+                <li>STORE</li>
+                <li>UNIVERSE</li>
+                <li>CORPORATE</li>
+                <li class="slide_menu_open header_menu_display">MENU</li>
+            </ul>
+            <div class="logo">
+                <a href="index.html"></a>
+            </div>
+        </div>
+
+        <!-- slide_menu -->
+        <div class="slide_menu">
+            <div class="slide_menu_inner slide_menu_inner_L">
+                <div class="slide_menu_txt_top">
+                    <div class="slide_menu_innner_logo"></div>
+                </div>
+                <div class="slide_menu_inner_txt_middle">
+                    <div class="slide_menu_inner_txt_middle_inner_top">
+                        <div class="slide_menu_close_btn">
+                            <svg class="slide_menu_svg" viewBox="0 0 24 24">
+                                <circle class="slide_menu_svg_border" cx="12" cy="12" r="11" stroke="1"></circle>
+                                <circle class="slide_menu_svg_act" cx="12" cy="12" r="11" stroke="1"></circle>
+                            </svg>
+                            <svg class="slide_menu_svg_close" viewBox="0 0 12 12" style="height: 12px; width: 12px;"><path d="M4.674 6L.344 1.05A.5.5 0 0 1 1.05.343L6 4.674l4.95-4.33a.5.5 0 0 1 .707.706L7.326 6l4.33 4.95a.5.5 0 0 1-.706.707L6 7.326l-4.95 4.33a.5.5 0 0 1-.707-.706L4.674 6z"></path></svg>
+                        </div>
+                    </div>
+                    <div class="slide_menu_inner_txt_middle_inner_bot">
+                        <span>Auto</span>
+                    </div>
+                </div>
+                <div class="slide_menu_inner_txt_bot">
+                    <ul>
+                        <li class="slide_menu_li">
+                            <span>Chevrolet Corvette C1</span>
+                            <a href="auto.html" class="slide_menu_li_inner_display"></a>
+                        </li>
+                        <li class="slide_menu_li">
+                            <span>Chevrolet Corvette C2</span>
+                            <a href="auto.html" class="slide_menu_li_inner_display"></a>
+                        </li>
+                        <li class="slide_menu_li">
+                            <span>Chevrolet Corvette C3</span>
+                            <a href="auto.html" class="slide_menu_li_inner_display"></a>
+                        </li>
+                        <li class="slide_menu_li">
+                            <span>Chevrolet Corvette C4</span>
+                            <a href="auto.html" class="slide_menu_li_inner_display"></a>
+                        </li>
+                        <li class="slide_menu_li">
+                            <span>Chevrolet Corvette C5</span>
+                            <a href="auto.html" class="slide_menu_li_inner_display"></a>
+                        </li>
+                        <li class="slide_menu_li">
+                            <span>Chevrolet Corvette C6</span>
+                            <a href="auto.html" class="slide_menu_li_inner_display"></a>
+                        </li>
+                        <li class="slide_menu_li">
+                            <span>Chevrolet Corvette C7</span>
+                            <a href="auto.html" class="slide_menu_li_inner_display"></a>
+                        </li>
+                        <li class="slide_menu_li">
+                            <span>Chevrolet Corvette C8</span>
+                            <a href="auto.html" class="slide_menu_li_inner_display"></a>
+                        </li>
+                        <li class="slide_menu_li_border"></li>
+                        <li class="slide_menu_li2">Line-up</li>
+                        <li class="slide_menu_li2 slide_menu_li_svg">
+                            My Corvette
+                            <svg width="8" height="16" viewBox="0 0 8 16" xmlns="http://www.w3.org/2000/svg"><path d="M7.268 9.547L0 16l4-8-4-8 7.268 6.453C7.715 6.82 8 7.377 8 8c0 .623-.285 1.18-.732 1.547z"></path></svg>
+                        </li>
+                        <li class="slide_menu_li2">Auto Service</li>
+                        <li class="slide_menu_li2">Dealer</li>
+                    </ul>
+                    <div class="slide_menu_inner_txt_bot_bar">
+                        <div class="slide_menu_inner_txt_bot_bar_line"></div>
+                    </div>
+                    <div class="slide_menu_gradi"></div>
+                </div>
+            </div>
+            <div class="slide_menu_inner slide_menu_inner_R">
+                <div class="slide_video">
+                    <video id="slide_video1" src="video/video4.mp4" autoplay muted></video>
+                </div>
+                <div class="slide_logo slide_logo1">
+                    <img src="corvette_img/h_f/slide_menu/c1_logo.png" alt="">
+                </div>
+                <div class="slide_video">
+                    <video id="slide_video2" src="video/video6.mp4" autoplay muted></video>
+                </div>
+                <div class="slide_logo slide_logo2">
+                    <img src="corvette_img/h_f/slide_menu/c2_logo.png" alt="">
+                </div>
+                <div class="slide_video">
+                    <video id="slide_video3" src="video/video2.mp4" autoplay muted></video>
+                </div>
+                <div class="slide_logo slide_logo3">
+                    <img src="corvette_img/h_f/slide_menu/c3_logo.png" alt="">
+                </div>
+                <div class="slide_video">
+                    <video id="slide_video4" src="video/video1.mp4" autoplay muted></video>
+                </div>
+                <div class="slide_logo slide_logo4">
+                    <img src="corvette_img/h_f/slide_menu/c4_logo.png" alt="">
+                </div>
+                <div class="slide_video">
+                    <video id="slide_video5" src="video/video3.mp4" autoplay muted></video>
+                </div>
+                <div class="slide_logo slide_logo5">
+                    <img src="corvette_img/h_f/slide_menu/c5_logo.png" alt="">
+                </div>
+                <div class="slide_video">
+                    <video id="slide_video6" src="video/video4.mp4" autoplay muted></video>
+                </div>
+                <div class="slide_logo slide_logo6">
+                    <img src="corvette_img/h_f/slide_menu/c6_logo.png" alt="">
+                </div>
+                <div class="slide_video">
+                    <video id="slide_video7" src="video/video6.mp4" autoplay muted></video>
+                </div>
+                <div class="slide_logo slide_logo7">
+                    <img src="corvette_img/h_f/slide_menu/c7_logo.png" alt="">
+                </div>
+                <div class="slide_video">
+                    <video id="slide_video8" src="video/video2.mp4" autoplay muted></video>
+                </div>
+                <div class="slide_logo slide_logo8">
+                    <img src="corvette_img/h_f/slide_menu/c8_logo.png" alt="">
+                </div>
+                <div class="slide_video slide_video9">
+                    <video id="slide_video9" src="video/video7.mp4" autoplay muted></video>
+                </div>
+                
+                <div class="slide_img slide_img1"></div>
+                <div class="slide_img slide_img2"></div>
+                <div class="slide_img slide_img3"></div>
+                <div class="slide_img slide_img4"></div>
+            </div>
+        </div>
+
+        <!-- wallpaper -->
+        <div class="wallpaper">
+            <div class="video_box">
+                <video id="video1" class="video" src="video/video1.mp4" autoplay muted loop></video>
+                <video id="video2" class="video" src="video/video2.mp4" autoplay muted loop></video>
+                <video id="video3" class="video" src="video/video3.mp4" autoplay muted loop></video>
+
+                <div class="wallpaper_gradi"></div>
+
+                <div class="wallpaper_txt_box wallpaper_txt_box1">
+                    <p>RACING</p>
+                    <h1><span>START</span> <span>YOUR</span> <span>ENGINE</span></h1>
+                    <div class="wallpaper_txt_more_box">
+                        <p class="hover_circle_txt">READ MORE</p>
+                        <div class="hover_circle">
+                            <svg class="hover_circle_inner" viewBox="0 0 24 24">
+                                <circle class="horver_circle_inner_border" cx="12" cy="12" r="11" stroke="1"></circle>
+                                <circle class="hover_circle_act" cx="12" cy="12" r="11" stroke="1"></circle>
+                            </svg>
+                            <svg class="hover_circle_icon" viewBox="0 0 8 16" width="8" height="16" xmlns="http://www.w3.org/2000/svg" style="height: 16px; width: 8px;"><path d="M7.268 9.547L0 16l4-8-4-8 7.268 6.453C7.715 6.82 8 7.377 8 8c0 .623-.285 1.18-.732 1.547z"></path></svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="wallpaper_txt_box wallpaper_txt_box2">
+                    <p>Auto</p>
+                    <h1><span>NEW</span> <span>CORVETTE</span> <span>Z06</span></h1>
+                    <div class="wallpaper_txt_more_box">
+                        <p class="hover_circle_txt">READ MORE</p>
+                        <div class="hover_circle">
+                            <svg class="hover_circle_inner" viewBox="0 0 24 24">
+                                <circle class="horver_circle_inner_border" cx="12" cy="12" r="11" stroke="1"></circle>
+                                <circle class="hover_circle_act" cx="12" cy="12" r="11" stroke="1"></circle>
+                            </svg>
+                            <svg class="hover_circle_icon" viewBox="0 0 8 16" width="8" height="16" xmlns="http://www.w3.org/2000/svg" style="height: 16px; width: 8px;"><path d="M7.268 9.547L0 16l4-8-4-8 7.268 6.453C7.715 6.82 8 7.377 8 8c0 .623-.285 1.18-.732 1.547z"></path></svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="wallpaper_txt_box wallpaper_txt_box3">
+                    <p>Store</p>
+                    <h1><span>22</span> <span>COLLECTION</span></h1>
+                    <div class="wallpaper_txt_more_box">
+                        <p class="hover_circle_txt">READ MORE</p>
+                        <div class="hover_circle">
+                            <svg class="hover_circle_inner" viewBox="0 0 24 24">
+                                <circle class="horver_circle_inner_border" cx="12" cy="12" r="11" stroke="1"></circle>
+                                <circle class="hover_circle_act" cx="12" cy="12" r="11" stroke="1"></circle>
+                            </svg>
+                            <svg class="hover_circle_icon" viewBox="0 0 8 16" width="8" height="16" xmlns="http://www.w3.org/2000/svg" style="height: 16px; width: 8px;"><path d="M7.268 9.547L0 16l4-8-4-8 7.268 6.453C7.715 6.82 8 7.377 8 8c0 .623-.285 1.18-.732 1.547z"></path></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wallpaper_navi_box">
+                <div class="navi_circle">
+                    <svg class="ani_circle" width="20" height="20">
+                        <mask id="carousel-bullet-mask-73">
+                            <circle cx="10" cy="10" r="9" stroke-width="2" stroke="#ffffff" fill="none"></circle>
+                        </mask>
+                        <g mask="url(#carousel-bullet-mask-73)">
+                            <circle class="bullet-bg" cx="10" cy="10" r="10" fill="#8f8f8f"></circle>
+                            <circle class="bullet-progress-circle" cx="10" cy="10" r="9" stroke-width="3" fill="none"></circle>
+                        </g>
+                    </svg>
+                    <div class="navi_circle_back"></div>
+                </div>
+                <div class="navi_circle">
+                    <svg class="ani_circle" width="20" height="20">
+                        <mask>
+                            <circle cx="10" cy="10" r="9" stroke-width="2"  stroke="#ffffff" fill="none"></circle>
+                        </mask>
+                        <g mask="url(#carousel-bullet-mask-73)">
+                            <circle class="bullet-bg" cx="10" cy="10" r="10" fill="#8f8f8f"></circle>
+                            <circle class="bullet-progress-circle" cx="10" cy="10" r="9" stroke-width="3" fill="none"></circle>
+                        </g>
+                    </svg>
+                    <div class="navi_circle_back"></div>
+                </div>
+                <div class="navi_circle">
+                    <svg class="ani_circle" width="20" height="20">
+                        <mask>
+                            <circle cx="10" cy="10" r="9" stroke-width="2" stroke="#ffffff" fill="none"></circle>
+                        </mask>
+                        <g mask="url(#carousel-bullet-mask-73)">
+                            <circle class="bullet-bg" cx="10" cy="10" r="10" fill="#8f8f8f"></circle>
+                            <circle class="bullet-progress-circle" cx="10" cy="10" r="9" stroke-width="3" fill="none"></circle>
+                        </g>
+                    </svg>
+                    <div class="navi_circle_back"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- main -->
+        <div class="main">
+            <!-- roate_360 -->
+            <div class="rotate_360_box w_1800">
+                <div class="title_360">
+                    <h1>Precision is the new perfection 360° Rendering.</h1>
+                    <p>The 6.2L LT2 V8 makes this mid-engine masterpiece the most powerful Stingray Sports Car produced, ever.</p>
+                </div>
+                <div class="active_box_360">
+                    <div id="container"></div>
+                    <div class="rotate_loading">
+                        <svg class="circular-loader" viewBox="25 25 50 50" >
+                            <circle class="loader-path" cx="50" cy="50" r="20" fill="none"></circle>
+                        </svg>
+                          <div class="rotate_sym"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- gallery -->
+            <ul class="gallery_box">
+                <li class="gallery_inner">
+                    <img src="corvette_img/index/gallery/gallery1.jpg" alt="">
+                </li>
+                <li class="gallery_inner">
+                    <img src="corvette_img/index/gallery/gallery2.jpg" alt="">
+                </li>
+                <li class="gallery_inner">
+                    <img src="corvette_img/index/gallery/gallery3.jpg" alt="">
+                </li>
+                <li class="gallery_inner">
+                    <img src="corvette_img/index/gallery/gallery4.jpg" alt="">
+                </li>
+                <li class="gallery_inner">
+                    <img src="corvette_img/index/gallery/gallery5.jpg" alt="">
+                </li>
+                <li class="gallery_inner gallery_inner_black">
+                    <div class="gallery_inner_txt">
+                        <h5>Gallery</h5>
+                        <p><span>40 Photos</span><i></i><span>34 Videos</span></p>
+                    </div>
+                </li>
+            </ul>
+
+            <!-- wish_design_box -->
+            <div class="wish_design_box">
+                <div class="wish_design_txt_box">
+                    <div class="wish_design_title">
+                        <span>You’ve dreamt about it. Now design it.</span>
+                    </div>
+                    <div class="wish_design_sub_txt">
+                        <span>Customize a Stingray coupe or convertible to your exact specifications with the Corvette Configurator.</span>
+                    </div>
+                    <div class="wish_design_hover_box">
+                        <a href="quote.html"><span>Design Yours</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- news_slide_box -->
+            <div class="news_slide_box w_1200">
+                <div class="news_slide_box_inner_box">
+                    <div class="news_slide_btn news_slide_btn_L">
+                        <svg width="8" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M.732 9.547L8 16 4 8l4-8L.732 6.453A1.996 1.996 0 0 0 0 8c0 .623.285 1.18.732 1.547z"></path></svg>
+                    </div>
+                    <div class="news_slide_btn news_slide_btn_R">
+                        <svg width="8" height="16" viewBox="0 0 8 16" xmlns="http://www.w3.org/2000/svg"><path d="M7.268 9.547L0 16l4-8-4-8 7.268 6.453C7.715 6.82 8 7.377 8 8c0 .623-.285 1.18-.732 1.547z"></path></svg>
+                    </div>
+
+                    <div class="news_slide_content_box">
+                        <div class="news_slide_content_box_inner news_slide_content_box_inner_L">
+                            <div class="n_s_txt_box n_s_txt_box1">
+                                <div class="n_s_txt_box_title">
+                                    <span>You bought it, </span>
+                                    <span>now push it to the limit</span>
+                                </div>
+                                <div class="n_s_txt_box_ex">
+                                    <p>Learn all the capabilities of your new Corvette through the Ron Fellows Performance Driving School at the Spring Mountain Motor Resort and Country Club in Pahrump, Nevada. This two-day program is available to new Corvette owners at a reduced rate. Developed and managed by legendary Corvette racer Ron Fellows, the program will help you master Corvette technologies and racing techniques.</p>
+                                </div>
+                                <div class="n_s_txt_box_more">
+                                    <span class="hover_circle_txt">READ MORE</span>
+                                    <div class="hover_circle">
+                                        <svg class="hover_circle_inner" viewBox="0 0 24 24">
+                                            <circle class="horver_circle_inner_border" cx="12" cy="12" r="11" stroke="1"></circle>
+                                            <circle class="hover_circle_act" cx="12" cy="12" r="11" stroke="1"></circle>
+                                        </svg>
+                                        <svg class="hover_circle_icon" viewBox="0 0 8 16" width="8" height="16" xmlns="http://www.w3.org/2000/svg" style="height: 16px; width: 8px;"><path d="M7.268 9.547L0 16l4-8-4-8 7.268 6.453C7.715 6.82 8 7.377 8 8c0 .623-.285 1.18-.732 1.547z"></path></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="n_s_txt_box n_s_txt_box2">
+                                <div class="n_s_txt_box_title">
+                                    <span>Chevy Redefined the Z06 </span>
+                                    <span>With the C8 Corvette</span>
+                                </div>
+                                <div class="n_s_txt_box_ex">
+                                    <p>With the debut of the all-new 2023 C8 Corvette Z06, General Motors has redefined the track-focused Corvette model. More closely related to the C8.R race car than the Stingray, the new Z06 is a dramatically different machine than its C7 predecessor in more ways than one.</p>
+                                </div>
+                                <div class="n_s_txt_box_more">
+                                    <span class="hover_circle_txt">READ MORE</span>
+                                    <div class="hover_circle">
+                                        <svg class="hover_circle_inner" viewBox="0 0 24 24">
+                                            <circle class="horver_circle_inner_border" cx="12" cy="12" r="11" stroke="1"></circle>
+                                            <circle class="hover_circle_act" cx="12" cy="12" r="11" stroke="1"></circle>
+                                        </svg>
+                                        <svg class="hover_circle_icon" viewBox="0 0 8 16" width="8" height="16" xmlns="http://www.w3.org/2000/svg" style="height: 16px; width: 8px;"><path d="M7.268 9.547L0 16l4-8-4-8 7.268 6.453C7.715 6.82 8 7.377 8 8c0 .623-.285 1.18-.732 1.547z"></path></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="n_s_txt_box n_s_txt_box3">
+                                <div class="n_s_txt_box_title">
+                                    <span>Become our </span>
+                                    <span>newest exhibit</span>
+                                </div>
+                                <div class="n_s_txt_box_ex">
+                                    <p>With its unveiling in 1953, Corvette set the tone for the American sports car. For an extra cost at purchase, you can choose to become a part of our history by taking delivery of your vehicle at the National Corvette Museum in Bowling Green, Kentucky. And while you’re there, check out the hundreds of Corvette models, interactive displays and more.</p>
+                                </div>
+                                <div class="n_s_txt_box_more">
+                                    <span class="hover_circle_txt">READ MORE</span>
+                                    <div class="hover_circle">
+                                        <svg class="hover_circle_inner" viewBox="0 0 24 24">
+                                            <circle class="horver_circle_inner_border" cx="12" cy="12" r="11" stroke="1"></circle>
+                                            <circle class="hover_circle_act" cx="12" cy="12" r="11" stroke="1"></circle>
+                                        </svg>
+                                        <svg class="hover_circle_icon" viewBox="0 0 8 16" width="8" height="16" xmlns="http://www.w3.org/2000/svg" style="height: 16px; width: 8px;"><path d="M7.268 9.547L0 16l4-8-4-8 7.268 6.453C7.715 6.82 8 7.377 8 8c0 .623-.285 1.18-.732 1.547z"></path></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="n_s_txt_box n_s_txt_box4">
+                                <div class="n_s_txt_box_title">
+                                    <span>Corvette Racing </span>
+                                    <span> Shanghai livery revealed</span>
+                                </div>
+                                <div class="n_s_txt_box_ex">
+                                    <p>Chevrolet has today revealed the Redline livery for the No. 64 Chevrolet Corvette C7.R which will race in the upcoming 6 Hours of Shanghai (16-18 November) in China. Oliver Gavin and Tommy Milner will drive the silver Corvette in the GTE Pro class.</p>
+                                </div>
+                                <div class="n_s_txt_box_more">
+                                    <span class="hover_circle_txt">READ MORE</span>
+                                    <div class="hover_circle">
+                                        <svg class="hover_circle_inner" viewBox="0 0 24 24">
+                                            <circle class="horver_circle_inner_border" cx="12" cy="12" r="11" stroke="1"></circle>
+                                            <circle class="hover_circle_act" cx="12" cy="12" r="11" stroke="1"></circle>
+                                        </svg>
+                                        <svg class="hover_circle_icon" viewBox="0 0 8 16" width="8" height="16" xmlns="http://www.w3.org/2000/svg" style="height: 16px; width: 8px;"><path d="M7.268 9.547L0 16l4-8-4-8 7.268 6.453C7.715 6.82 8 7.377 8 8c0 .623-.285 1.18-.732 1.547z"></path></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news_slide_content_box_inner news_slide_content_box_inner_R">
+                            <div class="n_s_img_box">
+                                <div class="n_s_box_size n_s_img_box1"></div>
+                            </div>
+                            <div class="n_s_img_box">
+                                <div class="n_s_box_size n_s_img_box2"></div>
+                            </div>
+                            <div class="n_s_img_box">
+                                <div class="n_s_box_size n_s_img_box3"></div>
+                            </div>
+                            <div class="n_s_img_box">
+                                <div class="n_s_box_size n_s_img_box4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="news_outer_box">
+                    <div class="news_navi_box">
+                        <div class="navi_circle">
+                            <svg class="ani_circle" width="20" height="20">
+                                <mask>
+                                    <circle cx="10" cy="10" r="9" stroke-width="2" stroke="#ffffff" fill="none"></circle>
+                                </mask>
+                                <g mask="url(#carousel-bullet-mask-73)">
+                                    <circle class="bullet-bg" cx="10" cy="10" r="10" fill="#8f8f8f"></circle>
+                                    <circle class="bullet-progress-circle" cx="10" cy="10" r="9" stroke-width="3" fill="none"></circle>
+                                </g>
+                            </svg>
+                            <div class="navi_circle_back"></div>
+                        </div>
+                        <div class="navi_circle">
+                            <svg class="ani_circle" width="20" height="20">
+                                <mask>
+                                    <circle cx="10" cy="10" r="9" stroke-width="2" stroke="#ffffff" fill="none"></circle>
+                                </mask>
+                                <g mask="url(#carousel-bullet-mask-73)">
+                                    <circle class="bullet-bg" cx="10" cy="10" r="10" fill="#8f8f8f"></circle>
+                                    <circle class="bullet-progress-circle" cx="10" cy="10" r="9" stroke-width="3" fill="none"></circle>
+                                </g>
+                            </svg>
+                            <div class="navi_circle_back"></div>
+                        </div>
+                        <div class="navi_circle">
+                            <svg class="ani_circle" width="20" height="20">
+                                <mask>
+                                    <circle cx="10" cy="10" r="9" stroke-width="2" stroke="#ffffff" fill="none"></circle>
+                                </mask>
+                                <g mask="url(#carousel-bullet-mask-73)">
+                                    <circle class="bullet-bg" cx="10" cy="10" r="10" fill="#8f8f8f"></circle>
+                                    <circle class="bullet-progress-circle" cx="10" cy="10" r="9" stroke-width="3" fill="none"></circle>
+                                </g>
+                            </svg>
+                            <div class="navi_circle_back"></div>
+                        </div>
+                        <div class="navi_circle">
+                            <svg class="ani_circle" width="20" height="20">
+                                <mask>
+                                    <circle cx="10" cy="10" r="9" stroke-width="2" stroke="#ffffff" fill="none"></circle>
+                                </mask>
+                                <g mask="url(#carousel-bullet-mask-73)">
+                                    <circle class="bullet-bg" cx="10" cy="10" r="10" fill="#8f8f8f"></circle>
+                                    <circle class="bullet-progress-circle" cx="10" cy="10" r="9" stroke-width="3" fill="none"></circle>
+                                </g>
+                            </svg>
+                            <div class="navi_circle_back"></div>
+                        </div>
+                    </div>
+                    <div class="news_outer_middle_line"></div>
+                    <div class="news_outer_txt">READ MORE NEWS</div>
+                </div>
+            </div>
+
+            <!-- etc_box -->
+            <div class="etc_box">
+                <div class="etc_box_inner etc_box_inner_L">
+                    <img src="corvette_img/index/etc/etc_shopping.jpg" alt="">
+                    <div class="etc_box_gradi"></div>
+                    <div class="etc_box_inner_txt_box">
+                        <div class="etc_box_cate">Store</div>
+                        <div class="etc_box_title">CHEVY MALL</div>
+                        <div class="etc_box_more_box">
+                            <span class="hover_circle_txt">READ MORE</span>
+                            <div class="hover_circle">
+                                <svg class="hover_circle_inner" viewBox="0 0 24 24">
+                                    <circle class="horver_circle_inner_border" cx="12" cy="12" r="11" stroke="1"></circle>
+                                    <circle class="hover_circle_act" cx="12" cy="12" r="11" stroke="1"></circle>
+                                </svg>
+                                <svg class="hover_circle_icon" viewBox="0 0 8 16" width="8" height="16" xmlns="http://www.w3.org/2000/svg" style="height: 16px; width: 8px;"><path d="M7.268 9.547L0 16l4-8-4-8 7.268 6.453C7.715 6.82 8 7.377 8 8c0 .623-.285 1.18-.732 1.547z"></path></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="etc_box_inner etc_box_inner_R">
+                    <div class="etc_box_gradi"></div>
+                    <img src="corvette_img/index/etc/etc_brand.jpg" alt="">
+                    <div class="etc_box_inner_txt_box">
+                        <div class="etc_box_cate">Performance Perfected.</div>
+                        <div class="etc_box_title">CHEVROLET CORVETTE STINGRAY</div>
+                        <div class="etc_box_more_box">
+                            <span class="hover_circle_txt">READ MORE</span>
+                            <div class="hover_circle">
+                                <svg class="hover_circle_inner" viewBox="0 0 24 24">
+                                    <circle class="horver_circle_inner_border" cx="12" cy="12" r="11" stroke="1"></circle>
+                                    <circle class="hover_circle_act" cx="12" cy="12" r="11" stroke="1"></circle>
+                                </svg>
+                                <svg class="hover_circle_icon" viewBox="0 0 8 16" width="8" height="16" xmlns="http://www.w3.org/2000/svg" style="height: 16px; width: 8px;"><path d="M7.268 9.547L0 16l4-8-4-8 7.268 6.453C7.715 6.82 8 7.377 8 8c0 .623-.285 1.18-.732 1.547z"></path></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- subscribe_box -->
+            <div class="subscribe_box">
+                <span class="hover_circle_txt">CORVETTE SUBSCRIBE NEWSLETTER</span>
+                <div class="hover_circle">
+                    <svg class="hover_circle_inner" viewBox="0 0 24 24">
+                        <circle class="horver_circle_inner_border" cx="12" cy="12" r="11" stroke="1"></circle>
+                        <circle class="hover_circle_act" cx="12" cy="12" r="11" stroke="1"></circle>
+                    </svg>
+                    <svg class="hover_circle_icon" viewBox="0 0 8 16" width="8" height="16" xmlns="http://www.w3.org/2000/svg" style="height: 16px; width: 8px;"><path d="M7.268 9.547L0 16l4-8-4-8 7.268 6.453C7.715 6.82 8 7.377 8 8c0 .623-.285 1.18-.732 1.547z"></path></svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="w_1180">
+                <div class="footer_top">
+                    <div class="footer_top_inner_box">
+                        <ul class="footer_menu_ul">
+                            <li class="footer_menu_ul_title">AUTO</li>
+
+                            <li>
+                                <a href="auto.html">Chevrolet Corvette C1</a>
+                            </li>
+                            <li>
+                                <a href="auto.html">Chevrolet Corvette C2</a>
+                            </li>
+                            <li>
+                                <a href="auto.html">Chevrolet Corvette C3</a>
+                            </li>
+                            <li>
+                                <a href="auto.html">Chevrolet Corvette C4</a>
+                            </li>
+                            <li>
+                                <a href="auto.html">Chevrolet Corvette C5</a>
+                            </li>
+                            <li>
+                                <a href="auto.html">Chevrolet Corvette C6</a>
+                            </li>
+                            <li>
+                                <a href="auto.html">Chevrolet Corvette C7</a>
+                            </li>
+                            <li>
+                                <a href="auto.html">Chevrolet Corvette C8</a>
+                            </li>
+                        </ul>
+                        <ul class="footer_menu_ul">
+                            <li class="footer_menu_ul_title">ABOUT</li>
+
+                            <li>Accessibility</li>
+                            <li>Innovation</li>
+                            <li>Chevy Cares</li>
+                            <li>Awards & Accolades</li>
+                            <li>Safety</li>
+                            <li>Connected Services</li>
+                        </ul>
+                        <ul class="footer_menu_ul">
+                            <li class="footer_menu_ul_title">STORE</li>
+
+                            <li>New Arrivals</li>
+                            <li>Hats & Caps</li>
+                            <li>T-Shirts & Polos</li>
+                            <li>Jackets & Fleece</li>
+                            <li>Home, Office & Garage</li>
+                            <li>2022 Calendars</li>
+                            <li>Posters</li>
+                            <li>Chevy Ladies</li>
+                            <li>Chevy Kids</li>
+                        </ul>
+                        <ul class="footer_menu_ul">
+                            <li class="footer_menu_ul_title">OWNER</li>
+
+                            <li>My Chevrolet Account</li>
+                            <li>How To Support</li>
+                            <li>Certified Service</li>
+                            <li>Covered Maintenance</li>
+                            <li>Owner Manuals</li>
+                            <li>Quick Tips</li>
+                            <li>Warranty</li>
+                            <li>GM Financial</li>
+                            <li>Protection</li>
+                        </ul>
+                        <ul class="footer_menu_ul">
+                            <li class="footer_menu_ul_title">UNIVERSE</li>
+                            
+                            <li>News</li>
+                            <li>The Official Corvette Magazine</li>
+                            <li>Corvette Museums</li>
+                            <li>History</li>
+                        </ul>
+                    </div>
+                    <ul class="footer_sns">
+                        <li>
+                            <img src="corvette_img/h_f/footer/facebook_icon.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="corvette_img/h_f/footer/insta_icon.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="corvette_img/h_f/footer/twiter_icon_jpg.png" alt="">
+                        </li>
+                        <li class="youtube_icon">
+                            <img src="corvette_img/h_f/footer/youtube_icon.jpg" alt="">
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_mid">
+                    <div class="footer_copyright_box">
+                        <p>
+                            Copyright 2021 General Motors. All Rights Reserved. All text, images, graphics, animation, videos, music and other materials on this website are subject to the copyright and other intellectual property rights of GM. These materials may not be reproduced, distributed, modified or reposted to other websites without the express written permission of GM. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bot">
+                <div class="footer_content_box w_1180">
+                    <ul class="footer_content_cate_ul">
+                        <li>Legal</li>
+                        <li>Privacy Section</li>
+                        <li>Cookie Policy</li>
+                        <li>Contacts</li>
+                        <li>Media Center</li>
+                        <li>Career</li>
+                        <li>Corporate</li>
+                    </ul>
+                    <div class="footer_language_box">
+                        <span>CHANGE COUNTRY</span>
+                        <svg width="16" height="8" viewBox="0 0 16 8" xmlns="http://www.w3.org/2000/svg"><path d="M9.547.732L16 8 8 4 0 8 6.453.732A1.996 1.996 0 0 1 8 0c.623 0 1.18.285 1.547.732z"></path></svg>
+                    </div>
+                </div>
+
+                <div class="footer_final">
+                    <div class="min_logo"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

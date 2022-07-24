@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오설록 모바일 구매 페이지</title>
+     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/mobile_main/header_footer.css">
+    <link rel="stylesheet" href="css/mobile_shop_page/index.css">
+    <link rel="stylesheet" href="css/mobile_main/commons.css">
+    <link rel="shortcut icon" href="img/icon/oh_favicon.ico" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="js/mobile_shop_page/index.js"></script>
+    <script src="js/mobile_main/header_footer.js"></script>
+    <script src="js/mobile_main/commons.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <!-- 탑버튼 -->
+        <div class="top_btn">TOP</div>
+            <!-- 헤더 -->
+        <div class="header">
+            <div class="bot_header">
+                <!-- 로고 -->
+                <div class="header_logo">
+                    <a href="mainpage_mobile.html" class="header_a">
+                        <div class="logo">오설록</div>
+                    </a>
+                </div>
+            <!-- 햄버거 -->
+                <div class="hamberger">
+                    <div class="ham_line" id="line_top"></div>
+                    <div class="ham_line" id="line_mid"></div>
+                    <div class="ham_line" id="line_bot"></div>
+                </div>
+            <!-- 햄버거 메뉴판 -->
+                <div class="ham_menu_pan">
+                    <div class="ham_menu_pan_box">
+                        <div class="ham_icon_box">
+                            <div class="menu_icon ham_icon1"></div>
+                            <div class="menu_icon ham_icon2"></div>
+                            <div class="menu_icon ham_icon3"></div>
+                        </div>
+
+                        <div class="ham_sec">
+                            <ul class="ham_sec_pan_ul ham_bor_none">
+                                <li class="ham_li" onclick="shop();">TEA</li>
+                                <li class="sec_pan_li" onclick="change_mobile1();">명차</li>
+                                <li class="sec_pan_li" onclick="change_mobile2();">녹차 / 발효차</li>
+                                <li class="sec_pan_li" onclick="shop();">허브티</li>
+                                <li class="sec_pan_li" onclick="shop();">블렌디드티</li>
+                                <li class="sec_pan_li" onclick="shop();">파우더</li>
+                            </ul>
+                        </div>
+                        <div class="ham_sec">
+                            <ul class="ham_sec_pan_ul">
+                                <li class="ham_li" onclick="shop();">FOOD</li>
+                                <li class="sec_pan_li" onclick="shop();">베이커리</li>
+                                <li class="sec_pan_li" onclick="shop();">초콜릿/ 잼</li>
+                            </ul>
+                        </div>
+                        <div class="ham_sec">
+                            <ul class="ham_sec_pan_ul">
+                                <li class="ham_li" onclick="shop();">GIFT</li>
+                                <li class="sec_pan_li" onclick="shop();">세트 </li>
+                                <li class="sec_pan_li" onclick="shop();">기프트권</li>
+                            </ul>
+                        </div>
+                        <div class="ham_sec">
+                            <ul class="ham_sec_pan_ul">
+                                <li class="ham_li" onclick="shop();">ETC.</li>
+                                <li class="sec_pan_li" onclick="shop();">찻잔</li>
+                                <li class="sec_pan_li" onclick="shop();">티팟</li>
+                                <li class="sec_pan_li" onclick="shop();">텀블러</li>
+                                <li class="sec_pan_li" onclick="shop();">티푸드 플레이트</li>
+                                <li class="sec_pan_li" onclick="shop();">소도구</li>
+                            </ul>
+                        </div>
+                        <div class="ham_sec">
+                            <ul class="ham_sec_pan_ul">
+                                <li class="ham_li" onclick="menu();">TEA LIFE</li>
+                                <li class="sec_pan_li" onclick="menu();">이벤트</li>
+                                <li class="sec_pan_li" onclick="menu();">온라인쇼핑</li>
+                                <li class="sec_pan_li" onclick="menu();">혜택</li>
+                                <li class="sec_pan_li" onclick="menu();">인스타그램</li>
+                                <li class="sec_pan_li" onclick="menu();">About tea</li>
+                            </ul>
+                        </div>
+                        <div class="ham_sec">
+                            <ul class="ham_sec_pan_ul">
+                                <li class="ham_li" onclick="menu();">MUSEUM</li>
+                                <li class="sec_pan_li" onclick="menu();">티뮤지엄 소개</li>
+                                <li class="sec_pan_li" onclick="menu();">티스톤 예약</li>
+                                <li class="sec_pan_li" onclick="menu();">제주 오설록 앱</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- menu_배너 -->
+        <div class="menu_banner main_banner3">
+            <div class="banner_txt">
+                <h1>허 브 티</h1>
+                <p>꽃잎, 과일향이 가득한 풍미가 돋보이는 라인 입니다.</p>
+            </div>
+        </div>
+
+           <div class="contents">
+               <!-- 메뉴 클릭 페이지 바뀜 -->
+                <div class="click_menu">
+                    <ul>
+                        <li class="click_menu_li" onclick="change_mobile1()">명차</li>
+                        <li class="click_menu_li" onclick="change_mobile2()">녹차 / 발효차</li>
+                        <li class="click_menu_li" onclick="shop()">허브티</li>
+                    </ul>
+                    <!-- 베스트 메뉴 -->
+                </div>
+                <!-- 베스트 상품 -->
+                <div class="best_box">
+                        <div class="best_top_txt">
+                            <h2>B E S T</h2>
+                            <p>오설록에서 가장 잘나가는 제품</p>
+                        </div>
+                        <div class="best_img_outer">
+                            <div class="rig_bot_menu_box">
+                                <div class="best_menu_box">
+                                    <div class="best_img">
+                                        <div class="best_inner_img inner_img1"></div>
+                                    </div>
+                                    <div class="best_txt">
+                                        <h3>녹차 밀크
+                                        <br> 스프레드</h3>
+                                        <p>15.000원</p>
+                                    </div>
+                                </div>
+    
+                                <div class="best_menu_box">
+                                    <div class="best_img">
+                                        <div class="best_inner_img inner_img2"></div>
+                                    </div>
+                                    <div class="best_txt">
+                                        <h3>신오브 
+                                        <br>제주 세트</h3>
+                                        <p>27.000원</p>
+                                    </div>
+                                </div>
+    
+                                <div class="best_menu_box">
+                                    <div class="best_img">
+                                        <div class="best_inner_img inner_img3"></div>
+                                    </div>
+                                    <div class="best_txt">
+                                        <h3>그린티
+                                        <br> 웨하스</h3>
+                                        <p>5.000원</p>
+                                    </div>
+                                </div>
+    
+                                <div class="best_menu_box">
+                                    <div class="best_img">
+                                        <div class="best_inner_img inner_img4"></div>
+                                    </div>
+                                    <div class="best_txt">
+                                        <h3>그린티 
+                                        <br>랑드샤</h3>
+                                        <p>12.000원</p>
+                                    </div>
+                                </div>
+    
+                                <div class="best_menu_box">
+                                    <div class="best_img">
+                                        <div class="best_inner_img inner_img5"></div>
+                                        <div class="best_hov_img hov_img5"></div>
+                                    </div>
+                                    <div class="best_txt">
+                                        <h3>삼다연
+                                        <br>제주 영귤</h3>
+                                        <p>23.000원</p>
+                                    </div>
+                                </div>
+    
+                                <div class="best_menu_box">
+                                    <div class="best_img">
+                                        <div class="best_inner_img inner_img6"></div>
+                                        <div class="best_hov_img hov_img6"></div>
+                                    </div>
+                                    <div class="best_txt">
+                                        <h3>웨딩 그린티</h3>
+                                        <p>23.000원</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                 </div>
+               
+               <!-- 상품1 -->
+                <div class="shop_box">
+                   <div class="shop_box_text">
+                    <h2>허 브 티</h2>
+                   </div>
+                <!-- 상품 이미지 1 -->
+                    <div class="shop_top_box">
+                        <div class="shop_inner">
+                            <div class="before_hov">
+                                <div class="shop_img shop_img1"></div>
+                                <div class="shop_txt">
+                                    <h3>바람노래</h3>
+                                    <h3>(10입)</h3>
+                                    <p>12.000원</p>
+                                </div>
+                            </div>
+                            <div class="shop_hover">
+                                <div class="icon_box">
+                                    <div class="shop_left_icon">
+                                        <div class="left_icon_img hov_icon1"></div>
+                                        <div class="shop_icon_txt">20</div>
+
+                                    </div>
+                                    <div class="shop_rig_icon">
+                                        <div class="left_icon_img hov_icon2"></div>
+                                        <div class="shop_icon_txt">50</div>
+
+                                    </div>
+                                </div>
+                                <div class="buy_box">BUY NOW</div>
+                            </div>
+                        </div>
+
+                        <div class="shop_inner">
+                            <div class="before_hov">
+                                <div class="shop_img shop_img2"></div>
+                                <div class="shop_txt">
+                                    <h3>비의 사색</h3>
+                                    <h3>(10입)</h3>
+                                    <p>12.000원</p>
+                                </div>
+                            </div>
+                            <div class="shop_hover">
+                                <div class="icon_box">
+                                    <div class="shop_left_icon">
+                                        <div class="left_icon_img hov_icon1"></div>
+                                        <div class="shop_icon_txt">20</div>
+
+                                    </div>
+                                    <div class="shop_rig_icon">
+                                        <div class="left_icon_img hov_icon2"></div>
+                                        <div class="shop_icon_txt">50</div>
+
+                                    </div>
+                                </div>
+                                <div class="buy_box">BUY NOW</div>
+                            </div>
+                        </div>
+
+                        <div class="shop_inner">
+                            <div class="before_hov">
+                                <div class="shop_img shop_img3"></div>
+                                <div class="shop_txt">
+                                    <h3>금빛 마중</h3>
+                                    <h3>(10입)</h3>
+                                    <p>15.000원</p>
+                                </div>
+                            </div>
+                            <div class="shop_hover">
+                                <div class="icon_box">
+                                    <div class="shop_left_icon">
+                                        <div class="left_icon_img hov_icon1"></div>
+                                        <div class="shop_icon_txt">20</div>
+
+                                    </div>
+                                    <div class="shop_rig_icon">
+                                        <div class="left_icon_img hov_icon2"></div>
+                                        <div class="shop_icon_txt">50</div>
+
+                                    </div>
+                                </div>
+                                <div class="buy_box">BUY NOW</div>
+                            </div>
+                        </div>
+
+                        <div class="shop_inner">
+                            <div class="before_hov">
+                                <div class="shop_img shop_img4"></div>
+                                <div class="shop_txt">
+                                    <h3>레드파파야 블랙티</h3>
+                                    <h3>(20입)</h3>
+                                    <p>23.000원</p>
+                                </div>
+                            </div>
+                            <div class="shop_hover">
+                                <div class="icon_box">
+                                    <div class="shop_left_icon">
+                                        <div class="left_icon_img hov_icon1"></div>
+                                        <div class="shop_icon_txt">20</div>
+
+                                    </div>
+                                    <div class="shop_rig_icon">
+                                        <div class="left_icon_img hov_icon2"></div>
+                                        <div class="shop_icon_txt">50</div>
+
+                                    </div>
+                                </div>
+                                <div class="buy_box">BUY NOW</div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- 상품 이미지2 -->
+                    <div class="shop_top_box">
+                        <div class="shop_inner">
+                            <div class="before_hov">
+                                <div class="shop_img shop_img5"></div>
+                                <div class="shop_txt">
+                                    <h3>삼다연 제주 영귤</h3>
+                                    <h3>(20입)</h3>
+                                    <p>23.000원</p>
+                                </div>
+                            </div>
+                            <div class="shop_hover">
+                                <div class="icon_box">
+                                        <div class="shop_left_icon">
+                                            <div class="left_icon_img hov_icon1"></div>
+                                            <div class="shop_icon_txt">50</div>
+
+                                        </div>
+                                        <div class="shop_rig_icon">
+                                            <div class="left_icon_img hov_icon2"></div>
+                                            <div class="shop_icon_txt">50</div>
+
+                                        </div>
+                                    </div>
+                                <div class="buy_box">BUY NOW</div>
+                            </div>
+                        </div>
+
+                        <div class="shop_inner">
+                            <div class="before_hov">
+                                <div class="shop_img shop_img6"></div>
+                                <div class="shop_txt">
+                                    <h3>웨딩 그린티</h3>
+                                    <h3>(20입)</h3>
+                                    <p>23.000원</p>
+                                </div>
+                            </div>
+                            <div class="shop_hover">
+                                <div class="icon_box">
+                                        <div class="shop_left_icon">
+                                            <div class="left_icon_img hov_icon1"></div>
+                                            <div class="shop_icon_txt">50</div>
+
+                                        </div>
+                                        <div class="shop_rig_icon">
+                                            <div class="left_icon_img hov_icon2"></div>
+                                            <div class="shop_icon_txt">50</div>
+
+                                        </div>
+                                    </div>
+                                <div class="buy_box">BUY NOW</div>
+                            </div>
+                        </div>
+
+                        <div class="shop_inner">
+                            <div class="before_hov">
+                                <div class="shop_img shop_img7"></div>
+                                <div class="shop_txt">
+                                    <h3>달빛걷기</h3>
+                                    <h3>(20입)</h3>
+                                    <p>23.000원</p>
+                                </div>
+                            </div>
+                            <div class="shop_hover">
+                                <div class="icon_box">
+                                        <div class="shop_left_icon">
+                                            <div class="left_icon_img hov_icon1"></div>
+                                            <div class="shop_icon_txt">50</div>
+
+                                        </div>
+                                        <div class="shop_rig_icon">
+                                            <div class="left_icon_img hov_icon2"></div>
+                                            <div class="shop_icon_txt">50</div>
+
+                                        </div>
+                                    </div>
+                                <div class="buy_box">BUY NOW</div>
+                            </div>
+                        </div>
+
+                        <div class="shop_inner">
+                            <div class="before_hov">
+                                <div class="shop_img shop_img8"></div>
+                                <div class="shop_txt">
+                                    <h3>벚꽃향 가득 올레</h3>
+                                    <h3>(10입)</h3>
+                                    <p>15.000원</p>
+                                </div>
+                            </div>
+                            <div class="shop_hover">
+                                <div class="icon_box">
+                                        <div class="shop_left_icon">
+                                            <div class="left_icon_img hov_icon1"></div>
+                                            <div class="shop_icon_txt">50</div>
+
+                                        </div>
+                                        <div class="shop_rig_icon">
+                                            <div class="left_icon_img hov_icon2"></div>
+                                            <div class="shop_icon_txt">50</div>
+
+                                        </div>
+                                    </div>
+                                <div class="buy_box">BUY NOW</div>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+                <!-- 상품2 -->
+                <div class="shop_box">
+                <!-- 상품 이미지 3 -->
+                     <div class="shop_top_box">
+                        <div class="shop_inner">
+                            <div class="before_hov">
+                                <div class="shop_img shop_img13"></div>
+                                <div class="shop_txt">
+                                    <h3>세작 80g</h3>
+                                    <h3>(잎차)</h3>
+                                    <p>40.000원</p>
+                                </div>
+                            </div>
+                            <div class="shop_hover">
+                                <div class="icon_box">
+                                        <div class="shop_left_icon">
+                                            <div class="left_icon_img hov_icon1"></div>
+                                            <div class="shop_icon_txt">50</div>
+
+                                        </div>
+                                        <div class="shop_rig_icon">
+                                            <div class="left_icon_img hov_icon2"></div>
+                                            <div class="shop_icon_txt">50</div>
+
+                                        </div>
+                                    </div>
+                                <div class="buy_box">BUY NOW</div>
+                            </div>
+                        </div>
+
+                        <div class="shop_inner">
+                            <div class="before_hov">
+                                <div class="shop_img shop_img14"></div>
+                                <div class="shop_txt">
+                                    <h3>곱들락한 블루베리</h3>
+                                    <h3>(10입)</h3>
+                                    <p>15.000원</p>
+                                </div>
+                            </div>
+                            <div class="shop_hover">
+                                <div class="icon_box">
+                                        <div class="shop_left_icon">
+                                            <div class="left_icon_img hov_icon1"></div>
+                                            <div class="shop_icon_txt">50</div>
+
+                                        </div>
+                                        <div class="shop_rig_icon">
+                                            <div class="left_icon_img hov_icon2"></div>
+                                            <div class="shop_icon_txt">50</div>
+
+                                        </div>
+                                    </div>
+                                <div class="buy_box">BUY NOW</div>
+                            </div>
+                        </div>
+
+                        <div class="shop_inner">
+                            <div class="before_hov">
+                                <div class="shop_img shop_img15"></div>
+                                <div class="shop_txt">
+                                    <h3>제주 삼다 영귤티</h3>
+                                    <h3>(20입)</h3>
+                                    <p>8.500원</p>
+                                </div>
+                            </div>
+                            <div class="shop_hover">
+                                <div class="icon_box">
+                                        <div class="shop_left_icon">
+                                            <div class="left_icon_img hov_icon1"></div>
+                                            <div class="shop_icon_txt">50</div>
+
+                                        </div>
+                                        <div class="shop_rig_icon">
+                                            <div class="left_icon_img hov_icon2"></div>
+                                            <div class="shop_icon_txt">50</div>
+
+                                        </div>
+                                    </div>
+                                <div class="buy_box">BUY NOW</div>
+                            </div>
+                        </div>
+
+                        <div class="shop_inner">
+                            <div class="before_hov">
+                                <div class="shop_img shop_img16"></div>
+                                <div class="shop_txt">
+                                    <h3>영귤섬</h3>
+                                    <h3>(20입)</h3>
+                                    <p>12.000원</p>
+                                </div>
+                            </div>
+                            <div class="shop_hover">
+                                <div class="icon_box">
+                                        <div class="shop_left_icon">
+                                            <div class="left_icon_img hov_icon1"></div>
+                                            <div class="shop_icon_txt">50</div>
+
+                                        </div>
+                                        <div class="shop_rig_icon">
+                                            <div class="left_icon_img hov_icon2"></div>
+                                            <div class="shop_icon_txt">50</div>
+
+                                        </div>
+                                    </div>
+                                <div class="buy_box">BUY NOW</div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- 상품 이미지 4 -->
+                    <div class="shop_top_box">
+                        <div class="shop_inner">
+                            <div class="before_hov">
+                                <div class="shop_img shop_img17"></div>
+                                <div class="shop_txt">
+                                    <h3>파라다이스 세트</h3>
+                                    <p>24.000원</p>
+                                </div>
+                            </div>
+                            <div class="shop_hover">
+                                <div class="icon_box">
+                                        <div class="shop_left_icon">
+                                            <div class="left_icon_img hov_icon1"></div>
+                                            <div class="shop_icon_txt">50</div>
+
+                                        </div>
+                                        <div class="shop_rig_icon">
+                                            <div class="left_icon_img hov_icon2"></div>
+                                            <div class="shop_icon_txt">50</div>
+
+                                        </div>
+                                    </div>
+                                <div class="buy_box">BUY NOW</div>
+                            </div>
+                        </div>
+
+                        <div class="shop_inner">
+                            <div class="before_hov">
+                                <div class="shop_img shop_img18"></div>
+                                <div class="shop_txt">
+                                    <h3>트로피컬 블랙티</h3>
+                                    <h3>(20입)</h3>
+                                    <p>8.500원</p>
+                                </div>
+                            </div>
+                            <div class="shop_hover">
+                                <div class="icon_box">
+                                        <div class="shop_left_icon">
+                                            <div class="left_icon_img hov_icon1"></div>
+                                            <div class="shop_icon_txt">50</div>
+
+                                        </div>
+                                        <div class="shop_rig_icon">
+                                            <div class="left_icon_img hov_icon2"></div>
+                                            <div class="shop_icon_txt">50</div>
+
+                                        </div>
+                                    </div>
+                                <div class="buy_box">BUY NOW</div>
+                            </div>
+                        </div>
+
+                        <div class="shop_inner">
+                            <div class="before_hov">
+                                <div class="shop_img shop_img19"></div>
+                                <div class="shop_txt">
+                                    <h3>삼다연 국화</h3>
+                                    <h3>(10입)</h3>
+                                    <p>15.000원</p>
+                                </div>
+                            </div>
+                            <div class="shop_hover">
+                                <div class="icon_box">
+                                        <div class="shop_left_icon">
+                                            <div class="left_icon_img hov_icon1"></div>
+                                            <div class="shop_icon_txt">50</div>
+
+                                        </div>
+                                        <div class="shop_rig_icon">
+                                            <div class="left_icon_img hov_icon2"></div>
+                                            <div class="shop_icon_txt">50</div>
+
+                                        </div>
+                                    </div>
+                                <div class="buy_box">BUY NOW</div>
+                            </div>
+                        </div>
+
+                        <div class="shop_inner">
+                            <div class="before_hov">
+                                <div class="shop_img shop_img20"></div>
+                                <div class="shop_txt">
+                                    <h3>바닐라 에스프레소</h3>
+                                    <h3>(20입)</h3>
+                                    <p>15.000원</p>
+                                </div>
+                            </div>
+                            <div class="shop_hover">
+                                <div class="icon_box">
+                                        <div class="shop_left_icon">
+                                            <div class="left_icon_img hov_icon1"></div>
+                                            <div class="shop_icon_txt">50</div>
+
+                                        </div>
+                                        <div class="shop_rig_icon">
+                                            <div class="left_icon_img hov_icon2"></div>
+                                            <div class="shop_icon_txt">50</div>
+
+                                        </div>
+                                    </div>
+                                <div class="buy_box">BUY NOW</div>
+                            </div>
+                        </div>
+                    </div>
+              
+                </div>
+                <!-- 상품3 -->
+                <div class="shop_box">
+                     <!-- 상품 이미지 5 -->
+                     <div class="shop_top_box">
+                        <div class="shop_inner">
+                            <div class="before_hov">
+                                <div class="shop_img shop_img1"></div>
+                                <div class="shop_txt">
+                                    <h3>바람노래</h3>
+                                    <h3>(10입)</h3>
+                                    <p>12.000원</p>
+                                </div>
+                            </div>
+                            <div class="shop_hover">
+                                <div class="icon_box">
+                                        <div class="shop_left_icon">
+                                            <div class="left_icon_img hov_icon1"></div>
+                                            <div class="shop_icon_txt">50</div>
+
+                                        </div>
+                                        <div class="shop_rig_icon">
+                                            <div class="left_icon_img hov_icon2"></div>
+                                            <div class="shop_icon_txt">50</div>
+
+                                        </div>
+                                    </div>
+                                <div class="buy_box">BUY NOW</div>
+                            </div>
+                        </div>
+
+                        <div class="shop_inner">
+                            <div class="before_hov">
+                                <div class="shop_img shop_img2"></div>
+                                <div class="shop_txt">
+                                    <h3>비의 사색</h3>
+                                    <h3>(10입)</h3>
+                                    <p>12.000원</p>
+                                </div>
+                            </div>
+                            <div class="shop_hover">
+                                <div class="icon_box">
+                                        <div class="shop_left_icon">
+                                            <div class="left_icon_img hov_icon1"></div>
+                                            <div class="shop_icon_txt">50</div>
+
+                                        </div>
+                                        <div class="shop_rig_icon">
+                                            <div class="left_icon_img hov_icon2"></div>
+                                            <div class="shop_icon_txt">50</div>
+
+                                        </div>
+                                    </div>
+                                <div class="buy_box">BUY NOW</div>
+                            </div>
+                        </div>
+
+                        <div class="shop_inner">
+                            <div class="before_hov">
+                                <div class="shop_img shop_img3"></div>
+                                <div class="shop_txt">
+                                    <h3>금빚 마중</h3>
+                                    <h3>(10입)</h3>
+                                    <p>15.000원</p>
+                                </div>
+                            </div>
+                            <div class="shop_hover">
+                                <div class="icon_box">
+                                        <div class="shop_left_icon">
+                                            <div class="left_icon_img hov_icon1"></div>
+                                            <div class="shop_icon_txt">50</div>
+
+                                        </div>
+                                        <div class="shop_rig_icon">
+                                            <div class="left_icon_img hov_icon2"></div>
+                                            <div class="shop_icon_txt">50</div>
+
+                                        </div>
+                                    </div>
+                                <div class="buy_box">BUY NOW</div>
+                            </div>
+                        </div>
+
+                        <div class="shop_inner">
+                            <div class="before_hov">
+                                <div class="shop_img shop_img4"></div>
+                                <div class="shop_txt">
+                                    <h3>레드파파야 블랙티</h3>
+                                    <p>22.000원</p>
+                                </div>
+                            </div>
+                            <div class="shop_hover">
+                                <div class="icon_box">
+                                        <div class="shop_left_icon">
+                                            <div class="left_icon_img hov_icon1"></div>
+                                            <div class="shop_icon_txt">50</div>
+
+                                        </div>
+                                        <div class="shop_rig_icon">
+                                            <div class="left_icon_img hov_icon2"></div>
+                                            <div class="shop_icon_txt">50</div>
+
+                                        </div>
+                                    </div>
+                                <div class="buy_box">BUY NOW</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 더보기 버튼 -->
+                <div class="plus_btn">더 보 기</div>
+           </div>
+        <!-- sns 창  -->
+            <div class="sns_box">
+                <p>오설록과 함께하는  SNS</p>
+                <div class="sns_icon_box">
+                    <div class="sns_items">
+                        <div class="sns_btn_icon sns_icon1"></div>
+                        <div class="sns_btn_hov sns_hov1"></div> 
+                    </div>
+                    <div class="sns_items">
+                        <div class="sns_btn_icon sns_icon2"></div>
+                        <div class="sns_btn_hov sns_hov2"></div>
+                    </div>
+                    <div class="sns_items">
+                        <div class="sns_btn_icon sns_icon3"></div>
+                        <div class="sns_btn_hov sns_hov3"></div>
+                    </div>
+                    <div class="sns_items">
+                        <div class="sns_btn_icon sns_icon4"></div>
+                        <div class="sns_btn_hov sns_hov4"></div>
+                    </div>
+                    <div class="sns_items no_margin">
+                        <div class="sns_btn_icon sns_icon5"></div>
+                        <div class="sns_btn_hov sns_hov5"></div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- 푸터-->
+        <div class="footer">
+            <div class="top_footer">
+                <div class="top_fot_txt">
+                    <ul>
+                        <li class="top_fot_li">회사소개</li>
+                        <li class="top_fot_li">서비스</li>
+                        <li class="top_fot_li">이용약관</li>
+                        <li class="top_fot_li">개인정보 처리방침</li>
+                        <li class="top_fot_li">영상정보 처리방침</li>
+                        <li class="top_fot_li">뷰티포인트</li>
+                        <li class="top_fot_li">임직원할인</li>
+                        <li class="top_fot_li">사이트맵</li>
+                    </ul>
+                </div>
+            </div>
+           
+           <div class="bot_footer">
+                <div class="fot_logo"></div>
+                   <div class="bot_fot_txt">
+                        <ul class="bot_fot_ul1">
+                            <li class="bot_fot_li">주문/배송문의</li>
+                            <li class="bot_fot_li">고객상담센터 080-000-0000</li>
+                            <li class="bot_fot_li bor_none">평일 09 : 30 - 17 : 00 (점심 11 : 30 - 13 : 00)</li>
+                        </ul>
+
+                        <ul class="bot_fot_ul">
+                            <li class="bot_fot_li">대표이사:서혁제</li>
+                            <li class="bot_fot_li">주소:서울특별시 용산구</li>
+                            <li class="bot_fot_li"> 한강대로 100, 14층(한강로2가)</li>
+                            <li class="bot_fot_li">사업자등록번호: 390-87-01499</li>
+                            <li class="bot_fot_li bor_none"> 통신판매업신고번호:</li>
+                            <li class="bot_fot_li">2019-서울용산-1173호</li>
+                        </ul>
+                        
+                   </div>
+           </div>
+        </div>
+    </div>
+</body>
+</html>

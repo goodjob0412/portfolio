@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page4</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script defer src="js/page4.js"></script>
+
+
+    <link rel="stylesheet" href="css/page4.css">
+    <link rel="icon" href="img/favicon.ico" type="image/png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="wrap">
+        <!-- 헤더 -->
+        <div class="header">
+            <div class="logo">
+                <a class="logo_a" href="index.html">logo</a>
+            </div>
+            <ul class="h_ul">
+                <li>
+                    <a href="page2.html">캐릭터소개</a>
+                </li>
+                <li>
+                    <a href="page3.html">카카오샵</a>
+                </li>
+                <li>
+                    <a href="page2.html">스토리</a>
+                </li>
+                <li>
+                    <a href="page3.html">매장안내</a>
+                </li>
+                <li>
+                    <a href="page3.html">고객센터</a>
+                </li>
+            </ul>
+        </div>
+        <!-- 메인 -->
+        <div class="main">
+            <div class="container">
+                <div class="detail_area">
+                    <div class="item_big_img">
+                        <img src="img/page4/left_big.jpg" alt="">
+                        <div class="magnifier" style="background-image: url(img/page4/left_big.jpg)"></div>
+                    </div>
+                    <div class="item_info_area">
+                        <div class="item_title">
+                            허니프렌즈 소프트인형 라이언
+                        </div>
+                        <div class="item_options">
+                            <table class="item_info_sec1">
+                                <tr>
+                                    <td class="ii_title">소비자가</td>
+                                    <td class="ii_desc">
+                                        <div><del>40000원</del></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="ii_title">판매가</td>
+                                    <td class="ii_desc">
+                                        <div>35000원</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="ii_title">배송비</td>
+                                    <td class="ii_desc">
+                                        <select>
+                                            <option value="">주문시 결제</option>
+                                            <option value="">수령시 결제</option>
+                                        </select>
+                                        <div>2,500원 (45,000원 이상 구매 시 무료)</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="ii_title">적립금</td>
+                                    <td class="ii_desc">
+                                        <div>3,500원(10%)</div>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table class="item_info_sec2">
+                                <tr>
+                                    <td class="color_title"><span>색상</span></td>
+                                    <td class="color_container">
+                                        <div class="color_box">
+                                            <div class="cb_black">
+                                                <span class="color_name">BLACK</span>
+                                            </div>
+                                        </div>
+                                        <div class="opt_required">[필수] 옵션을 선택해 주세요</div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <div class="selected_opt">
+                                <div class="sel_opt_title">(최소주문수량 1개 이상)</div>
+                            </div>
+                            <div class="opt_continer">
+                                <table class="opt_box">
+                                    <tr>
+                                        <td class="opt_name">
+                                            <div>마켓디자인</div>
+                                            <div>-GRAY</div>
+                                        </td>
+                                        <td class="opt_qty">
+                                            <input type="button" class="btn_qty btn_minus" value="-">
+                                            <input type="text" class="txt_qty" value="1">
+                                            <input type="button" class="btn_qty btn_plus" value="+">
+                                        </td>
+                                        <td class="opt_price">
+                                            <div>50,000원</div>
+                                            <div>(적립 10,000원)</div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="total_price">
+                            <div class="total_price_box">
+                                TOTAL: <span id="final_price">35,000원</span>
+                            </div>
+                        </div>
+
+                        <div class="btn_item">
+                            <div class="btn_buy">BUY IT NOW</div>
+                            <div class="btn_addCart">ADD TO CART</div>
+                            <div class="btn_wishlist">WISH LIST</div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+            <div class="itm_exp">
+                <img src="img/page4/itm_explain.jpg" alt="">
+            </div>
+        </div>
+        <!-- 푸터 -->
+        <div class="footer">
+            <div class="w1400">
+                <div class="footer1">
+                    <a href="#">개인정보처리방침</a>
+                    <a href="#">이용약관</a>
+                    <a href="#">제휴문의</a>
+                </div>
+                <div class="footer2">
+                    <p>카카오아이엑스 사업자등록번호 : 354-86-00070</p>
+                    <p>통신판매업 신고번호 : 2017-서울강남-02573</p>
+                    <p>대표이사 : 권승조</p>
+                    <p>주소 : 서울특별시 강남구 테헤란로 521 파르나스타워, 27층</p>
+                    <p>고객센터 : 1577-6263 / 평일 10시 ~ 18시</p>
+                    <p>store@kakaofriends.com</p>
+                </div>
+                <div class="footer3">
+                    <div class="footer_logo"></div>
+                    <div class="footer_link">
+                        <a href="https://www.facebook.com/kakaofriends/"></a>
+                        <a href="https://twitter.com/ejjdjriikkw"></a>
+                        <a href="https://www.kakaocorp.com/"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

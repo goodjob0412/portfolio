@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>오시는길</title>
+    <link rel="stylesheet" href="../css/header_footer.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/page2/index.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="../js/page2/index.js"></script>
+    <script src="../js/main/commons.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <style>
+       
+        * { font-family: 'Noto Sans KR', sans-serif !important;}
+    </style>
+</head>
+<body>
+<div class="wrap">
+ <div class="big_container">
+        <!-- 상단 메뉴바  -->
+        <div class="header">
+        <div class="logo">
+            <a href="index.html">대학병원</a>
+        </div> 
+        <div class="menu">
+            <ul class="menu_ul">
+                <li class="menu_li">
+                    <a href="page_4.html">병원안내</a>
+                    <ul class="hover_menu_ul" >
+                        <li onclick="page4()">병원장 인사말</li>
+                        <li onclick="page4()">비전</li>
+                        <li onclick="page4()">연혁</li>
+                        <li onclick="page4()">병원소식</li>
+                        <li onclick="page4()">공지사항</li>
+                    </ul>
+                </li>
+                <li class="menu_li">
+                        <a href="page5_1.html">진료안내</a>
+                        <ul class="hover_menu_ul">
+                            <li onclick="page5_1()">진료과</li>
+                            <li onclick="page5_2()">전문센터</li>
+                            <li onclick="page5_3()">특수클리닉</li>
+                        </ul>
+                </li>
+                <li class="menu_li">
+                        <a href="page_2.html">이용안내</a>
+                        <ul class="hover_menu_ul">
+                            <li onclick="map()">위치안내</li>
+                            <li onclick="map()">오시는길</li>
+                            <li onclick="map()">편의시설</li>
+                            <li onclick="map()">주차안내</li>
+                           
+                        </ul>
+                </li>
+                <li class="menu_li">
+                        <a href="page_3_1.html">예약/조회/발급</a>
+                        <ul class="hover_menu_ul">
+                        <li onclick="page3()">예약안내</li>
+                        <li onclick="page3()">온라인예약</li>
+                        <li onclick="page3()">예약/조회/취소</li>
+                        <li onclick="page3()">증명서발급</li>
+                    </ul>
+                </li>
+                <li class="menu_li">
+                    <a href="page_3_1.html">고객서비스</a>
+                   <ul class="hover_menu_ul">
+                       <li onclick="page3()">고객의 소리</li>
+                       <li onclick="page3()">자원봉사</li>
+                       <li onclick="page3()">발전기금</li>
+                   </ul>
+           </li>
+            </ul>
+            <div class="menu_pan"></div>
+        </div>
+        <div class="search_bar">
+            <div class="box">
+                <input type="text">
+            </div>
+            <div class="search_icon"></div>
+        </div>
+        </div>
+        <!-- 메인배너 -->
+        <div class="main_banner">
+            <h1>오시는길</h1>
+        </div>
+        <!-- 컨텐츠 -->
+        <div class="contents">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3157.9348006802525!2d126.74816121511658!3d37.674239779777935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c856327ce42b5%3A0xc383686d3e290b00!2z7J247KCc64yA7ZWZ6rWQIOydvOyCsOuwseuzkeybkA!5e0!3m2!1sko!2skr!4v1583219563095!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen=""></iframe>
+            <div class="come_box">
+                <div class="subway">
+                    <div class="sub_left">
+                        <div class="sub_icon"></div>
+                        <div class="sub_txt">지하철</div>
+                    </div>
+                    <div class="sub_rig">
+                        <div class="com_circle sub_circle1">3호선</div>
+                        <p class="sub_cir_p1">대화역 하차, 1번 출구(도보 150m)</p>
+                        <div class="com_circle sub_circle2">경의 중앙</div>
+                        <p class="sub_cir_p2">일산역 -> 대곡역 -> 대화역 하차 1번 출구 (도보 150m) </p>
+    
+                    </div>
+                </div>
+                <div class="bus">
+                    <div class="bus_left">
+                        <div class="bus_icon"></div>
+                        <div class="bus_txt">버스</div>
+                    </div>
+                    <div class="bus_rig">
+                        <div class="com_circle bus_circle1">마을</div>
+                            <div class="ma_bus">
+                                <div class="bus_num_box">039</div>
+                                <div class="bus_num_box">057</div>
+                                <div class="bus_num_box">061</div>
+                                <div class="bus_num_box">082A</div>
+                                <div class="bus_num_box">082B</div>
+                                <div class="bus_num_box">089</div>
+                                <div class="bus_num_box">090</div>
+                                <div class="bus_num_box">091</div>
+                            </div>
+                        <div class="com_circle bus_circle2">광역</div>
+                            <div class="r_bus">
+                                <div class="bus_num_box1">200</div>
+                                <div class="bus_num_box1">1001</div>
+                                <div class="bus_num_box1">1500</div>
+                                <div class="bus_num_box1">9700</div>
+                                <div class="bus_num_box1">9701</div>
+                                <div class="bus_num_box1">9707</div>
+                            </div>
+                        <div class="com_circle bus_circle3">공항</div>
+                            <div class="r_bus">
+                                <div class="bus_num_box1">3300</div>
+                            </div>
+                        <div class="com_circle bus_circle4">일반</div>
+                            <div class="ma_bus">
+                                <div class="bus_num_box">10</div>
+                                <div class="bus_num_box">56</div>
+                                <div class="bus_num_box">66</div>
+                                <div class="bus_num_box">70</div>
+                                <div class="bus_num_box">72</div>
+                                <div class="bus_num_box">80</div>
+                                <div class="bus_num_box">88A</div>
+                                <div class="bus_num_box">92</div>
+                                <div class="bus_num_box">92-1</div>
+                                <div class="bus_num_box">97</div>
+                                <div class="bus_num_box">150</div>
+                                <div class="bus_num_box">600</div>
+                            </div>
+                        </div>
+                      
+                </div>
+                <div class="car">
+                    <div class="car_left">
+                        <div class="car_icon"></div>
+                        <div class="car_txt">자가용</div>
+                    </div>
+                    <div class="car_rig">
+                        <p>(우)10380 경기도 고양시 일산서구 주화로 170 대학병원</p>
+                    </div>
+                </div>
+            </div>
+         </div>
+        <!-- 푸터 -->
+        <div class="footer">
+            <div class="footer_logo"></div>
+            <div class="footer_soild"></div>
+            <p>주소 : 10380 경기도 고양시 일산서구 주화로 170 대학병원  대표전화 : 1588-0000 사업자등록번호 : 000-00-000000 대학병</p>
+            <p>© 2020  University Medical Center. All rights reserved.해외전화 : 82-0-0000-0000</p>
+        </div>
+    </div>
+    
+</div>
+
+</body>
+</html>

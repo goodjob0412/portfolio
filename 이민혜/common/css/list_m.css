@@ -1,0 +1,131 @@
+.item_sec {
+    margin: 50px auto;
+}
+.title {
+    width: 100%;
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+.inner_menu {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 50px 0;
+}
+.inner_menu_li {
+    font-size: 20px;
+    color: #555;
+    font-weight: 500;
+}
+
+.item_ul{
+    width: 100%;
+    overflow: hidden;
+}
+.item_li {
+    width: calc((100% - 15px) / 2);
+    margin-right: 15px;
+    margin-bottom: 30px;
+    float: left;
+}
+.item_li:nth-child(2n) {
+    margin-right: 0;
+}
+.item_img {
+
+    border-radius: 15px;
+    overflow: hidden;
+    font-size: 0;
+}
+
+.item_img img {
+    width: 100%;
+    
+    transition: all 0.5s;
+}
+.item_sub {
+    padding: 10px 5px;
+}
+.item_title_en {
+    height: 20px;
+    overflow: hidden;
+    font-size: 14px;
+    font-weight: 300;
+}
+.itme_title_kr {
+    height: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #444;
+    margin: 5px 0;
+    word-break: keep-all;
+}
+
+.item_o_price {
+    color: #444;
+    margin: 10px 0;
+}
+.item_s_price {
+    font-size: 12px;
+    color: #999;
+    text-decoration: line-through;
+    margin: 10px 5px 10px 0;
+}
+.sale_percent {
+    float: right;
+    color: #ff7205;
+    font-size: 16px;
+    font-weight: 700;
+}
+.item_color {
+    margin: 14px 0;
+    display: flex;
+    justify-content: left;
+    gap: 5px;
+}
+.color_dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+}
+
+/* ------------------------------------------------------- 미디어 쿼리 */
+
+@media screen and (max-width: 480px) {
+    .item_li {
+        width: calc((100% - 10px) / 2);
+        margin-right: 10px;
+    }
+    .item_sub {
+        padding: 5px 0;
+        box-sizing: border-box;
+    }
+    /* .item_title_kr {
+        font-size: 11px;
+        margin: 3px 0 5px;
+    } */
+    /* .item_title_en {
+        font-size: 10px;
+    } */
+    /* .item_s_price {
+        font-size: 10px;
+    } */
+    /* .item_o_price {
+        font-size: 12px;
+    } */
+    /* .sale_percent {
+        font-size: 14px;
+        float: none;
+    } */
+    .item_color {
+        margin: 8px 0;
+    }
+
+}
+
+
+
+

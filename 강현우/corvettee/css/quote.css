@@ -1,0 +1,640 @@
+body {background: #111;}
+.content_box {
+    width: 100%;
+    height: calc(100% - 69px);
+    display: flex;
+    background: #111;
+}
+.content_img_box {
+    width: 70%;
+    max-width: 1440px;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    background: #000;
+}
+.common_img_box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding-bottom: 73%;
+    background: #000;
+}
+.content_img_box_inner {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0%;
+    height: 100%;
+}
+.content_img_box_gradi {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 69%, rgba(0, 0, 0, 1));
+    z-index: 999;
+}
+.content_txt_box {
+    width: 30%;
+    height: 100%;
+    border-left: 1px solid #222;
+    position: relative;
+}
+.content_txt_box_top {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 75%;
+    border-bottom: 1px solid #222;
+    box-sizing: border-box;
+}
+.content_txt_box_bot {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 25%;
+    box-sizing: border-box;
+}
+.common_txt_box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    padding: 7%;
+    box-sizing: border-box;
+    overflow: auto;
+}
+.common_txt_box::-webkit-scrollbar {
+    width: 23px;
+    background: none;
+}
+.common_txt_box::-webkit-scrollbar-thumb {
+    background: #808080;
+    border-radius: 25px;
+    background-clip: padding-box;
+    border: 10px solid transparent;
+}
+.common_txt_box::-webkit-scrollbar-track {
+    background: none;
+}
+.content_txt_title {display: block; font-size: 18px; color: #ad7b61; font-weight: 700; margin-bottom: 15%;}
+.content_box_border {
+    width: 100%;
+    height: 1px;
+    background: #222;
+    position: relative;
+    overflow: hidden;
+}
+.content_box_border_inner {
+    position: absolute;
+    left: -100%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #ad7b61;
+    transition: all 0.5s;
+}
+.content_txt_img_box {
+    width: 100%;
+    height: 20%;
+    min-height: 90px;
+    max-height: 130px;
+}
+.content_txt_img_box_inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    cursor: pointer;
+}
+.common_txt_img_box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 3vh 0%;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+.common_txt_img_box_L {
+    width: 55%;
+    height: 100%;
+    color: #808080;
+    font-weight: 700;
+    font-size: 13px;
+    position: relative;
+}
+.common_txt_img_box_R {
+    width: 40%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.common_txt_img_box_R > img {
+    position: absolute;
+    left: 29%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 250%;
+}
+.common_txt_img_box_L > p {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: 700;
+}
+.common_txt_select {color: #fff !important;}
+.common_txt_img_box_L > span {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 11px;
+}
+.content_txt_box_bot_top {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+    width: 90%;
+}
+.content_txt_box_bot_top > p {
+    font-size: 15px;
+    color: #808080;
+    display: block;
+    margin-bottom: 1%;
+}
+.content_txt_box_bot_top_menu_btn {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 35px;
+    height: 35px;
+    transform: translateY(-50%);
+    border: 1px solid #808080;
+    box-sizing: border-box;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.content_txt_box_bot_top_menu_btn_line {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 2px;
+    background: #fff;
+}
+.content_txt_box_bot_top_menu_btn_line1 {top: 40%;}
+.content_txt_box_bot_top_menu_btn_line2 {top: 60%;}
+.content_txt_box_bot_bot {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 50%;
+    bottom: 15%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 30%;
+}
+.content_txt_box_bot_btn {
+    width: 48%;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+.content_txt_box_bot_btn1 {color: #fff;}
+.content_txt_box_bot_btn2 {color: #000; background: #fff;}
+.content_txt_box_bot_btn > span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.content_txt_box_bot_btn:hover > span {transform: translate(-50%, -50%) scale(1.04); font-weight: 700;}
+
+
+.wheel_txt_img_box_R > img {left: 50%; top: 27%; width: 160%;}
+.interior_txt_img_box_R > img {left: 50%; width: 110%;}
+
+.Quotation_box {
+    width: 100%;
+    height: calc(100% - 69px);
+    position: absolute;
+    left: 0;
+    top: 69px;
+    background: #111;
+    padding: 6% 12%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+.Quotation_box_L {
+    width: 37%;
+    height: 100%;
+    color: #fff;
+    position: relative;
+}
+.Quotation_box_L_top > h1 {
+    display: block;
+    font-size: 30px;
+    margin-bottom: 4%;
+}
+.Quotation_box_L_top_inner {width: 100%;}
+.Quotation_box_L_top_inner > span {
+    font-size: 16px;
+}
+.Quotation_box_L_top_inner > i {
+    font-style: normal;
+}
+.Quotation_box_border {
+    width: 100%;
+    height: 1px;
+    background: #222;
+    margin: 15% 0;
+}
+.Quotation_box_L_mid {
+    margin-bottom: 15%;
+}
+.Quotation_box_L_mid > p {
+    display: block;
+    color: #ad7b61;
+    margin-bottom: 2%;
+}
+.Quotation_box_L_mid > span {
+    display: block;
+    font-size: 35px;
+    font-weight: 700;
+}
+.Quotation_box_L_bot {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.Quotation_box_L_bot_btn {
+    width: 100%;
+    height: 60px;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    position: relative;
+    font-weight: 700;
+    cursor: pointer;
+}
+.Quotation_box_L_bot_btn > span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.Quotation_box_L_bot_btn1 {
+    background: #fff;
+    border: none;
+    color: #000;
+    margin-bottom: 5%;
+}
+.Quotation_box_R {
+    width: 60%;
+    height: 100%;
+    background: #000;
+    position: relative;
+}
+.Quotation_box_R_inner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding-bottom: 89%;
+}
+.Quotation_box_R_img_box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: url(../corvette_img/quote/img_box/color_box/ren/resize/1.jpg) no-repeat left / 117%;
+}
+.Quotation_box_R_img_box > img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 130%;
+}
+.Quotation_box_R_gradi {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 1) 8%, rgba(0, 0, 0, 0) 32%, rgba(0, 0, 0, 1)92%);
+}
+
+
+/* img */
+/* speical */
+.special_img1 {background: url(../corvette_img/quote/img_box/speical_box/resize/standard_ren.jpg) no-repeat left / cover}
+.special_img2 {background: url(../corvette_img/quote/img_box/speical_box/resize/speical1_ren.jpg) no-repeat left / cover}
+.special_img3 {background: url(../corvette_img/quote/img_box/speical_box/resize/speical2_ren.jpg) no-repeat left / cover}
+
+/* color */
+.color_img1 {background: url(../corvette_img/quote/img_box/color_box/ren/resize/1.jpg) no-repeat left / cover}
+.color_img2 {background: url(../corvette_img/quote/img_box/color_box/ren/resize/2.jpg) no-repeat left / cover}
+.color_img3 {background: url(../corvette_img/quote/img_box/color_box/ren/resize/3.jpg) no-repeat left / cover}
+.color_img4 {background: url(../corvette_img/quote/img_box/color_box/ren/resize/4.jpg) no-repeat left / cover}
+.color_img5 {background: url(../corvette_img/quote/img_box/color_box/ren/resize/5.jpg) no-repeat left / cover}
+.color_img6 {background: url(../corvette_img/quote/img_box/color_box/ren/resize/6.jpg) no-repeat left / cover}
+.color_img7 {background: url(../corvette_img/quote/img_box/color_box/ren/resize/7.jpg) no-repeat left / cover}
+.color_img8 {background: url(../corvette_img/quote/img_box/color_box/ren/resize/8.jpg) no-repeat left / cover}
+.color_img9 {background: url(../corvette_img/quote/img_box/color_box/ren/resize/9.jpg) no-repeat left / cover}
+.color_img10 {background: url(../corvette_img/quote/img_box/color_box/ren/resize/10.jpg) no-repeat left / cover}
+.color_img11 {background: url(../corvette_img/quote/img_box/color_box/ren/resize/11.jpg) no-repeat left / cover}
+
+/* wheel */
+/* wheel2 */
+.wheel2_img1 {background: url(../corvette_img/quote/img_box/wheel_box/Bright_Silver_Open_Spoke/0.jpg) no-repeat left / cover}
+.wheel2_img2 {background: url(../corvette_img/quote/img_box/wheel_box/Bright_Silver_Open_Spoke/1.jpg) no-repeat left / cover}
+.wheel2_img3 {background: url(../corvette_img/quote/img_box/wheel_box/Bright_Silver_Open_Spoke/2.jpg) no-repeat left / cover}
+.wheel2_img4 {background: url(../corvette_img/quote/img_box/wheel_box/Bright_Silver_Open_Spoke/3.jpg) no-repeat left / cover}
+.wheel2_img5 {background: url(../corvette_img/quote/img_box/wheel_box/Bright_Silver_Open_Spoke/4.jpg) no-repeat left / cover}
+.wheel2_img6 {background: url(../corvette_img/quote/img_box/wheel_box/Bright_Silver_Open_Spoke/5.jpg) no-repeat left / cover}
+.wheel2_img7 {background: url(../corvette_img/quote/img_box/wheel_box/Bright_Silver_Open_Spoke/6.jpg) no-repeat left / cover}
+.wheel2_img8 {background: url(../corvette_img/quote/img_box/wheel_box/Bright_Silver_Open_Spoke/7.jpg) no-repeat left / cover}
+.wheel2_img9 {background: url(../corvette_img/quote/img_box/wheel_box/Bright_Silver_Open_Spoke/8.jpg) no-repeat left / cover}
+.wheel2_img10 {background: url(../corvette_img/quote/img_box/wheel_box/Bright_Silver_Open_Spoke/9.jpg) no-repeat left / cover}
+.wheel2_img11 {background: url(../corvette_img/quote/img_box/wheel_box/Bright_Silver_Open_Spoke/10.jpg) no-repeat left / cover}
+
+/* wheel4 */
+.wheel4_img1 {background: url(../corvette_img/quote/img_box/wheel_box/Spectra_Gray_Machined_Trident_Spoke/0.jpg) no-repeat left / cover}
+.wheel4_img2 {background: url(../corvette_img/quote/img_box/wheel_box/Spectra_Gray_Machined_Trident_Spoke/1.jpg) no-repeat left / cover}
+.wheel4_img3 {background: url(../corvette_img/quote/img_box/wheel_box/Spectra_Gray_Machined_Trident_Spoke/2.jpg) no-repeat left / cover}
+.wheel4_img4 {background: url(../corvette_img/quote/img_box/wheel_box/Spectra_Gray_Machined_Trident_Spoke/3.jpg) no-repeat left / cover}
+.wheel4_img5 {background: url(../corvette_img/quote/img_box/wheel_box/Spectra_Gray_Machined_Trident_Spoke/4.jpg) no-repeat left / cover}
+.wheel4_img6 {background: url(../corvette_img/quote/img_box/wheel_box/Spectra_Gray_Machined_Trident_Spoke/5.jpg) no-repeat left / cover}
+.wheel4_img7 {background: url(../corvette_img/quote/img_box/wheel_box/Spectra_Gray_Machined_Trident_Spoke/6.jpg) no-repeat left / cover}
+.wheel4_img8 {background: url(../corvette_img/quote/img_box/wheel_box/Spectra_Gray_Machined_Trident_Spoke/7.jpg) no-repeat left / cover}
+.wheel4_img9 {background: url(../corvette_img/quote/img_box/wheel_box/Spectra_Gray_Machined_Trident_Spoke/8.jpg) no-repeat left / cover}
+.wheel4_img10 {background: url(../corvette_img/quote/img_box/wheel_box/Spectra_Gray_Machined_Trident_Spoke/9.jpg) no-repeat left / cover}
+.wheel4_img11 {background: url(../corvette_img/quote/img_box/wheel_box/Spectra_Gray_Machined_Trident_Spoke/10.jpg) no-repeat left / cover}
+
+/* wheel6 */
+.wheel6_img1 {background: url(../corvette_img/quote/img_box/wheel_box/Accessory_Black_Trident_Spoke/0.jpg) no-repeat left / cover}
+.wheel6_img2 {background: url(../corvette_img/quote/img_box/wheel_box/Accessory_Black_Trident_Spoke/1.jpg) no-repeat left / cover}
+.wheel6_img3 {background: url(../corvette_img/quote/img_box/wheel_box/Accessory_Black_Trident_Spoke/2.jpg) no-repeat left / cover}
+.wheel6_img4 {background: url(../corvette_img/quote/img_box/wheel_box/Accessory_Black_Trident_Spoke/3.jpg) no-repeat left / cover}
+.wheel6_img5 {background: url(../corvette_img/quote/img_box/wheel_box/Accessory_Black_Trident_Spoke/4.jpg) no-repeat left / cover}
+.wheel6_img6 {background: url(../corvette_img/quote/img_box/wheel_box/Accessory_Black_Trident_Spoke/5.jpg) no-repeat left / cover}
+.wheel6_img7 {background: url(../corvette_img/quote/img_box/wheel_box/Accessory_Black_Trident_Spoke/6.jpg) no-repeat left / cover}
+.wheel6_img8 {background: url(../corvette_img/quote/img_box/wheel_box/Accessory_Black_Trident_Spoke/7.jpg) no-repeat left / cover}
+.wheel6_img9 {background: url(../corvette_img/quote/img_box/wheel_box/Accessory_Black_Trident_Spoke/8.jpg) no-repeat left / cover}
+.wheel6_img10 {background: url(../corvette_img/quote/img_box/wheel_box/Accessory_Black_Trident_Spoke/9.jpg) no-repeat left / cover}
+.wheel6_img11 {background: url(../corvette_img/quote/img_box/wheel_box/Accessory_Black_Trident_Spoke/10.jpg) no-repeat left / cover}
+
+/* wheel8 */
+.wheel8_img1 {background: url(../corvette_img/quote/img_box/wheel_box/Carbon_Flash_Open_Spoke/0.jpg) no-repeat left / cover}
+.wheel8_img2 {background: url(../corvette_img/quote/img_box/wheel_box/Carbon_Flash_Open_Spoke/1.jpg) no-repeat left / cover}
+.wheel8_img3 {background: url(../corvette_img/quote/img_box/wheel_box/Carbon_Flash_Open_Spoke/2.jpg) no-repeat left / cover}
+.wheel8_img4 {background: url(../corvette_img/quote/img_box/wheel_box/Carbon_Flash_Open_Spoke/3.jpg) no-repeat left / cover}
+.wheel8_img5 {background: url(../corvette_img/quote/img_box/wheel_box/Carbon_Flash_Open_Spoke/4.jpg) no-repeat left / cover}
+.wheel8_img6 {background: url(../corvette_img/quote/img_box/wheel_box/Carbon_Flash_Open_Spoke/5.jpg) no-repeat left / cover}
+.wheel8_img7 {background: url(../corvette_img/quote/img_box/wheel_box/Carbon_Flash_Open_Spoke/6.jpg) no-repeat left / cover}
+.wheel8_img8 {background: url(../corvette_img/quote/img_box/wheel_box/Carbon_Flash_Open_Spoke/7.jpg) no-repeat left / cover}
+.wheel8_img9 {background: url(../corvette_img/quote/img_box/wheel_box/Carbon_Flash_Open_Spoke/8.jpg) no-repeat left / cover}
+.wheel8_img10 {background: url(../corvette_img/quote/img_box/wheel_box/Carbon_Flash_Open_Spoke/9.jpg) no-repeat left / cover}
+.wheel8_img11 {background: url(../corvette_img/quote/img_box/wheel_box/Carbon_Flash_Open_Spoke/10.jpg) no-repeat left / cover}
+
+/* interior */
+.interior_img1 {background: url(../corvette_img/quote/img_box/interi_box/interi/1.jpg) no-repeat left / cover}
+.interior_img2 {background: url(../corvette_img/quote/img_box/interi_box/interi/2.jpg) no-repeat left / cover}
+.interior_img3 {background: url(../corvette_img/quote/img_box/interi_box/interi/3.jpg) no-repeat left / cover}
+.interior_img4 {background: url(../corvette_img/quote/img_box/interi_box/interi/4.jpg) no-repeat left / cover}
+.interior_img5 {background: url(../corvette_img/quote/img_box/interi_box/interi/5.jpg) no-repeat left / cover}
+.interior_img6 {background: url(../corvette_img/quote/img_box/interi_box/interi/6.jpg) no-repeat left / cover}
+.interior_img7 {background: url(../corvette_img/quote/img_box/interi_box/interi/7.jpg) no-repeat left / cover}
+.interior_img8 {background: url(../corvette_img/quote/img_box/interi_box/interi/8.jpg) no-repeat left / cover}
+.interior_img9 {background: url(../corvette_img/quote/img_box/interi_box/interi/9.jpg) no-repeat left / cover}
+.interior_img10 {background: url(../corvette_img/quote/img_box/interi_box/interi/10.jpg) no-repeat left / cover}
+.interior_img11 {background: url(../corvette_img/quote/img_box/interi_box/interi/11.jpg) no-repeat left / cover}
+.interior_img12 {background: url(../corvette_img/quote/img_box/interi_box/interi/12.jpg) no-repeat left / cover}
+.interior_img13 {background: url(../corvette_img/quote/img_box/interi_box/interi/13.jpg) no-repeat left / cover}
+.interior_img14 {background: url(../corvette_img/quote/img_box/interi_box/interi/14.jpg) no-repeat left / cover}
+
+
+/* tmp_index */
+.speical_tmptmp {z-index: 98;}
+
+/* .special_box {display: none;} */
+.color_box {display: none;}
+.wheel_box {display: none;}
+.interior_box {display: none;}
+.Quotation_box {display: none;}
+
+.close_popup {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+}
+.close_popup_inner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 50%;
+    background: #111;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    color: #fff;
+    padding: 3%;
+}
+.close_popup_inner_top {
+    font-size: 18px;
+}
+.close_popup_inner_mid {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+}
+.close_popup_inner_bot {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+}
+.close_popup_inner_bot_btn {
+    width: 48%;
+    height: 50px;
+    border: 1px solid #fff;
+    position: relative;
+    cursor: pointer;
+}
+.close_popup_inner_bot_btn:hover > span {
+    transform: translate(-50%, -50%) scale(1.1);
+    font-weight: 700;
+    transition: all 0.5s;
+}
+.close_popup_inner_bot_btn2 {
+    background: #fff;
+    color: #000;
+}
+.close_popup_inner_bot_btn > span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.close_popup_inner_close_btn {
+    position: absolute;
+    right: 7%;
+    top: 10%;
+    width: 18px;
+    height: 18px;
+    fill: #fff;
+    cursor: pointer;
+}
+
+/* total */
+.total_price_box {
+    display: flex;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 700;
+    overflow: hidden;
+}
+.total_price_rel_box {position: relative;}
+.total_opac {opacity: 0;}
+.total_price1 {position: absolute; left: 0; top: 0;}
+.total_price2 {position: absolute; left: 0; top: 100%;}
+
+.Quotation_price_box {
+    display: flex;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 700;
+    overflow: hidden;
+}
+.Quotation_price_rel_box {position: relative;}
+.final_opac {opacity: 0;}
+.final_price {position: absolute; left: 0; top: 0;}
+
+
+@media screen and (max-width: 1200px) {
+    .close_popup_inner {width: 52%; height: 40%;}
+}
+@media screen and (max-width: 1150px) {
+    .header_menu_ul {font-size: 13px;}
+}
+@media screen and (max-width: 1025px) {
+    .speical_txt_img_box_R > img {left: 189%; width: 930%;}
+}
+@media screen and (max-width: 985px) {
+    .header_menu_ul {font-size: 11px;}
+}
+@media screen and (max-width: 880px) {
+    .header_menu {height: 119px; flex-direction: column;}
+    .header_menu_R {height: 40%; width: 100%;}
+    .header_menu_li > span {padding: 16.1px 9px;}
+    .quote_close_btn {top: 30%;}
+    .content_box {height: 140vh; flex-direction: column;}
+    .wrap {width: 100%; height: 100%;}
+    .content_img_box {width: 100%; height: 100%;}
+    .content_txt_box {width: 100%;}
+    .content_txt_box {border: none;}
+    .content_txt_box_top {height: 62%;}
+    .content_txt_box_bot {height: 38%;}
+    .common_txt_box {padding: 4% 7%;}
+    .content_txt_title {margin-bottom: 3%;}
+    .Quotation_box_L_top > h1 {font-size: 22px;}
+    .Quotation_box_L_top_inner > span {font-size: 12px;}
+    .Quotation_box {flex-direction: column; padding: 0;}
+    .Quotation_box_R {order: 1; width: 100%; overflow: hidden; height: 60%;}
+    .Quotation_box_L {width: 100%; height: 40%; order: 2; padding: 3% 1%; box-sizing: border-box;}
+    .Quotation_box_L_top > h1 {margin-bottom: 2%;}
+    .Quotation_box_border {display: none;}
+    .Quotation_box_L_bot {width: auto; right: 1%; left: auto; bottom: 15%;}
+    .Quotation_box_L_bot_btn {width: 200px; height: 50px;}
+    .Quotation_box_L_mid {position: absolute; left: 1%; bottom: 15%; margin: 0;}
+    .Quotation_price_box {font-size: 38px;}
+    .Quotation_box_L_mid > p {font-size: 20px;}
+}
+@media screen and (max-width: 768px) {
+    .close_popup_inner {width: 58%;}
+    .close_popup_inner_mid {font-size: 17px;}
+    .close_popup_inner_bot_btn {width: 47%; height: 40px;}
+}
+@media screen and (max-width: 600px) {
+    .header_menu_li {padding: 0 2%;}
+    .close_popup_inner {width: 68%;}
+}
+@media screen and (max-width: 550px) {
+    .header_menu_li {font-size: 10px;}
+    .header_menu_name > p:nth-child(2) {font-size: 23px;}
+    .header_menu_L {min-width: 180px;}
+    .header_menu_li > span {padding: 16.1px 7px;}
+    .header_menu_li::after {width: 9px; height: 28px;}
+    .header_menu_ul {min-width: 430px;}
+    .header_menu_R {height: 46.2px; width: 100%; overflow: hidden; min-height: 46.2px;}
+    .header_menu_li1 {min-width: 103px;}
+    .header_menu_li5 {min-width: 133px;}
+    .header_menu_ul {overflow: auto; }
+    .header_menu_ul::-webkit-scrollbar {
+        width: 0px;
+        height: 2px;
+        background: none;
+    }
+    .header_menu_ul::-webkit-scrollbar-thumb {
+        background: #808080;
+        background-clip: padding-box;
+        border: 20px solid transparent;
+    }
+    .header_menu_ul::-webkit-scrollbar-track {
+        background: none;
+    }
+}
+@media screen and (max-width: 500px) {
+    .close_popup_inner {width: 70%; height: 36%;}
+    .close_popup_inner_mid {font-size: 16px;}
+}
+@media screen and (max-width: 450px) {
+    .close_popup_inner {width: 72%; height: 34%;}
+    .close_popup_inner_mid {font-size: 14px;}
+}
+@media screen and (max-width: 420px) {
+    .Quotation_box_L_bot_btn {width: 170px; height: 46px; font-size: 14px;}
+    .Quotation_price_box {font-size: 35px;}
+}
+@media screen and (max-width: 400px) {
+    .close_popup_inner {width: 72%; height: 32%;}
+    .close_popup_inner_mid {font-size: 12px;}
+    .close_popup_inner_bot_btn {height: 35px; font-size: 12px;}
+}
+@media screen and (max-width: 360px) {
+    .Quotation_box_L_bot_btn {width: 140px; height: 42px; font-size: 12px;}
+    .close_popup_inner {width: 72%; height: 28%;}
+    .close_popup_inner_mid {font-size: 10px;}
+}

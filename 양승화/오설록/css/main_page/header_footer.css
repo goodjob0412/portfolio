@@ -1,0 +1,239 @@
+
+/* 헤더 */
+.behind_hader{
+    width: 100%;
+    height: 122px;
+}
+.header{
+    width: 100%;
+    height: 122px;
+    background: rgba(0,0,0,0.3);
+    z-index: 9999999;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* 상단 로고 헤더*/
+.top_header{
+    width: 100%;
+    height: 80PX;
+    background:#fff;
+
+    position: relative;
+}
+.header_a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-indent: -9999px;
+}
+.logo{
+    width: 125px;
+    height: 65px;
+    background:url(../../img/logo/main_logo.png) no-repeat center / cover;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+   
+    transform: translateX(-50%);
+   
+}
+/* 하단헤더 */
+.bot_header{
+    width: 100%;
+    height: 42px;
+    background: #839e69;
+   
+
+    position: relative;
+}
+.menu_icon{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;  
+}
+.left_menu{
+    width: calc(100% - 30%);
+    height: 100%;
+    float: left; 
+}
+.menu_ul{
+    width: 100%;
+    height: 100%;
+}
+.menu_li{
+    width: calc(100%/ 6);
+    height: 100%;
+    line-height: 42px;
+    color: #fff;
+    float: left;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'baemin2';
+    font-weight: 500;
+}
+.sec_pan_li a,
+.menu_li a{
+        text-decoration: none;
+        color: #fff;
+   
+}
+.right_icon{
+    width: calc(100% - 90%);
+    height: 100%;
+    float: right; 
+    padding: 9px 0;
+    box-sizing: border-box;
+}
+.rig_icon{
+    width: calc((100% - 15px) / 3);
+    height: 23px;
+    float: left;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.icon1{background: url(../../img/icon/white_a_img.png) no-repeat center / contain;}
+.icon2{background: url(../../img/icon/white_cart_img.png) no-repeat center / contain;}
+.icon3{background: url(../../img/icon/white_my_img.png) no-repeat center / contain;}
+.ham_li{
+    display: none;
+}
+/* 메뉴 나오는판 */
+.menu_pan{
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    background: rgba(151, 151, 151, 0.59);
+
+    position: absolute;
+    left: 0;
+    top: 100%;
+}
+.menu_hover_box{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+.menu_pan_box{
+    width: calc(100% - 30%);
+    height: 100%;
+    padding: 10px 0 ;
+    box-sizing: border-box; 
+}
+.sec{
+    width: calc(100% / 6);
+    height: 0;
+    /* display: none; */
+    float: left;
+}
+.sec_pan_ul{
+    width: 100%;
+    height: 100%;
+    float: left;
+    color: #fff;
+    font-family: 'baemin2';
+}
+
+.menu_pan > .menu_pan_box >div {
+    /* display: none; */
+    overflow: hidden;
+}   
+.sec_pan_li{
+    width: 100%;
+    height: calc(100% / 6);
+    line-height: 58px;
+    font-size: 15px;
+    cursor: pointer;
+    
+}
+/* .sec_pan_li a{
+    text-decoration: none;
+    color: #fff;
+} */
+.sec_pan_li:hover{
+    color: #839e69;
+}  
+
+
+/* 푸터 */
+.footer{
+    width: 100%;
+    height: 250px;
+    margin-top: 100px;
+    font-family: Dotum,'돋움',Helvetica,"Apple SD Gothic Neo",sans-serif;
+    font-size: 13px;
+    box-sizing: border-box;
+    border-top: 3px solid #839e69 ;
+}
+.top_footer{
+    width: 100%;
+    height: 61px;
+    box-sizing: border-box;
+    padding-top: 20px;
+    box-sizing: border-box;
+    /* background: #839e69; */
+    border-bottom: 1px solid #839e69 ;
+}
+.top_fot_txt > ul{
+    width: 1200px;
+    height: 20px;
+    margin: 0 auto;
+    padding-left: 120px;
+    box-sizing: border-box;
+}
+.top_fot_li{
+    height: 100%;
+    line-height: 20px;
+    text-align: center;
+    float: left;
+    margin-right: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+
+}
+.bot_footer{
+    width: 1200px;
+    height: 100px;
+    margin:0 auto;
+    margin-top: 20px;
+}
+.fot_logo{
+    width: 100px;
+    height: 100px;
+    background: url(../../img/logo/color_logo.png) no-repeat center / contain;
+    float: left;
+    
+}
+.bot_fot_txt{
+    width: calc( 1200px - 100px);
+    height: 80px;
+    margin-top: 20px;
+    float: right;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+.bot_fot_ul{
+    width: 100%;
+    height: 25px;  
+    float: left;
+}
+.bot_fot_li{
+    height: 15px;
+    float: left;
+    cursor: pointer;
+    margin-right: 15px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    border-right: 2px solid #000;
+
+   
+}
+.top_fot_li:hover,
+.bot_fot_li:hover{
+    color: #839e69;
+}
+.bor_none{
+    border-right: 0px solid ;
+}

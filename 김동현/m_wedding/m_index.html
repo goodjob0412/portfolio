@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=East+Sea+Dokdo" >
+    <title>wedding</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+	<link rel="stylesheet" type="text/css" href="css/main2.css">
+    <style>
+        *{ padding: 0; margin: 0; }
+        body::-webkit-scrollbar { 
+            display: none; 
+        }
+        /* body {
+            overflow: hidden;
+        } */
+        #menu_container {
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 100%;
+            box-shadow: none;
+            position: fixed;
+            height: 60px;
+            overflow: hidden;
+            z-index: 99999999;
+        }
+        #menu_container .menu {
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 100%;
+            background-color: #231f20;
+            position: fixed;
+            height: 60px;
+            overflow: hidden;
+            color: rgba(223,190,106,0.7);
+            font-family: "Helvetica Neue", Helvetica, Arials, sans;
+            text-align: center;
+            line-height: 60px;
+            font-size: 25px;
+        }
+
+        #sidebarMenu {
+            height: 100%;
+            position: fixed;
+            left: 0;
+            width: 250px;
+            margin-top: 60px;
+            transform: translateX(-250px);
+            transition: transform 250ms ease-in-out;
+            background: linear-gradient(180deg, #231f20 0%, rgb(146, 112, 52) 100%);
+            z-index: 999999999;
+        }
+        .sidebarMenuInner { 
+            margin: 0;
+            padding: 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.10);
+        }
+        .sidebarMenuInner li {
+            list-style: none;
+            color: #fff;
+            font-family: 'Varela Round', sans-serif;
+            text-transform: uppercase;
+            /* font-weight: bold; */
+            padding: 20px;
+            cursor: pointer;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+        }   
+        .sidebarMenuInner li span {
+            display: block;
+            font-size: 14px;
+            font-family: 'Varela Round', sans-serif;
+            color: rgba(255, 255, 255, 0.50);
+        }
+        .sidebarMenuInner li a {
+            color: #fff;
+            text-transform: uppercase;
+            /* font-weight: bold; */
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        input[type="checkbox"]:checked ~ #sidebarMenu { 
+            transform: translateX(0); 
+        }
+
+        input[type="checkbox"] {
+            transition: all 0.3s;
+            box-sizing: border-box;
+            display: none;
+        }
+
+        .sidebarIconToggle {
+            transition: all 0.3s;
+            box-sizing: border-box;
+            cursor: pointer;
+            position: absolute;
+            z-index: 999999999999;
+            height: 100%;
+            width: 100%;
+            top: 18px;
+            left: 15px;
+            height: 29px;
+            width: 35px;
+        }
+        .spinner {
+            transition: all 0.3s;
+            box-sizing: border-box;
+            position: absolute;
+            height: 2px;
+            width: 100%;
+            background-color: #fff;
+        }   
+        .horizontal {
+            transition: all 0.3s;
+            box-sizing: border-box;
+            position: relative;
+            float: left;
+            margin-top: 8px;
+        }
+        .diagonal.part-1 {
+            position: relative;
+            transition: all 0.3s;
+            box-sizing: border-box;
+            float: left;
+        }
+        .diagonal.part-2 {
+            transition: all 0.3s;
+            box-sizing: border-box;
+            position: relative;
+            float: left;
+            margin-top: 8px;
+        }
+
+        input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+            transition: all 0.3s;
+            box-sizing: border-box;
+            opacity: 0;
+        }
+
+        input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+            transition: all 0.3s;
+            box-sizing: border-box;
+            transform: rotate(130deg);
+            margin-top: 10px;
+        }
+
+        input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+            transition: all 0.3s;
+            box-sizing: border-box;
+            transform: rotate(-130deg);
+            margin-top: -12px;
+        }
+
+        .up {
+            position: fixed;
+            right: 3%;
+            bottom: 5%;
+            width: 50px;
+            height: 50px;
+            z-index: 99999999;
+            display: block;
+        }
+        
+        #sec0 {
+            position: relative;
+            overflow: hidden;
+        }
+        #sec0 .img_slide {
+            position: absolute;
+            top: 0;
+            left: 100%;
+            width: 100%;
+            height: 100%;
+        }
+        #sec0 #sec0_btn {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        #sec0 #sec0_btn #btn_slide_L img {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            width: 100px;
+            z-index: 999999999;
+            cursor: pointer;
+        }
+        #sec0 #sec0_btn #btn_slide_R img {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+            width: 100px;
+            z-index: 999999999;
+            cursor: pointer;
+        }
+        #sec0 #sec1_logo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50%;
+            height: auto;
+            z-index: 999;
+        }
+
+
+        #sec1 {
+            position: relative;
+            /* margin-top: 100px; */
+            margin-top: 60px;
+            width: 100%;
+        }
+        #sec1 #sec1_bg{
+            width: 100%;
+            height: 100%;
+        }
+        #sec1 #sec1_img {
+            position: absolute;
+            top: 0;
+            width: 75%;
+            height: 100%;
+            margin-left: 12.5%;
+            overflow: hidden;
+        }
+        #sec1 #sec1_img #sec1_bg2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 120%;
+            
+        }
+        #sec1 #sec1_img .sec1_imgslide {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 120%;
+        }
+        #sec1 #sec1_img .sec1_imgslide .sec1_slide {
+            position: absolute;
+            top: 0%;
+            left: 100%;
+            transform: translateY(-50%);
+            width: 100%;
+        }
+
+        #sec1 #sec1_btn {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        #sec1 #sec1_btn_slide_L {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            width: 100px;
+            z-index: 9999999;
+            cursor: pointer;
+        }
+        #sec1 #sec1_btn_slide_R {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+            width: 100px;
+            z-index: 9999999;
+            cursor: pointer;
+        }
+        
+
+        #sec2 {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+
+            background: url('imgs/img3.jpg') no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        #sec2 #sec2_img2{
+            position: absolute;
+            bottom: -100%;
+            right: -100%;
+            width: 75%;
+            transition: all 0.5s;
+        }
+        
+        #sec2 #wedding {
+            width: 100%;
+            height: 300px;
+            margin: 0 auto;
+        }
+        #sec2 #wedding ul {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            list-style: none;
+        }
+        #sec2 #sec2_txt {   
+            display: block;
+            clear: both;
+            padding-top: 30px;
+            width: 100%;
+            list-style: none;
+            font-family: 'East Sea Dokdo', cursive;
+            font-size: 30px;
+            color: rgb(255, 255, 255);
+        }
+        #sec2 #sec2_txt span {
+           font-size: 40px;
+           font-family: 'East Sea Dokdo', cursive;
+        }
+       
+        #sec2 #wedding .letter {
+            top: 0;
+            float: left;
+            color: #fff;
+            margin: 0 10px;
+            font-size: 35px;
+            font-weight: bold;
+            opacity: 0;
+        }
+
+        @font-face {
+                font-family: 'Lobster-Regular';
+
+                src: local('fonts/Lobster-Regular'),
+                url('fonts/Lobster-Regular.eot'),
+                url('fonts/Lobster-Regular.woff') format('woff'),
+                url('fonts/Lobster-Regular.ttf') format('truetype');
+        }
+        
+        #sec3 {
+            width: 100%;
+            background: url('img/bg3.png')
+        }
+        #sec3 #sec3_0 {
+            position: relative;
+            width: 80%;
+            height: 100%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        #sec3 #sec3_0 h1{
+            text-align: center;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 30px;
+            font-family: 'Lobster-Regular';
+            height: 100px;
+            line-height: 100px;
+        }
+        #sec3 #sec3_0 #sec3_center {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 100%;
+        }
+        #sec3 #sec3_0 .sec3_1 {
+            position: relative;
+            text-align: center;
+            color: #fff;
+            overflow: hidden;
+            width: 100%;
+            height: 45%;
+            float: left;
+margin-bottom: 0;
+        }
+        #sec3 #sec3_0 .sec3_1 img {
+            display: block;
+            width: calc(100% + 60px);
+            transform: translateX(-60px);
+            transition: all 0.5s;
+        }
+        #sec3 #sec3_0 .sec3_1 .fig_1 {
+            position: absolute;
+            left: 30px;
+            right: 30px;
+            top: 30px;
+            bottom: 30px;
+            border: 1px solid rgba(255,255,255,0);
+            background: rgba(255,255,255,0);
+            box-sizing: border-box;
+            transition: all 0.5s;
+        }
+        #sec3 #sec3_0 .sec3_1 .fig_1 .fig_1_01 {
+            position: absolute;
+            top: 35%;
+            left: 30px;
+            
+        }
+        #sec3 #sec3_0 .sec3_1 .fig_1 .fig_1_02 {
+            position: absolute;
+            top: 55%;
+            left: 0;
+            padding: 0 30px;
+            transform: translateX(-30px);
+            opacity: 0;
+            transition: all 0.5s;
+            font-size: 10px;
+        }
+        #sec3 #sec3_0 .sec3_1:hover img {
+            transform: translateX(0);
+            transition: all 0.5s;
+        }
+        #sec3 #sec3_0 .sec3_1:hover .fig_1 {
+            border: 1px solid rgba(255,255,255,1);
+            background: rgba(0, 0, 0, 0.2);
+            transition: all 0.5s;
+            cursor: pointer;
+        }
+        #sec3 #sec3_0 .sec3_1:hover .fig_1 .fig_1_02 { 
+            transform: translateX(0);
+            opacity: 1;
+            transition: all 0.5s;
+        }
+
+
+        #sec3_1 {
+            width: 100%;
+            background: url('img/bg3.png')
+        }
+        #sec3_1 #sec3_01 {
+            position: relative;
+            width: 80%;
+            height: 100%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        #sec3_1 #sec3_01 #sec3_center2 {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 100%;
+        }
+        #sec3_1 #sec3_01 .sec3_1 {
+            position: relative;
+            text-align: center;
+            color: #fff;
+            overflow: hidden;
+            width: 100%;
+            height: 45%;
+            float: left;
+            margin-bottom: 0;
+        }
+        #sec3_1 #sec3_01 .sec3_1 img {
+            display: block;
+            width: calc(100% + 60px);
+            transform: translateX(-60px);
+            transition: all 0.5s;
+        }
+        #sec3_1 #sec3_01 .sec3_1 .fig_1 {
+            position: absolute;
+            left: 30px;
+            right: 30px;
+            top: 30px;
+            bottom: 30px;
+            border: 1px solid rgba(255,255,255,0);
+            background: rgba(255,255,255,0);
+            box-sizing: border-box;
+            transition: all 0.5s;
+        }
+        #sec3_1 #sec3_01 .sec3_1 .fig_1 .fig_1_01 {
+            position: absolute;
+            top: 35%;
+            left: 30px;
+            
+        }
+        #sec3_1 #sec3_01 .sec3_1 .fig_1 .fig_1_02 {
+            position: absolute;
+            top: 55%;
+            left: 0;
+            padding: 0 30px;
+            transform: translateX(-30px);
+            opacity: 0;
+            transition: all 0.5s;
+            font-size: 10px;
+        }
+        #sec3_1 #sec3_01 .sec3_1:hover img {
+            transform: translateX(0);
+            transition: all 0.5s;
+        }
+        #sec3_1 #sec3_01 .sec3_1:hover .fig_1 {
+            border: 1px solid rgba(255,255,255,1);
+            background: rgba(0, 0, 0, 0.2);
+            transition: all 0.5s;
+            cursor: pointer;
+        }
+        #sec3_1 #sec3_01 .sec3_1:hover .fig_1 .fig_1_02 { 
+            transform: translateX(0);
+            opacity: 1;
+            transition: all 0.5s;
+        }
+
+
+        #sec4 {
+            position: relative;
+            width: 100%;
+            background: black;
+            overflow: hidden;
+        }
+        #sec4_img {
+            position: absolute;
+            top: 0;
+            left: 0;    
+            width: 100%;
+            transform: scale(1.2);
+            transition: all 3s;
+            left : 0;
+        }
+        #sec4 #new {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 60%;
+            height: 60%;
+        }
+        #sec4 #new #sec4_wrap {
+            width: 100%;
+            height: 100%;
+        }
+        #sec4 #new #sec4_wrap #sec4_box {
+            width: 100%;
+            height: 100%;
+            background: #000;
+            opacity: 0;
+        }
+        #sec4 #new #sec4_wrap #txt {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 85%;
+            height: 300px;
+            font-size: 10px;
+            text-align: center;
+            line-height: 30px;
+            color: rgba(255, 255, 255, 1);
+            opacity: 0;
+            display: block;
+        }
+        #sec4 #new #sec4_wrap #txt span {
+            width: 100%;
+            height: 50px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        #sec4 #new #sec4_wrap .sec4_img {
+            position: absolute;
+            top: 85%;
+            transform: translateX(-50%);
+            left: 50%;
+            width: 150px;
+            height: 40px;
+            opacity: 0;
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+<body>
+     
+    <header id="menu_container">
+        <div class="menu">INFINITY</div>
+        <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+        
+        <label for="openSidebarMenu" class="sidebarIconToggle">
+            <div class="spinner diagonal part-1"></div>
+            <div class="spinner horizontal"></div>
+            <div class="spinner diagonal part-2"></div>
+        </label>
+
+        <div id="sidebarMenu">
+            <ul class="sidebarMenuInner">
+            <li><a href="#sec0">Infinity.shop <span>Wedding Dress</span></a></li>
+            <li><a href="#sec1">DressShapes</a></li>
+            <li><a href="#sec2">Infinity</a></li>
+            <li><a href="#sec3">Dressroom</a></li>
+            <li><a href="#sec4">ContactUs</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="up">
+        <a href="#sec0"><img src="img/up2.png" alt=""></a>
+    </div>
+    <section>
+        <div id="sec0" class="box">
+            <img id="sec1_logo" src="img/slide.png" alt="">
+            <img id="slide1" class="img_slide" src="imgs/imgs1.jpg" alt="">
+            <img id="slide2" class="img_slide" src="imgs/imgs2.jpg" alt="">
+            <img id="slide3" class="img_slide" src="imgs/imgs5.jpg" alt="">
+        
+            <div id="sec0_btn">
+                <div class="btn_slide" id="btn_slide_L">
+                    <img src="img/btn_L.png" alt="">
+                </div>
+                <div class="btn_slide" id="btn_slide_R">
+                    <img src="img/btn_R.png" alt="">
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="sec1" class="box">
+            <img id="sec1_bg" src="imgs/imgs_sec1.jpg" alt="">
+            <div id="sec1_btn">
+                <img id="sec1_btn_slide_L" src="img/btn_L2.png" alt="">
+                <img id="sec1_btn_slide_R" src="img/btn_R2.png" alt="">
+            </div>
+            <div id="sec1_img">
+                <img id="sec1_bg2"src="imgs/imgs_sec1_base.png" alt="">
+                <div class="sec1_imgslide">
+                    <img id="sec1_slide1" class="sec1_slide" src="imgs/imgs_sec1_base_1.png" alt="">
+                    <img id="sec1_slide2" class="sec1_slide" src="imgs/imgs_sec1_base_2.png" alt="">
+                    <img id="sec1_slide3" class="sec1_slide" src="imgs/imgs_sec1_base_3.png" alt="">
+                    <img id="sec1_slide4" class="sec1_slide" src="imgs/imgs_sec1_base_4.png" alt="">
+                    <img id="sec1_slide5" class="sec1_slide" src="imgs/imgs_sec1_base_5.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div id="sec2" class="box">
+            <img id="sec2_img2"src="imgs/imgs_sec2_bg.png" alt="">
+            <div id="wedding">
+                <ul>
+                    <li id="w" class="letter">W</li>
+                    <li id="e" class="letter">E</li>
+                    <li id="d" class="letter">D</li>
+                    <li id="d_2" class="letter">D</li>
+                    <li id="i" class="letter">I</li>
+                    <li id="n" class="letter">N</li>
+                    <li id="g" class="letter">G</li>
+                    <li id="sec2_txt">'<span>단 하루</span> 나를 빛내줄 웨딩드레스'</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="sec3" class="box">
+            <div id="sec3_0">
+                <div id="sec3_center">
+                    <h1>Dressroom</h1>
+                    <figure class="sec3_1" >
+                        <img src="img/section3_02.jpg" alt="">
+                        <figcaption class="fig_1">
+                            <h2 class="fig_1_01">Elegant</h2> 
+                            <p class="fig_1_02">글래머러스함과 섹시함을 연출해주는 라인과 레이스와 머메이드를 더해 여성스러운 느낌이 물씬 풍기는 드레스입니다.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="sec3_1">
+                        <img src="img/section3_11.jpg" alt="">
+                        <figcaption class="fig_1">
+                            <h2 class="fig_1_01"> Lovely</h2> 
+                            <p class="fig_1_02">여성스러운 라인감에 꼼꼼하고 은은한 비딩으로 어깨가 더욱 여리여리해보이는 소녀스러운 시스루 플레어 드레스입니다.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <div id="sec3_1" class="box">
+            <div id="sec3_01">
+                <div id="sec3_center2">
+                    <figure class="sec3_1">
+                        <img src="img/section3_10.jpg" alt="">
+                        <figcaption class="fig_1">
+                            <h2 class="fig_1_01">Classic</h2> 
+                            <p class="fig_1_02">베이직 하면서도 여성스러운 라인을 연출하는 드레스로 오래보아도 좋을 심플하면서도 세련된 느낌입니다.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="sec3_1">
+                        <img src="img/section3_01.jpg" alt="">
+                        <figcaption class="fig_1">
+                            <h2 class="fig_1_01">luxurious</h2> 
+                            <p class="fig_1_02">은은한 레이스 자수위에 고급스러운 진주가 촤르르 비딩되어있는 곱디고운 머메이드 웨딩드레스입니다</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="sec4" class="box">
+
+            <div class="container-contact100">
+                <div class="wrap-contact100">
+                    <form class="contact100-form validate-form">
+                        <span class="contact100-form-title">
+                            Contact Us
+                        </span>
+        
+                        <label class="label-input100" for="first-name">Name *</label>
+                        <div class="wrap-input100 rs1 validate-input">
+                            <input id="first-name" class="input100" type="text" name="first-name" placeholder="name">
+                            <span class="focus-input100"></span>
+                        </div>
+                        
+                        <label class="label-input100" for="email">Email Address *</label>
+                        <div class="wrap-input100 validate-input">
+                            <input id="email" class="input100" type="text" name="email" placeholder="example@email.com">
+                            <span class="focus-input100"></span>
+                        </div>
+        
+                        <label class="label-input100" for="phone">Phone Number</label>
+                        <div class="wrap-input100">
+                            <input id="phone" class="input100" type="text" name="phone" placeholder="010-0000-0000">
+                            <span class="focus-input100"></span>
+                        </div>
+        
+                        <label class="label-input100" for="message">Message *</label>
+                        <div class="wrap-input100 validate-input">
+                            <textarea id="message" class="input100" name="message" placeholder="Please enter your comments..."></textarea>
+                            <span class="focus-input100"></span>
+                        </div>
+        
+                        <div class="container-contact100-form-btn">
+                            <button type="reset" id="cancel" class="contact100-form-btn">
+                                <span>
+                                    cancel
+                                </span>
+                            </button>
+                            <button class="contact100-form-btn">
+                                <span>
+                                    Send
+                                    <i class="zmdi zmdi-arrow-right m-l-8"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <div id="close">
+                            <span>
+                                X
+                            </span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+            <img id="sec4_img" src="imgs/imgs_sec4.jpg" alt="">
+            <div id="new">
+                <div id="sec4_wrap">
+                    <div id="sec4_box"></div>
+                    <p id="txt">
+                        <span>"특별한 날 빛내줄 드레스이기에
+                                진심을 담아 제작합니다"</span>
+                        <br><br>
+                        전화번호 : 02)000-0000<br>
+                        이메일 : dong_k@nate.com<br>
+                        거주지 : 경기도 남양주시
+                    </p>
+                    <img id="click" class="sec4_img" src="img/send.png" alt="">
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <script>
+        $(document).ready(function(){ 
+            
+
+            tmp_height();
+            function tmp_height() {
+                $('.box').css({
+                    height: $(window).height() + $('#menu_container').height(),
+                });
+            
+
+                $('#sec0').css({
+                    width: $(window).width(),
+                    height: $(window).height(),
+                    zIndex: 999999999,
+                });
+            }
+
+            $(window).resize(function(){
+
+                scrollController();
+
+                tmp_height();
+                $('.box').css({
+                    height: $(window).height() + $('#menu_container').height(),
+                });
+
+                $('#sec0').css({
+                    width: $(window).width(),
+                    height: $(window).height(),
+                    zIndex: 999999999,
+                });
+
+                
+            });
+
+
+            var currentScrollTop = 0;
+            scrollController();
+
+            $(window).on('scroll', function() {
+                scrollController();
+            });
+            
+            function scrollController() {
+                currentScrollTop = $(window).scrollTop();
+                if (currentScrollTop < $("#sec0").outerHeight(true)){
+
+                    $('.up').css('display','none');
+
+                    $('#menu_container').css('top', ($("#sec0").outerHeight(true))-(currentScrollTop));
+                    if ($('#menu_container').hasClass('fixed')) {
+                        $('#menu_container').removeClass();
+                    }
+                } 
+                else {
+                    if (!$('#menu_container').hasClass('fixed')) {
+                        $('#menu_container').removeClass();
+                        $('#menu_container').css('top', '0');
+                        $('#menu_container').addClass('fixed');
+
+                        $('.up').css('display','block');
+                    }
+                }
+            }
+
+
+            $('#menu_container a').click(function(){            
+                event.preventDefault();	
+                var href = $(this).attr('href'); 
+                var target = $(href == "" ? 'html' : href); 		
+                var position = target.offset().top - $('#menu_container').height();
+
+                if(href == "#sec0") {
+                    $('body, html').animate({scrollTop:position}, 0); 
+                }
+                else {
+                    $('body, html').animate({scrollTop:position}, 800, 'swing'); 
+                }
+            });
+
+//             var direction;
+//             $(".box").each(function (e) {
+//                 $(this).on("mousewheel DOMMouseScroll", function (e) {               
+//                     e.preventDefault();
+//                     if (!event) {
+//                         event = window.event;
+//                     } 
+//                     if (event.wheelDelta) {
+//                         direction = event.wheelDelta / 120;
+//                     }
+//                     var nextPos;                  
+//                     if (direction < 0) { 
+//                         nextPos = $(this).next().offset().top - $('#menu_container').height();
+// console.log($($(this).next()[0]['id']));  
+//                     }
+//                     else {   
+//                         if($($(this).prev()[0]).length > 0) {
+//                             nextPos = $(this).prev().offset().top - $('#menu_container').height();
+// console.log($($(this).prev()[0]['id']));  
+//                         }
+                        
+//                     }
+//                     $("html,body").stop().animate({ scrollTop: nextPos }, 500);
+//                 });
+//             });
+            //-------------------------------------------------------------
+            window.onload = function(){
+                start(); 
+                tmp_height();
+            } 
+            $('#sec0').hover(
+                function(){
+                    clearInterval(interval);
+                },
+                function(){
+                    start();
+                }
+            );
+            $('.img_slide').eq(0).css({
+                'left': '0'
+            });
+            var index = 1;
+            var timer = 2000;
+            var interval; 
+            $('#btn_slide_R').click(function(){      
+                init(); 
+                var curr_index = index % $('.img_slide').length;
+                var pos1 = '100%';
+                var prev_index = (index - 1) % $('.img_slide').length;
+                var pos2 = '-100%';
+                slide_move(curr_index, pos1, prev_index, pos2); 
+                index++;  
+            });
+            $('#btn_slide_L').click(function(){    
+                init();
+                index--;
+                var curr_index = (index - 1) % $('.img_slide').length;
+                var pos1 = '-100%';
+                var prev_index = index % $('.img_slide').length;
+                var pos2 = '100%';
+                slide_move(curr_index, pos1, prev_index, pos2); 
+            });
+            function init() {
+                $('.btn_slide').css('pointer-events', "none");  
+                setTimeout(function(){
+                    $('.btn_slide').css('pointer-events', "auto");  
+                }, 2000);
+                $('.img_slide').css({
+                    zIndex: 1
+                }); 
+            }
+            function slide_move(curr_index, pos1, prev_index, pos2) {
+                $('.img_slide').eq(curr_index).css({
+                    left: pos1,
+                    zIndex: 99
+                }).animate({
+                    left: 0
+                },2000);
+                $('.img_slide').eq(prev_index).animate({
+                    left: pos2, 
+                },2000);
+            }
+            function start(){
+                interval = setInterval(function(){
+                    $('#btn_slide').attr('disabled', true);
+                    setTimeout(function(){
+                        $('#btn_slide').attr('disabled', false);
+                    }, timer);
+                    $('.img_slide').css({
+                        'zIndex': '1'
+                    });
+                    $('.img_slide').eq(index % $('.img_slide').length).css({
+                        'left': '100%'
+                    }).animate({
+                        'left': '0',
+                        'zIndex': '99'
+                    }, timer);
+                    $('.img_slide').eq((index - 1) % $('.img_slide').length).animate({
+                        'left': '-100%'
+                    }, timer);
+                    index++;  
+                }, 3000);
+            }
+            function stop2(){
+                clearInterval(interval);
+            } 
+            //-------------------------------------------------------------
+            $('.sec1_slide').eq(0).css({
+                'left': '0'
+            });
+            var index2=1;
+            var timer2=1000;
+            $('#sec1_btn_slide_R').click(function(){
+                btn_init();
+                var curr_index2 = index2 % $('.sec1_slide').length;
+                var pos3 = '100%';
+                var next_index2 = (index2 - 1) % $('.sec1_slide').length;
+                var pos4 = '-100%';
+                slide_move2(curr_index2, pos3, next_index2, pos4); 
+                index2++;  
+            });
+            $('#sec1_btn_slide_L').click(function(){
+                btn_init();
+                index2--;
+                var curr_index2 = (index2 - 1) % $('.sec1_slide').length;
+                var pos3 = '-100%';
+                var next_index2 = index2 % $('.sec1_slide').length;
+                var pos4 = '100%';
+                slide_move2(curr_index2, pos3, next_index2, pos4); 
+            });
+            function btn_init() {
+                $('#sec1_btn_slide_L').css('pointer-events', "none");  
+                $('#sec1_btn_slide_R').css('pointer-events', "none");  
+                setTimeout(function(){
+                    $('#sec1_btn_slide_L').css('pointer-events', "auto");
+                    $('#sec1_btn_slide_R').css('pointer-events', "auto");
+                }, timer2);
+                $('.sec1_slide').css({
+                    'zIndex': '1'
+                });
+            }
+            function slide_move2(curr_index2, pos3, next_index2, pos4) {          
+                $('.sec1_slide').eq(curr_index2).css({
+                    'left': pos3,
+                    'zIndex': '99'
+                }).animate({
+                    'left':'0'
+                }, timer2);
+                $('.sec1_slide').eq(next_index2).animate({
+                    'left': pos4
+                }, timer2);
+            }
+            //-------------------------------------------------------------
+            $(window).scroll(function(){
+                // if($(window).scrollTop() == 0) {
+                //     $('.box').css({
+                //         height: $(window).height()
+                //     });
+                // }
+                // else {
+                //     $('.box').css({
+                //         height: $(window).height() + $('#menu_container').height()
+                //     });
+                // }
+console.log( ($(window).scrollTop() + 60) + " , " + ($('#sec2').offset().top) + " , "  +( $('#sec2').offset().top + $(window).height() - 100));
+                if ($(window).scrollTop() >= $('#sec2').offset().top - 120 && $(window).scrollTop() < ($('#sec2').offset().top - 60 + $(window).height() - 100) ) {
+                    $('#sec2_img2').css({
+                        'bottom' : '-10%',
+                        'right' : '0%',
+                    });
+                    $('#w').delay(250).animate({
+                        'top' : '20px',
+                        'opacity' : '1',
+                    }, 2000);
+                    $('#e').delay(500).animate({
+                        'top' : '20px',
+                        'opacity' : '1',
+                    }, 2000);
+                    $('#d').delay(750).animate({
+                        'top' : '20px',
+                        'opacity' : '1',
+                    }, 2000);
+                    $('#d_2').delay(1000).animate({
+                        'top' : '20px',
+                        'opacity' : '1',
+                    }, 2000);
+                    $('#i').delay(1250).animate({
+                        'top' : '20px',
+                        'opacity' : '1',
+                    }, 2000);
+                    $('#n').delay(1500).animate({
+                        'top' : '20px',
+                        'opacity' : '1',
+                    }, 2000);
+                    $('#g').delay(1750).animate({
+                        'top' : '20px',
+                        'opacity' : '1',
+                    }, 2000);
+                }
+                else {
+                    $('#sec2_img2').animate({
+                        'bottom' : '-100%',
+                        'right' : '-100%'
+                    }, 0);
+                    $('#w').stop().animate({
+                        'opacity' : '0'
+                    }, 0);
+                    $('#e').stop().animate({
+                        'opacity' : '0'
+                    }, 0);
+                    $('#d').stop().animate({
+                        'opacity' : '0'
+                    }, 0);
+                    $('#d_2').stop().animate({
+                        'opacity' : '0'
+                    }, 0);
+                    $('#i').stop().animate({
+                        'opacity' : '0'
+                    }, 0);
+                    $('#n').stop().animate({
+                        'opacity' : '0'
+                    }, 0);
+                    $('#g').stop().animate({
+                        'opacity' : '0'
+                    }, 0);
+                }
+            });
+
+
+            $(window).scroll(function(){
+                if ($(window).scrollTop() >= $('#sec4').offset().top - 60 ) {
+                    $('#sec4_img').css({
+                        transform: 'scale(1)',
+                    });
+                    $('#sec4_img').delay(100).animate({
+                        'top' : '-200px',
+                        'left' : '0',
+                        'opacity' : '0.5', 
+                    });
+                    $('#sec4_box').delay(1000).animate({
+                        'opacity' : '0.5'
+                    });
+                    $('#txt').delay(1000).animate({
+                        'opacity' : '1'
+                    });
+                    $('.sec4_img').delay(1000).animate({
+                        'opacity' : '1'
+                    });
+                }
+                else {
+                    $('#sec4_img').css({
+                        'top' : '0',
+                        'left' : '0',
+                        'transform': 'scale(1.2)',
+                        'opacity' : '1'
+                    });
+                    $('#sec4_box').css({
+                        'opacity' : '0'
+                    });
+                    $('#txt').stop().animate({
+                        'opacity' : '0'
+                    });
+                    $('.sec4_img').stop().animate({
+                        'opacity' : '0'
+                    });
+                }
+            });
+
+            $('#click').click(function(){
+                    $('.container-contact100').fadeIn(500);  
+            });
+
+            $('#close').click(function(){
+                    $('.container-contact100').fadeOut(500);  
+            });
+            
+
+            
+
+            $('.sidebarIconToggle').click(function(){
+                // alert($('#openSidebarMenu').prop('checked'));
+                // true-체크 된거, false-체크 해제
+                if($('#openSidebarMenu').prop('checked') == true) {
+                    $('#sidebarMenu').css({
+                        transform: 'translateX(-250px)'
+                    });
+                }
+                else {
+                    $('#sidebarMenu').css({
+                        transform: 'translateX(0)'
+                    });
+                }
+            });
+            $('.sidebarMenuInner > li:first-child').click(function(){
+                $('.sidebarIconToggle').trigger('click');
+            });
+        });
+    </script>
+
+<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<script src="vendor/animsition/js/animsition.min.js"></script>
+<script src="vendor/bootstrap/js/popper.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="vendor/select2/select2.min.js"></script>
+<script src="vendor/daterangepicker/moment.min.js"></script>
+<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<script src="vendor/countdowntime/countdowntime.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

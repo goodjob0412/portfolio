@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오설록 메뉴 페이지</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main_page/header_footer.css">
+    <link rel="stylesheet" href="css/menu_page/index.css">
+    <link rel="stylesheet" href="css/main_page/commons.css">
+    <link rel="shortcut icon" href="img/icon/oh_favicon.ico" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="js/menu_page/index.js"></script>
+    <script src="js/main_page/header_footer.js"></script>
+    <script src="js/main_page/commons.js"></script>
+</head>
+<body>
+<div class="wrap">
+    <!-- 탑버튼 -->
+    <div class="top_btn">TOP</div>
+    <!-- 헤더 -->
+        <div class="behind_hader"></div>
+        <div class="header">
+            <!-- 로고 -->
+            <div class="top_header">
+                <a href="index.html" class="header_a">
+                    <div class="logo">오설록</div>
+                </a>
+            </div>
+            <!-- 메뉴 -->
+            <div class="bot_header">
+            <div class="menu_icon">
+                    <div class="left_menu">
+                        <ul class="menu_ul">
+                            <li class="menu_li"><a href="shop_page.html">TEA</a></li>
+                            <li class="menu_li"><a href="shop_page.html">FOOD</a></li>
+                            <li class="menu_li"><a href="shop_page.html">GIFT</a></li>
+                            <li class="menu_li"><a href="shop_page.html">ETC</a></li>
+                            <li class="menu_li"><a href="menu_page.html">TEA LIFE</a></li>
+                            <li class="menu_li"><a href="menu_page.html">MUSEUM</a></li>
+                        </ul>
+                    </div>
+                    <div class="right_icon">
+                        <div class=" rig_icon icon1"></div>
+                        <div class=" rig_icon icon2"></div>
+                        <div class=" rig_icon icon3"></div>
+                    </div>
+            </div>
+            <!-- 메뉴나오는판 -->
+            <div class="menu_pan">
+                <div class="menu_hover_box">
+                     <div class="menu_pan_box">
+                         <div class="sec">
+                             <ul class="sec_pan_ul">
+                                 <li class="ham_li">TEA</li>
+                                 <li class="sec_pan_li" onclick="shop();">명차</li>
+                                 <li class="sec_pan_li" onclick="shop();">녹차 / 발효차</li>
+                                 <li class="sec_pan_li" onclick="shop();">허브티</li>
+                                 <li class="sec_pan_li" onclick="shop();">블렌디드티</li>
+                                 <li class="sec_pan_li" onclick="shop();">파우더</li>
+                             </ul>
+                         </div>
+                         <div class="sec">
+                             <ul class="sec_pan_ul">
+                                 <li class="ham_li">FOOD</li>
+                                 <li class="sec_pan_li" onclick="shop();">베이커리</li>
+                                 <li class="sec_pan_li" onclick="shop();"> 초콜릿/ 잼</li>
+                             </ul>
+                         </div>
+                         <div class="sec">
+                             <ul class="sec_pan_ul">
+                                 <li class="ham_li">GIFT</li>
+                                 <li class="sec_pan_li" onclick="shop();">세트</li>
+                                 <li class="sec_pan_li" onclick="shop();">기프트권</li>
+                             </ul>
+                         </div>
+                         <div class="sec">
+                             <ul class="sec_pan_ul">
+                                 <li class="ham_li">ETC.</li>
+                                 <li class="sec_pan_li" onclick="shop();">찻잔</li>
+                                 <li class="sec_pan_li" onclick="shop();">티팟</li>
+                                 <li class="sec_pan_li" onclick="shop();">텀블러</li>
+                                 <li class="sec_pan_li" onclick="shop();">티푸드 플레이트</li>
+                                 <li class="sec_pan_li" onclick="shop();">소도구</li>
+ 
+                             </ul>
+                         </div>
+                         <div class="sec">
+                             <ul class="sec_pan_ul">
+                                 <li class="ham_li">TEA LIFE</li>
+                                 <li class="sec_pan_li" onclick="menu();">이벤트</li>
+                                 <li class="sec_pan_li" onclick="menu();">온라인쇼핑</li>
+                                 <li class="sec_pan_li" onclick="menu();">혜택</li>
+                                 <li class="sec_pan_li" onclick="menu();">인스타그램</li>
+                                 <li class="sec_pan_li" onclick="menu();">About tea</li>
+                             </ul>
+                         </div>
+                         <div class="sec">
+                             <ul class="sec_pan_ul bor_none">
+                                 <li class="ham_li">MUSEUM</li>
+                                 <li class="sec_pan_li" onclick="menu();">티뮤지엄 소개</li>
+                                 <li class="sec_pan_li" onclick="menu();">티스톤 예약</li>
+                                 <li class="sec_pan_li" onclick="menu();">제주 오설록 앱</li>
+                             </ul>
+                         </div>
+                     </div>
+                </div>
+                </div>
+            
+            </div>
+        </div>
+        <!-- 메인 이미지 -->
+        <div class="main_banner">
+            <div class="move_tea1"></div>
+            <div class="move_tea2"></div>
+            <div class="move_tea3"></div>
+        </div>
+        <div class="contents">
+            <!-- 상단 텍스트 -->
+            <div class="top_text_box">
+                <h3>제주숲 동화 미니 세트</h3>
+                <p class="top_p">과즙이 터지듯 영글게 익은 제주의 열매들과 제주 숲 차와의 환상적 마리아쥬</p>
+                <p class="top_p">일상으로부터의 힐링과 상상력을 자극하는 동화 같은 행복한 티타임</p>
+            </div>
+            <!-- 딸기 -->
+            <div class="tea_box1 tea_box">
+                <div class="tea_left_img tea_stra_img"></div>
+                <div class="tea_rig_img stra_img"></div> 
+            </div>
+            <!-- 망고 -->
+            <div class="tea_box2 mang_tea_box">
+                <div class="mang_rig_img_box">
+                    <div class="mang_rig_img"></div>
+                    <div class="mang_mini_img"></div>
+                </div>
+                <div class="mang_left_img "></div>
+            </div>
+            <!-- 블루베리 -->
+            <div class="tea_box3 tea_box">
+                <div class="tea_left_img tra_blu_img"></div>
+                <div class="tea_rig_img">
+                    <div class="mini_tea_img"></div>
+                    <div class="tea_rig_img blu_img"></div> 
+                </div>
+                
+            </div>
+            <!-- 배너2 -->
+            <!-- <div class="banner2"></div> -->
+        </div>
+
+        <!-- 티 먹는법 -->
+        <div class="eat_tea_box">
+                <div class="eat_inner_box">
+                    <h2>오설록 차를 더 맛있게 즐기는 방법</h2>
+                    <div class="eat_box">
+                        <div class="eat_text">
+                            <h3 class="eat_text_h3">찻잎 준비</h3>
+                            <p class="eat_text_p">1인 1피라미드 티백을 준비합니다.</p>
+                        </div>
+                        <div class="circle">1</div>
+                        <div class="eat_img_box">
+                            <div class="eat_img1"></div>
+                            <div class="eat_img2"></div>
+                        </div>
+                    </div>
+                    <div class="eat_box">
+                        <div class="eat_text">
+                            <h3 class="eat_text_h3">찻물 준비</h3>
+                            <p class="eat_text_p">90도의 물을 150ml 준비해주세요</p>
+                        </div> 
+                        <div class="circle">2</div>
+                        <div class="eat_img_box">
+                            <div class="eat_img3"></div>
+                            <div class="eat_img4"></div>
+                            <div class="eat_img5"></div>
+                        </div>
+                    </div>
+                    <div class="eat_box">
+                        <div class="eat_text">
+                            <h3 class="eat_text_h3">기다린 후 음용</h3>
+                            <p class="eat_text_p">2분간 티가 우러나는 것을 즐겨보세요</p>
+                        </div>
+                        <div class="circle">3</div>
+                        <div class="eat_img_box">
+                            <div class="eat_img6"></div>
+                            <div class="eat_img7"></div>
+                            <div class="eat_img8"></div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    <!--sns 창  -->
+        <div class="sns_box">
+            <p>오설록과 함께하는  SNS</p>
+            <div class="sns_icon_box">
+                <div class="sns_items">
+                    <div class="sns_btn_icon sns_icon1"></div>
+                    <div class="sns_btn_hov sns_hov1"></div> 
+                </div>
+                <div class="sns_items">
+                    <div class="sns_btn_icon sns_icon2"></div>
+                    <div class="sns_btn_hov sns_hov2"></div>
+                </div>
+                <div class="sns_items">
+                    <div class="sns_btn_icon sns_icon3"></div>
+                    <div class="sns_btn_hov sns_hov3"></div>
+                </div>
+                <div class="sns_items">
+                    <div class="sns_btn_icon sns_icon4"></div>
+                    <div class="sns_btn_hov sns_hov4"></div>
+                </div>
+                <div class="sns_items">
+                    <div class="sns_btn_icon sns_icon5"></div>
+                    <div class="sns_btn_hov sns_hov5"></div>
+                </div>
+            </div>
+        </div>
+    <!-- ins슬라이드 -->
+        <div class="ins_banner">
+        <div class="ins_img_box">
+            <div class="ins_img ins_img1"></div>
+            <div class="ins_img ins_img2"></div>
+            <div class="ins_img ins_img3"></div>
+            <div class="ins_img ins_img4"></div>
+            <div class="ins_img ins_img5"></div>
+            <div class="ins_img ins_img6"></div>
+            <div class="ins_img ins_img7"></div>
+            <div class="ins_img ins_img8"></div>
+            <div class="ins_img ins_img9"></div>
+            <div class="ins_img ins_img10"></div>
+        </div>
+        <input type="button" value="〈" id="left_btn" class="btn_slide">
+        <input type="button" value="〉" id="right_btn" class="btn_slide">  
+        </div>
+    <!-- 푸터-->
+        <div class="footer">
+            <div class="top_footer">
+                <div class="top_fot_txt">
+                    <ul>
+                        <li class="top_fot_li">회사소개</li>
+                        <li class="top_fot_li">서비스</li>
+                        <li class="top_fot_li">이용약관</li>
+                        <li class="top_fot_li">개인정보 처리방침</li>
+                        <li class="top_fot_li">영상정보 처리방침</li>
+                        <li class="top_fot_li">뷰티포인트</li>
+                        <li class="top_fot_li">임직원할인</li>
+                        <li class="top_fot_li">사이트맵</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="bot_footer">
+                <div class="fot_logo"></div>
+                    <div class="bot_fot_txt">
+                        <ul class="bot_fot_ul">
+                            <li class="bot_fot_li">주문/배송문의</li>
+                            <li class="bot_fot_li">고객상담센터 080-000-0000</li>
+                            <li class="bot_fot_li bor_none">평일 09 : 30 - 17 : 00 (점심 11 : 30 - 13 : 00)</li>
+                        </ul>
+
+                        <ul class="bot_fot_ul">
+                            <li class="bot_fot_li">대표이사:서혁제</li>
+                            <li class="bot_fot_li">주소:서울특별시 용산구 한강대로 100, 14층(한강로2가)</li>
+                            <li class="bot_fot_li">사업자등록번호: 390-87-01499</li>
+                            <li class="bot_fot_li bor_none"> 통신판매업신고번호:2019-서울용산-1173호</li>
+                        </ul>
+                        <ul class="bot_fot_ul">
+                            <li class="bot_fot_li bor_none">(주)이니시스 구매안전서비스
+                                고객님의 안전거래를 위해 현금 거래에 대해 이니페이 에스크로서비스를 이용하실 수 있습니다.</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

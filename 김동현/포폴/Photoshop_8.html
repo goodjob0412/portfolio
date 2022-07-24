@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/header.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <title>Document</title>
+    <style>
+        * { padding: 0; margin: 0; }
+        body {
+            background: #f7f6f3 url('img/bg.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        /* ------------------------------------ */
+        @font-face {
+            font-family: 'RussoOne-Regular';
+
+            src: local('fonts/RussoOne-Regularr'),
+            url('fonts/RussoOne-Regular.ttf') format('truetype');
+        }
+        @font-face {
+            font-family: 'Quicksand-Medium';
+
+            src: local('fonts/Quicksand-Mediumr'),
+            url('fonts/Quicksand-Medium.ttf') format('truetype');
+        }
+        /* ------------------------------------ */
+        #sec1 {
+            width: 60px;
+            height: 60px;
+            margin: 40px auto;
+            z-index: 9999;
+            background: url('img/home.png');
+        }
+        #moon_a {
+            position: relative;
+            text-decoration: none;
+            cursor: pointer;
+            width: 60px;
+            height: 60px;
+        }
+        #moon {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: url('img/home.png');
+            width: 60px;
+            height: 60px;
+        }
+        
+        #home_hide {
+            position: absolute;
+            top: -80%;
+            left: -80%;
+            width: 65px;
+            transition: all 1s;
+            animation: home_hide 1.5s 1;
+        }
+        @keyframes home_hide {
+            from {
+                top: -3%;
+                left: -3%;
+            }
+            to {
+                top: -80%;
+                left: -80%;
+            }
+        }
+        #moon:hover #home_hide{
+            position: absolute;
+            top: -30%;
+            left: -30%;
+            width: 62px;
+            transition: all 1s;
+        }
+        /* ------------------------------------ */
+       
+        .block {
+            width: 100%;
+        }
+       
+        .content {
+            width: 75%;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 25px;
+            color: #114756;
+        }
+        .content h2 {
+            text-align: left;
+            font-size: 16px;
+            color: #114756;
+            text-transform: uppercase;
+            font-family: 'RussoOne-Regular';
+            font-weight: normal;
+        }
+        .content h3 {
+            text-align: left;
+            margin-top: 8px;
+            font-size: 30px;
+            color: rgb(1, 28, 35);
+            line-height: 1.2;
+        }
+        .content p {
+            text-align: left;
+            color: rgb(27, 135, 147);
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        #box {
+            width: 75%;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        #box img {
+            width: 100%;
+            margin-top: 50px;
+            
+        }
+
+        /* ------------------------------------ */
+
+        #footer {
+            position: relative;
+            background: #fff;
+            width: 100%;
+            height: 150px;
+            margin-top: 50px;
+        }
+        #name {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 250px;
+        }
+        #top {
+            position: absolute;
+            top: 40%;
+            right: 20%;
+            width: 30px;
+            height: 30px;
+        }
+
+        /* ------------------------------------ */
+
+    </style>
+</head>
+<body>
+    <div id="header">
+        <img id="logo" src="img/logo3.png" alt="">
+        <p id="txt">
+            art direction<br>
+            design<br>
+            illustration<br>
+            website design<br>
+            web publisher<br>
+        </p>
+        <ul class="block-menu">
+			<li><a href="Illustrator.html" class="three-d">
+				Illustrator
+				<span aria-hidden="true" class="three-d-box">
+					<span class="front">Illustrator</span>
+					<span class="back">Illustrator</span>
+				</span>
+			</a></li>
+			<li><a href="Photoshop.html" class="three-d">
+				Photoshop
+				<span aria-hidden="true" class="three-d-box">
+					<span class="front">Photoshop</span>
+					<span class="back">Photoshop</span>
+				</span>
+            </a></li>
+            <li><a href="Web.html" class="three-d">
+                Web
+                <span aria-hidden="true" class="three-d-box">
+                    <span class="front">Web</span>
+                    <span class="back">Web</span>
+                </span>
+            </a></li>
+            <li><a href="about.html" class="three-d">
+                    Aboutme
+                    <span aria-hidden="true" class="three-d-box">
+                        <span class="front">Aboutme</span>
+                        <span class="back">Aboutme</span>
+                    </span>
+                </a></li>
+		</ul>
+    </div>
+    <div id="sec1">
+        <a id="moon_a" href="index.html">
+            <div id="moon"><img id="home_hide" src="img/home_hide.png" alt=""></div>
+        </a>    
+    </div>
+
+    <section id="photoshop" class="block">
+        <div class="content">
+            <h2><span>Photoshop</span></h2>
+            <h3>HOEGAARDEN | Synthesis</h3>
+            <p>donghyun kim. goodjobacademy</p>
+        </div>
+        <div id="box">
+            <img src="imgs/photoshop/8.png" alt="">
+        </div>
+    </section>  
+ 
+
+   
+
+    <footer id="footer">
+        <a href="#"><img id="top" src="img/top.png" alt="pagetop"></a>
+        <img id="name" src="img/logo2.png" alt="">
+    </footer>
+
+    <script>
+        $(document).ready(function(){ 
+
+            //------------------------------------------------//
+
+
+
+
+        });
+    </script>
+</body>
+</html>

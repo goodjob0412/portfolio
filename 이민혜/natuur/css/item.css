@@ -1,0 +1,502 @@
+.main {
+    padding-top: 88px;
+    padding-bottom: 150px;
+}
+
+/* ---------- 아이템 인포 */
+.item_info {
+    padding: 50px 0 ;
+    background: rgb(221, 233, 255);
+}
+.item_info_box {
+    transform: translateY(20px);
+    transition: all 0.5s;
+}
+.item_name_en {
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+}
+.item_name_kr {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 30px;
+}
+.item_box {
+    margin: 100px 0;
+    position: relative;
+}
+
+.item_img {
+    text-align: center;
+    opacity: 0;
+    transition: all 0.5s;
+
+    position: relative;
+}
+.item_img_item {
+    width: 30%;
+    min-width: 250px;
+}
+.item_img_tag {
+    width: 10%;
+    min-width: 70px;
+
+    position: absolute;
+    top: 0;
+    right: 30%;
+    background: rgb(158, 191, 240);
+
+    border-radius: 50%;
+
+    opacity: 1;
+    transition: all 0.5s;
+}
+.btn_box {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    transform: translateY(-50%);
+}
+
+.menu_btn  {
+    width: 130px;
+    display: block;
+
+    box-sizing: border-box;
+    word-break: keep-all;
+
+    font-weight: 700;
+
+    position: absolute;
+    top: 0;
+}
+.prev_btn {
+    background: url(../img/icon/Arrow_prev.png) no-repeat left / 20%;
+    padding-left: 40px;
+    text-align: left;
+
+    left: 0;
+}
+.next_btn {
+    background: url(../img/icon/Arrow.png) no-repeat right / 20%;
+    padding-right: 40px;
+    text-align: right;
+
+    right: 0;
+}
+.item_desc {
+    margin-top: 100px;
+    font-weight: 700;
+    word-break: keep-all;
+    text-align: center;
+}
+
+
+.nutrient_allergy {
+    width: 70%;
+    margin: 150px auto 100px;
+
+}
+.nutrient_allergy_title {
+    margin: 35px 0 0;
+    padding-bottom: 15px;
+    border-bottom: 2px solid;
+
+    font-size: 20px;
+    font-weight: 700;
+}
+.nutrient_allergy_title span {
+    font-size: 14px;
+    font-weight: 500;
+    overflow: hidden;
+}
+.slide_d_btn {
+    width: 25px;
+    height: 25px;
+    
+    background: url(../img/icon/arrow_down.png) no-repeat center /contain;
+    float: right;
+    margin-right: 20px;
+
+    transition: all 0.5s;
+}
+
+
+.slide_d_btn img {
+    width: 100%;
+}
+.nutrient_outer,
+.allergy_box {
+    font-weight: 700;
+    border-bottom: 2px solid;
+    padding: 30px 0;
+
+    display: none;
+}
+.n_a_box_active {
+    display: block;}
+.nutrient_box {
+    width: 100%;
+    height: 120px;
+    text-align: center;
+    border-collapse: collapse;
+}
+th {
+    border-bottom: 1px solid;
+}
+th:first-child,
+td:first-child {
+    text-align: left;
+    font-weight: 700;
+}
+
+
+/* ---------------- with */
+.item_with {
+    margin: 100px auto;
+    text-align: center;
+
+    transform: translateY(100px);
+    transition: all 0.5s;
+}
+.item_with_txt {
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+}
+.item_with_ul {
+    display: inline-block;
+}
+.item_with_li {
+    width: 200px;
+    float: left;
+    margin: 50px;
+}
+.item_with_li img { 
+    width: 100%;
+}
+
+.item_with_li p {
+    margin: 10px 0;
+    font-weight: 700;
+}
+
+
+/* 매장 찾기 , 배달앱 */
+.store_app {
+    margin: 100px auto;
+    overflow: hidden;
+
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.7;
+    word-break: keep-all;
+
+    transform: translateY(100px);
+    transition: all 0.5s;
+}
+.now_store {
+    width: calc((100% -  20px) / 2);
+    height: 100%;
+    background: rgb(255, 218, 218) url(../img/icon/위치02.png) no-repeat 90% / 80px;
+    box-sizing: border-box;
+    padding: 50px 125px 50px 50px;
+
+    float: left;
+}
+.store_txt,
+.app_txt {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+    min-height: 150px;
+}
+.store_box {
+    width: 70%;
+    padding-left: 50px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid;
+    background: url(../img/icon/store_icon.png) no-repeat 5px 0px / 25px;
+    line-height: 2;
+
+}
+.app {
+    width: calc((100% -  20px) / 2);
+    height: 100%;
+    background: rgb(216, 225, 255)  url(../img/icon/모바일01.png) no-repeat 90% / 80px;
+    box-sizing: border-box;
+    padding: 50px 125px 50px 50px;
+
+    float: right;
+}
+.app_box {
+    overflow: hidden;
+}
+.app_box img {
+    width: 50px;
+    float: left;
+    margin-right: 10px;
+}
+/* 목록으로 */
+
+.to_list_btn {
+    width: 40%;
+    max-width: 200px;
+    height: 60px;
+    background:  url(../img/icon/Arrow_prev.png) no-repeat 10%/ 25px;
+
+    line-height: 60px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin: 50px auto 0;
+
+    border: 2px solid #000;
+    border-radius: 30px;
+
+    display: block;
+
+    font-size: 18px;
+    font-weight: 900;
+    text-align: right;
+
+    transition: all 0.5s;
+    transform: translateY(100px);
+}
+.to_list_btn:hover {
+    background: red url(../img/icon/Arrow_prev_w.png) no-repeat 10%/ 25px;
+    border: 2px solid red;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+
+
+
+
+
+/* -------------------------------------------------------------------- 미디어 쿼리 */
+@media screen and (max-width: 1260px) {
+    .item_info_box {
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+    /* with */
+    .item_with {
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+    /* with */
+    .store_app {
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+
+}
+@media screen and (max-width: 1024px) {
+    
+    .store_txt,
+    .app_txt {
+        font-size: 16px;
+
+    }
+}
+
+
+@media screen and (max-width: 960px) {
+    .now_store,
+    .app {
+        padding: 40px 130px 40px 40px;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    /* 헤더 높이 변경  */
+    .main {
+        padding-top: 60px;
+        padding-bottom: 50px;
+    }
+
+    .item_name_en {
+        font-size: 30px;
+    }
+    .item_name_kr {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    .item_box {
+        margin: 50px 0;
+    }
+
+    .menu_btn  {
+        font-size: 14px;
+    }
+    .item_desc {
+        margin-top: 50px;
+    }
+
+    .nutrient_allergy {
+        width: 85%;
+        margin: 70px auto 50px;
+    }
+    .nutrient_allergy_title {
+        font-size: 16px;
+    }
+    .n_a_box {
+        font-size: 14px;
+        padding: 20px 0;
+    }
+    .nutrient_box {
+        height: 90px;
+    }
+
+
+    /* with */
+    .item_with {
+        margin: 50px 0;
+    }
+    .item_with_txt {
+        font-size: 16px;
+    }
+    .item_with_ul {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+    }
+    .item_with_li {
+        font-size: 14px;
+        float: left;
+        width: calc((100% - 30px) / 2);
+        max-width: 200px;
+        margin: 30px 0;
+    }
+
+    /* 앱 */
+    .store_app  {
+        margin: 30px 0 50px;
+    }
+    .now_store {
+        width: 100%;
+    }
+    .app {
+        width: 100%;
+        margin-top: 15px;
+    }
+    .store_txt,
+    .app_txt {
+        min-height: 120px;
+    }
+
+    /* 목록 */
+    .to_list_btn {
+        max-width: 150px;
+        height: 50px;
+        background:  url(../img/icon/Arrow_prev.png) no-repeat  no-repeat 10%/ 20px;
+        line-height: 50px;
+        
+        font-size: 16px;
+        font-weight: 700;
+        margin: 30px auto 0;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .item_info {
+        padding: 30px 0 ;
+    }
+    .item_img_item {
+        width: 50%;
+        min-width: 150px;
+    }
+    .item_img_tag {
+        width: 15%;
+        min-width: 50px;
+        right: 20%;
+    }
+    .item_desc {
+        font-size: 14px;
+    }
+
+    .menu_btn {
+        width: 75px;
+        font-size: 12px;
+    }
+    .next_btn {
+        padding-right: 20px;
+    }
+    .prev_btn {
+        padding-left: 20px;
+    }
+    .n_a_box {
+        font-size: 12px;
+        padding: 15px 0;
+    }
+    .nutrient_allergy {
+        width: 100%;
+        margin: 50px auto 0;
+    }
+    .nutrient_outer,
+    .allergy_box {
+    font-weight: 500;
+    }
+
+
+    /* with */
+    .item_with {
+        margin: 50px 0 20px;
+    }
+    .item_with_ul {
+        gap: 15px;
+    }
+    .item_with_li {
+        width: calc((100% - 15px) / 2);
+    }
+
+    /* 앱 */
+    .store_app  {
+        margin: 0;
+    }
+    .now_store {
+        padding: 30px 110px 30px 30px;
+        background: #ffdada url(../img/icon/위치02.png) no-repeat 90% / 60px;
+    }
+    .app {
+        padding: 30px 130px 30px 30px;
+        background: #d8e1ff url(../img/icon/모바일01.png) no-repeat 90% / 60px;
+    }
+    .store_txt,
+    .app_txt {
+        font-size: 14px;
+    }
+    .app_box img {
+        width: 40px;
+    }
+
+    /* 목록 */
+    .to_list_btn {
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+    .n_a_box {
+        font-size: 10px;
+    }
+    /* 앱 */
+    .now_store,
+    .app {
+        padding: 20px 80px 20px 20px;
+    }
+    .store_txt,
+    .app_txt {
+        font-size: 14px;
+    }
+}

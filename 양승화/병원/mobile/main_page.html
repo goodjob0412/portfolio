@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>모바일</title>
+    <link rel="stylesheet" href="../css/mobile/mobile_main.css">
+    <link rel="stylesheet" href="../css/mobile/mobile_commons.css">
+    <link rel="stylesheet" href="../css/mobile/mobile_header_footer.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="../js/mobile/header_footer.js"></script>
+    <script src="../js/mobile/main.js"></script>
+    <script src="../js/mobile/commons.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <style>
+       
+        * { font-family: 'Noto Sans KR', sans-serif !important;}
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="logo" onclick="mobile_main()"></div>
+            <!-- 햄버거 -->
+            <div class="hamberger">
+                <div class="ham_line" id="line_top"></div>
+                <div class="ham_line" id="line_mid"></div>
+                <div class="ham_line_text" id="line_bot">menu</div>
+            </div>
+        <!-- 햄버거 메뉴판 -->
+            <div class="ham_menu_pan">
+                <div class="ham_menu_pan_box">
+                    <div class="ham_icon_box">
+                        <div class="menu_icon ham_icon1">마이페이지</div>
+                        <div class="menu_icon ham_icon2" onclick="mobile_page3()">예약 안내</div>
+                        <div class="menu_icon ham_icon3" onclick="mobile_page2()">오시는길</div>
+                    </div>
+    
+                    <div class="ham_sec">
+                        <ul class="ham_sec_pan_ul ham_bor_none">
+                            <li class="ham_li" onclick="mobile_page4()">병원안내</li>
+                            <li class="sec_pan_li" onclick="mobile_page4()">병원장 인사말</li>
+                            <li class="sec_pan_li" onclick="mobile_page4()">비전</li>
+                            <li class="sec_pan_li" onclick="mobile_page4()">연혁</li>
+                            <li class="sec_pan_li" onclick="mobile_page4()">조직도</li>
+                            <li class="sec_pan_li" onclick="mobile_page4()">공지사항</li>
+                        </ul>
+                    </div>
+                    <div class="ham_sec">
+                        <ul class="ham_sec_pan_ul">
+                            <li class="ham_li" onclick="mobile_page5()">진료안내</li>
+                            <li class="sec_pan_li" onclick="mobile_page5()">진료과</li>
+                            <li class="sec_pan_li" onclick="mobile_page5()">전문센터</li>
+                            <li class="sec_pan_li" onclick="mobile_page5()">특수클리닉</li>
+                        </ul>
+                    </div>
+                    <div class="ham_sec">
+                        <ul class="ham_sec_pan_ul">
+                            <li class="ham_li" onclick="mobile_page2()">이용안내</li>
+                            <li class="sec_pan_li" onclick="mobile_page2()">위치안내 </li>
+                            <li class="sec_pan_li" onclick="mobile_page2()">오시는길</li>
+                        </ul>
+                    </div>
+                    <div class="ham_sec">
+                        <ul class="ham_sec_pan_ul">
+                            <li class="ham_li" onclick="mobile_page3()">예약/조회/발급</li>
+                            <li class="sec_pan_li" onclick="mobile_page3()">예약안내</li>
+                            <li class="sec_pan_li" onclick="mobile_page3()">온라인예약</li>
+                            <li class="sec_pan_li" onclick="mobile_page3()">예약/조회/취소</li>
+                            <li class="sec_pan_li" onclick="mobile_page3()">증명서발급</li>
+                        </ul>
+                    </div>
+                    <div class="ham_sec">
+                        <ul class="ham_sec_pan_ul">
+                            <li class="ham_li" onclick="mobile_page3()">고객서비스</li>
+                            <li class="sec_pan_li" onclick="mobile_page3()">고객의 소리</li>
+                            <li class="sec_pan_li" onclick="mobile_page3()">자원봉사</li>
+                            <li class="sec_pan_li" onclick="mobile_page3()">발전기금</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 검색창 -->
+                <div class="search_bar">
+                        <input type="text">
+                    <div class="search_icon"></div>
+                </div>
+        </div>
+         <!-- 메인베너 -->
+         <div class="main_banner">
+            <div class="banner_img main_banner1"></div>
+            <div class="banner_img main_banner2"></div>
+            <div class="banner_img main_banner3"></div>
+            <div class="banner_img main_banner4"></div>
+
+            <div class="btn_arrow" id="btn_L"></div>
+            <div class="btn_arrow" id="btn_R"></div>
+
+            <div class="indicator"></div>
+            
+        </div>
+        <!-- 컴텐츠 -->
+        <div class="contents">
+            <!-- 상단 아이콘 박스  -->
+            <div class="icon_box">
+                <div class="top_icon_box" onclick="mobile_page3()">
+                    <div class="page_move page_move1">
+                        <div class="page_move_img page_icon_img1"></div>
+                        <div class="page_move_txt_box">
+                            <h3>온라인 예약</h3>
+                            <p>쉽고 빠르게 진료예약및 조회를
+                                <br>
+                                하실수 있습니다
+                            </p>
+                        </div>
+                    </div>
+                    <div class="page_move page_move2" onclick="mobile_page3()">
+                        <div class="page_move_img page_icon_img2"></div>
+                        <div class="page_move_txt_box">
+                            <h3>증명서 발급</h3>
+                                <p>온라인으로 증명서를 
+                                    <br>
+                                    발급받으실 수 있습니다
+                                </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bot_icon_Box">
+                    <div class="page_move page_move3" onclick="mobile_page5()">
+                        <div class="page_move_img page_icon_img3"></div>
+                        <div class="page_move_txt_box">
+                            <h3>365 연중무휴</h3>
+                            <p>평일 : 10:00 ~ 24:00
+                                <br>
+                                공휴일 : 10:00 ~ 24:00
+                            </p>
+                        </div>
+                    </div>
+                     <div class="page_move page_move4" onclick="mobile_page4()">
+                         <div class="page_move_img page_icon_img4"></div>
+                         <div class="page_move_txt_box">
+                            <h3>시설안내</h3>
+                            <p>언제나 환자를 향합니다.</p>
+                         </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="contents2">
+            <div class="come_box" onclick="mobile_page2()">
+                <div class="com_txt_box" >
+                    <h2>오시는길</h2>
+                    <div class="line"></div>
+                    <p>경기도 고양시 일산서구 주화로 170 대학병원</p>
+                </div>
+                <div class="com_icon_box"></div>
+            </div>
+            <div class="text_box">
+                <div class="txt_left_icon_box">
+                    <div class="txt_left_icon">공지</div>
+                    <div class="txt_left_icon">공지</div>
+                    <div class="txt_left_icon">공지</div>
+                    <div class="txt_left_icon blue_color">뉴스</div>
+                    <div class="txt_left_icon blue_color">뉴스</div>
+                </div>
+                <div class="txt_rig_box">
+                    <div class="txt_rig">코로나바이러스감염증-19 확산에 따른 내원객 협조안내</div>
+                    <div class="txt_rig">2020년 03월 건강교실 취소 안내</div>
+                    <div class="txt_rig">대학병원 개인정보처리방침 개정 공지</div>
+                    <div class="txt_rig">백진희교수, 간질성방광염 수술법 비교 세계 최초 연구</div>
+                    <div class="txt_rig">이준규 교수, 송천의학연구비 수상</div>
+                </div>
+            </div>
+        </div>
+        <!-- 배너 -->
+        <div class="banner1">
+            <div class="banner_txt">
+                <h2>전문화된 의료 시스템과 고객</h2>
+                <h2>고객맞춤 서비스</h2>
+                <h3 class="banner_txt_h3">고객한분 한분을 내 가족 처럼</h3>
+            </div>
+        </div>
+         <!-- 푸터 -->
+         <div class="footer">
+            <div class="footer_logo"></div>
+            <div class="footer_soild"></div>
+            <p class="fot_p">주소 : 경기도 고양시 일산서구 주화로 170 대학병원</p>
+            <p class="fot_p">대학병원 대표전화 : 1588-0000 </p>
+            <p class="fot_p">사업자등록번호 : 000-00-000000 대학병원</p>
+            <p class="fot_p">© 2020  University Medical Center. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>

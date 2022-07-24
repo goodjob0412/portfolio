@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'NIXGONFONTS M 2.0';
+  src: url('NIXGONFONTS M 2.0.eot');
+  src: url('NIXGONFONTS M 2.0.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NIXGONM-Vb';
+  src: url('NIXGONM-Vb.ttf') format('truetype'),
+       url('NIXGONM-Vb.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+

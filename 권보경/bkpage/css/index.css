@@ -1,0 +1,544 @@
+* {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: 0;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+  
+}
+/* html {
+width: 100%;
+height: 100%;
+} */
+body {
+/* width: 100%; */
+/* height: 100%; */
+overflow: hidden;
+background-color: rgba(155,134,190,0.7);
+/* background: url(../img/tmp_bg5.jpg) no-repeat center ; */
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+#canvas0 {
+  width: 100%;
+  height: 60%;
+  position: absolute;
+  left:0;
+  bottom:0;
+}
+
+/* wrap */
+
+@font-face {
+  font-family: 'SEBANG_Gothic_Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/SEBANG_Gothic_Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SEBANG_Gothic_Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/SEBANG_Gothic_Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BBTreeGB';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeGB.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'IBMPlexSansKR-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.header{
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  font-size: 20px;
+  color: rgba(50,50,48);
+  /* background: orangered; */
+  padding: 0 20px;
+  box-sizing: border-box;
+  position: fixed;
+  left: 0;
+  top: 2%;
+}
+.logo {
+  /* width: 100px; */
+  height: 80px;
+  line-height: 80px;
+  font-size: 30px;
+  float: left;
+}
+.menu {
+ float: left;
+ margin-left: 200px;
+}
+.menu div {
+  float: left;
+  height: 80px;
+  line-height: 80px;
+  font-size: 30px;
+  margin: 0 10px;
+}
+.menu div:hover{
+  color: transparent;
+  -webkit-text-stroke: 2px #000
+}
+.container {
+  position: relative;
+  left: 0;
+  top: 0;
+  z-index: 99999;
+}
+.sec {
+  /* width: 100%; */
+  /* height: 100vh; */
+  box-sizing: border-box;
+  text-align: center;
+}
+.txt_box {
+  width: 450px;
+  font-family: 'SEBANG_Gothic_Bold';
+  position: fixed;
+  left: 50%;
+  top: 30%;
+  z-index: 999;
+  transform: translate(-50%,-50%);
+  text-align: left;
+  padding: 10px;
+  border: 5px solid rgba(50,50,48);;
+  transition: all 1s;
+  opacity: 0;
+}
+.txt_box > div{
+  opacity: 0;
+  font-size: 80px;
+  margin: 10px 0;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.txt_box div:hover {
+  color: transparent;
+  -webkit-text-stroke: 2px #000
+}
+.intro {
+  width: 100%;
+  height: 60%;
+  font-family: 'SEBANG_Gothic_Bold';
+  font-size: 80px;
+  /* margin-top: 150px; */
+  line-height: 90px;
+  /* transform: translateY(70%); */
+  /* transition: all 3s; */
+  opacity: 1;
+  color: rgba(50,50,48);
+  /* -webkit-text-stroke: 1px #000; */
+  position: relative;
+  z-index: 9;
+  overflow: hidden;
+}
+/* txt글자 부분 */
+.intro_txt_box1 {
+  position: absolute;
+  left: 50%;
+  top: 150px;
+  transform: translate(-50%, 0%);
+}
+.intro_txt_box2 {
+  position: absolute;
+  left: 50%;
+  top: 250px;
+  transform: translate(-50%, 0%);
+}
+.intro_txt_box3 {
+  position: absolute;
+  left: 50%;
+  top: 350px;
+  transform: translate(-50%, 0%);
+}
+
+.intro_txt_box > .tb_span {
+  float: left;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: all 0.8s;
+}
+.intro_txt_box > .txt_active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.txt_color {
+  color: rgba(203, 67,51);
+  font-size: 40px;
+ 
+}
+.fas, .fab, .far {
+  color: rgba(110,90,151);
+  animation: resume_move 1s infinite;
+}
+.small_color {
+  margin-left: 100px;
+  margin-right: 20px;
+  font-size: 20px;
+  text-align: right;
+}
+
+.camel {
+  width: 150px;
+  transform-origin: center;
+  position: fixed;
+  left: 0;
+  bottom: -15px;
+  /* animation: camel_move 1s infinite linear; */
+}
+
+.moon {
+  width: 500px;
+  position: fixed;
+  left: 50%;
+  top: 15%;
+  transform: translate(-50%, 0) scale(1.5);
+  animation: img_move 10s 6s infinite linear;
+}
+.cactus_outer {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 40%;
+}
+.cactus{
+  width: 120px;
+  float: left;
+  margin: 0 30px;
+  opacity: 0;
+  animation: cactus_move 3s infinite;
+}
+.cactus1{
+
+}
+.cactus2{
+  float: right;
+  animation: cactus_move 3s 2s infinite;
+}
+.cactus3{
+  width: 150px;
+  margin: 0;
+  padding-top: 20px;
+  float: right;
+  animation: cactus_move 3s 1s infinite;
+  
+}
+
+.img_move {
+  width: 200px;
+  height: 200px;
+  position: fixed;
+  left: 0;
+  top: 50%;
+  animation: surfer_move 5s infinite;
+}
+
+@keyframes img_move {
+  0% { transform:  rotate(0)  }
+  50% { transform:  rotate(360deg) }
+  100% { transform:  rotate(0)  }
+}
+
+@keyframes cactus_move {
+  0% { transform: translate(0,0)  }
+  50% { transform: translate(0,8%)  }
+  100% { transform: translate(0,0)  }
+}
+@keyframes camel_move {
+  0% { transform: translate(0,0)  }
+  50% { transform: translate(0,3%)  }
+  100% { transform: translate(0,0)  }
+}
+
+/* sec2 about me */
+.txt_outer {
+  width: 80%;
+  height: 80%;
+  margin: 5%  auto;
+  padding-top: 2%;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.7);
+}
+.txt_outer > div {
+  width: 90%;
+  height: 95%;
+  margin: auto;
+  border: 2px solid rgba(167, 199,250);
+
+}
+.title {
+  width: 100%;
+  height: 120px;
+  margin-top: 20px;
+  color: #fff;
+  font-size: 48px;
+  line-height: 60px;
+  font-family: 'SEBANG_Gothic_Bold';
+}
+
+
+.title > div {
+  padding: 0 9%;
+  box-sizing: border-box;
+}
+.one_txt {
+  float: left;
+  margin-left: 5px;
+  
+}
+.color_on {
+  color: rgba(233,106,99);
+}
+.at_L {
+  width: 50%;
+  font-family: 'SEBANG_Gothic_Regular';
+  padding-left: 12%;
+  box-sizing: border-box;
+  float: left;
+  margin-top: 20px;
+  color: #ddd;
+  text-align: left;
+  font-size: 18px;
+  line-height: 30px;
+}
+.at_L img {
+  /* margin-left: 50px; */
+  
+}
+.resume_box {
+  width: 80px;
+  display: inline-block;
+}
+.resume {
+  width: 80px;
+  height: 80px;
+  animation: resume_move 1s infinite;
+}
+.at_L span {
+  font-size: 18px;
+  animation: cactus_move 1s infinite;
+}
+.at_R {
+  width: 50%;
+  font-family: 'SEBANG_Gothic_Regular';
+  padding-right:12%;
+  padding-top: 2%;
+  box-sizing: border-box;
+  float: right;
+  margin-top: 20px;
+  text-align: left;
+  font-size: 14px;
+  line-height: 27px;
+  color: #ddd;
+  
+}
+.at_R span {
+  font-family: 'SEBANG_Gothic_Regular';
+  /* -webkit-text-stroke: 1px #000; */
+  font-size: 17px;
+  color: rgba(250,199,108);
+  
+
+}
+@keyframes resume_move {
+  0% { transform: translate(0,0)  }
+  50% { transform: translate(10%,0)  }
+  100% { transform: translate(0,0)  }
+}
+
+/* sec3 */
+.title_skills, .title_port, .title_contact {
+  height: 100px;
+  line-height: 100px;
+}
+.score_box { 
+  font-family: 'SEBANG_Gothic_Bold'; 
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  margin: 10px 20px;
+  position: relative;
+  /* border: 5px solid #fff;  */
+  background:transparent;
+}
+.score_box:nth-child(1){
+  background: url(../img/icon_html.png) no-repeat center / 45% 45%;
+}
+.score_box:nth-child(2){
+  background: url(../img/icon_css.png) no-repeat center / 45% 45%;
+}
+.score_box:nth-child(3){
+  background: url(../img/icon_js.png) no-repeat center / 40% 40%;
+}
+.score_box:nth-child(4){
+  background: url(../img/icon_jquery.png) no-repeat center / 40% 40%;
+}
+.score_box:nth-child(5){
+  background: url(../img/icon_php.png) no-repeat center / 55% 55%;
+}
+.score_box:nth-child(6){
+  background: url(../img/icon_mysql.png) no-repeat center / 40% 40%;
+}
+.score_box:nth-child(7){
+  background: url(../img/icon_ps.png) no-repeat center / 40% 40%;
+}
+.score_box:nth-child(8){
+  background: url(../img/icon_ai.png) no-repeat center / 45% 45%;
+}
+
+
+.code {
+  font-family: 'SEBANG_Gothic_Regular';
+  font-size: 17px;
+  color: #fff;
+}
+.code span {
+  color: rgba(250,199,108);
+}
+.score1,.score2,.score3,.score4,.score5,.score6,.score7,.score8 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  
+  transform: translate(-50%, -50%);
+  font-weight: 900;
+  font-size: 50px;
+  color: rgba(184, 231,250);
+  color: transparent;
+}
+
+.skill_outer {
+  overflow: hidden;
+  width: calc(240px * 5);
+  margin: 0 auto;
+}
+.port_L {
+  width: 50%;
+  float: left;
+  padding-left: 12%;
+  box-sizing: border-box;
+ 
+}
+.port_L img{
+  transition: all 0.3s;
+}
+.port_L img:hover{
+  transform: scale(1.2) ;
+}
+.port_R {
+  width: 50%;
+  padding-right: 12%;
+  padding-left: 2%;
+  box-sizing: border-box;
+  float: right;
+  font-family: 'SEBANG_Gothic_Regular';
+  color: #fff;
+  font-size: 17px;
+  text-align: left;
+  line-height: 35px;
+}
+.port_R > div {
+  margin-bottom: 15px;
+}
+.port_title {
+  font-family: 'SEBANG_Gothic_Bold'; 
+  font-size: 30px;
+  color: rgba(203,67,51);
+}
+.port_box {
+  overflow: hidden;
+}
+.port_box div:hover {
+  background: rgba(203,67,51);
+  border: 1px solid rgba(203,67,51);
+  color: #fff;
+}
+.port_box div {
+  float: left;
+  border: 1px solid #fff;
+  padding: 6px;
+  margin-right: 6px;
+  font-size: 16px;
+}
+.img_box {
+  width: 100%;
+  position: relative;
+}
+.lu{
+  width: 500px;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+}
+.lu_mobile {
+  width: 120px;
+  position: absolute;
+  left: 1%;
+  top: 0%;
+  margin-top: 50%;
+}
+.port_desc span {
+  color: rgba(250,199,108);
+}
+.color_r {
+  color: rgba(184, 231,250) !important;
+}
+
+/* contact me section */
+.contact_con {
+  width: 100%;
+
+}
+.contact_con > div {
+  width: calc(100% / 3);
+  margin: 10% 0 ;
+  float: left;
+}
+.contact {
+  width: 100%;
+  font-size: 150px;
+  line-height: 200px;
+  margin-bottom: 10px;
+  animation: color_change 13s infinite linear;
+}
+.kakao_ {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+}
+ 
+.contact + span, .kakao_span {
+  font-family: 'SEBANG_Gothic_Regular';
+  font-size: 20px;
+  line-height: 40px;
+  color: #fff;
+}
+@keyframes color_change {
+  0% {color: rgba(110,90,151);}
+  25% {color: rgba(250,199,108);}
+  50% {color: rgba(233,97,135);}
+  100% {color: rgba(155,134,190);}
+}
+
+.color_red{
+  color: rgba(203, 67,51);
+}

@@ -1,0 +1,491 @@
+
+body { 
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+h1, h2, h2, p  {
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.contants_area {
+    width: 100%;
+    min-width: 280px;
+    max-width: 1220px;
+    height: 100%;
+
+    margin: 0 auto;
+    position: relative;
+}
+.contants_area_all {
+    width: 100%;
+    min-width: 280px;
+    max-width: 1920px;
+    height: 100%;
+
+    margin: 0 auto;
+    position: relative;
+}
+/* ------------------------------------------- 탑버튼 */
+.btn_top {
+    display: block;
+
+    width: 50px;
+    height: 30px;
+    padding-top: 25px;
+    background: url(../img/icon/arrow_up.png) no-repeat top / 30px;
+
+    position: fixed;
+    bottom: 50px;
+    right: calc(50% - 660px);
+    z-index: 999999;
+
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+}
+/* ------------------------------------------- 헤더 */
+.header {
+    width: 100%;
+    height: 88px;
+    line-height: 88px;
+    background: #fff;
+    box-shadow:  0 0 7px 0 #999;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+
+
+}
+.inner_header {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    align-items: center;
+}
+.logo {
+    width: 150px;
+    height: 100%;
+    background: url(../img/logo_black.png) no-repeat left / 100%;
+
+    float: left;
+}
+.logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    text-indent: -9999px;
+}
+
+/* ---------------------------------- 햄버거 */
+.hamburger {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    box-sizing: border-box;
+
+    display: none;
+}
+
+.ham_line {
+    width: 100%;
+    height: 4px;
+    background: #000;
+}
+.ham_line:nth-child(2) {
+    margin: 4px 0;
+}
+.ham_pan {
+    width: calc(100% - 250px);
+    height: 100%;
+
+}
+
+.ham_close {
+    width: 40px;
+    height: 40px;
+    color: #fff;
+
+    padding: 10px;
+    box-sizing: border-box;
+    
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    display: none;
+}
+.ham_close_line {
+    width: 20px;
+    height: 2px;
+    background: #fff;
+
+    position: absolute;
+    top: 50%;
+    left: auto;
+}
+.ham_close_line_top_active {
+    transform: rotate(45deg);
+    transition: all 0.3s;
+}
+.ham_close_line_btm_active {
+    transform: rotate(-45deg);
+    transition: all 0.3s;
+}
+.h_logo {
+    width: 180px;
+    height: 45px;
+    background: url(../img/logo_white.png) no-repeat left / contain;
+    margin-bottom: 35px;
+
+    display: none;
+}
+.h_logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-indent: -9999px;
+}
+
+/* ------------------------ */
+.nav_ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.nav_li {
+    width: calc(100% / 5);
+    min-width: 95px;
+    font-size: 22px;
+    font-weight: 900;
+}
+.nav_li:last-child {
+    width: 160px;
+}
+.menu_under_line {
+    width: 100%;
+    height: 3px;
+    border-radius: 2px;
+    background: red;
+
+    opacity: 0;
+    transform: translateY(-15px);
+    transition: all 0.3s;
+}
+.nav_li:hover .menu_under_line{
+    opacity: 1;
+    transform: translateY(-25px);
+    transition: all 0.3s;
+}
+.nav_li_txt:hover {
+    color: red;
+    transition: all 0.3s;
+}
+.nav_li_fr {
+    border-radius: 30px;
+    background: #000;
+    color: #fff;
+    padding: 10px 20px;
+
+    transition: all 0.3s;
+}
+.nav_li_txt_atcive {
+    color: #000
+}
+/* ----------------- 하위메뉴 */
+.nav_menu {
+    width: 100%;
+    height: 0;
+    background: #fff;
+    transition: all 0.3s;
+
+}
+.nav_menu_active {
+    height: 200px;
+    transition: all 0.3s;
+}
+.nav_inner_ul {
+    height: 0 ; 
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.3s;
+
+    overflow: hidden;
+}
+.nav_inner_ul_active2 {
+    height: auto ; 
+}
+.nav_inner_ul_active {
+    height: 150px;
+    margin-top: 20px;
+    opacity: 1;
+    transform: translateY(0px);
+    transition: all 0.2s 0.1s;
+    z-index: 1;
+} 
+.nav_inner_li {
+    line-height: 2;
+    font-size: 18px;
+    font-weight: 500;
+    transform: translateX(0);
+    opacity: 1;
+
+}
+.nav_inner_li:hover {
+    color: red;
+}
+/* ------------------------------------------- 푸터 */
+
+.footer {
+    width: 100%;
+    background: #000;
+
+    font-weight: 700;
+    color: #fff;
+
+    padding: 50px 0;
+    overflow: hidden;
+}
+.footer_left {
+    font-size: 20px;
+    line-height: 1.6;
+
+    float: left;
+}
+.f_logo {
+    width: 150px;
+    height: 40px;
+    background: url(../img/logo_white.png) no-repeat left / contain;
+
+    margin-bottom: 20px;
+}
+.f_logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-indent: -9999px;
+}
+.f_menu_ul {
+    padding: 0 0 0 20px;
+}
+.footer_right {
+    line-height: 2;
+
+    margin-top: 50px;
+    float: right;
+    
+} 
+.f_sns_info {
+    margin-bottom: 15px;
+}
+.f_sns {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.f_sns img {
+    width: 25px;
+    margin-left: 10px;
+}
+.f_info_line {
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    background: #fff;
+    margin-right: 15px;
+}
+.f_info a {
+    margin-right: 15px;
+}
+.f_info a:hover {
+    color: rgb(255, 47, 47);
+}
+
+/* ---------------------------------------------- 미디어 쿼리 */
+@media screen and (max-width: 1370px) {
+    .btn_top {
+        right: 20px;
+    }
+}
+@media screen and (max-width: 1260px) {
+    .inner_header,
+    .footer_inner {
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+    .f_sns {
+        right: 15px;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .nav_li {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 960px) {
+    .inner_header {
+        gap: 50px;
+    }
+    .ham_pan {
+        width: calc(100% - 200px);
+    }
+}
+@media screen and (max-width: 768px) {
+    /* hover  */
+    .menu_under_line {
+        display: none;
+    }
+    .nav_li_txt:hover {
+        color: #fff;
+        transition: all 0.3s;
+    }
+    .nav_li_fr:hover {
+        background: transparent;
+        color: #fff;
+    }
+    .nav_inner_li:hover {
+        color: #fff;
+    }
+
+
+
+    /* 헤더 높이 변경 */
+    .header {
+        height: 60px;
+        line-height: 1;
+    }
+    /* //////////////////////////////// */
+    .hamburger {
+        display: block;
+    }
+    .ham_close {
+        display: block;
+    }
+    .ham_pan {
+        width: 100%;
+        height: 100vh;
+        background: #000;
+
+        padding: 30px;
+        box-sizing: border-box;
+
+        position: fixed;
+        top: 0;
+        left: 100%;
+
+        color: #fff;
+    } 
+    .nav_li { 
+        width: 100%;
+        padding: 15px 0;
+        font-size: 24px;
+    }
+    .nav_li_fr {
+        padding: 0;
+        background: transparent;
+    }
+
+    .h_logo {
+        display: block;
+    }
+    /* //////////////////////////////// */
+    .nav_ul {
+        width: 100%;
+        display: block;
+        font-size: 18px;
+    
+    }
+    
+    .nav_inner_ul {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .nav_inner_li {
+        padding-left: 10px;
+        box-sizing: border-box;
+        opacity: 0;
+        transform: translateX(300px);
+        transition: all 0.3s;
+
+        margin-top: 20px;
+    }
+
+
+    /* --------------------------- 푸터 */
+    .footer_left {
+        font-size: 16px;
+    }
+    .footer_right {
+        font-size: 14PX;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .footer_left {
+        float: none;
+    }
+    .f_menu_ul {
+        padding:0;
+    }
+    .footer_right {
+        float: none;
+        word-break: keep-all;
+        border-top: 1px solid #fff;
+        padding-top: 20px;
+        margin-top: 20px;
+    }
+    .f_sns_info {
+        width: 132px;
+        position: absolute;
+        top: 0;
+        right: 15px;
+        text-align: left;
+    }
+    .f_sns {
+        position: static;
+        text-align: left;
+    }
+    .f_info_line {
+        margin: 0;
+        margin-left: 10px;
+    }
+    .f_info_line:nth-child(4) {
+        display: none;
+    }
+    .f_info {
+        font-size: 12px;
+    }
+    .f_info a {
+        margin: 0;
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .f_logo {
+        width: 100px;
+        height: 40px;
+        background: url(../img/logo_white.png) no-repeat left / contain;
+    
+        margin-bottom: 20px;
+    }
+    .f_address {
+        font-size: 12px;
+    }
+}

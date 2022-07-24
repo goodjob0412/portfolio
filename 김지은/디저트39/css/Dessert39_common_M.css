@@ -1,0 +1,48 @@
+@font-face{
+    font-family: 'BungeeShade';
+    src: url(../fonts/Bungee_Shade/BungeeShade-Regular.ttf);
+}
+/* 선글자 */
+@font-face{
+    font-family: 'Monoton';
+    src: url(../fonts/Monoton/Monoton-Regular.ttf);
+}
+/* 기본폰트 */
+@font-face {
+    font-family: 'IBMPlexSansKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+/* 공통 */
+
+body { 
+    margin: 0 auto;
+    font-family: 'IBMPlexSansKR-Regular';
+    max-width: 480px;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.w_480{
+    width: 100%;
+    max-width: 480px;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: relative;
+    /* background-color:lemonchiffon; */
+}
+main{
+    margin-top: 59px;
+}

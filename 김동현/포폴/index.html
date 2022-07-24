@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/move.css">
+    <link rel="stylesheet" href="css/btn.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <title>Document</title>
+    <style>
+        * { padding: 0; margin: 0; }
+        body {
+            background: #f7f6f3 url('img/bg.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        #loading {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background: #1874d2;
+            z-index: 999;
+        }
+        #loading3 {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        /* ------------------------------------ */
+        @font-face {
+            font-family: 'RussoOne-Regular';
+
+            src: local('fonts/RussoOne-Regularr'),
+            url('fonts/RussoOne-Regular.ttf') format('truetype');
+        }
+        @font-face {
+            font-family: 'Quicksand-Medium';
+
+            src: local('fonts/Quicksand-Mediumr'),
+            url('fonts/Quicksand-Medium.ttf') format('truetype');
+        }
+        /* ------------------------------------ */
+        .block {
+            width: 100%;
+        }
+       
+        .content {
+            width: 75%;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 50px;
+            color: #114756;
+        }
+        .content h2 {
+            display: inline-block;
+            font-family: 'RussoOne-Regular';
+            font-weight: normal;
+        }
+        .content h2 span::after{
+            background-color: #114756;
+            border-radius: 2px;
+            content: "";
+            display: block;
+            height: 4px;
+        }
+        .box {
+            height: 500px;
+            list-style: none;
+        }
+        .box1 {
+            width: calc((100% - 80px) / 4);
+            float: left;
+            margin: 10px;
+            
+        }
+        .box_1 {
+            position: relative;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            cursor: pointer;
+            
+            border-radius: 5px 5px;
+            margin-top: 50px;
+            margin-bottom: 0;
+        }
+        .box_1 img{
+            width: 100%;
+        }
+        .box_1 .hover {
+            position: absolute;
+            top: 0%;
+            left: 100%;
+            transition: all 0.1s;
+        }
+        .box_1:hover .hover {
+            top: 0;
+            left: 0; 
+        }
+
+        
+        .title h3 {
+            clear: both;
+            margin-top: 12px;
+            text-align: left;
+            font-size: 14px;
+            color: #353535;
+            letter-spacing: 1px;
+        }
+        .title_txt {
+            margin-top: 12px;
+            text-align: left;
+            font-size: 10px;
+            font-weight: bold;
+            color: #69a88b;
+            
+        }
+        .title_txt2 {
+            margin-top: 12px;
+            text-align: left;
+            font-size: 10px;
+            font-weight: bold;
+            color: #187f92;
+        }
+        
+        /* ------------------------------------ */
+        #illustrator .content #ect_wrap {
+            position: relative;
+            top: 0;
+            right: 0;
+            width: 100%;
+
+        }
+        #illustrator .content #ect_wrap #ect {
+            position: absolute;
+            top: -100px;
+            right: 10px;
+            width: 200px;
+            opacity: 0.8;
+        }
+        
+        /* ------------------------------------ */
+        #bg img {
+            margin-top: 3%;
+            width: 100%;      
+        }
+        /* ------------------------------------ */
+        #box2 {
+            background: #fff;
+            width: 100%;
+            height: 350px;
+            position: relative;
+        }
+        
+        .box2_content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 75%;
+            max-width: 1200px;
+            margin: 0 auto;
+            margin-top: -30px;
+            text-align: center;
+            color: #114756;
+            padding-top: 10px;
+        }
+        .box2_content h2 {
+            display: inline-block;
+            font-family: 'RussoOne-Regular';
+            font-weight: normal;
+        }
+        .box2_content h2 span::after{
+            content: "";
+            background-color: #114756;
+            border-radius: 2px;
+            display: block;
+            height: 4px;
+        }
+        
+        #box2_imgbox {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+            list-style: none;
+        }
+        #box2_imgbox li {
+            width: calc((100% - 100px) / 5);
+            float: left;
+            margin: 0 10px;
+            margin-top: 30px;
+            border-radius: 5px 5px;
+            overflow: hidden;
+        }
+        #box2_imgbox li img {
+            width: 100%;
+        }
+        /* ------------------------------------ */
+        
+        #box3 {
+            background: url('img/bg2.jpg');
+            position: relative;
+            width: 100%;
+            height: 350px;
+            overflow: hidden;
+        }
+        #box3 h2{
+            font-size: 30px;
+            color: #fff;
+            text-align: center;
+            margin-top: 80px;
+        }
+        #box3 p{
+            font-size: 16px;
+            color: #fff;
+            text-align: center;
+            margin: 30px auto;
+        }
+        
+        /* ------------------------------------ */
+
+        #footer {
+            position: relative;
+            background: #fff;
+            width: 100%;
+            height: 150px;
+        }
+        #name {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 250px;
+        }
+        #top {
+            position: absolute;
+            top: 40%;
+            right: 20%;
+            width: 30px;
+            height: 30px;
+        }
+
+        /* ------------------------------------ */
+
+    </style>
+</head>
+<body>
+    <div id="loading"><img id="loading3" src="loading3.gif" alt=""></div>
+    <div id="header">
+        <img id="logo" src="img/logo3.png" alt="">
+        <p id="txt">
+            art direction<br>
+            design<br>
+            illustration<br>
+            website design<br>
+            web publisher<br>
+        </p>
+        <ul class="block-menu">
+			<li><a href="Illustrator.html" class="three-d">
+				Illustrator
+				<span aria-hidden="true" class="three-d-box">
+					<span class="front">Illustrator</span>
+					<span class="back">Illustrator</span>
+				</span>
+			</a></li>
+			<li><a href="Photoshop.html" class="three-d">
+				Photoshop
+				<span aria-hidden="true" class="three-d-box">
+					<span class="front">Photoshop</span>
+					<span class="back">Photoshop</span>
+				</span>
+            </a></li>
+            <li><a href="Web.html" class="three-d">
+                Web
+                <span aria-hidden="true" class="three-d-box">
+                    <span class="front">Web</span>
+                    <span class="back">Web</span>
+                </span>
+            </a></li>
+            <li><a href="about.html" class="three-d">
+                    Aboutme
+                    <span aria-hidden="true" class="three-d-box">
+                        <span class="front">Aboutme</span>
+                        <span class="back">Aboutme</span>
+                    </span>
+                </a></li>
+		</ul>
+    </div>
+    <div id="sec1">
+        <div id="wrap">
+            <img id="base" src="img/base.png" alt="">
+            <div id="moon"><img id="moon_hide" src="img/hide.png" alt=""></div>
+            <img id="balloon1" src="img/1.png" alt="">
+            <img id="balloon2" src="img/2.png" alt="">
+            <img id="balloon3" src="img/3.png" alt="">
+            <img id="ro" src="img/4.png" alt="">
+            <img id="ro2" src="img/5.png" alt="">
+            <img id="light" src="img/6.png" alt="">
+            <div id="bus_hide">
+                <img id="bus" src="img/8.png" alt="">
+            </div>
+            <img id="lightning" src="img/9.png" alt="">
+            <img id="lightning2" src="img/9.png" alt="">
+            <div id="rain_hide">
+                <img id="rain" src="img/11.png" alt="">
+                <img id="rain2" src="img/11.png" alt="">
+                <img id="rain3" src="img/11.png" alt="">
+                <img id="rain4" src="img/11.png" alt="">
+                <img id="rain5" src="img/11.png" alt="">
+                <img id="rain6" src="img/11.png" alt="">
+                <img id="rain7" src="img/11.png" alt="">
+                <img id="rain8" src="img/11.png" alt="">
+                <img id="rain9" src="img/11.png" alt="">
+                <img id="rain10" src="img/11.png" alt="">
+            </div>
+            <img id="eyes" src="img/12.png" alt="">
+            <img id="ro3" src="img/15.png" alt="">
+            <img id="boom" src="img/14.png" alt="">
+            <img id="boom2" src="img/14.png" alt="">
+            <img id="cloud" src="img/13.png" alt="">
+            <div id="circle_hide">
+                <img id="circle" src="img/16.png" alt="">
+                <img id="circle2" src="img/16.png" alt="">
+                <img id="circle3" src="img/16.png" alt="">
+            </div>
+            <img id="hi" src="img/10.png" alt="">
+            <img id="hi2" src="img/10-1.png" alt="">
+        </div>
+    </div>
+    
+    <section id="illustrator" class="block">
+        <div class="content">
+            <div id="ect_wrap">
+                <img id="ect" src="img/13.png" alt="">
+            </div>
+            <h2><span>Illustrator</span></h2>
+            <ul class="box">
+                <li class="box1">
+                    <div class="box_1">
+                        <a href="Illustrator_1.html">
+                            <img id="img1" src="img/img1.png" alt="">
+                            <img class="hover" src="img/img0.png" alt="">
+                        </a>
+                    </div>
+                    <div class="title">
+                        <h3>TEXT ART | Foster</h3>
+                    </div>
+                    <div class="title_txt">
+                        <span>donghyun kim.</span>
+                    </div>
+                </li>
+                <li class="box1">
+                    <div class="box_1">
+                        <a href="Illustrator_2.html">
+                            <img id="img2" src="img/img2.png" alt="">
+                            <img class="hover" src="img/img0.png" alt="">
+                        </a>
+                    </div>
+                    <div class="title">
+                        <h3>WPOP | Magazine</h3>
+                    </div>
+                    <div class="title_txt2">
+                        <span>donghyun kim.</span>
+                    </div>
+                </li>
+                <li class="box1">
+                    <div class="box_1">
+                        <a href="Illustrator_3.html">
+                            <img id="img3" src="img/img3.png" alt="">
+                            <img class="hover" src="img/img0.png" alt="">
+                        </a>
+                    </div>
+                    <div class="title">
+                        <h3>POLYGON ART | Calendar</h3>
+                    </div>
+                    <div class="title_txt">
+                        <span>donghyun kim.</span>
+                    </div>
+                </li>
+                <li class="box1">
+                    <div class="box_1">
+                        <a href="Illustrator_4.html">
+                            <img id="img4" src="img/img4.png" alt="">
+                            <img class="hover" src="img/img0.png" alt="">
+                        </a>
+                    </div>
+                    <div class="title">
+                        <h3>PRODUCTION DESIGN | Foster</h3>
+                    </div>
+                    <div class="title_txt2">
+                        <span>donghyun kim.</span>
+                    </div>
+                </li>
+                <div class="more cursol" style="opacity: 1;">
+                    <a href="Illustrator.html" class="link"><span>more</span></a>
+                </div>
+            </ul>
+        </div>
+    </section>
+
+    <section id="photoshop" class="block">
+        <div class="content">
+            <h2><span>Photoshop</span></h2>
+            <ul class="box">
+                <li class="box1">
+                    <div class="box_1">
+                        <a href="Photoshop_1.html">
+                            <img src="img/img5.png" alt="">
+                            <img class="hover" src="img/img0.png" alt="">
+                        </a>
+                    </div>
+                    <div class="title">
+                        <h3>SUZY | Smokeeffect</h3>
+                    </div>
+                    <div class="title_txt">
+                        <span>donghyun kim.</span>
+                    </div>
+                </li>
+                <li class="box1">
+                    <div class="box_1">
+                        <a href="Photoshop_2.html">
+                            <img src="img/img6.png" alt="">
+                            <img class="hover" src="img/img0.png" alt="">
+                        </a>
+                    </div>
+                    <div class="title">
+                        <h3>WHALE | Puppetwarp</h3>
+                    </div>
+                    <div class="title_txt2">
+                        <span>donghyun kim. goodjobacademy</span>
+                    </div>
+                </li>
+                <li class="box1">
+                    <div class="box_1">
+                        <a href="Photoshop_3.html">
+                            <img src="img/img7.png" alt="">
+                            <img class="hover" src="img/img0.png" alt="">
+                        </a>
+                    </div>
+                    <div class="title">
+                        <h3>FANTASY | Synthesis</h3>
+                    </div>
+                    <div class="title_txt">
+                        <span>donghyun kim.</span>
+                    </div>
+                </li>
+                <li class="box1">
+                    <div class="box_1">
+                        <a href="Photoshop_4.html">
+                            <img src="img/img8.png" alt="">
+                            <img class="hover" src="img/img0.png" alt="">
+                        </a>
+                    </div>
+                    <div class="title">
+                        <h3>SURREALISM | Colorbalance</h3>
+                    </div>
+                    <div class="title_txt2">
+                        <span>donghyun kim. goodjobacademy</span>
+                    </div>
+                </li>
+                <div class="more cursol" style="opacity: 1;">
+                    <a href="Photoshop.html" class="link"><span>more</span></a>
+                </div>
+            </ul>
+        </div>
+    </section>
+
+    <section id="web" class="block">
+        <div class="content">
+            <h2><span>Web</span></h2>
+            <ul class="box">
+                <li class="box1">
+                    <div class="box_1">
+                        <a href="Web_1.html">
+                            <img src="img/img9.png" alt="">
+                            <img class="hover" src="img/img0.png" alt="">
+                        </a>
+                    </div>
+                    <div class="title">
+                        <h3>TICKDOC | UX/UI</h3>
+                        <br>
+                    </div>
+                    <div class="title_txt">
+                        <span>donghyun kim.</span>
+                    </div>
+                </li>
+                <li class="box1">
+                    <div class="box_1">
+                        <a href="Web_2.html">
+                            <img src="img/img10.png" alt="">
+                            <img class="hover" src="img/img0.png" alt="">
+                        </a>
+                    </div>
+                    <div class="title">
+                        <h3>PERIPERA/DONGWOO/
+                            <br>ANGOLD/WITHUS | 웹기획</h3>
+                    </div>
+                    <div class="title_txt">
+                        <span>donghyun kim. dongwoo</span>
+                    </div>
+                </li>
+                <li class="box1">
+                    <div class="box_1">
+                        <a href="Web_3.html">
+                            <img src="img/img17-1.png" alt="">
+                            <img class="hover" src="img/img0.png" alt="">
+                        </a>
+                    </div>
+                    <div class="title">
+                        <h3>WEDDING | Website</h3>
+                        <br>
+                    </div>
+                    <div class="title_txt">
+                        <span>donghyun kim.</span>
+                    </div>
+                </li>
+                <li class="box1">
+                    <div class="box_1">  
+                        <a href="Web_4.html">  
+                            <img src="img/.png" alt="">
+                            <img class="hover" src="img/img0.png" alt="">
+                        </a>
+                    </div>
+                    <div class="title">
+                        <h3>##### | Website</h3>
+                        <br>
+                    </div>
+                    <div class="title_txt">
+                        <span>donghyun kim.</span>
+                    </div>
+                </li>
+                <div class="more cursol" style="opacity: 1;">
+                    <a href="Web.html" class="link"><span>more</span></a>
+                </div>
+            </ul>
+        </div>
+        
+        <div id="bg">
+            <img src="img/base2-1.png" alt="">
+        </div>
+
+    </section>
+
+    <section>
+        <div id="box2">
+            <div class="box2_content">
+                <h2><span>Landscape</span></h2>
+                <ul id="box2_imgbox">
+                    <li class="landscape"><img src="img/img11.png" alt=""></li>
+                    <li class="landscape"><img src="img/img14.png" alt=""></li>
+                    <li class="landscape"><img src="img/img13.png" alt=""></li>
+                    <li class="landscape"><img src="img/img15.png" alt=""></li>
+                    <li class="landscape"><img src="img/img16.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+    </section>    
+
+    <section>
+        <div id="box3">
+            <h2>KIM DONG HYUN</h2>
+            <p>
+                안녕하세요. 저만의 이야기로 풀어나가는 포트폴리오 사이트에 방문해 주셔서 감사합니다.<br>
+                늘 노력하는 HYUN이 되겠습니다. 
+            </p>
+            <div class="btn">
+                <a href="about.html" data-hover="ABOUT" class="link"><span>ABOUT ME</span></a>
+                <img src="img/bg2.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <a href="#"><img id="top" src="img/top.png" alt="pagetop"></a>
+        <img id="name" src="img/logo2.png" alt="">
+    </footer>
+
+    <script>
+        $(document).ready(function(){ 
+            $(window).load(function(){
+                $('#loading').delay(2000).fadeOut(2000);
+            });
+            $('#loading').css({
+                height: $(document).height()
+            });
+
+            $('#moon_hide').delay(4000).animate({
+                'top' : '-100px',
+                'left' : '-100px'    
+            });
+
+            img_height();
+            $(window).resize(function(){
+                img_height();
+            });
+
+            function img_height(){
+                $('.box_1').css({
+                    height: $('.box_1').width()
+                });
+
+                $('.landscape').css({
+                    height: $('.landscape').width()
+                });
+            }
+            
+
+            //------------------------------------------------//
+
+            var timer;
+            var angle=0;
+            
+            angle=0;
+            timer=setInterval(function(){
+                $('#ro').css({
+                    transform: 'rotate('+angle +'deg)'
+                });
+                angle+=5; 
+            }, 50);
+            
+            var timer2;
+            var angle2=0;
+            
+            angle2=0;
+            timer2=setInterval(function(){
+                $('#ro2').css({
+                    transform: 'rotate('+angle2 +'deg)'
+                });
+                angle2+=5; 
+            }, 50);
+
+            
+            var timer3;
+            var angle3=0;
+            
+            angle3=0;
+            timer3=setInterval(function(){
+                $('#ro3').css({
+                    transform: 'rotate('+angle3 +'deg)'
+                });
+                angle3+=5; 
+            }, 25);
+    
+            
+
+
+            // 폭죽이 사라질 시간
+            var opacity_time = 1000;
+
+            // 폭죽의 초기화 될 시간
+            var init_delay = 1000;
+            setInterval(function(){ 
+                $('#boom').css({
+                    'transform' : 'scale(1)',  
+                    'transition': 'all 1s',
+                    'opacity': '1'
+                });
+                setTimeout(function(){
+                    $('#boom').css({
+                        opacity: 0,
+                        // 사라지는 시간 조절할때
+                        // 'transition': 'all 1s',
+                    });
+                }, opacity_time);
+                setTimeout(function(){
+                    $('#boom').css({
+                        'transform' : 'scale(0)',  
+                        'transition': 'all 0.1s',
+                    });
+                }, opacity_time + init_delay);
+            }, 3000);
+
+
+            setInterval(function(){ 
+                $('#boom2').css({
+                    'transform' : 'scale(1)',  
+                    'transition': 'all 1s',
+                    'opacity': '1'
+                });
+                setTimeout(function(){
+                    $('#boom2').css({
+                        opacity: 0,
+                        'transition': 'all 1s',
+                    });
+                }, opacity_time);
+                setTimeout(function(){
+                    $('#boom2').css({
+                        'transform' : 'scale(0)',  
+                        'transition': 'all 0.1s',
+                    });
+                }, opacity_time + init_delay);
+            }, 4000);
+
+
+
+        });
+    </script>
+</body>
+</html>

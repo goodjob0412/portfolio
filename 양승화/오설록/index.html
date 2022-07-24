@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>오설록</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main_page/header_footer.css">
+    <link rel="stylesheet" href="css/main_page/index.css">
+    <link rel="stylesheet" href="css/main_page/commons.css">
+    <link rel="shortcut icon" href="img/icon/oh_favicon.ico" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="js/main_page/index.js"></script>
+    <script src="js/main_page/header_footer.js"></script>
+    <script src="js/main_page/commons.js"></script>
+
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- 탑버튼 -->
+        <div class="top_btn">top</div>
+        <!-- 헤더 -->
+        <div class="behind_hader"></div>
+        <div class="header">
+            <!-- 로고 -->
+            <div class="top_header">
+                <a href="#" class="header_a">
+                    <div class="logo">오설록</div>
+                </a>
+            </div>
+            <!-- 메뉴 -->
+            <div class="bot_header">
+               <div class="menu_icon">
+                    <div class="left_menu">
+                        <ul class="menu_ul">
+                            <li class="menu_li"><a href="shop_page.html">TEA</a></li>
+                            <li class="menu_li"><a href="shop_page.html">FOOD</a></li>
+                            <li class="menu_li"><a href="shop_page.html">GIFT</a></li>
+                            <li class="menu_li"><a href="shop_page.html">ETC</a></li>
+                            <li class="menu_li"><a href="menu_page.html">TEA LIFE</a></li>
+                            <li class="menu_li"><a href="menu_page.html">MUSEUM</a></li>
+                        </ul>
+                    </div>
+                    <div class="right_icon">
+                        <div class=" rig_icon icon1"></div>
+                        <div class=" rig_icon icon2"></div>
+                        <div class=" rig_icon icon3"></div>
+                    </div>
+               </div>
+               <!-- 메뉴나오는판 -->
+               <div class="menu_pan">
+               <div class="menu_hover_box">
+                    <div class="menu_pan_box">
+                        <div class="sec">
+                            <ul class="sec_pan_ul">
+                                <li class="ham_li">TEA</li>
+                                <li class="sec_pan_li" onclick="shop();">명차</li>
+                                <li class="sec_pan_li" onclick="shop();">녹차 / 발효차</li>
+                                <li class="sec_pan_li" onclick="shop();">허브티</li>
+                                <li class="sec_pan_li" onclick="shop();">블렌디드티</li>
+                                <li class="sec_pan_li" onclick="shop();">파우더</li>
+                            </ul>
+                        </div>
+                        <div class="sec">
+                            <ul class="sec_pan_ul">
+                                <li class="ham_li">FOOD</li>
+                                <li class="sec_pan_li" onclick="shop();">베이커리</li>
+                                <li class="sec_pan_li" onclick="shop();"> 초콜릿/ 잼</li>
+                            </ul>
+                        </div>
+                        <div class="sec">
+                            <ul class="sec_pan_ul">
+                                <li class="ham_li">GIFT</li>
+                                <li class="sec_pan_li" onclick="shop();">세트</li>
+                                <li class="sec_pan_li" onclick="shop();">기프트권</li>
+                            </ul>
+                        </div>
+                        <div class="sec">
+                            <ul class="sec_pan_ul">
+                                <li class="ham_li">ETC.</li>
+                                <li class="sec_pan_li" onclick="shop();">찻잔</li>
+                                <li class="sec_pan_li" onclick="shop();">티팟</li>
+                                <li class="sec_pan_li" onclick="shop();">텀블러</li>
+                                <li class="sec_pan_li" onclick="shop();">티푸드 플레이트</li>
+                                <li class="sec_pan_li" onclick="shop();">소도구</li>
+
+                            </ul>
+                        </div>
+                        <div class="sec">
+                            <ul class="sec_pan_ul">
+                                <li class="ham_li">TEA LIFE</li>
+                                <li class="sec_pan_li" onclick="menu();">이벤트</li>
+                                <li class="sec_pan_li" onclick="menu();">온라인쇼핑</li>
+                                <li class="sec_pan_li" onclick="menu();">혜택</li>
+                                <li class="sec_pan_li" onclick="menu();">인스타그램</li>
+                                <li class="sec_pan_li" onclick="menu();">About tea</li>
+                            </ul>
+                        </div>
+                        <div class="sec">
+                            <ul class="sec_pan_ul bor_none">
+                                <li class="ham_li">MUSEUM</li>
+                                <li class="sec_pan_li" onclick="menu();">티뮤지엄 소개</li>
+                                <li class="sec_pan_li" onclick="menu();">티스톤 예약</li>
+                                <li class="sec_pan_li" onclick="menu();">제주 오설록 앱</li>
+                            </ul>
+                        </div>
+                    </div>
+               </div>
+               </div>
+               
+            </div>
+        </div>
+        <!-- 메인배너 -->
+        <div class="main_banner">
+            <div class="banner_img main_banner1"></div>
+            <div class="banner_img main_banner2"></div>
+            <div class="banner_img main_banner3"></div>
+
+            <input type="button" value="〈" class="btn_arrow" id="btn_L">
+            <input type="button" value="〉" class="btn_arrow" id="btn_R">
+
+            <div class="indicator"></div>
+            
+        </div>
+        <!-- 컨텐츠 -->
+        <div class="contents">
+            <!-- 티 상품 -->
+            <div class="tea_box">
+                    <ul class="tea_ul">
+                        <li class="tea_li">
+                            <a href="menu_page.html"><div class="tea_li_imgbox tea_img1"></div></a>
+                            <div class="tea_li_txt">TEA</div>
+                        </li> 
+                        <li class="tea_li">
+                            <a href="menu_page.html"><div class="tea_li_imgbox tea_img2"></div></a>
+                            <div class="tea_li_txt">TEA</div>
+                        </li>
+                        <li class="tea_li">
+                            <a href="menu_page.html"><div class="tea_li_imgbox tea_img3"></div></a>
+                            <div class="tea_li_txt">TEA</div>
+                        </li>
+                        <li class="tea_li">
+                            <a href="menu_page.html"><div class="tea_li_imgbox tea_img4"></div></a>
+                            <div class="tea_li_txt">TEA</div>
+                        </li>
+                        <li class="tea_li">
+                            <a href="menu_page.html"><div class="tea_li_imgbox tea_img5"></div></a>
+                            <div class="tea_li_txt">TEA</div>
+                        </li>
+                        <li class="tea_li">
+                            <a href="menu_page.html"><div class="tea_li_imgbox tea_img6"></div></a>
+                            <div class="tea_li_txt">TEA</div>
+                        </li>
+                    </ul>
+            </div>
+            <!-- 배너1 -->
+            <div class="mini_banner1">
+                
+                <div class="mini_banner1_box">
+                        <a href="menu_page.html">
+                            <div class="mini_banner">
+                                <div class="scale_banner1"></div>
+                            </div>
+                        </a>
+                            <div class="mini_banner_text">
+                                <div class="top_txt">
+                                    <div class="top_txt_h2">티뮤지엄 투어</div>
+                                    <div class="line"></div>
+                                </div>
+                                <p class="top_txt_p">제주 오설록 티뮤지엄으로여러분을 초대합니다.</p>
+                                <p class="top_txt_p">티뮤지엄으로여러분을 초대합니다.</p>
+                            </div>
+                </div>
+                
+                <div class="mini_banner1_box">
+                        <a href="menu_page.html">
+                            <div class="mini_banner">
+                                <div class="scale_banner2">
+                            </div>
+                        </div></a>
+                            <div class="mini_banner_text">
+                                <div class="top_txt">
+                                    <div class="top_txt_h2">기프트 세트</div>
+                                    <div class="line"></div>
+                                </div>
+                                <p class="top_txt_p">선물하기에 딱좋은 기프트 세트</p>
+                                <p class="top_txt_p">딱좋은 기프트 세트</p>
+                            </div>
+                </div>
+
+                <div class="mini_banner1_box">
+                        <a href="menu_page.html">
+                            <div class="mini_banner">
+                                <div class="scale_banner3">
+                            </div>
+                        </div></a>
+                            <div class="mini_banner_text">
+                                <div class="top_txt">
+                                    <div class="top_txt_h2">Brand Story</div>
+                                    <div class="line"></div>
+                                </div>
+                                <p class="top_txt_p">1979년 부터의 오설록을 느껴보세요.</p>
+                                <p class="top_txt_p">오설록을 느껴보세요.</p>
+                            </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 100% 배너 -->
+        <div class="banner2">
+            <div class="banner2_img">
+                <div class="banner2_txt">
+                    <h2 class="banner_slide">티클래스 OPEN</h2>
+                    <p class="banner_slide banner2_txt_p">나의 차 취향을 찾고 싶은 분들께 추천합니다.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contents">
+            <!-- 상품 -->
+            <div class="shop">
+                <div class="text">NEW</div>
+                <div class="shop_text">새로운 오설록을 만나보세요!</div>
+
+                <div class="top_shop">
+                    <div class="tshop">
+                    <div class="top_img t_img1" ></div>
+                        <div class="top_hover">
+                            <h2>레드파파야 블랙티</h2>
+                            <p class="hover_p1">23.000원</p>
+                            <p class="hover_p2">장미와 달콤한 파파야가 </p>
+                            <p class="hover_p2"> 곁들여진 화려한 풍미의 홍차</p>
+                            <div class="hover_line"></div>
+                            <p class="hover_p3">TEA INFO</p>
+                            <p class="hover_p3">베이스 : 홍차 , 후발효차</p>
+                            <p class="hover_p3">계열   : 프루티</p>
+                            <a href="shop_page.html">
+                                <div class="shop_box">BUY NOW!</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="tshop">
+                    <div class="top_img t_img2" ></div>
+                        <div class="top_hover">
+                            <h2>삼다연제주영귤</h2>
+                            <p class="hover_p1">23.000원</p>
+                            <p class="hover_p2">삼나무의 그윽한 풍미에  </p>
+                            <p class="hover_p2">제주영귤의 싱그러움을 더한 후발효차</p>
+                            <div class="hover_line"></div>
+                            <p class="hover_p3">TEA INFO</p>
+                            <p class="hover_p3">베이스 : 후발효차</p>
+                            <p class="hover_p3">계열   : 시트러스</p>
+                            <a href="shop_page.html">
+                                <div class="shop_box">BUY NOW!</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="tshop">
+                    <div class="top_img t_img3" ></div>
+                        <div class="top_hover">
+                            <h2>웨딩그린티</h2>
+                            <p class="hover_p1">23.000원</p>
+                            <p class="hover_p2">신부의 부케가 꽃향이</p>
+                            <p class="hover_p2">만발하는 한잔의 차가 되었습니다.</p>
+                            <div class="hover_line"></div>
+                            <p class="hover_p3">TEA INFO</p>
+                            <p class="hover_p3">베이스 : 홍차 , 후발효차</p>
+                            <p class="hover_p3">계열   : 프루티</p>
+                            <a href="shop_page.html">
+                                <div class="shop_box">BUY NOW!</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="tshop">
+                        <div class="top_img t_img4" ></div>
+                        <div class="top_hover">
+                            <h2>달빛걷기</h2>
+                            <p class="hover_p1">23.000원</p>
+                            <p class="hover_p2">달큰한 배향이 달빛처럼</p>
+                            <p class="hover_p2">은은하게 감도는 후발효차</p>
+                            <div class="hover_line"></div>
+                            <p class="hover_p3">TEA INFO</p>
+                            <p class="hover_p3">베이스 : 홍차 , 후발효차</p>
+                            <p class="hover_p3">계열   : 프루티</p>
+                            <a href="shop_page.html">
+                                <div class="shop_box">BUY NOW!</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bottom_shop">
+                    <div class="tshop">
+                        <div class="top_img bottom_img1" ></div>
+                        <div class="top_hover">
+                            <h2>바람노래</h2>
+                            <p class="hover_p1">15.000원</p>
+                            <p class="hover_p2">제주 들길에 부는 바람처럼 </p>
+                            <p class="hover_p2">순하고 구수한 제주 허브 블렌디드티</p>
+                            <div class="hover_line"></div>
+                            <p class="hover_p3">TEA INFO</p>
+                            <p class="hover_p3">베이스 : 녹차</p>
+                            <p class="hover_p3">계열   : 허브</p>
+                            <a href="shop_page.html">
+                                <div class="shop_box">BUY NOW!</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="tshop">
+                        <div class="top_img bottom_img2" ></div>
+                        <div class="top_hover">
+                            <h2>비의사색</h2>
+                            <p class="hover_p1">15.000원</p>
+                            <p class="hover_p2">애플시나몬향이 비 내린</p>
+                            <p class="hover_p2">숲처럼 녹아든 오리엔탈 블렌디드티</p>
+                            <div class="hover_line"></div>
+                            <p class="hover_p3">TEA INFO</p>
+                            <p class="hover_p3">베이스 : 후발효차 , 홍차</p>
+                            <p class="hover_p3">계열   : 스파이시</p>
+                            <a href="shop_page.html">
+                                <div class="shop_box">BUY NOW!</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="tshop">
+                        <div class="top_img bottom_img3" ></div>
+                        <div class="top_hover">
+                            <h2>금빛마중</h2>
+                            <p class="hover_p1">15.000원</p>
+                            <p class="hover_p2">열대과일향의 달콤함에</p>
+                            <p class="hover_p2">빛 노을처럼 물든 티</p>
+                            <div class="hover_line"></div>
+                            <p class="hover_p3">TEA INFO</p>
+                            <p class="hover_p3">베이스 : 녹차</p>
+                            <p class="hover_p3">계열   : 홍차</p>
+                            <a href="shop_page.html">
+                                <div class="shop_box">BUY NOW!</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="tshop">
+                        <div class="top_img bottom_img4" ></div>
+                        <div class="top_hover">
+                            <h2>벚꽃향가득한올레</h2>
+                            <p class="hover_p1">15.000원</p>
+                            <p class="hover_p2">제주 왕벚꽃향의 달콤새콤한</p>
+                            <p class="hover_p2">과실향이 어우러진 블렌디드티</p>
+                            <div class="hover_line"></div>
+                            <p class="hover_p3">TEA INFO</p>
+                            <p class="hover_p3">베이스 : 홍차 , 후발효차</p>
+                            <p class="hover_p3">계열   : 프루티</p>
+                            <a href="shop_page.html">
+                                <div class="shop_box">BUY NOW!</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- bot_banner -->
+            <div class="bot_banner_banner">
+                <a href="#"><div class="bot_banner_img1"></div></a>
+                <a href="#"><div class="bot_banner_img2"></div></a>
+            </div>
+        </div>
+        <!-- md_pick -->
+            <div class="md_pick">
+                <div class="md_pick_inner">
+                    <div class="left_md_box">
+                        <div class="md_top_text">
+                            <h1 class="md_top_text_h1">MD's PICK</h1>
+                            <p class="md_top_text_p1">2020년, 벌써 새해라구요?</p>
+                            <h2 class="md_top_text_h2">작심삼일이 되더라도 새롭게 시작하는 1월</h2>
+                            <p class="md_top_text_p">새해맞이로  핸드폰 저장 공간 넉넉하게 비워두고 시작하세요~</p>
+                            <p class="md_top_text_p"> 행복한 순간을 담은 사진과 영상으로 가득 채워질 테니!!</p>
+                        </div>
+                        <div class="md_btn_img_box">
+                            <div class="md_box">
+                                <div class="md_img">
+                                    <div class="md_img_box md_img1"></div>
+                                    <div class="md_img_box_hov md_hover_img1"></div>
+                                </div>
+                                <div class="md_img_txt">
+                                    <h2>가루녹차</h2>
+                                    <p>10.000원</p>
+                                </div>
+
+                            </div>
+                            <div class="md_box">
+                                <div class="md_img">
+                                    <div class="md_img_box md_img2"></div>
+                                    <div class="md_img_box_hov  md_hover_img2"></div>
+                                </div>
+                                <div class="md_img_txt">
+                                    <h2>삼다연 오리지널 밀크티</h2>
+                                    <p>12.000원</p>
+                                </div>
+
+                            </div>
+                            <div class="md_box">
+                                <div class="md_img">
+                                    <div class="md_img_box md_img3"></div>
+                                    <div class="md_img_box_hov md_hover_img3"></div>
+                                </div>
+                                <div class="md_img_txt">
+                                    <h2>제주숲 동화 파우치</h2>
+                                    <p>8.000원</p>
+                                </div>
+
+                            </div>
+                            <div class="md_box">
+                                <div class="md_img">
+                                    <div class="md_img_box md_img4"></div>
+                                    <div class="md_img_box_hov md_hover_img4"></div>
+                                </div>    
+                                <div class="md_img_txt">
+                                    <h2>달빛보틀 + 찬물녹차</h2>
+                                    <p>13.000원</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rig_md_box">
+                        <div class="md_rig_img"></div>
+                    </div>
+                </div>
+            </div>
+        <!--sns 창  -->
+       <div class="sns_box">
+           <p>오설록과 함께하는  SNS</p>
+              <div class="sns_icon_box">
+                <div class="sns_items">
+                    <div class="sns_btn_icon sns_icon1"></div>
+                    <div class="sns_btn_hov sns_hov1"></div> 
+                </div>
+                <div class="sns_items">
+                    <div class="sns_btn_icon sns_icon2"></div>
+                    <div class="sns_btn_hov sns_hov2"></div>
+                </div>
+                <div class="sns_items">
+                    <div class="sns_btn_icon sns_icon3"></div>
+                    <div class="sns_btn_hov sns_hov3"></div>
+                </div>
+                <div class="sns_items">
+                    <div class="sns_btn_icon sns_icon4"></div>
+                    <div class="sns_btn_hov sns_hov4"></div>
+                </div>
+                <div class="sns_items">
+                    <div class="sns_btn_icon sns_icon5"></div>
+                    <div class="sns_btn_hov sns_hov5"></div>
+                </div>
+              </div>
+       </div>
+       <!-- ins슬라이드 -->
+       <div class="ins_banner">
+        <div class="ins_img_box">
+            <div class="ins_img ins_img1"></div>
+            <div class="ins_img ins_img2"></div>
+            <div class="ins_img ins_img3"></div>
+            <div class="ins_img ins_img4"></div>
+            <div class="ins_img ins_img5"></div>
+            <div class="ins_img ins_img6"></div>
+            <div class="ins_img ins_img7"></div>
+            <div class="ins_img ins_img8"></div>
+            <div class="ins_img ins_img9"></div>
+            <div class="ins_img ins_img10"></div>
+        </div>
+        <input type="button" value="〈" id="left_btn" class="btn_slide">
+        <input type="button" value="〉" id="right_btn" class="btn_slide">  
+      </div>
+      <!-- 푸터-->
+        <div class="footer">
+            <div class="top_footer">
+                <div class="top_fot_txt">
+                    <ul>
+                        <li class="top_fot_li">회사소개</li>
+                        <li class="top_fot_li">서비스</li>
+                        <li class="top_fot_li">이용약관</li>
+                        <li class="top_fot_li">개인정보 처리방침</li>
+                        <li class="top_fot_li">영상정보 처리방침</li>
+                        <li class="top_fot_li">뷰티포인트</li>
+                        <li class="top_fot_li">임직원할인</li>
+                        <li class="top_fot_li">사이트맵</li>
+                    </ul>
+                </div>
+            </div>
+           
+           <div class="bot_footer">
+                <div class="fot_logo"></div>
+                   <div class="bot_fot_txt">
+                        <ul class="bot_fot_ul">
+                            <li class="bot_fot_li">주문/배송문의</li>
+                            <li class="bot_fot_li">고객상담센터 080-000-0000</li>
+                            <li class="bot_fot_li bor_none">평일 09 : 30 - 17 : 00 (점심 11 : 30 - 13 : 00)</li>
+                        </ul>
+
+                        <ul class="bot_fot_ul">
+                            <li class="bot_fot_li">대표이사:서혁제</li>
+                            <li class="bot_fot_li">주소:서울특별시 용산구 한강대로 100, 14층(한강로2가)</li>
+                            <li class="bot_fot_li">사업자등록번호: 390-87-01499</li>
+                            <li class="bot_fot_li bor_none"> 통신판매업신고번호:2019-서울용산-1173호</li>
+                        </ul>
+                        <ul class="bot_fot_ul">
+                            <li class="bot_fot_li bor_none">(주)이니시스 구매안전서비스
+                                고객님의 안전거래를 위해 현금 거래에 대해 이니페이 에스크로서비스를 이용하실 수 있습니다.</li>
+                        </ul>
+                   </div>
+           </div>
+        </div>
+    </div>
+</body>
+</html>

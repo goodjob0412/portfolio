@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'GmarketSansTTFBold';
+  src: url('GmarketSansTTFBold.eot');
+  src: url('GmarketSansTTFBold.eot?#iefix') format('embedded-opentype'),
+       url('GmarketSansTTFBold.ttf') format('truetype'),
+       url('GmarketSansTTFBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+

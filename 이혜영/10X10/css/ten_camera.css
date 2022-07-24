@@ -1,0 +1,681 @@
+*{margin:0; padding:0;}
+body{
+    font-weight: 500;
+    /* font-family: 'Noto Sans KR', sans-serif; */
+    /* font-family: 'Nanum Gothic', sans-serif; */
+    color:#444;
+    font-family: 'Noto Sans KR', sans-serif;
+
+}
+li{
+    list-style: none;
+}
+.container{
+    position: relative;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background: #ff3131;
+}
+.logo{
+    display: inline-block;
+}
+.logo > a >img{
+    /* width: 160px; */
+    height:40px;
+    position: absolute;
+    top:30px;
+}
+.head_top{
+    width: 100%;
+    height: 30px;
+    padding-top:10px;
+    /* margin-top:-70px; */
+    cursor: pointer;
+}
+.head_ul{
+    position: absolute;
+    right:0;
+}
+.head_ul > li{
+    float: left;
+    color:#fff;
+    font-size:13px;
+    padding:0 6px;
+    cursor: pointer;
+}
+.head_ul > li:hover{
+    opacity: 0.8;
+}
+.head_top_2{
+    float:right;
+}
+.head_ul_2 > li{
+    float: left;
+    /* margin-top:30px; */
+    color:#fff;
+    font-size:17px;
+    padding:0 6px;
+    cursor: pointer;
+}
+.head_ul_2 > li:hover{
+    opacity: 0.8;
+}
+
+.search_form {
+    width: 230px;
+    height: 25px;
+    border-radius: 15px;
+    position: relative;
+    float: left;
+    background: #fff;
+}
+.search_form > input{
+    width: 200px;
+    height: 20px;
+    border-radius: 15px;
+    border:none;
+}
+.text_img{
+    position: absolute;
+    top:2px;
+    right: 10px;
+    width:20px;
+    height:20px;
+    cursor: pointer;
+}
+.text_img > img{
+   width: 100%;
+}
+.nav{
+    width: 100%;
+    height: 50px;
+    background:#fff;
+}
+.nav_ul{
+    width: 100%;
+    z-index: 999;
+    float: left;
+    position: absolute;
+}
+.nav_ul > li{
+    cursor: pointer;
+    float: left;
+    width: calc(100% / 8);
+    line-height: 50px;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 15px;
+    /* padding:0 38px; */
+}
+.nav_ul > li:hover{
+    color:#f22727;
+    cursor: pointer;
+}
+.nav_ul > li:hover .nav_inner{
+    width: 100%;
+    height: 300px;
+    transition: all 0.3s;
+}
+.nav_inner{
+    color: #000;
+    position: relative;
+    background: #fff;
+    border: 1px solid #aaa;
+    height: 0;
+    overflow: hidden;
+    width: 140px;
+    text-align: center;
+    pointer-events: none;
+    visibility: hidden;
+    top:-2px;
+}
+.inner_ul > li{
+    z-index: 9999999;
+    color:#000;
+    font-size: 13px;
+    /* width: 100%; */
+    height: 30px;
+    line-height: 30px;
+}
+
+.inner_ul{
+    background: #fff;
+    opacity: 1;
+    pointer-events: auto;
+    visibility:visible;
+}
+
+.inner_ul > li:hover{
+    width: 100%;
+    height: 30px;
+    background: lightgrey;
+    line-height: 30px;
+}
+.top_banner{
+    width: 100%;
+    height:500px;
+    background:url(../img/tentencamera/topaddimg20190729124729.jpg) no-repeat center /contain #fbd8c4;
+}
+
+.main_banner{
+    position: relative;
+    width: 100%;
+    height:500px;
+    /* overflow: hidden; */
+    margin:0 auto;
+    /* background: lawngreen; */
+}
+.banner_box{
+    width: 100%;
+    height: 500px;
+    margin:0 auto;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.btn_slide{
+    font-size: 30px;
+    position: absolute;
+    cursor: pointer;
+    top:40%;
+}
+#btn_L{
+    left: 0;
+}
+#btn_R{
+    right:0;
+}
+.top_banner_desc{
+    text-align: center;
+}
+.top_banner_desc > img{
+    z-index: 99;
+    width: 500px;
+    /* margin-left: 40%; */
+    margin-top:100px;
+}
+.size_box{
+    position: relative;
+    width:100%;
+    height:500px;
+    margin:0 auto;
+    /* background: lightsalmon; */
+}
+.slide{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    top:0;
+    left:100%;
+    margin: 0 auto;
+}
+#slide_1{
+    background: url(../img/tentencamera/slideimg20190729125029.jpg) no-repeat center/ contain;
+}
+#slide_2{
+    background: url(../img/tentencamera/slideimg20190729125022.jpg) no-repeat center/contain;
+}
+#slide_3{
+    background: url(../img/tentencamera/slideimg20190729125042.jpg) no-repeat center/ contain;
+}
+#slide_4{
+    background: url(../img/tentencamera/slideimg20190729125103.jpg)no-repeat center/ contain;
+}
+#slide_5{
+    background: url(../img/tentencamera/slideimg20190729125115.jpg)no-repeat center/ contain;
+}
+
+.film_camera{
+    width: 100%;
+    height:800px;
+    background: #f5f7f6;
+}
+.film_desc{ 
+    width: 100%;
+    height: 350px;
+    margin:0 auto;
+    /* background:lavender; */
+    position: relative;
+}
+.film_L{
+    text-align:left;
+    font-size: 30px;
+    width: 40%;
+    display: inline-block;
+    top:20%;
+    position: relative;
+    /* background:palegoldenrod; */
+}
+.film_L > p{
+    float: right;
+    padding-right:100px;
+    color:#2d5384;
+}
+.film_R{
+    float: right;
+    width: 60%;
+    
+    margin-top:75px;
+    font-size: 17px;
+    margin-left:0;
+}
+.film_img{
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+}
+.film_img > li{
+    width: calc((100% - (10px * 2 * 3)) / 3);
+    margin:10px;
+    height:260px;
+    float: left;
+    transform: translateX(100%);
+    transition: all 1s;
+    /* background: #ff3131; */
+}
+.film_img > li > img{
+    width: 100%;
+    /* height: 100%; */
+}
+.candy_camera{
+    width: 100%;
+    height: 700px;
+    background: #d0dcea;
+}
+.candy_desc {
+    color:#4658d5;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    top:8%;
+    position: relative;
+    overflow: hidden;
+}
+.cady_img{
+    width: 100%;
+    position: relative;
+    top:100px;
+}
+.candy_img_ul{
+    width:70%;
+    height: 500px;
+    margin:0 auto;
+    /* background: #2d5384; */
+}
+.candy_img_img{
+    width: 100%;
+    height: 340px;
+    overflow: hidden;
+}
+.candy_img_ul > li{
+    width: calc((100% - (30px * 3)) / 3);
+    margin:0 30px 30px 0;
+    float: left;
+    position: relative;
+    /* background: #4658d5; */
+     cursor: pointer;
+    height: 340px;
+}
+.candy_img_img > img{
+    transition: all 0.3s;
+    transform: scale(1);
+    
+}
+.candy_img_img:hover >img{
+    transform: scale(1.2);
+}
+.candy_img_ul > li > img{
+    width: 100%;
+    height: 340px;
+    overflow: hidden;
+    margin:auto;
+   
+}
+.candy_num{
+    position: absolute;
+    font-size: 45px;
+    font-family: 'Lusitana', serif;
+    bottom:-8%;
+    left:5%;
+    color:#f5f5f5;
+    z-index: 99;
+}
+.candy_img_desc{
+    position: relative;
+    left: 20px;
+    font-size: 15px;
+    line-height: 25px;
+}
+.hitchhiker{
+    width: 100%;
+    height:40px;
+    background: #e7b93c;
+    text-align: center;
+    color:#fff;
+    font-size: 17px;
+    line-height:40px;
+}
+.search_box{
+    width: 100%;
+    /* height: 1600px; */
+    background: #f9f9f9;
+}
+.hit_ul{
+    width: 100%;
+    overflow: hidden;
+    /* height: 500px; */
+    /* background: #f9f9f9; */
+}
+.hit_img_li{
+    width: calc((100% - (20px * 3))/ 3 );
+    /* height: 500px; */
+    margin:0 20px 20px 0;
+    /* background: #d0dcea; */
+    float: left;
+    cursor: pointer;
+}
+.hit_img{
+    width:100%;
+    position: relative;
+    /* height: 390px; */
+    /* background: lightsalmon; */
+}
+.hit_img > img{
+    width: 100%;
+    transition:all 0.3s;
+    display:block;
+
+}
+.hit_img > img:nth-child(2){
+    position: absolute;
+    left: 0;
+    top:0;
+    display: none;
+    
+}
+.hit_img_li:hover .hit_img > img{
+    display:block;
+}
+.hitchhiker_box{
+    width: 100%;
+    top: 100px;
+    left: 0;
+}
+/* 
+#hit_img_1{
+    background: url(../img/tentencamera/A002402089_01.jpg) no-repeat center/cover;
+}
+#hit_img_2{
+    background:url(../img/tentencamera/A002402022_01.jpg) no-repeat center/cover;
+}
+#hit_img_3{
+    background: url(../img/tentencamera/A002401989_01-1.jpg) no-repeat center/cover;
+}
+.hit_img_li:hover img{
+   opacity: 0;
+} */
+.hit_desc{
+    width: 100%;
+    /* height: 100px; */
+    /* background: #2d5384; */
+    text-align: center;
+    font-size: 15px;
+    line-height: 25px;
+}
+.p_top{
+    
+    display: inline-block;
+    color:#777;
+    border-bottom:1px solid #777;
+}
+.p_mid{
+    line-height: 30px;
+}
+.p_btm{
+    line-height: 35px;
+}
+/* ---텐바이텐--- */
+.tenbyten{
+    width: 100%;
+    height:40px;
+    background: #e7b93c;
+    text-align: center;
+    color:#fff;
+    font-size: 17px;
+    line-height:40px;
+}
+.ten_ul{
+    width: 100%;
+    /* height: 900px; */
+    overflow: hidden;
+    /* background: #f9f9f9; */
+}
+.ten_img_li{
+    width: calc((100% - (20px * 3))/ 3 );
+    /* height: 500px; */
+    margin:0 20px 20px 0;
+    /* background: #d0dcea; */
+    float: left;
+    cursor: pointer;
+    
+}
+.ten_img_li > img{
+    width: 100%;
+}
+.ten_img{
+    width: 100%;
+    position: relative;
+    transition:all 0.5s;
+    /* background:390px;
+    background: lemonchiffon; */
+}
+.ten_img > img{
+    width: 100%;
+    display: block; 
+    
+    /* position: absolute; */
+}
+.ten_img > img:nth-child(2){
+    position: absolute;
+    left: 0;
+    top:0;
+    display: none;  
+}
+.ten_img_li:hover .ten_img > img{
+    display:block;
+}
+.tenbyten_box{
+    width: 100%;
+    top: 100px;
+    left: 0;
+}
+.ten_desc{
+    width: 100%;
+    /* height: 100px; */
+    /* background: #2d5384; */
+    text-align: center;
+    font-size: 15px;
+    line-height: 25px;
+}
+.p_top{
+    
+    display: inline-block;
+    color:#777;
+    border-bottom:1px solid #777;
+}
+.p_mid{
+    line-height: 30px;
+}
+.p_btm{
+    line-height: 35px;
+}
+footer{
+    margin-top:100px;
+    /* max-width: 1200px; */
+    margin:0 auto;
+    height: 250px;
+    font-size: 15px;
+    background: #fff;
+}
+.footer_nav{
+    position: relative;
+    width: 100%;
+    height:50px;
+    border-top: 1px solid #ddd;
+    border-bottom:1px solid #ddd;
+}
+
+.footer_nav_ul > li{
+    cursor: pointer;
+    font-size: 15px;
+    float: left;
+    width: calc(100% / 8); 
+    line-height: 50px;
+}
+.footer_nav_ul > li:hover{
+    color:#ff3131;
+}
+.footer_inner{
+    width: 100%;
+    height: 200px;
+    padding:50px 0;
+}
+.footer_company > em{
+    font-size:20px;
+}
+.footer_logo{
+    width: 20%;
+    float: left;
+}
+.footer_company{
+    width: 40%;
+    float: left;
+    /* background: lavender; */
+    /* padding-left: 100px; */
+    line-height:30px;
+}
+.footer_center{
+    float: right;
+    /* width: 30%; */
+    line-height:20px;
+    padding-top:20px;
+}
+.gray_p{
+    color:#555;
+}
+.footer_center > strong{
+    color:#ff001c;
+    font-size: 25px;
+}
+.header480{
+    display: none;
+}
+.h_480_nav{
+    display: none;
+}
+.footer_910{
+    display:none;
+}
+.f_910_btm{
+    display:none;
+}
+/* 910px */
+@media screen and (max-width: 910px) {
+    .container{
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+    }
+    .h_480_nav{
+        display:block;
+        line-height: 50px;
+    }
+    .h_480_nav_ul > li{
+        margin-left: 50px;
+    }
+    .header480{
+        display:block;
+        width: 100%;
+        /* height:80px; */
+        position: fixed;;
+        top:0;
+        background: #fff;
+        z-index: 99999;
+    }
+    .logo{
+        width: 120px;
+        height: 30px;
+        background: url(../img/mobile/m_logo.png) no-repeat center /contain;
+        padding-top: 40px;
+        padding-left: 10px;        
+    }
+    .logo > a{
+        text-decoration: none;
+        display:none;
+
+    }
+    .main_banner{
+        /* position: relative;
+        top:130px; */
+        margin-top:0;
+    }
+    .tool{
+        position: absolute;
+        width: 100%;
+        top:20%;
+    }
+    .tool > img{
+        width: 25px;
+        float: right;
+        padding:5px;
+    }
+    .h_480_nav{
+        /* position: fixed;
+        top:80px; */
+        height: 50px;
+        background:#fff;
+        overflow-x: scroll;
+    }
+    .h_480_nav_ul{
+         width: 140%;
+    }
+    .h_480_nav_ul > li {
+        float: left;
+        width: calc(100% / 8);
+        color:#2e2e2e;
+        font-size: 15px;
+    } 
+    header{
+        display:none;
+    }
+    .nav{
+        display:none;
+    }
+    .top_banner{
+        height: 600px;
+        margin-top:130px;
+        background:url(../img/tentencamera/topaddimg20190729124729.jpg) no-repeat center /cover #fbd8c4;
+    }
+    .top_banner_desc > img{
+        margin-top:150px;
+    }
+    .film_img{
+        width: 100%;
+    }
+    .film_L > p{
+        padding-right: 140px;
+    }
+    .film_R{
+        width: 70%;
+        margin-top:-25px;
+    }
+    .candy_img_ul{
+        width: 100%;
+    }
+}

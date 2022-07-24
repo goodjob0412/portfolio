@@ -1,0 +1,192 @@
+
+/* 상단 사라지는 배너 */
+#top_banner { display: none;}
+.top_popup{
+    /* width: 100%; */
+    height: 40px;
+    background: url(../img/main_page/top_banner.jpg) no-repeat center /cover;
+
+    transition: all 0.5s;
+    position: relative;
+}
+.top_popup_inner{
+    width: calc(100% - 40%);
+    height: 100%;
+    line-height: 40px;
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    transform: translateX(-30%);
+}
+.top_icon{
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-right: 10px;
+    background: url(../img/main_page/siren.gif) no-repeat center / cover;
+}
+.top_popup > p{
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    float: left;
+}
+
+.top_popup_close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #fff;  
+    cursor: pointer; 
+}
+#top_banner:checked + .top_popup {
+    /* height: 0; */
+    margin-top: -40px;
+}
+/* 상단바 */
+.header{
+    width: 100%;
+    height: 80px;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,.2);
+    position: relative;
+    z-index: 99999;
+    /* background: #999;    */
+    box-sizing: border-box;
+    padding: 0 15px;
+
+}
+.logo{
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    background: url(../img/main_page/logo3.png) no-repeat center / contain;
+    float: left;
+}
+.logo a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-indent: -9999px;
+}
+.menu{
+    width: calc(100% - (275px * 2));
+    height: 40px;
+    /* background: #666; */
+    float: left;
+    margin-top: 30px;
+    
+}
+
+.menu_li{
+    width: calc(100% / 5);
+    height: 40px;
+    font-size: 18px;
+    float: left;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+
+    position: relative;
+    z-index: 9999;
+}
+.menu_li a:hover {
+    color: #12b8ba;
+}
+.menu_pan{
+    width: 100%;
+    height:0px;
+    background: rgba(193, 192, 192, 0.8);
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.hover_menu_ul{
+    list-style: none;
+    width: 100%;
+    height:0px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+.menu_li:hover > .hover_menu_ul{
+    height: 180px;
+}
+.menu_ul:hover ~ .menu_pan{
+    height: 180px;
+}
+.hover_menu_ul >li{
+    height: 30px;
+    font-size: 16px;
+}
+.hover_menu_ul >li:hover{
+    color: #12b8ba;
+}
+
+.search_bar{
+    width: 270px;
+    height: 80px;
+    /* background: #777; */
+    float: right;
+    position: relative;
+    outline: none;
+}
+.box{
+    width: 220px;
+    height: 40px;
+    border: 1px solid #23507b;
+    border-right: none;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+}
+.box > input{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;    
+    outline: none;
+    border: none;       
+    padding: 0 10px;
+}
+.search_icon{
+    width: 50px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    background: url(../img/main_page/Untitled-1-01.png) no-repeat center /contain;
+    border: 1px solid #23507b ;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.footer{
+    width: 100%;
+    height: 200px;
+    background: #f2f2f2;
+    margin-top: 80px;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+.footer_logo{
+    width: 179px;
+    height: 64px;
+    background: url(../img/main_page/logo3.png) no-repeat center / contain;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.footer_soild{
+    width: 100%;
+    height: 2px;
+    background: #23507b;
+    margin-bottom: 10px;
+}
+.footer_soild ~ p{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.footer_soild ~ p:hover{
+    color: #12b8ba;
+    cursor: pointer;
+    transition: all 1s;
+}

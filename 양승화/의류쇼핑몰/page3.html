@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>옷 구매</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main/header_footer.css">
+    <link rel="stylesheet" href="css/page3/index.css">
+    <link rel="stylesheet" href="css/main/commons.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="js/main/header_footer.js"></script>
+    <script src="js/page3/index.js"></script>
+    <script src="js/main/commons.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <style>
+       
+        * { font-family: 'Noto Sans KR', sans-serif !important;}
+    </style>
+</head>
+<body>
+    <div class="wrap">
+    
+        <!-- 고정 팝업 -->
+        <div class="side_popup">
+            <div class="close_img"></div>
+            <div class="car_img"></div>
+        </div>
+        <!-- 헤더 -->
+        <div class="header">
+            <div class="top_header">
+                <div class="left_logo" onclick="main();"></div>
+            </div>
+            <div class="bot_header">
+                <div class="bot_logo" onclick="main();"></div>
+                <div class="mid_menu">
+                    <ul class="mid_menu_ul">
+                        <li class="mid_menu_li" onclick="brand();">ACHIO</li>
+                        <li class="mid_menu_li" onclick="cloths();">OUTER</li>
+                        <li class="mid_menu_li" onclick="cloths();">TOP</li>
+                        <li class="mid_menu_li" onclick="cloths();">BOTTOM</li>
+                        <li class="mid_menu_li" onclick="cloths();">ACC</li>
+                    </ul>
+                </div>
+                <div class="rig_menu">
+                    <ul>
+                        <li class="rig_menu_li">MY PAGE
+                            <div class="hover_pan">
+                                <div class="my_txt_box">회원정보</div>
+                                <div class="my_txt_box">주문내역</div>
+                                <div class="my_txt_box">관심상품</div>
+                                <div class="my_txt_box">적립금</div>
+                                <div class="my_txt_box">예치금</div>
+                                <div class="my_txt_box">쿠폰</div>
+                            </div>
+                        </li>
+                        <li class="rig_menu_li">LOGIN</li>
+                    </ul>
+                </div>
+                <!-- 클릭하면 로그인 창 -->
+                <div class="back_pan">
+                    <div class="login_pan">
+                        <div class="login_close"></div>
+                        <div class="login_title">로그인</div>
+                        <div class="top_login_box">
+                        <input type="text" placeholder="아이디" class="lo_txt_box">
+                        <input type="text" placeholder="비밀번호" class="lo_txt_box">
+                        <div class="login_btn">로그인</div>
+                        <div class="no_family_btn">비회원 구매</div>
+                        </div>
+                        <div class="btn_login_box">
+                            <ul>
+                                <li class="login_li">아이디찾기</li>
+                                <li class="login_li">비밀번호찾기</li>
+                                <li class="login_li">회원가입</li>
+                            </ul>
+                            <div class="btn_login naver">네이버 로그인</div>
+                            <div class="btn_login kakao">카카오계정 로그인</div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- 메뉴 내려오는 판 -->
+                <div class="menu_pan">
+                    <div class="menu_pan_rig">
+                        <ul class="pan_ul">
+                            <li class="pan_li" onclick="brand();">Brand</li>
+                            <li class="pan_li" onclick="brand();">About us</li>
+                            <li class="pan_li" onclick="brand();">Info</li>
+                            <li class="pan_li" onclick="brand();">Contact</li>
+                        </ul>
+                        <ul class="pan_ul">
+                            <li class="pan_li" onclick="cloths();">Jacket</li>
+                            <li class="pan_li" onclick="cloths();">Cardigan</li>
+                            <li class="pan_li" onclick="cloths();">Coat</li>
+                            <li class="pan_li" onclick="cloths();">Jumper</li>
+                            <li class="pan_li" onclick="cloths();">Padding</li>
+                        </ul>
+                        <ul class="pan_ul">
+                            <li class="pan_li" onclick="cloths();">Tea</li>
+                            <li class="pan_li" onclick="cloths();">Shirts</li>
+                            <li class="pan_li" onclick="cloths();">Blouses</li>
+                            <li class="pan_li" onclick="cloths();">Knit</li>
+                            <li class="pan_li" onclick="cloths();">Cardigan</li>
+                            <li class="pan_li" onclick="cloths();">Sleeve</li>
+                        </ul>
+                        <ul class="pan_ul">
+                            <li class="pan_li" onclick="cloths();">denim</li>
+                            <li class="pan_li" onclick="cloths();">Slacks</li>
+                            <li class="pan_li" onclick="cloths();">Pants</li>
+                            <li class="pan_li" onclick="cloths();">Skirt</li>
+                            <li class="pan_li" onclick="cloths();">OPS</li>
+                            <li class="pan_li" onclick="cloths();">short pants</li>
+
+                        </ul>
+                        <ul class="pan_ul">
+                            <li class="pan_li" onclick="cloths();">Jewelry</li>
+                            <li class="pan_li" onclick="cloths();">hair acc</li>
+                            <li class="pan_li" onclick="cloths();">Watch</li>
+                            <li class="pan_li" onclick="cloths();">Hat</li>
+                            <li class="pan_li" onclick="cloths();">socks</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 햄버거 -->
+            <div class="ham_menu">
+                  <!-- 햄버거 -->
+                <div class="hamberger">
+                    <div class="ham_line" id="line_top"></div>
+                    <div class="ham_line" id="line_mid"></div>
+                    <div class="ham_line" id="line_bot"></div>
+                </div>
+                <!-- 햄버거 메뉴판 -->
+                <div class="ham_menu_pan">
+                    <div class="ham_menu_pan_box">
+                        <div class="ham_icon_box">
+                            <div class="menu_icon ham_icon1"></div>
+                            <div class="menu_icon ham_icon2"></div>
+                            <div class="menu_icon ham_icon3"></div>
+                        </div>
+
+                        <div class="ham_sec">
+                            <ul class="ham_sec_pan_ul ham_bor_none">
+                                <li class="ham_li" onclick="brand();">ACHIO</li>
+                                <li class="sec_pan_li" onclick="brand();">Brand</li>
+                                <li class="sec_pan_li" onclick="brand();">About us</li>
+                                <li class="sec_pan_li" onclick="brand();">Info</li>
+                                <li class="sec_pan_li" onclick="brand();">Contact</li>
+                            </ul>
+                        </div>
+                        <div class="ham_sec">
+                            <ul class="ham_sec_pan_ul">
+                                <li class="ham_li" onclick="cloths();">OUTER</li>
+                                <li class="sec_pan_li" onclick="cloths();">Jacket</li>
+                                <li class="sec_pan_li" onclick="cloths();">Cardigan</li>
+                                <li class="sec_pan_li" onclick="cloths();">Coat</li>
+                                <li class="sec_pan_li" onclick="cloths();">Jumper</li>
+                                <li class="sec_pan_li" onclick="cloths();">Padding</li>
+                            </ul>
+                        </div>
+                        <div class="ham_sec">
+                            <ul class="ham_sec_pan_ul">
+                                <li class="ham_li" onclick="cloths();">TOP</li>
+                                <li class="sec_pan_li" onclick="cloths();">Tea</li>
+                                <li class="sec_pan_li" onclick="cloths();">Shirts</li>
+                                <li class="sec_pan_li" onclick="cloths();">Blouses</li>
+                                <li class="sec_pan_li" onclick="cloths();">Knit</li>
+                                <li class="sec_pan_li" onclick="cloths();">Cardigan</li>
+                                <li class="sec_pan_li" onclick="cloths();">Sleeve</li>
+                            </ul>
+                        </div>
+                        <div class="ham_sec">
+                            <ul class="ham_sec_pan_ul">
+                                <li class="ham_li" onclick="cloths();">BOTTOM</li>
+                                <li class="sec_pan_li" onclick="cloths();">denim</li>
+                                <li class="sec_pan_li" onclick="cloths();">Slacks</li>
+                                <li class="sec_pan_li" onclick="cloths();">Pants</li>
+                                <li class="sec_pan_li" onclick="cloths();">Skirt</li>
+                                <li class="sec_pan_li" onclick="cloths();">OPS</li>
+                                <li class="sec_pan_li" onclick="cloths();">short pants</li>
+                            </ul>
+                        </div>
+                        <div class="ham_sec">
+                            <ul class="ham_sec_pan_ul">
+                                <li class="ham_li" onclick="cloths();">ACC</li>
+                                <li class="sec_pan_li" onclick="cloths();">Jewelry</li>
+                                <li class="sec_pan_li" onclick="cloths();">hair acc</li>
+                                <li class="sec_pan_li" onclick="cloths();">Watch</li>
+                                <li class="sec_pan_li" onclick="cloths();">Hat</li>
+                                <li class="sec_pan_li" onclick="cloths();">socks</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       <div class="top_title">
+           <h2>OUTER</h2>
+           <ul class="top_title_ul">
+               <li class="top_title_li">Jacket</li>
+               <li class="top_title_li">Cardigan</li>
+               <li class="top_title_li">Coat</li>
+               <li class="top_title_li">Jumper</li>
+               <li class="top_title_li">Padding</li>
+           </ul>
+       </div>
+        <div class="contents">
+            <!-- 베스트 상품 -->
+            <div class="pho_txt">
+                <div class="pho_txt_box">BEST ITEMS</div>
+            </div>
+            <div class="photo_review show_at_lg">
+                <div class="btn_slide" id="left_btn"></div>
+                <div class="btn_slide" id="right_btn"></div>
+
+                <div class="review_box">
+
+                    <div class="rev_img_box">
+                        <div class="rev_img rev_img1" onclick="buy();">
+                            <div class="best_num">Best 01</div>
+                        </div>
+                    </div>
+
+                    <div class="rev_img_box">
+                        <div class="rev_img rev_img2" onclick="buy();">
+                            <div class="best_num">Best 02</div>
+                        </div>
+                    </div>
+
+
+                    <div class="rev_img_box">
+                        <div class="rev_img rev_img3" onclick="buy();">
+                            <div class="best_num">Best 03</div>
+                        </div>
+                    </div>
+
+
+                    <div class="rev_img_box">
+                        <div class="rev_img rev_img4" onclick="buy();">
+                            <div class="best_num">Best 04</div>
+                        </div>
+                    </div> 
+
+
+                    <div class="rev_img_box">
+                        <div class="rev_img rev_img5" onclick="buy();">
+                            <div class="best_num">Best 05</div>
+                        </div>
+                    </div>
+
+                    <div class="rev_img_box">
+                        <div class="rev_img rev_img6" onclick="buy();">
+                            <div class="best_num">Best 06</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 새로운 상품 -->
+            <div class="shop_box">
+                <div class="header_txt">OUTER</div>
+            <!-- 상단 상품 -->
+                <div class="cloths_box">
+                    <div class="clo_inner_box" onclick="buy();">
+                        <div class="img_box clot_img1">
+                            <div class="img_hov_box">
+                                <div class="left_hov">CLICK HEART!
+                                    <div class="left_hov_icon"></div>
+                                </div>
+                                <div class="rig_hov">ADD CART
+                                    <div class="rig_hov_icon"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clo_txt_box">
+                            <h2>SIGNATURE HOOCIE</h2>
+                            <h3 class="clo_h3">78.500 원</h3>
+                            <p class="clo_p">Delivers a super dose of</p>
+                            <p class="clo_p">strengthening and reparative</p>
+                        </div>
+                    </div>
+
+                    <div class="clo_inner_box" onclick="buy();">
+                        <div class="img_box clot_img2">
+                            <div class="img_hov_box">
+                                 <div class="left_hov">CLICK HEART!
+                                    <div class="left_hov_icon"></div>
+                                </div>
+                                <div class="rig_hov">ADD CART
+                                    <div class="rig_hov_icon"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clo_txt_box">
+                            <h2>TWIST SHAPE SK</h2>
+                            <h3 class="clo_h3">39.000 원</h3>
+                            <p class="clo_p">Delivers a super dose of</p>
+                            <p class="clo_p">strengthening and reparative</p>
+                        </div>
+                    </div>
+
+                    <div class="clo_inner_box" onclick="buy();">
+                        <div class="img_box clot_img3">
+                            <div class="img_hov_box">
+                                 <div class="left_hov">CLICK HEART!
+                                    <div class="left_hov_icon"></div>
+                                </div>
+                                <div class="rig_hov">ADD CART
+                                    <div class="rig_hov_icon"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clo_txt_box">
+                            <h2>SWEATSHIRT_YELLOW</h2>
+                            <h3 class="clo_h3">68.000 원</h3>
+                            <p class="clo_p">Delivers a super dose of</p>
+                            <p class="clo_p">strengthening and reparative</p>
+                        </div>
+                    </div>
+
+                    <div class="clo_inner_box" onclick="buy();">
+                        <div class="img_box clot_img4">
+                            <div class="img_hov_box">
+                                 <div class="left_hov">CLICK HEART!
+                                    <div class="left_hov_icon"></div>
+                                </div>
+                                <div class="rig_hov">ADD CART
+                                    <div class="rig_hov_icon"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clo_txt_box">
+                            <h2>ONE-BUTTON BACK POINT</h2>
+                            <h3 class="clo_h3">86.500 원</h3>
+                            <p class="clo_p">Delivers a super dose of</p>
+                            <p class="clo_p">strengthening and reparative</p>
+                        </div>
+                    </div>
+         <!-- 하단 상품 -->
+                    <div class="clo_inner_box" onclick="buy();">
+                        <div class="img_box clot_img5">
+                            <div class="img_hov_box">
+                                <div class="left_hov">CLICK HEART!
+                                    <div class="left_hov_icon"></div>
+                                </div>
+                                <div class="rig_hov">ADD CART
+                                    <div class="rig_hov_icon"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clo_txt_box">
+                            <h2>LOGO LAUNDRY POUCH</h2>
+                            <h3 class="clo_h3">32.000 원</h3>
+                            <p class="clo_p">Delivers a super dose of</p>
+                            <p class="clo_p">strengthening and reparative</p>
+                        </div>
+                    </div>
+
+                    <div class="clo_inner_box" onclick="buy();">
+                        <div class="img_box clot_img6">
+                            <div class="img_hov_box">
+                                <div class="left_hov">CLICK HEART!
+                                    <div class="left_hov_icon"></div>
+                                </div>
+                                <div class="rig_hov">ADD CART
+                                    <div class="rig_hov_icon"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clo_txt_box">
+                            <h2>DETAIL SPRING SHORT JP</h2>
+                            <h3 class="clo_h3">69.000 원</h3>
+                            <p class="clo_p">Delivers a super dose of</p>
+                            <p class="clo_p">strengthening and reparative</p>
+                        </div>
+                    </div>
+
+                    <div class="clo_inner_box" onclick="buy();">
+                        <div class="img_box clot_img7">
+                            <div class="img_hov_box">
+                                <div class="left_hov">CLICK HEART!
+                                    <div class="left_hov_icon"></div>
+                                </div>
+                                <div class="rig_hov">ADD CART
+                                    <div class="rig_hov_icon"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clo_txt_box">
+                            <h2>STUDY POCKET SHIRT</h2>
+                            <h3 class="clo_h3">38.000 원</h3>
+                            <p class="clo_p">Delivers a super dose of</p>
+                            <p class="clo_p">strengthening and reparative</p>
+                        </div>
+                    </div>
+
+                    <div class="clo_inner_box" onclick="buy();">
+                        <div class="img_box clot_img8">
+                            <div class="img_hov_box">
+                                <div class="left_hov">CLICK HEART!
+                                    <div class="left_hov_icon"></div>
+                                </div>
+                                <div class="rig_hov">ADD CART
+                                    <div class="rig_hov_icon"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clo_txt_box">
+                            <h2>UNBAL SHIRRIMG SLIT SK</h2>
+                            <h3 class="clo_h3">34.500 원</h3>
+                            <p class="clo_p">Delivers a super dose of</p>
+                            <p class="clo_p">strengthening and reparative</p>
+                        </div>
+                    </div>
+                    <div class="clo_inner_box last_clo_box">
+                        <div class="img_box clot_img9">
+                            <div class="img_hov_box">
+                                <div class="left_hov">CLICK HEART!
+                                    <div class="left_hov_icon"></div>
+                                </div>
+                                <div class="rig_hov">ADD CART
+                                    <div class="rig_hov_icon"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clo_txt_box">
+                            <h2>black short skirt</h2>
+                            <h3 class="clo_h3">24.000 원</h3>
+                            <p class="clo_p">Delivers a super dose of</p>
+                            <p class="clo_p">strengthening and reparative</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 하단 배너 -->
+            <div class="fot_banner">
+                <div class="fot_banner_txt">
+                    <h2>주말 20% 할인 이벤트</h2>
+                    <div class="fot_banner_line"></div>
+                    <p>ACHIO 온라인몰만의 할인 혜택</p>
+                    <p>3만원 이상 구매시 무료배송</p>
+                </div>
+            </div>
+             <!-- 새로운 상품 -->
+             <div class="shop_box">
+            <!-- 상단 상품 -->
+                <div class="cloths_box">
+                    <div class="clo_inner_box" onclick="buy();">
+                        <div class="img_box clot_img1">
+                            <div class="img_hov_box">
+                                <div class="left_hov">CLICK HEART!
+                                    <div class="left_hov_icon"></div>
+                                </div>
+                                <div class="rig_hov">ADD CART
+                                    <div class="rig_hov_icon"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clo_txt_box">
+                            <h2>SIGNATURE HOOCIE</h2>
+                            <h3 class="clo_h3">78.500 원</h3>
+                            <p class="clo_p">Delivers a super dose of</p>
+                            <p class="clo_p">strengthening and reparative</p>
+                        </div>
+                    </div>
+
+                    <div class="clo_inner_box" onclick="buy();">
+                        <div class="img_box clot_img2">
+                            <div class="img_hov_box">
+                                 <div class="left_hov">CLICK HEART!
+                                    <div class="left_hov_icon"></div>
+                                </div>
+                                <div class="rig_hov">ADD CART
+                                    <div class="rig_hov_icon"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clo_txt_box">
+                            <h2>TWIST SHAPE SK</h2>
+                            <h3 class="clo_h3">39.000 원</h3>
+                            <p class="clo_p">Delivers a super dose of</p>
+                            <p class="clo_p">strengthening and reparative</p>
+                        </div>
+                    </div>
+
+                    <div class="clo_inner_box" onclick="buy();">
+                        <div class="img_box clot_img3">
+                            <div class="img_hov_box">
+                                 <div class="left_hov">CLICK HEART!
+                                    <div class="left_hov_icon"></div>
+                                </div>
+                                <div class="rig_hov">ADD CART
+                                    <div class="rig_hov_icon"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clo_txt_box">
+                            <h2>SWEATSHIRT_YELLOW</h2>
+                            <h3 class="clo_h3">68.000 원</h3>
+                            <p class="clo_p">Delivers a super dose of</p>
+                            <p class="clo_p">strengthening and reparative</p>
+                        </div>
+                    </div>
+
+                    <div class="clo_inner_box" onclick="buy();">
+                        <div class="img_box clot_img4">
+                            <div class="img_hov_box">
+                                 <div class="left_hov">CLICK HEART!
+                                    <div class="left_hov_icon"></div>
+                                </div>
+                                <div class="rig_hov">ADD CART
+                                    <div class="rig_hov_icon"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clo_txt_box">
+                            <h2>ONE-BUTTON BACK POINT</h2>
+                            <h3 class="clo_h3">86.500 원</h3>
+                            <p class="clo_p">Delivers a super dose of</p>
+                            <p class="clo_p">strengthening and reparative</p>
+                        </div>
+                    </div>
+         <!-- 하단 상품 -->
+                    <div class="clo_inner_box" onclick="buy();">
+                        <div class="img_box clot_img5">
+                            <div class="img_hov_box">
+                                <div class="left_hov">CLICK HEART!
+                                    <div class="left_hov_icon"></div>
+                                </div>
+                                <div class="rig_hov">ADD CART
+                                    <div class="rig_hov_icon"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clo_txt_box">
+                            <h2>LOGO LAUNDRY POUCH</h2>
+                            <h3 class="clo_h3">32.000 원</h3>
+                            <p class="clo_p">Delivers a super dose of</p>
+                            <p class="clo_p">strengthening and reparative</p>
+                        </div>
+                    </div>
+
+                    <div class="clo_inner_box" onclick="buy();">
+                        <div class="img_box clot_img6">
+                            <div class="img_hov_box">
+                                <div class="left_hov">CLICK HEART!
+                                    <div class="left_hov_icon"></div>
+                                </div>
+                                <div class="rig_hov">ADD CART
+                                    <div class="rig_hov_icon"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clo_txt_box">
+                            <h2>DETAIL SPRING SHORT JP</h2>
+                            <h3 class="clo_h3">69.000 원</h3>
+                            <p class="clo_p">Delivers a super dose of</p>
+                            <p class="clo_p">strengthening and reparative</p>
+                        </div>
+                    </div>
+
+                    <div class="clo_inner_box" onclick="buy();">
+                        <div class="img_box clot_img7">
+                            <div class="img_hov_box">
+                                <div class="left_hov">CLICK HEART!
+                                    <div class="left_hov_icon"></div>
+                                </div>
+                                <div class="rig_hov">ADD CART
+                                    <div class="rig_hov_icon"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clo_txt_box">
+                            <h2>STUDY POCKET SHIRT</h2>
+                            <h3 class="clo_h3">38.000 원</h3>
+                            <p class="clo_p">Delivers a super dose of</p>
+                            <p class="clo_p">strengthening and reparative</p>
+                        </div>
+                    </div>
+
+                    <div class="clo_inner_box" onclick="buy();">
+                        <div class="img_box clot_img8">
+                            <div class="img_hov_box">
+                                <div class="left_hov">CLICK HEART!
+                                    <div class="left_hov_icon"></div>
+                                </div>
+                                <div class="rig_hov">ADD CART
+                                    <div class="rig_hov_icon"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clo_txt_box">
+                            <h2>UNBAL SHIRRIMG SLIT SK</h2>
+                            <h3 class="clo_h3">34.500 원</h3>
+                            <p class="clo_p">Delivers a super dose of</p>
+                            <p class="clo_p">strengthening and reparative</p>
+                        </div>
+                    </div>
+                    <div class="clo_inner_box last_clo_box">
+                        <div class="img_box clot_img9">
+                            <div class="img_hov_box">
+                                <div class="left_hov">CLICK HEART!
+                                    <div class="left_hov_icon"></div>
+                                </div>
+                                <div class="rig_hov">ADD CART
+                                    <div class="rig_hov_icon"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clo_txt_box">
+                            <h2>black short skirt</h2>
+                            <h3 class="clo_h3">24.000 원</h3>
+                            <p class="clo_p">Delivers a super dose of</p>
+                            <p class="clo_p">strengthening and reparative</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!-- 푸터 -->
+        <div class="footer">
+            <div class="top_btn"></div>
+            <div class="foot_inner">
+                <div class="foot_box">
+                    <h1 class="foot_title">고객지원 센터</h1>
+                    <h2 class="phone_num">1899-0000</h2>
+                    <div class="fot_line"></div>
+                    <div class="foot_bot_box">
+                        <h4>계좌안내</h4>
+                        <p>KB국민 000000-00-000000</p>
+                        <p>예금주 OOO(ACHIO)</p>
+                        <div class="fot_line_2"></div>
+                        <p>교환/반품 택배비 전용 계좌</p>
+                        <p>KB국민 000000-00-000000</p>
+                        <p>예금주 OOO(ACHIO)</p>
+                    </div>
+                </div>
+                <div class="foot_box">
+                    <h1 class="foot_title">SNS </h1>
+                    <div class="foot_icon">
+                        <div class="icon_img ins"></div>
+                        <div class="icon_img you"></div>
+                        <div class="icon_img talk"></div>
+                    </div>
+                    <div class="foot_bot_box">
+                        <h4>계좌안내</h4>
+                        <p>KB국민 000000-00-000000</p>
+                        <p>예금주 OOO(ACHIO)</p>
+                        <div class="fot_line_2"></div>
+                        <p>교환/반품 택배비 전용 계좌</p>
+                        <p>KB국민 000000-00-000000</p>
+                        <p>예금주 OOO(ACHIO)</p>
+                    </div>
+                </div>
+                <div class="foot_box3">
+                    <h1 class="foot_title">커뮤니티 / 소개</h1>
+                    <ul class="foot3_ul">
+                        <li class="foot3_li">전체</li>
+                        <li class="foot3_li">NOTICE</li>
+                        <li class="foot3_li">Q & A</li>
+                        <li class="foot3_li">입고지연</li>
+                        <li class="foot3_li">채용공고</li>
+                        <li class="foot3_li">홈</li>
+                        <li class="foot3_li">회사소개</li>
+                        <li class="foot3_li">이용약관</li>
+                        <li class="foot3_li">개인정보 정책</li>
+                        <li class="foot3_li">쇼핑가이드</li>
+                    </ul>
+                </div>
+                <div class="foot_box4">
+                    <h1 class="foot_title">회사정보</h1>
+                    <div class="foot_box4_inner">
+                        <p>회사: ACHIO 대표 : OOO</p>
+                        <p>사업자등록번호 : [ 000-00-00000 ]</p>
+                        <p>통신판매업신고 : 제2020-고양시-00000호 사업자정보확인</p>
+                        <p>개인정보관리책임자 : OOO / 123456@naver.com</p>
+                        <p>주소 : 경기도 고양시 일산서구  5층 501호 ACHIO</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>       
