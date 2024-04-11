@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <link rel="stylesheet" href="./인벤.css" >
+</head>
+<body>
+    <script src="인벤.js"></script>
+    <div class="background">
+        <div class="bar"></div>
+        <!-- <img id="background_img" src="./img/i8211598777.jpg" alt=""> -->
+    </div>
+    <!-- <div class="inven_timer_box">
+                                <div class="inven_timer_top">
+                                    <p class="timer_txt1 ">로아 인벤 타이머</p>
+                                    <div class="more_box">
+                                        <p class="timer_txt2 ">더보기+</p>
+                                    </div>
+                                </div>
+                            <div class="timer_item_box">
+                                <ul class="timer_ul">
+                                    <li class="timer_li">
+                                        <div class="timer_img timer_img1"></div>
+                                        <div class="t_img_txt">
+                                            <p class="">두키 섬</p>
+                                            <p class="">28일 12:50</p>
+                                        </div>
+                                    </li>
+                                    <li class="timer_li"><div class="timer_img timer_img2"></div>
+                                        <div class="t_img_txt">
+                                            <p class="">모코콩 아일랜드</p>
+                                            <p class="">28일 13:00</p>
+                                        </div></li>
+                                    <li class="timer_li"><div class="timer_img timer_img3"></div>
+                                        <div class="t_img_txt">
+                                            <p class="">무릉도원</p>
+                                            <p class="">28일 13:00</p>
+                                        </div></li>
+                                    <li class="timer_li"><div class="timer_img timer_img4"></div>
+                                        <div class="t_img_txt">
+                                            <p class="">카오스게이트</p>
+                                            <p class="">28일 13:00</p>
+                                        </div></li>
+                                    <li class="timer_li"><div class="timer_img timer_img5"></div>
+                                        <div class="t_img_txt">
+                                            <p class="">잠자는 노래의 섬</p>
+                                            <p class="">28일 13:00</p>
+                                        </div></li>
+                                    <li class="timer_li"><div class="timer_img timer_img6"></div>
+                                        <div class="t_img_txt">
+                                            <p class="">환각의 섬</p>
+                                            <p class="">28일 13:00</p>
+                                        </div></li>
+                                </ul>
+                            </div>
+                            </div> -->
+    <div id="wrap">
+        <div class="main_contents_area">
+            <header class="header">
+                <a href="./인벤.html">
+                <div class="header_img">
+                    <img src="./img/i8207764704.png" alt="">
+                </div>
+                </a>
+                <div class="header_add">
+                    <img src="./img/0326_LineageM_Sub_Upper_800x144.jpg" alt="">
+                </div>
+            </header>
+                <div class="header_nav">
+                    <ul class="hd_nav_ul"></ul>
+                    <div class="hd_nav_bt">
+                        <ul class="hd_nav_bt_ul">
+                            <li class="hd_nav_bt_li ">스킬정보</li>
+                            <li class="hd_nav_bt_li ">스킬시뮬레이터</li>
+                            <li class="hd_nav_bt_li ">대륙/섬 지도</li>
+                            <li class="hd_nav_bt_li ">로아 인벤 타이머</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main_contents_area1">
+                    <div class="coumm_left">
+                        <div class="left_info">
+                            <h3 class="loa_inven"><a href="" class="loa_inven_a ">로스트아크 인벤</a></h3>
+                        </div>
+                        <div class="login_box">
+                            <div class="login_top">
+                                <p class="">로그인 하고<br>
+                                출석보상 받으세요!</p>
+                            </div>
+                            <div class="login_bottom">
+                                
+                                <div class="login_btn">
+                                    <a href="./인벤로그인.html" id="login_btn" style="display: block; margin: 0 auto">
+                                        로그인
+                                        <!-- <input type="button" value="로그인" class=""  id="login_btn"> -->
+                                    </a>
+                                </div>
+                                <div class="admin">
+                                    <div class="acount ">회원가입</div>
+                                    <div></div>
+                                    <div class="id_pw ">ID/PW 찾기</div>
+                                </div>
+                                <div class="search_bar">
+                                    <input type="text" id="keyword" class="" placeholder="로아 인벤 통합검색">
+                                    <div class="search_icon">
+                                        <div class="search_icon_inner"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="lost_focus">
+                            <div class="lost_focus_top left_common_top">
+                                <p class="">로스트아크 화제 집중</p>
+                                <div class="lost_focus_top_more lost_more">+</div>
+                            </div>
+                            <div class="lost_focus_bot">
+                                <ul class="lost_focus_bot_ul">
+                                    <li class="lost_focus_bot_li left_common_li ">리포터 뉴스</li>
+                                    <li class="lost_focus_bot_li left_common_li ">로스트아크 소식</li>
+                                    <li class="lost_focus_bot_li left_common_li ">팁과 노하우 게시판</li>
+                                    <li class="lost_focus_bot_li left_common_li ">└ 삭제된 팁 게시판</li>
+                                    <li class="lost_focus_bot_li left_common_li ">관리자 인증 게시물</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="lost_media">
+                            <div class="lost_media_top left_common_top">
+                                <p class="">미디어 게시판</p>
+                                <div class="lost_media_top_more lost_more">+</div>
+                            </div>
+                            <div class="lost_media_bot">
+                                <ul class="lost_media_bot_ul">
+                                    <li class="lost_media_bot_li left_common_li ">로아 유튜브 모아보기</li>
+                                    <li class="lost_media_bot_li left_common_li ">팬아트 / 카툰 갤러리</li>
+                                    <li class="lost_media_bot_li left_common_li ">로아 인벤 영상 모음</li>
+                                    <li class="lost_media_bot_li left_common_li ">스크린샷 갤러리</li>
+                                    
+                                    <li class="lost_media_bot_li left_common_li "><a href="./인벤_아바타.html" style="color: rgb(155, 156, 158);;">└ 커스터마이징 자랑</a></li>
+                                    <li class="lost_media_bot_li left_common_li ">└ 커마 상시 공유</li>
+                                    <li class="lost_media_bot_li left_common_li ">└ 로아 AI 그림</li>
+                                    <li class="lost_media_bot_li left_common_li ">로스트아크 영상관</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- <div class="lost_coummunity">
+                            <div class="lost_coummunity_top left_common_top">
+                                <p class="">커뮤니티 게시판</p>
+                                <div class="lost_coummunity_top_more lost_more">+</div>
+                            </div>
+                            <div class="lost_coummunity_bot">
+                                <ul class="lost_coummunity_bot_ul">
+                                </ul>
+                            </div>
+                        </div> -->
+                        <div class="lost_job">
+                            <div class="lost_job_top left_common_top">
+                                <p class="">직업 게시판</p>
+                                <div class="lost_job_top_more lost_more">+</div>
+                            </div>
+                            <div class="lost_job_bot">
+                                <ul class="lost_job_bot_ul"></ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main_sec">
+                        <div class="main_bn">
+                            <div class="main_banner_top">
+                                <div class="mb_img_box0">
+                                <a href="" class="main_banner_bot"><img  src="./img/베히모스이름이벤트.jpg" alt="베히모스이름이벤트"></a>
+                                </div>
+                                <div class="main_banner_slide">
+                                    <div class="slide_btn slide_btn_L">
+                                        &#10094;
+                                    </div>
+                                    <div class="slide_btn slide_btn_R">
+                                        &#10095;
+                                    </div>
+                                    <div class="mb_img_box mb_img_box1">
+                                        <a href="" class="main_banner_bot mb_bot_img"><img class="mb_img" src="./img/i17168721489.png" alt="뉴스">
+                                            <div class="banner_txt_box">
+                                                <p class="banner_txt ">뉴스</p>
+                                                <p class="banner_txt ">만우절 기념!</p>
+                                                <p class="banner_txt ">'로스트 대기열'이 돌아왔다</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="mb_img_box mb_img_box2">
+                                        <a href="" class="main_banner_bot mb_bot_img"><img class="mb_img" src="./img/i13259874888.png" alt="베히1관문">
+                                            <div class="banner_txt_box">
+                                                <p class="banner_txt ">정보</p>
+                                                <p class="banner_txt ">한눈에 보는</p>
+                                                <p class="banner_txt ">베히모스 1관문</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="mb_img_box mb_img_box3">
+                                        <a href="" class="main_banner_bot mb_bot_img"><img class="mb_img" src="./img/i16768883456.png" alt="베히2관문">
+                                            <div class="banner_txt_box">
+                                                <p class="banner_txt ">정보</p>
+                                                <p class="banner_txt ">한눈에 보는</p>
+                                                <p class="banner_txt ">베히모스 2관문</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="mb_img_box mb_img_box4">
+                                        <a href="" class="main_banner_bot mb_bot_img"><img class="mb_img" src="./img/베히모스클리어.jpg" alt="베히모스클리어">
+                                            <div class="banner_txt_box">
+                                                <p class="banner_txt ">뉴스</p>
+                                                <p class="banner_txt ">베히모스 클리어 등장!</p>
+                                                <p class="banner_txt ">2시간 29분 걸렸다.</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="mb_img_box mb_img_box5">
+                                        <a href="" class="main_banner_bot mb_bot_img"><img class="mb_img" src="./img/초월효율계산.png"  alt="초월">
+                                            <div class="banner_txt_box">
+                                                <p class="banner_txt ">정보</p>
+                                                <p class="banner_txt ">딜러 기준 약 6.5% 상승!</p>
+                                                <p class="banner_txt ">무기 초월 효율 계산</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="mb_img_box mb_img_box6">
+                                        <a href="" class="main_banner_bot mb_bot_img"><img class="mb_img" src="./img/베히모스&pc방이벤트.png" alt="">
+                                            <div class="banner_txt_box">
+                                            <p class="banner_txt ">뉴스</p>
+                                            <p class="banner_txt ">16인 보스 베히모스 등장!</p>
+                                            <p class="banner_txt ">MVP 개선과 PC방 아바타까지</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="site_issue_box">
+                                <div class="site_issue_top">
+                                    <div class="issue_title ">로아 인벤 화제글</div>
+                                        <ul class="data_list">
+                                            <li class="select">
+                                                <span class="select_span ">오늘의 화제</span>
+                                            </li>
+                                            <li class="select">
+                                                <span class="select_span ">/</span>
+                                            </li>
+                                            <li class="select">
+                                                <span class="select_span ">주간</span>
+                                            </li>
+                                            <li class="select">
+                                                <span class="select_span ">/</span>
+                                            </li>
+                                            <li class="select">
+                                                <span class="select_span ">월간</span>
+                                            </li>
+                                            <li class="select">
+                                                <span class="select_span ">/</span>
+                                            </li>
+                                            <li class="select">
+                                                    <span class="select_span ">직게</span>
+                                            </li>
+                                        </ul>
+                                        <div class="link_wrap">
+                                            <a href="" class=" link_txt"><div class="link_txt">30추 더보기</div></a>
+                                            <a href="" class=" link_txt"><div class="link_txt">화제 더보기</div></a>
+                                            <a href="" class=" link_txt"><div class="link_txt">직게화제 더보기</div></a>
+                                        </div>
+                                    </div>
+                                <div class="site_issue_bot">
+                                    <div class="issue_bar"></div>
+                                    <div class="issue_bar"></div>
+                                    <div class="issue_bar issue_bar1"></div>
+                                    <ul class="cate_ul"></ul>
+                                </div>
+                            </div>
+                            <div class="job_btn_area">
+                                <ul class="job_btn_area_ul"></ul>
+
+                                <div class="job_btn_area_bot">
+                                    <div class="job_btn_area_left">
+                                        <ul class="job_list_ul"></ul>
+                                    </div>
+                                    <div class="job_btn_area_right">
+                                        <div class="job_list_right_top">
+                                            <div class="job_list_right_div">
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="job_list_right_bot">
+                                            <ul class="job_list_right_bot_ul"></ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="center_area">
+                                <div class="center_add"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="content_area_right">
+            <div class="right_add"></div>
+            <div class="Auction">
+                <div class="Auction_header">
+                    <div class="Auction_txt_wrap">
+                    <p class="Auction_txt Auction_txt1">경매 손익 계산기</p>
+                    </div>
+                </div>
+                <div class="Auction_bot">
+                    <div class="Auction_sec">
+                        <p>인원 수</p>
+                        <input type="text" class="Auction_sec_input" placeholder="인원 수 입력" >
+                    </div>
+                    <div class="Auction_sec">
+                        <p>거래소 가격</p>
+                        <input type="text" class="Auction_sec_input" placeholder="최저가 입력">
+                    </div>
+                    <div class="Auction_sec">
+                        <p>손익 분기점</p>
+                        <div class="result"></div>
+                    </div>
+                    <div class="Auction_sec">
+                        <p>입찰 추천가</p>
+                        <div class="result"></div>
+                    </div>
+                    <div class="Auction_sec">
+                        <!-- <input type="button" value="계산" id="Auction_sec_btn"> -->
+                    </div>
+                </div>
+            </div>
+            <div class="menu_group"></div>
+            <div class="brand_pt_wrap">
+                <div class="brand_pt_head">
+                    <h3>브랜드 파트너 이벤트</h3>
+                    <div class="brand_pt_btn brand_pt_btn_L">
+                        &#10094;
+                    </div>
+                    <div class="brand_pt_btn brand_pt_btn_R">
+                        &#10095;
+                    </div>
+                </div>
+                <div class="brand_pt_bot">
+                    <div class="brand_pt_bot_img brand_pt_bot_img1"></div>
+                    <div class="brand_pt_bot_img brand_pt_bot_img2"></div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+    <footer class="footer">
+        <div class="footer_txt">Copyright ⓒ Inven. All rights reserved.</div>
+    </footer>
+    
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./인벤로그인.css" >
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+</head>
+<body>
+    <script src="./인벤로그인.js"></script>
+    
+        <header class="header">
+            <a href="./index.html">
+                <img id="header_img" src="./img/inven_logo.gif" alt="">
+            </a>
+        </header>
+    <div id="wrap">
+        <p class="id_wrap admin_wrap">
+            <input type="text" placeholder="아이디를 입력하세요." id="input_id" class="input_admin">
+        </p>
+
+        <p class="pw_wrap admin_wrap">
+            <input type="text" placeholder="비밀번호를 입력하세요."
+            id="input_pw" class="input_admin">
+        </p>
+
+        <p class="chk_box">
+            <span class="chk_circle">&#10004;</span>
+            <span class="chk_txt">자동 로그인</span>
+        </p>
+        <p class="login_info_wrap">
+            <span class="login_info">로그인 정보가 일치하지 않습니다.</span>
+            <span class="close_btn">X</span>
+        </p>
+
+        <p class="login_wrap admin_wrap">
+                <input type="button" class="input_admin" id="input_btn" value="로그인">
+        </p>
+
+        <div class="hr_sect">또는</div>
+
+        <p class="QR_wrap admin_wrap">
+                <input type="button" value="QR코드로 로그인" class="input_admin" id="input_btn_sec">
+        </p>
+
+        <p class="acount_wrap">
+            <span class="join"><a href="">회원가입</a></span>
+            <span>
+                <span class="find_id"><a href="">아이디 찾기</a></span>
+                <span>/</span>
+                <span class="find_pw"><a href="">비밀번호 찾기</a></span>
+            </span>
+        </p>
+
+        <div class="other_way">
+            <a href="">
+                <div class="other_btn naver">NAVER 로그인</div>
+            </a>
+            <a href="">
+                <div class="other_btn kakao">KAKAO 로그인</div>
+            </a>
+            <a href="">
+                <div class="other_btn google">GOOGLE 로그인</div>
+            </a>
+            <a href=""><div class="other_btn facebook">FACEBOOK 로그인</div>
+            </a>
+            <a href="">
+                <div class="other_btn apple">APPLE 로그인</div>
+            </a>
+            <a href=""><div class="other_btn discord">DISCORD 로그인</div>
+            </a>
+        </div>
+
+    </div>
+
+        <footer class="footer">
+            <div class="footer_txt">Copyright ⓒ Inven. All rights reserved.</div>
+        </footer>
+    
+
+</body>
+
+</html>
