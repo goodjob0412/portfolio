@@ -1,0 +1,282 @@
+.main_banner{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+.banner{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    text-align: center;
+    font-size: 80px;
+    font-weight: 900;
+    color: #fff;
+}
+.red{ background-color: red;}
+.green{ background-color: green;}
+.violet{ background-color: violet;}
+.gray{ background-color: gray;}
+.slide_btn{
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border: none;
+    background: none;
+    font-size: 40px;
+    color: #fff;
+}
+#slide_btn_L{
+    left: 0;
+}
+#slide_btn_R{
+    right: 0;
+}
+.main_banner:hover > #slide_btn_L{
+    background: linear-gradient(to right, rgba(0,0,0,0.5), transparent);
+}
+.main_banner:hover > #slide_btn_R{
+    background: linear-gradient(to left, rgba(0,0,0,0.5), transparent);
+}
+.indi_box{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.indi{
+    width: 30px;
+    height: 10px;
+    background: #fff;
+    border-radius: 5px;
+}
+.indi_active{
+    width: 50px;
+    background: black;
+}
+/* ====================================== */
+.gesipan_box{
+    width: 100%;
+    display: flex;
+    gap: 5px;
+    margin-bottom: 100px;
+    position: relative;
+}
+.gesipan{
+    width: 100%;
+    max-width: 1036px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.g_pan{
+    width: 100%;
+    max-width: 510px;
+    height: 400px;
+    background: #fff;
+    margin-bottom: 20px;
+    box-shadow: 0 0 0 0.5px black;
+}
+.pan_head{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 0 0.5px black;
+    background: #ebebeb;
+}
+.title{
+    line-height: 30px;
+    margin-left: 5px;
+    font-weight: 900;
+}
+.more{
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    margin-right: 5px;
+    border-radius: 5px;
+}
+.gonzi_pan{
+    width: 100%;
+    max-width: 1036px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+}
+/* ================================================ */
+.item_box{
+    width: 100%;
+    max-width: 470px;
+    height: calc(400px - 30px);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.g_pan_item{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.gp_item_title{
+    width: 100%;
+    max-width: 370px;
+    height: 100%;
+    font-size: 14px;
+    font-weight: 900;
+}
+.gp_item_title a:hover{
+    text-decoration: underline;
+    color: rgb(99, 99, 255);
+}
+.gp_item_user{
+    width: 100%;
+    max-width: 100px;
+    height: 100%;
+    text-align: center;
+    font-size: 13px;
+}
+/* ============================================== */
+.side_box{
+    width: 100%;
+    max-width: 259px;
+    height: 600px;
+}
+.login_box{
+    width: 100%;
+    border: 5px solid #3b4890;
+    background: #fff;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.login_idx_box{
+    width: 65%;
+    height: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.login_idx{
+    width: 100%;
+    height: 25px;
+}
+.login_btn_box{
+    width: 30%;
+    height: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.login_btn{
+    width: 100%;
+    height: 31px;
+    background: #3b4890;
+    color: #fff;
+    text-align: center;
+    line-height: 31px;
+    border-radius: 3px;
+}
+.login_btn a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.login_chk_box{
+    width: 100%;
+    height: 31px;
+    display: flex;
+    font-size: 9px;
+    line-height: 31px;
+}
+.login_menu_box{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+    margin-top: 10px;
+}
+.dot_point{
+    width: 1px;
+    height: 10px;
+    background: black;
+}
+.login_menu a:hover{
+    text-decoration: underline;
+}
+/* ======================================== */
+.best_box{
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+.title_box{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    text-align: center;
+    line-height: 40px;
+}
+.hot_title{
+    width: calc(100% / 3);
+    height: 100%;
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    font-weight: 900;
+    color: #555555;
+    cursor: pointer;
+}
+.top10_box{
+    width: 100%;
+    background: #fff;
+    position: relative;
+}
+.ul_top10{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.idol_top{
+    position: relative;
+}
+.hot_title:hover{
+    background: #fff;
+    color: blue;
+}
+.ul_active{
+    display: block;
+}
+.top_item{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    box-shadow: 0 0 0 0.5px rgba(0, 0, 0, 0.5);
+    background: #ddd;
+    line-height: 40px;
+}
+.top_item:hover{
+    background: #fff;
+}

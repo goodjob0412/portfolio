@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>여행</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script defer src="../js/index.js"></script>
+    <script defer src="../js/dataList.js"></script>
+    <script defer src="../js/main_heaer.js"></script>
+    <script defer src="../js/common.js"></script>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/main_header.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Nanum+Pen+Script&family=Single+Day&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div id="wrap">
+
+        <div class="header">
+            <div class="header_main">
+                <div class="logo">
+                    <a href="./index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 106 18" class="css-1m87sqm"><path d="M94.8 18V6.7c0-.4-.3-.8-.8-.8-.4 0-.8.3-.8.8V18h-5.1V5.9C88.1 2.6 90.8 0 94 0s5.9 2.6 5.9 5.9V18h-5.1zm-9.5-5.1h1.8V18H76.9c-2.3 0-4.1-1.8-4.1-4.1V4.1c0-2.3 1.8-4.1 4.1-4.1h10.2v5.1h-1.8v7.8zm-4.5 0V5.1H79c-.6 0-1 .5-1 1v5.7c0 .6.5 1 1 1l1.8.1zM19.4 3.3v-.7c0-1.4 1.1-2.6 2.5-2.6s2.5 1.2 2.5 2.6V18h-5.1v-3.3h-3.5c-1.6 2-4.1 3.3-6.9 3.3C4 18 0 14 0 9s4-9 8.9-9c2.8 0 5.3 1.3 6.9 3.3h3.6zM17.8 8c0 .3.1.7.1 1s0 .7-.1 1h1.6V8h-1.6zm-8.9 5.1c2.3 0 4.1-1.8 4.1-4.1s-1.8-4.1-4.1-4.1S4.8 6.7 4.8 9s1.9 4.1 4.1 4.1zM38.3 1.2c.7.7 1.2 1.8 1.2 2.9V18h-5.1V6.2c0-.6-.5-1-1-1h-5.6c-1.4 0-2.5-1.2-2.5-2.6S26.4 0 27.8 0h7.6c1.1 0 2.2.5 2.9 1.2zM43.1 0c1.4 0 2.5 1.2 2.5 2.6V18h-5.1V2.6c0-1.4 1.1-2.6 2.6-2.6zm23.1 6.4V2.6c0-1.4 1.1-2.6 2.5-2.6s2.5 1.2 2.5 2.6V18h-5.1v-6.4h-1.9c-1.1 3.7-4.5 6.4-8.5 6.4-4.9 0-8.9-4-8.9-9s4-9 8.9-9c4 0 7.4 2.7 8.5 6.4h2zm-10.4 6.7c2.3 0 4.1-1.8 4.1-4.1S58 4.9 55.8 4.9 51.7 6.7 51.7 9s1.8 4.1 4.1 4.1zm47.6 4.9c-1.4 0-2.5-1.2-2.5-2.6s1.1-2.6 2.5-2.6 2.5 1.2 2.5 2.6-1.1 2.6-2.5 2.6z" fill="current"></path></svg>
+                    </a>
+                </div>
+                <div class="nav">
+                    <div class="login_btn">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="css-1o2laqr"><path d="M2 4h16v2H2V4zM2 14h16v2H2v-2zM18 9H2v2h16V9z" fill="current"></path></svg>
+                        <svg width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" class="log_img" clip-rule="evenodd" d="M10 9a3 3 0 10.002-6.001A3 3 0 0010 9zm-6.997 6.025C2.996 11.512 7.483 10 10 10c2.558 0 7.007 1.563 6.995 4.993 0 .058.002.104.003.146l.002.109c.004 1.06-.853 1.746-1.762 1.749-.602.004-5.232.002-5.232.002s-3.87.009-5.206-.001c-1.335-.01-1.796-1.13-1.8-1.692l.002-.188v-.093z" fill="current"></path></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="ham_pan">
+                <ul class="ul_ham_pan">
+                    <li><a href="#">로그인/회원가입</a></li>
+                    <li><a href="#">비회원 예약조회</a></li>
+                    <li><a href="../html/event.html">이벤트</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="centainer">
+            <div class="main">
+                <div class="sec main_banner">
+                    <div class="banner">
+                    </div>
+                </div>
+                <div class="search_box">
+                    <form action="./travel_detail.html" method="get" target="_self" autocomplete="on">
+                        <div class="form_wrap">
+                            <div class="search_wrap">
+                                <div class="serach_div">
+                                    <input class="search_input" type="text" placeholder="여행지를 입력해주세요" name="location" id="location">
+                                    <div class="close_bnt">X</div>
+                                </div>
+                            </div>
+                            <input type="submit" value="검색" class="search_form_btn">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="sec_event">
+                <div class="div_event_top">
+                    <h1>이벤트</h1>
+                    <span><a href="./event.html">더보기</a></span>
+                </div>
+                <div class="event_box">
+                    <div class="event_banner">
+                    </div>
+                </div>
+            </div>
+
+            <div class="sec_event pos_chk" id="travel_domestic">
+                <h1>국내 인기 여행지</h1>
+                <div class="domestic_favorit favorit" id="domestic"></div>
+            </div>
+            <div class="sec_event  pos_chk" id="travel_oversea">
+                <h1>해외 인기 여행지</h1>
+                <div class="oversea_favorit favorit" id="oversea"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer">F O O T E R</div>
+
+</body>
+</html>

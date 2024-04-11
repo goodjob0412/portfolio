@@ -1,0 +1,346 @@
+/* 공통 */
+
+body, h1, h2, h3, h4, h5, h6, p, span, input {
+    font-family: 'Single Day'!important;
+  }
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* container  */
+
+.main{
+    position: relative;
+}
+
+/* baaner */
+
+.main_banner{
+    width: 100%;
+    height: 210px;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner{
+    width: 100%;
+    height: 100%;
+}
+
+.banner_img{
+    width: 100%;
+    height: 100%;
+
+}
+
+
+/* 인티케이트  */
+
+.indi {
+    position: absolute;
+    bottom: -12%;;
+    left: 50%;
+    transform: translateX(-50%); 
+    display: flex;
+    gap: 5px;
+}
+.line {
+    width: 25px;
+    height: 6px;
+    background-color: #706c6c;
+
+    border-radius: 5px;
+
+    transition: all 0.5s;
+}
+
+.line_active {
+    width: 50px;
+    background-color: #3b8adb;
+}
+
+/* 검색창 */
+
+
+
+.search_box{
+    position: absolute;
+    padding-bottom: 25px;
+    width: 90%;
+    height: 15%;
+    /* min-width: 860px; */
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 15px;
+    z-index: 999;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.7;
+}
+.serach_tap{
+    display: flex;
+    gap: 30px;
+    font-size: 40px;
+    padding-left: 5vw;
+    padding-top: 3vh;
+    padding-bottom: 2vh;
+}
+
+
+.form_wrap{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.serach_div{
+    position: relative;
+    width: 55vw;
+    height: 4vh;
+}
+
+.search_input {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    left: -13px;
+    margin-left: 1vw;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+}
+
+
+/* 닫기버튼 */
+.close_bnt{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    font-size: 27px;
+    top: 13%;
+    /* transform: translateY(-100%); */
+    right: 1%;
+}
+
+/* 달력 */
+
+.search_date_box{
+    display: flex;
+    gap: 10px;
+}
+
+.search_date{
+    width: 17vw;
+    height: 4vh;
+    background: #fff;
+}
+
+/* 인원수 체크 */
+.chk_peoples{
+    width: 11vw;
+    height: 4vh;
+    background: #fff;
+    border: 1px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.search_form_btn{
+    width: 13%;
+    height: 4vh;
+    background: black;
+    color: white;
+}
+
+.date{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#chk_person{
+    width: 15px;
+    text-align: center;
+    border: 0px;
+}
+
+/* 이벤트 탭 */
+
+.sec_event{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5vh;
+    margin-bottom: 7vh;
+    text-align: center;
+}
+.div_event_top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* 이벤트 하단 */
+
+.event_box{
+    
+    width: 100%;
+
+}
+.event_box{
+    position: relative;
+}
+
+.event_banner{
+    position: relative;
+    height: 150px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.event_inner{
+    position: absolute;
+    display: flex;
+    gap: 2%;
+    width: 100%;
+    height: 100%;
+    right: -100%;
+}
+.event_img_box{
+    width: 100%;
+    height: 100%;
+}
+
+.event_img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.btn_backgrond{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: linear-gradient(to right, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
+    background-origin: border-box;
+    background-clip: border-box;
+    background: #fff;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+
+}
+
+.backgrond_L{
+    left: -7%
+}
+.backgrond_R{
+    right: -7%;
+}
+
+.btn_slide{
+    width: 10px;
+    height: 10px;
+    /* margin: 0 auto; */
+    border-top: solid #3b8adb;
+    border-left: solid #3b8adb;
+}
+
+
+#btn_L{
+    transform: rotateZ(-45deg);
+}
+#btn_R{
+
+    transform: rotateZ(135deg);
+}
+
+
+/* 국내 인기 여행지 추천 */
+
+.favorit{  
+    display: flex;
+    justify-content: space-between;
+}
+
+.trnasition_down{
+    display: block;
+    transform: translateY(50%);
+}
+
+.travel_img_box{
+    width: calc((100% - 50px) / 3);
+    border-radius: 25%;
+    transform: translateY(50%);
+}
+
+.travel_img_box > a > p{
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+}
+
+.travel_img{
+    width: 100%;
+    border: 1px solid #fff;
+    border-radius: 15%;
+    filter: brightness(1);
+}
+
+.travel_active{
+    filter: brightness(0.5);
+}
+
+.pos_init_active {
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+
+/* 푸터 */
+
+.footer{
+    width: 100%;
+    height: 100px;
+    margin-top: 50px;
+    background: black;
+    color: #fff;
+}

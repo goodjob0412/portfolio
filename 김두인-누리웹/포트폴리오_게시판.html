@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/게시판_list.js"></script>
+    <script src="./js/포트폴리오_게시판.js"></script>
+    <script src="./js/포트폴리오_h_f.js"></script>
+    <link rel="stylesheet" href="./css/포트폴리오_h_f.css">
+    <link rel="stylesheet" href="./css/포트폴리오_게시판.css">
+</head>
+<body>
+<div class="top_banner">
+    <div class="tb_txt">이 웹페이지는</div>
+    <div class="tb_txt">제가 만든 포트폴리오용</div>
+    <div class="tb_txt">웹페이지입니다.</div>
+    <div class="tb_txt">제 이름은 김두인이고</div>
+</div>
+<div id="wrap">
+    <header class="header contents_area">
+        <div class="logo"><a href="./포트폴리오_메인.html"></a></div>
+        <div class="search_box">
+            <input type="text" id="search_txt" placeholder="검색어를 입력하세요">
+            <div class="search_icon">검색/게시판 찾기</div>
+        </div>
+    </header>
+    <div class="nav">
+        <div class="contents_area">
+            <div class="nav_item"><a href="포트폴리오_게시판.html?cateNo=0&page=1">뉴스</a></div>
+            <div class="nav_item"><a href="포트폴리오_게시판.html?cateNo=1&page=1">정보게시판</a></div>
+            <div class="nav_item"><a href="포트폴리오_게시판.html?cateNo=2&page=1">유저게시판</a></div>
+            <div class="nav_item"><a href="포트폴리오_게시판.html?cateNo=3&page=1">커뮤니티</a></div>
+            <div class="nav_item"><a href="포트폴리오_게시판.html?cateNo=4&page=1">공지사항</a></div>
+        </div>
+    </div>
+    <div class="main_banner">
+        <div class="banner red">1</div>
+        <div class="banner green">2</div>
+        <div class="banner violet">3</div>
+        <div class="banner gray">4</div>
+        <input type="button" value="《" class="slide_btn" id="slide_btn_L">
+        <input type="button" value="》" class="slide_btn" id="slide_btn_R">
+        <div class="banner_close">X</div>
+        <div class="indi_box"></div>
+    </div>
+    <div class="data_list">
+        <div class="contents_area list_box">
+            <div class="list_title"><h1></h1></div>
+            <div class="data_idx">
+                <div class="list_number">번호</div>
+                <div class="item_name">제목</div>
+                <div class="user_name">글쓴이</div>
+                <div class="write_day">날짜</div>
+            </div>
+        </div>
+    </div>
+    <div class="data_page"></div>
+    <div class="creat_data"></div>
+</div>
+<footer class="footer">
+    <div class="goto"></div>
+</footer>
+</body>
+</html>

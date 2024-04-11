@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+.main_banner {
+    width: 100%;
+    height: 700px;
+    margin-bottom: 200px;
+}
+
+.main_banner .swiper-wrapper .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.main_banner .swiper-wrapper .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mb_txt_box{
+    position: absolute;
+    bottom: 40px;
+    left: 35px;
+    color: #fff;
+    text-align: left;
+}
+.mb_txt1{
+    font-size: 15px;
+    font-weight: 400;
+}
+.mb_txt2{
+    font-size: 35px;
+    font-weight: 400;
+    font-family: "Anton", sans-serif;
+}
+
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+    font-weight: 900;
+    color: transparent;
+    opacity: 0;
+    transition: all 0.3s;
+    padding: 10px;
+}
+
+.main_banner:hover .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+    opacity: 1;
+    color: #fff; 
+}
+
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
+    font-weight: 900;
+    color: transparent;
+    opacity: 0;
+    transition: all 0.3s;
+    padding: 10px;
+}
+
+.main_banner:hover .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
+    opacity: 1;
+    color: #fff; 
+}
+
+/* ------------------- */
+
+.sec {
+    margin-bottom: 150px;
+}
+.sec_title {
+    height: 130px;
+    font-size: 35px;
+    text-align: center;
+    font-weight: 900;
+}
+.sec_body {}
+
+.item_box {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    row-gap: 100px;
+}
+.item_img img{
+    width: 100%;
+}
+.item_info {
+    padding: 0 5px;
+    box-sizing: border-box;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+.item_info_title {
+    font-size: 12px;
+    font-weight: 600;
+    text-align: left;
+    color: #000;
+    line-height: 30px;
+    border-bottom: 1px solid #000;
+    margin-bottom: 5px;
+}
+.item_desc{
+    text-align: center;
+    color: #9e9e9e;
+    margin: 5px 0;
+}
+.o_price { text-decoration: line-through;}
+
+/* ------------------- */
+
+.pos_init {
+    transform: translateY(80px);
+    opacity: 0;
+}
+.pos_init_active {
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 0.5s;
+}
+.txt_r{
+    text-align: right;
+}
+
+/* ------------------- */
+
+#w_raking .item_img {
+    position: relative;
+}
+
+#w_raking .sec_body .item_box .item{
+    transition: all 0.3s;
+}
+
+.wr_item_1:hover {
+    transform: translateY(-45px);
+}
+.wr_item_2:hover {
+    transform: translateY(-45px);
+}
+.wr_item_3:hover {
+    transform: translateY(-45px);
+}
+.wr_item_4:hover {
+    transform: translateY(-45px);
+}
+.wr_item_5:hover {
+    transform: translateY(-45px);
+}
+.wr_item_6:hover {
+    transform: translateY(-45px);
+}
+
+#w_raking .ranking_no {
+    width: 14%;
+    height: 27%;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    background-color: rgb(0,0,0);
+    font-size: 20px;
+    border-radius: 5px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+/* ---------------- */
+
+#exhibition .sec_body .item_box{
+    justify-content: center;
+}
+
+#exhibition .sec_body .item_box .item{
+    position: relative;
+}
+.ex_logo{
+    width: 70px;
+    height: 70px;
+    bottom: 45px;
+    left: 25px;
+    position: absolute;
+    border-radius: 50%;
+}
+.ex_logo1{
+    background: url(../../img/main/MKBR_logo.jpg) no-repeat center / contain;
+}
+.ex_logo2{
+    background: url(../../img/main/MSBR_logo.jpg) no-repeat center / contain;
+}
+#exhibition .sec_body .item_box .item .item_info .item_info_title{
+    text-align: right;
+    font-size: 15px;
+    border: none;
+}
+#exhibition .sec_body .item_box .item .item_info .item_desc{
+    margin: 0;
+    color: #000;
+    font-size: 25px;
+}
+
+#exhibition .sec_body .item_box .item .item_img .ex_hover_txt{
+    position: absolute;
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+    bottom: 135px;
+    right: 10px;
+    transition: all 0.3s;
+    opacity: 0;
+}
+
+#exhibition .sec_body .item_box .item1 .item_img:hover .ex_hover_txt_1{
+    opacity: 1;
+}
+#exhibition .sec_body .item_box .item2 .item_img:hover .ex_hover_txt_2{
+    opacity: 1;
+}
+#exhibition .sec_body .item_box .item3 .item_img:hover .ex_hover_txt_3{
+    opacity: 1;
+}
+
+/* ---------------- */
+
+.MD_PICK {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 150px;
+}
+
+.MD_PICK .swiper-wrapper .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MD_PICK .swiper-wrapper .swiper-slide .item_img a img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.MD_PICK .swiper-wrapper .swiper-slide .item_img{
+    transition: all 0.3s;
+}
+
+.md_item1:hover {
+    transform: translateY(-45px);
+}
+.md_item2:hover {
+    transform: translateY(-45px);
+}
+.md_item3:hover {
+    transform: translateY(-45px);
+}
+.md_item4:hover {
+    transform: translateY(-45px);
+}
+.md_item5:hover {
+    transform: translateY(-45px);
+}
+.md_item6:hover {
+    transform: translateY(-45px);
+}
+.md_item7:hover {
+    transform: translateY(-45px);
+}
+.md_item8:hover {
+    transform: translateY(-45px);
+}
+.md_item9:hover {
+    transform: translateY(-45px);
+}
+.md_item10:hover {
+    transform: translateY(-45px);
+}
+
+.MD_PICK:hover .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+    opacity: 1;
+    color: #000; 
+}
+
+.MD_PICK:hover .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
+    opacity: 1;
+    color: #000; 
+}
+
+/* -------------------------------media_qurey */
+
+@media screen and (max-width: 1200px) {
+
+/* -------------------main_banner*/
+
+    .main_banner {
+        height: 620px;
+        margin-bottom: 100px;
+    }
+    .item3{
+        display: none;
+    }
+
+/* -------------------item_box*/
+
+    .sec {
+        margin-bottom: 120px;
+    }
+
+    .wr_item_5{
+        display: none;
+    }
+    .wr_item_6{
+        display: none;
+    }
+
+    .MD_PICK {
+        margin-bottom: 120px;
+    }
+
+    #female .sec_body .item:nth-child(3){
+        display: none;
+    }
+    #male .sec_body .item:nth-child(3){
+        display: none;
+    }
+    #kids .sec_body .item:nth-child(3){
+        display: none;
+    }
+    #goods .sec_body .item:nth-child(3){
+        display: none;
+    }
+    #balance .sec_body .item:nth-child(3){
+        display: none;
+    }
+    #outlet .sec_body .item:nth-child(3){
+        display: none;
+    }
+
+    .footer{
+        margin-top: 150px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .wr_item_4{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .wr_item_3{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 620px) {
+
+    #exhibition .sec_body .item_box .item .item_info .item_info_title {
+        font-size: 13px;
+        margin: 0;
+    }
+    #exhibition .sec_body .item_box .item .item_info .item_desc {
+        font-size: 22px;
+    }
+
+    #exhibition .sec_body .item_box .item .item_img .ex_hover_txt {
+        font-size: 22px;
+    }
+
+    .ex_logo {
+        width: 65px;
+        height: 65px;
+        bottom: 37px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    #female .sec_body .item:nth-child(2){
+        display: none;
+    }
+    #male .sec_body .item:nth-child(2){
+        display: none;
+    }
+    #kids .sec_body .item:nth-child(2){
+        display: none;
+    }
+    #goods .sec_body .item:nth-child(2){
+        display: none;
+    }
+    #balance .sec_body .item:nth-child(2){
+        display: none;
+    }
+    #outlet .sec_body .item:nth-child(2){
+        display: none;
+    }
+
+    .sec_title {
+        font-size: 33px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .sec {
+        margin-bottom: 80px;
+    }
+
+    .MD_PICK {
+        margin-bottom: 80px;
+    }
+
+    #exhibition .sec_body .item_box .item .item_info .item_info_title {
+        font-size: 12px;
+    }
+
+    #exhibition .sec_body .item_box .item .item_info .item_desc {
+        font-size: 20px;
+    }
+    .ex_logo {
+        bottom: 34px;
+    }
+}

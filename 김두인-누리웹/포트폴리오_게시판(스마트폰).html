@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/게시판_list.js"></script>
+    <script src="./js/포트폴리오_게시판(스마트폰).js"></script>
+    <script src="./js/포트폴리오_h_f.js"></script>
+    <link rel="stylesheet" href="./css/포트폴리오_h_f(스마트폰).css">
+    <link rel="stylesheet" href="./css/포트폴리오_게시판(스마트폰).css">
+</head>
+<body>
+<div class="top_banner">
+    <div class="tb_txt">이 웹페이지는</div>
+    <div class="tb_txt">김두인의</div>
+    <div class="tb_txt">포트폴리오용</div>
+    <div class="tb_txt">웹페이지</div>
+    <div class="tb_txt">스마트폰 버전입니다.</div>
+</div>
+<div id="wrap">
+    <header class="header">
+        <div class="h_left">
+            <div class="ham">
+                <div class="ham_line h_top"></div>
+                <div class="ham_line h_mid"></div>
+                <div class="ham_line h_bot"></div>
+            </div>
+            <div class="logo"><a href="./포트폴리오_메인(스마트폰).html"></a></div>
+        </div>
+        <div class="back_dark"></div>
+        <div class="ham_pan">
+            <div class="login_box">
+                <div class="input_box">
+                    <input type="text" id="login_id" class="login_txt" placeholder="아이디">
+                    <input type="text" id="login_pass" class="login_txt" placeholder="비밀번호">
+                </div>
+                <div class="btn_box">
+                    <div class="login_btn">로그인</div>
+                </div>
+                <div class="search_idx_box">
+                    <div class="chk_box">
+                        <input type="checkbox" id="login_chk">
+                        <div>아이디 저장</div>
+                    </div>
+                    <div class="b_line"></div>
+                    <div class="search_id">아이디 찾기</div>
+                    <div class="b_line"></div>
+                    <div class="create_id">회원가입</div>
+                </div>
+            </div>
+            <div class="gesipan_list">
+                <div class="list_guide">목록</div>
+                <div class="list_item"><a href="포트폴리오_게시판(스마트폰).html?cateNo=0&page=1">뉴스</a></div>
+                <div class="list_item"><a href="포트폴리오_게시판(스마트폰).html?cateNo=1&page=1">정보게시판</a></div>
+                <div class="list_item"><a href="포트폴리오_게시판(스마트폰).html?cateNo=2&page=1">유저게시판</a></div>
+                <div class="list_item"><a href="포트폴리오_게시판(스마트폰).html?cateNo=3&page=1">커뮤니티</a></div>
+                <div class="list_item"><a href="포트폴리오_게시판(스마트폰).html?cateNo=4&page=1">공지사항</a></div>
+            </div>
+            <div class="sub_banner">
+                <div class="s_banner red">1</div>
+                <div class="s_banner green">2</div>
+                <div class="s_banner gray">3</div>
+                <div class="s_banner violet">4</div>
+                <div class="s_banner skyblue">5</div>
+                <div class="s_indi_box"></div>
+            </div>
+        </div>
+        <div class="search_box">
+            <input type="text" id="search_txt" placeholder="검색어 입력">
+            <div class="search_icon">검색</div>
+        </div>
+    </header>
+    <div class="nav">
+        <div class="nav_item"><a href="포트폴리오_게시판(스마트폰).html?cateNo=0&page=1">뉴스</a></div>
+        <div class="nav_item"><a href="포트폴리오_게시판(스마트폰).html?cateNo=1&page=1">정보게시판</a></div>
+        <div class="nav_item"><a href="포트폴리오_게시판(스마트폰).html?cateNo=2&page=1">유저게시판</a></div>
+        <div class="nav_item"><a href="포트폴리오_게시판(스마트폰).html?cateNo=3&page=1">커뮤니티</a></div>
+        <div class="nav_item"><a href="포트폴리오_게시판(스마트폰).html?cateNo=4&page=1">공지사항</a></div>
+    </div>
+    <div class="main_banner">
+        <div class="banner red">1</div>
+        <div class="banner green">2</div>
+        <div class="banner gray">3</div>
+        <div class="banner violet">4</div>
+        <div class="banner skyblue">5</div>
+        <input type="button" value="《" class="btn_slide" id="btn_L">
+        <input type="button" value="》" class="btn_slide" id="btn_R">
+        <div class="indi_box"></div>
+        <div class="bn_del">X</div>
+    </div>
+    <div class="data_list">
+        <div class="list_box">
+            <div class="list_title"><h1></h1></div>
+            <div class="data_idx">
+                <div class="list_number">번호</div>
+                <div class="item_name">제목</div>
+            </div>
+        </div>
+    </div>
+    <div class="data_page"></div>
+    <div class="creat_data"></div>
+    <footer class="footer">
+        <div class="goto"></div>
+    </footer>
+</div>
+</body>
+</html>

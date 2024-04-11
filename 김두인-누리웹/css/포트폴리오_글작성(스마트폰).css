@@ -1,0 +1,138 @@
+.write_box{
+    width: 100%;
+    margin: 40px 0;
+}
+.txt_box{
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+#title{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    padding: 0 5px;
+}
+.icon_box{
+    width: 100%;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+}
+.icon_btn{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    margin-left: 5px;
+    font-size: 14px;
+    font-weight: 900;
+}
+.icon_pan{
+    background: #ddd;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 0 5px;
+}
+.pan_active{
+    height: 65px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.pan_icon_img{
+    display: none;
+}
+.img_active{
+    display: inline;
+}
+/* ======================================================= */
+.tool_box{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+}
+.tool_icon{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+.show_size{
+    width: 40px;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+.t_icon_box{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tool_active{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), #ddd, #fff);
+}
+.weight_900{
+    font-weight: 900;
+}
+.txt_under{
+    text-decoration: underline;
+}
+.txt_strike{
+    text-decoration: line-through;
+}
+/* ========================================= */
+.main_txt{
+    width: 100%;
+    height: 500px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+}
+#txt_box{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    resize: none;
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+/* ======================================================= */
+.finish{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background: #3b4890;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 900;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+}
+.cancle{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background: #ebcc1a;
+    font-size: 18px;
+    font-weight: 900;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+}

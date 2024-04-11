@@ -1,0 +1,262 @@
+
+/* 280~480 */
+body { margin: 0;}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.contents_area {
+    width: 100%;
+    height: 100%;
+    max-width: 480px;
+    min-width: 280px;
+    margin: 0 auto;
+    position: relative;
+}
+
+li {
+    list-style: none;
+}
+/* //////////////////헤더//////////////// */
+.top_head  > img {
+    width: 100%;
+}
+
+/* ///////햄버거//////////////////// */
+
+
+.btn_ham {
+    width: 50px;
+    height: 50px;
+    padding: 7px;
+    box-sizing: border-box;
+    position: relative;
+    font-size: 34px;
+}
+.line {
+    width: 70%;
+    height: 1px;
+    background: #777777;
+
+    position: absolute;
+    left: 5px;
+    right: 5px;
+
+    transition: all 0.5s;
+}  
+.line_top { top: 10px; }
+.line_mid { 
+    top: 50%; 
+    transform: translateY(-50%); 
+    transition: all 0s 0.5s;
+}
+.line_bot { top: calc(100% - 15px) }
+.mid_setting {top: 50%;transform: translateY(-50%); }
+.opa_0 { opacity: 0;}
+.rotate45 { transform: translateY(-50%) rotate(45deg);}
+.rotate_45 { transform: translateY(-50%) rotate(-45deg);}
+
+
+.ham_pan {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 999;
+    background-color: white;
+}
+.ham_main {
+    width: 100%;
+    display: flex;
+    gap: 150px;
+    margin: 26px;
+}
+.img_x {
+    width: 83px;
+    height: 43px;
+    background: url(../cgv/subSprite@2x.png);
+    background-position: 828px 334px;
+    scale: 0.5;
+    z-index: 999999999;
+}
+.menu_pan {
+    width: 100%;
+    height: 50px;
+}
+.menu_pan > div {
+    font-size: 20px;
+    border-bottom: 1px solid #666;
+    padding: 22px;
+}
+
+
+/* //////////헤더//////////// */
+.header {
+    width: 390px;
+    height: 44px;
+    display: flex;
+    gap: 134px;
+    line-height: 44px;
+    font-weight: 999;
+}
+
+/* ///////탑버튼/////////// */
+.btn_top {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: rgba(0.1, 0.3, 0., 0.1);
+    border-radius: 50%;
+    border: 1px solid #666;
+    margin-top: 20px;
+    position: fixed;
+    bottom: 70px;
+    right: 10px;
+    z-index: 999999;
+}
+.btn_top_size {
+    width: 25px;
+    height: 25px;
+    margin-top: 11px;
+}
+
+
+
+
+/* ////////////nav//////////////////////// */
+.mo_nav {
+    width: 100%;
+    height: 45px;
+}
+.mo_nav_li {
+    float: left;
+    margin-right: 47px;
+}
+
+/* ///////////////미니 네비//////////////////// */
+.mi_nav {
+    width: 100%;
+    height: 41px;
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: space-between;
+    line-height: 41px;
+    font-size: 12px;
+    color: #9197a3;
+}
+
+.mini_L {
+    display: flex;
+}
+
+.mini_R {
+    margin-right: 5px;
+}
+.m_L_f {
+    font-weight: 999;
+    color: #777777;
+}
+
+/* ////////////////영화//////////////// */
+.mo_item {
+    width: 100%;
+    margin-top: 30px;
+}
+.mov_sec {
+    margin: 0px 0 11px 10px;
+    width: 380px;
+    height: 110px;
+    display: flex;
+    gap: 10px;
+    font-size: 12px;
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom: 5px;
+    position: relative;
+}
+.mo_img > img {
+    width: 77px;
+    height: 110px;
+}
+.mov_bot {  
+    height: 90px;
+    padding-bottom: 10px;
+}
+.reser {
+    width: 92px;
+    height: 21px;
+    color: white;
+    background-color: #b8131a;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    position: absolute;
+    top: 88px;
+    left: 280px;
+    font-weight: 999;
+}
+
+.title,
+.open {
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* /////////////푸터////////////// */
+.footer {
+    width: 100%;
+    height: 200px;
+    background-color: #f2f2f2;
+}
+
+.foot_t {
+    line-height: 36px;
+    height: 36px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #d8d8d8;
+    margin: 0;
+    text-align: center;
+    font-size: 14px
+}
+.foot_t > div {
+    height: 38px;
+    margin: 0 23px;
+
+}
+.cine_font_R,
+.s_dx_font_R  {
+    font-size: 11px;
+    background-color: #f6f6f6;
+}
+
+.foot_box {
+    margin: 22px;
+    background-color: #f2f2f2;
+    font-weight: 999;
+}
+.foot_s_box {
+    display: flex;
+    margin: 0px 20px;
+    font-size: 12px;
+}

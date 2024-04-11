@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="../web/js/cgv_item.js"></script>
+    <script src="../web/js/cgv_hf.js"></script>
+    <script src="../web/js/cgv_reser.js"></script>
+
+    <link rel="stylesheet" href="./css/cgv_hf.css">
+    <link rel="stylesheet" href="./css/cgv_1.css">
+    <link rel="stylesheet" href="./css/cgv_3.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- 배너이미지 -->
+        <div class="top_banner">
+            <div class="img_x">
+                <img src="./cgv/btn_ad_close.png" alt="">
+            </div>
+            <div class="tb_item tb_item1">
+                <img src="./cgv/0325_980x80.jpg" alt="">
+            </div>
+            <div class="tb_item tb_item2">
+                <img src="./cgv/0321_980x80.jpg" alt="">
+            </div>
+            <div class="tb_item tb_item3">
+                <img src="./cgv/0401_980x80.jpg" alt="">
+            </div>
+            <div class="tb_item tb_item4">
+                <img src="./cgv/탑배너980x80.png" alt="">
+            </div>
+        </div>
+
+
+        <!-- 로고 -->
+        <div class="log_ban">
+            <div class="area">
+                <div class="logo_cts">
+                    <div class="lo_L">
+                        <a href="./cgv.html">
+                            <img src="../web/cgv/logoRed.png" alt="logo" class="logo">
+                        </a>
+                    </div>
+                    <div class="lo_R">
+                        <ul class="lo_ul">
+                            <li class="lo_li">
+                                <img src="../web/cgv/loginPassword.png" alt="로그인" class="L_logo">
+                                <div>로그인</div>
+                            </li>
+                            <li class="lo_li">
+                                <img src="../web/cgv/loginJoin.png" alt="회원가입" class="L_logo">
+                                <div>회원가입</div>
+                            </li>
+                            <li class="lo_li">
+                                <img src="../web/cgv/loginMember.png" alt="MY CGV" class="L_logo">
+                                <div>MY CGV</div>
+                            </li>
+                            <li class="lo_li">
+                                <img src="../web/cgv/loginCustomer.png" alt="고객센터" class="L_logo">
+                                <div>고객센터</div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- nav -->
+        <div class="nav">
+            <div class="area nav_menu">
+                <ul class="nav_ul">
+                    <li class="nav_li">영화</li>
+                    <li class="nav_li">극장</li>
+                    <li class="nav_li">예매</li>
+                    <li class="nav_li">스토어</li>
+                    <li class="nav_li">이벤트</li>
+                    <li class="nav_li">혜택</li>
+                </ul>
+                <div class="search">
+                    <input type="text" class="sear_txt" placeholder="비투비 타임: 비투게더 더 무비">
+                    <div class="sear_img">
+                        <img src="../web/cgv/search.png" alt="" class="img_search">
+                    </div>
+                </div>
+            </div>
+            <div class="menu_pan">
+                <div class="pan_box area">
+                    <ul>
+                        <li class="wei">영화</li>
+                        <li>무비차트</li>
+                        <li>아트하우스</li>
+                    </ul>
+                    <ul>
+                        <li class="wei">극장</li>
+                        <li>CGV 극장</li>
+                        <li>특별관</li>
+                    </ul>
+                    <ul>
+                        <li class="wei">예매</li>
+                        <li>빠른 예매</li>
+                        <li>상영스케줄</li>
+                    </ul>
+                    <ul>
+                        <li class="wei">스토어</li>
+                        <li>콤보</li>
+                        <li>팝콘</li>
+                        <li>음료</li>
+                        <li>스낵</li>
+                    </ul>
+                    <ul>
+                        <li class="wei">이벤트</li>
+                        <li>영화/예매</li>
+                        <li>멤버십/CLUB</li>
+                        <li>CGV 극장별</li>
+                        <li>당첨자 발표</li>
+                    </ul>
+                    <ul>
+                        <li class="wei">혜택</li>
+                        <li>CGV 할인정보</li>
+                        <li>CLUB 서비스</li>
+                        <li>VIP 라운지</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- ////////////탑버튼/////////// -->
+        <a href="#" class="btn_top">
+            <img src="../web/cgv/top.png" alt="" class="btn_top_size">
+        </a>
+        <!-- ///////////////예매창///////////////// -->
+
+        <div class="area">
+            <div class="reser_nav">
+                <div class="nav_L"></div>
+                <div class="nav_E"></div>
+                <div class="nav_R"></div>
+            </div>
+            <div class="main_sec">
+                <div class="menu_chk">
+                    <div class="mov_chk">
+                        <div class="mov_head">영화</div>
+                        <div class="mov_body">
+                            <div class="mov_sel">
+                                <div class="mov_all">전체</div>
+                                <select name="아트하우스">
+                                    <option value="">아트하우스</option>
+                                    <option value="">전체</option>
+                                    <option value="">최신작</option>
+                                    <option value="">굿어롱상영회</option>
+                                    <option value="">생일축하해유</option>
+                                    <option value="">STAGE</option>
+                                    <option value="">CHANNER</option>
+                                    <option value="">라이브러리톡</option>
+                                    <option value="">수어영화</option>
+                                </select>
+                                <select name="특별관" id="아트하우스">
+                                    <option value="">특별관</option>
+                                    <option value="">전체</option>
+                                    <option value="">IMAX</option>
+                                    <option value="">4DX</option>
+                                    <option value="">SCREENX</option>
+                                    <option value="">PRIVATE BOX</option>
+                                    <option value="">SUIT CINEMA</option>
+                                    <option value="">CINE de CHEF</option>
+                                    <option value="">GOLD CLASS</option>
+                                </select>
+                            </div>
+                            <div class="mo_or">
+                                <div class="or_1">예매율순</div>
+                                <div class="or_2">가나다순</div>
+                            </div>
+                            <div class="or_bot"></div>
+                            <div class="mo_list">
+                                <div class="mo_1">
+                                    <div class="mo_color_all">ALL</div>
+                                    <div class="mo_name">비투비 타임: 비투게더 더 무비</div>
+                                </div>
+                                <div class="mo_2">
+                                    <div class="mo_color_12">12</div>
+                                    <div class="mo_name">슈가│어거스트 디 투어</div>
+                                </div>
+                                <div class="mo_3">
+                                    <div class="mo_color_12">12</div>
+                                    <div class="mo_name">듄-파트2</div>
+                                </div>
+                                <div class="mo_4">
+                                    <div class="mo_color_all">ALL</div>
+                                    <div class="mo_name">유미의 세포들 더 무비</div>
+                                </div>
+                                <div class="mo_5">
+                                    <div class="mo_color_15">15</div>
+                                    <div class="mo_name">비키퍼</div>
+                                </div>
+                                <div class="mo_6">
+                                    <div class="mo_color_all">ALL</div>
+                                    <div class="mo_name">쿵푸팬더4</div>
+                                </div>
+                                <div class="mo_7">
+                                    <div class="mo_color_15">15</div>
+                                    <div class="mo_name">오멘-저주의 시작</div>
+                                </div>
+                                <div class="mo_8">
+                                    <div class="mo_color_15">15</div>
+                                    <div class="mo_name">파묘</div>
+                                </div>
+                                <div class="mo_9">
+                                    <div class="mo_color_12">12</div>
+                                    <div class="mo_name">남은 인생 10년</div>
+                                </div>
+                                <div class="mo_10">
+                                    <div class="mo_color_12">12</div>
+                                    <div class="mo_name">고질라 X 콩-뉴 엠파이어</div>
+                                </div>
+                                <div class="mo_11">
+                                    <div class="mo_color_15">15</div>
+                                    <div class="mo_name">씬</div>
+                                </div>
+                                <div class="mo_12">
+                                    <div class="mo_color_15">15</div>
+                                    <div class="mo_name">마더스</div>
+                                </div>
+                                <div class="mo_13">
+                                    <div class="mo_color_18">18</div>
+                                    <div class="mo_name">라스트 썸머</div>
+                                </div>
+                                <div class="mo_14">
+                                    <div class="mo_color_all">ALL</div>
+                                    <div class="mo_name">키메라</div>
+                                </div>
+                                <div class="mo_15">
+                                    <div class="mo_color_12">12</div>
+                                    <div class="mo_name">에스파: 월드 투어 인 시네마</div>
+                                </div>
+                                <div class="mo_16">
+                                    <div class="mo_color_18">18</div>
+                                    <div class="mo_name">가여운 것들</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="menu_chk">
+                    <div class="mov_chk">
+                        <div class="mov_head_tea">극장</div>
+                        <div class="mov_body">
+                            <div class="mov_sel mov_all_box">
+                                <div class="mov_all">전체</div>
+                                <div class="art">아트하우스</div>
+                                <div class="art">특별관</div>
+                            </div>
+                            </div>
+                            <div class="mo_list_tea">
+                                <div class="town">
+                                    <div>서울(31)</div>
+                                    <div>경기(59)</div>
+                                    <div>인천(12)</div>
+                                    <div>강원(5)</div>
+                                    <div>대전/충청(23)</div>
+                                    <div>대구(9)</div>
+                                    <div>부산/울산(18)</div>
+                                    <div>경상(16)</div>
+                                    <div>광주/전라/제주(23)</div>
+                                </div>
+                                <div>
+                                    <img src="../web/cgv/theaterarealist_item_selected.png" alt="" class="town_img">
+                                </div>
+                                <div class="town_in">
+                                    <div>강남</div>
+                                    <div>강변</div>
+                                    <div>건대입구</div>
+                                    <div>구로</div>
+                                    <div>대학로</div>
+                                    <div>동대문</div>
+                                    <div>등촌</div>
+                                    <div>명동</div>
+                                    <div>방학</div>
+                                    <div>불광</div>
+                                    <div>상봉</div>
+                                    <div>성신여대입구</div>
+                                    <div>송파</div>
+                                    <div>수유</div>
+                                    <div>신촌아트레온</div>
+                                    <div>압구정</div>
+                                    <div>여의도</div>
+                                    <div>연남</div>
+                                    <div>영등포</div>
+                                    <div>왕십리</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+
+                <div class="menu_chk">
+                    <div class="mov_chk">
+                        <div class="mov_head_wea">날짜</div>
+                            <div class="mov_body day_box">
+                                <div class="year">2024</div>
+                                <div class="mon">4</div>
+                                <div class="day">
+                                    <div class="day_L">
+                                        <div>월</div>
+                                        <div>화</div>
+                                        <div>수</div>
+                                        <div>목</div>
+                                        <div>금</div>
+                                        <div class="to_blue">토</div>
+                                        <div class="il_red">일</div>
+                                        <div>월</div>
+                                        <div>화</div>
+                                        <div>수</div>
+                                        <div>목</div>
+                                        <div>금</div>
+                                        <div class="to_blue">토</div>
+                                        <div class="il_red">일</div>
+                                        <div>월</div>
+                                        <div>화</div>
+                                        <div>수</div>
+                                        <div>목</div>
+                                        <div>금</div>
+                                        <div class="to_blue">토</div>
+                                        <div class="il_red">일</div>
+                                        <div>월</div>
+                                        <div>화</div>
+                                        <div>수</div>
+                                        <div>목</div>
+                                        <div>금</div>
+                                        <div class="to_blue">토</div>
+                                        <div class="il_red">일</div>
+                                        <div>월</div>
+                                        <div>화</div>
+                                    </div>
+                                    <div class="day_R">
+                                        <div>1</div>
+                                        <div>2</div>
+                                        <div>3</div>
+                                        <div>4</div>
+                                        <div>5</div>
+                                        <div class="to_blue">6</div>
+                                        <div class="il_red">7</div>
+                                        <div>8</div>
+                                        <div>9</div>
+                                        <div>10</div>
+                                        <div>11</div>
+                                        <div>12</div>
+                                        <div class="to_blue">13</div>
+                                        <div class="il_red">14</div>
+                                        <div>15</div>
+                                        <div>16</div>
+                                        <div>17</div>
+                                        <div>18</div>
+                                        <div>19</div>
+                                        <div class="to_blue">20</div>
+                                        <div class="il_red">21</div>
+                                        <div>22</div>
+                                        <div>23</div>
+                                        <div>24</div>
+                                        <div>25</div>
+                                        <div>26</div>
+                                        <div class="to_blue">27</div>
+                                        <div class="il_red">28</div>
+                                        <div>29</div>
+                                        <div>30</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                </div> 
+                <div class="menu_chk">
+                    <div class="mov_chk">
+                        <div class="mov_head_time">시간</div>
+                        <div class="mov_body">
+                            <div class="time_in">
+                                <div class="dnn">
+                                    <div class="d_mor">모닝</div>
+                                    <div class="d_nig">심야</div>
+                                </div>
+                                <div class="choice">영화,극장,날짜를 선택해주세요.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- //////////예매바닥 검은부분////// -->
+        <div class="mov_cho_box">
+            <div class="area mov_cho_in">
+                <div class="mo_btb">
+                    <img src="../web/cgv/포스터/포스터1.jpg" alt="">
+                    <div class="mo_btb_font">비투비 타임: 비투게더 더 무비</div>
+                </div>
+                <div class="tea_cho"></div>
+                <div class="seat_cho"></div>
+                <div class="pay"></div>
+                <div class="seat_pay"></div>
+            </div>
+        </div>
+        <div class="area">
+            <img src="../web/cgv/yumi_poster.jpg" alt="">
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- ////////////////푸터////////////////// -->
+        <div class="footer">
+            <div class="area">
+                <div class="foo_top">
+                    <ul>
+                        <li class="foo_top_li">회사소개</li>
+                        <li class="foo_top_li">지속가능경영</li>
+                        <li class="foo_top_li">IR</li>
+                        <li class="foo_top_li">채용정보</li>
+                        <li class="foo_top_li">광고/제휴/출점문의</li>
+                        <li class="foo_top_li">이용약관</li>
+                        <li class="foo_top_li">편성기준</li>
+                        <li class="foo_top_li">개인정보처리방침</li>
+                        <li class="foo_top_li">법적고지</li>
+                        <li class="foo_top_li">이메일주소무단수집거부</li>
+                        <li class="foo_top_li">윤리경영</li>
+                        <li class="foo_top_li">사이버감사실</li>
+                    </ul>
+                </div>
+                <div class="foo_bot">
+                    <div class="foo_bot_gap">(04377)서울특별시 용산구 한강대로 23길 55, 아이파크몰 6층(한강로동)</div>
+                    <div class="foo_bot_gap">
+                        대표이사
+                        허민회
+                        사업자등록번호
+                        104-81-45690
+                        통신판매업신고번호
+                        2017-서울용산-0662 사업자정보확인
+                    </div>
+                    <div class="foo_bot_gap">
+                        호스팅사업자
+                        CJ올리브네트웍스
+                        개인정보보호 책임자
+                        도형구
+                        대표이메일
+                        cjcgvmaster@cj.net
+                    </div>
+                    <div class="foo_bot_gap">
+                        © CJ CGV. All Rights Reserved
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</body>
+
+</html>

@@ -1,0 +1,707 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+body {
+    margin: 0;
+    padding-top: 142px;
+    font-family: "Noto Sans KR", sans-serif;
+}
+.contents_area {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    height: 100%;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+#wrap {}
+
+/* header */
+#header {
+    position: relative;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+}
+.h_top_B_L {
+    background-color: #fff;
+}
+.h_top {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sns_icons {
+    width: 187.09px;
+    height: 100%;
+    margin-left: 10px;
+}
+.sns_icons ul {
+    display: flex;
+    gap: 5px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.sns_icon {width: calc((100% - (5px * 4)) / 5);}
+.sns_icon a {
+    display: inline-block;
+    /* border: 1px solid;
+    border-radius: 50%; */
+}
+.sns1 {
+    width: 30px;
+    height: 20px;
+    background: url(../../img/던킨도너츠/icon_sns_l.png) no-repeat 1px 1px;
+}
+.sns2 {
+    width: 30px;
+    height: 20px;
+    background: url(../../img/던킨도너츠/icon_sns_l.png) no-repeat  3px -36px;
+}
+.sns3 {
+    width: 30px;
+    height: 20px;
+    background: url(../../img/던킨도너츠/icon_sns_l.png) no-repeat  2px -19px;
+}
+.sns4 {
+    width: 30px;
+    height: 20px;
+    background: url(../../img/던킨도너츠/icon_sns_l.png) no-repeat  3px -72px;
+}
+.sns5 {
+    width: 30px;
+    height: 20px;
+    background: url(../../img/던킨도너츠/icon_sns_l.png) no-repeat   3px -55px;
+}
+
+.logo {
+    width: 120px;
+    height: 60px;
+}
+.logo a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(../../img/던킨도너츠/logo.png) no-repeat center / contain;
+}
+.h_top_R ul{
+    display: flex;
+}
+.h_top_R li {
+    padding-right: 20px;
+}
+.h_top_R a {
+    font-weight: 600;
+    font-size: 14px;
+    color: #525741;
+}
+.h_top_R li:hover .loga {
+    color: #e21683;
+    font-weight: 999;
+} 
+.h_top_R img {
+    width: 40px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.h_top_R li:hover img {
+    transform: scale(1.2);
+}
+.h_bot {
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    
+    background-color: #f8faf0;
+    border-top: 1px solid #e5e2e0;
+    border-bottom: 1px solid #e5e2e0;
+}
+.nav_ul {
+    display: flex;
+    justify-content: center;
+}
+.nav_li {
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.nav_a {
+    color: #75675c;
+    font-weight: 999
+}
+.nav_li:hover .nav_a {
+    color: rgb(252 103 25);
+}
+
+/* ---PAN--- */
+.pan {
+    width: 100%;
+    height: 400px;
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 9999999999;
+
+    display: none;
+}
+.nav_pan {
+    width: 100%;
+    height: 100%;
+    font-size: 150px;
+    text-align: center;
+    cursor: pointer;
+
+    display: none;
+}
+.nav_active {
+    position: fixed;
+    top: 40px;
+    left: 0;
+}
+
+/* --서브판 공통 */
+.nav_menu {
+    justify-content: space-between;
+}
+.nav_sub_menu > ul {
+    display: flex;
+    justify-content: space-between;
+}
+.nav_sub_menu > ul > li {
+    text-align: left;
+}
+.nav_depth0 .main a {
+    height: 55px;
+    padding: 20px 0 0;
+    color: #7a6e5f;
+    font-weight: 900;
+    line-height: 55px;
+}
+.nav_depth0 a {
+    display: block;
+    padding: 5px 0;
+    color: #8b8b8b;
+    font-size: 14px;
+    line-height: 1.4;
+}
+.nav_depth0:hover .nav_depth0_main_a {
+    color: #2b2622;
+}
+.sub > ul > li:hover .nav_depth0_sub_a {
+    color: #f9b234;
+    font-weight: 999;
+}
+
+/* 서브판 --메뉴-- */
+.nav_menu > .nav_sub_menu {
+    width: 55%;
+    height: 100%;    
+}
+.nav_menu > .nav_sub_menu_img {
+    width: 30%;
+    height: 100%;
+    background: url(../../img/던킨도너츠/nav_img/nav_menu.png) no-repeat center / contain;
+}
+
+/* 서브판 --영양정보-- */
+.nav_info {
+    justify-content: flex-start !important;
+}
+.nav_info > .nav_sub_menu {
+    width: 25%;
+    height: 100%;
+    line-height: 320px;    
+} 
+
+/* 서브판 --스토어-- */
+.nav_store > .nav_sub_menu {
+    width: 25%;
+    height: 100%;    
+}
+.nav_sub_menu_img2 {
+    width: 35%;
+    background: url(../../img/던킨도너츠/nav_img/nav_store.png) no-repeat center / contain;
+    margin-right: 20px;
+}
+.nav_sub_menu_img3 {
+    width: 35%;
+    background: url(../../img/던킨도너츠/nav_img/nav_store2.png) no-repeat center / contain;
+}
+
+/* 서브판 --어바웃-- */
+.nav_about {
+    justify-content: space-between !important;
+}
+.nav_about > .nav_sub_menu {
+    width: 40%;
+    height: 100%;
+}
+.nav_about > .nav_sub_menu > ul > li {
+    margin-right: 20px;
+}
+.nav_sub_menu_img4 {
+    width: 30%;
+    background: url(../../img/던킨도너츠/nav_img/nav_about.png) no-repeat center / contain;
+}
+.nav_sub_menu_img5 {
+    width: 30%;
+    background: url(../../img/던킨도너츠/nav_img/nav_about2.png) no-repeat center / contain;
+}
+
+/* 서브판 --온라인-- */
+.nav_online > .nav_sub_menu {
+    width: 20%;
+    height: 100%;
+}
+.nav_sub_menu_img6 {
+    width: 30%;
+    background: url(../../img/던킨도너츠/nav_img/nav_online.png) no-repeat center / contain;
+}
+.nav_sub_menu_img7 {
+    width: 30%;
+    background: url(../../img/던킨도너츠/nav_img/nav_online2.png) no-repeat center / contain;
+}
+
+/* 서브판 --이벤트-- */
+.nav_event > .nav_sub_menu {
+    width: 30%;
+    height: 100%;
+}
+.nav_sub_menu_img8 {
+    width: 40%;
+    background: url(../../img/던킨도너츠/nav_img/nav_event.png) no-repeat center / contain;
+    margin-left: 200px;
+}
+
+.nav_ul, .pan {
+    z-index: 9999999999;
+} 
+
+
+
+/* 햄버거버튼 */
+.h_top_L {
+    width: 50px;
+    height: 50px;
+	box-sizing: border-box;
+    /* margin-top: 7px; */
+    padding-left: 10px;
+	text-align: center;
+}
+.hambuger {
+    padding-top: 7px;
+}
+.hamburger .row {
+	width: 100%;
+	height: 5px;
+	background-color: #e21683;
+	display: block;
+	margin: 8px auto;
+	transition: all 0.3s ease-in-out;
+}
+.hamburger:hover {
+	cursor: pointer;
+}
+#hamburger.is-active P{
+	transition: all 0.3s ease-in-out;
+	transition-delay: 0.6s;
+	transform: rotate(45deg);
+}
+/* #hamburger.is-active .row:nth-child(2) {
+	width: 0px;
+} */
+#hamburger.is-active .row:nth-child(1),
+#hamburger.is-active .row:nth-child(3) {
+	transition-delay: 0.3s;
+}
+/* #hamburger.is-active .row:nth-child(1) {
+	transform: translateY(13px) rotate(45deg);
+}
+#hamburger.is-active .row:nth-child(3) {
+	transform: translateY(-13px) rotate(-45deg);
+} */
+.h_top_L {
+    display: none;
+}
+
+/* 햄버거 판 */
+.ham_pan_box {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999999;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+}
+#ham_chk:checked ~ #wrap .ham_pan_box {
+    opacity: 1;
+    pointer-events: auto;
+}
+#ham_chk:checked ~ #wrap {
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    box-sizing: border-box;
+}
+.ham_pan {
+    width: 300px;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 60px 20px 10px;
+    background-color: #fff;
+    overflow: auto;
+    overflow-x: hidden;
+
+    position: absolute;
+    left: -300px;
+    top: 0;
+    z-index: 9999999999;
+
+    transition: all 0.5s;
+}
+#ham_chk:checked ~ #wrap .ham_pan {
+    left: 0;
+}
+.ham_pan > label {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgb(252 103 25);
+    color: #fff;
+    padding: 8px 10px;
+}
+
+
+
+.pan_menu {
+    margin: 20px 0;
+}
+/* .pan_menu > div:nth-child(4) {
+    border-top: 1px solid #636363;
+    border-bottom: 1px solid #636363;
+} */
+input[name="pan_rd"] {display: none;}
+.pan_btn {
+    height: 50px;
+    line-height: 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pan_btn > label {
+    display: block;
+    width: 100%;
+    font-size: 22px;
+    font-weight: 900;
+}
+input[name="pan_rd"]:checked ~ .pan_btn > label {
+    color: #e21683;
+}
+
+
+.pan_body {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+.pan_body > ul {
+    margin: 0px 0px 20px;
+}
+.pan_body li {
+    font-size: 14px;
+    font-weight: 900;
+    padding: 5px 10px;
+}
+input[name="pan_rd"]:checked ~ .pan_body {
+    height: 150px
+}
+input[name="menu_rd"] {
+    display: none;
+}
+#ham_chk {
+    display: none;
+}
+
+
+
+#footer {
+    margin-top: 150px;
+    margin-bottom: 20px;
+    
+}
+.foot_inner {
+    margin: 0 auto;
+}
+.info {
+    float: left;
+    font-size: 12px;
+    width: 30%;
+}
+.familysite button {
+    font-size: 10px;
+}
+
+
+.menu {
+    float: right;
+    width: 60%;
+}
+.menu_top {
+    width: 100%;
+    height: 200px;
+}
+.menu_L {
+    float: left;
+    width: 500px;
+}
+.menu_L > ul > li {
+    float: left;
+    width: 25%;
+    font-size: 13px;
+}
+.menu_L > ul > li > a {
+    height: 56px;
+    line-height: 56px;
+    color: #5c5149;
+    font-size: 15px;
+    font-weight: 600;
+}
+.menu_liul {
+    font-size: 13px;
+    height: 25px;
+    line-height: 25px;
+}
+.menu_R {
+    float: right;
+    padding-top: 16px;
+}
+.menu_R > ul > li{
+    color: #5c5149;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: right;
+    height: 30px;
+    line-height: 30px;
+}
+.menu_R_info a{
+    font-size: 15px;
+    color: #5c5149;
+    font-weight: 999;
+}
+.sns_box ul {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 50px;
+}
+.sns_box > ul > li {
+    padding: 0 10px;
+    font-size: 12px;
+}
+.policy ul {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.policy > ul > li {
+    padding: 0 5px;
+    font-size: 10px;
+}
+.privacy {
+    color: red;
+    font-weight: 600;
+}
+
+
+
+
+/* 모바일 푸터 */
+.m_logo_box {
+    width: 100%;
+    height: 100px;
+    background-color: #413830;
+    position: relative;
+}
+.m_logo_box img {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.m_logo_box p {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #c8bfb0;
+    font-size: 8px;
+}
+.policy {
+    border-bottom: 0.5px solid #857165;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.policy ul {
+    padding-top: 10px;
+    display: flex;
+    /* flex-direction: calc(100%/5); */
+}
+.policy > ul > li {
+    padding: 5px;
+    font-size: 8px;
+}
+.m_foot_bot {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.m_bot_L_t {
+    display: flex;
+    margin-bottom: 10px;
+}
+.m_open {
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #916a4c;
+    border-radius: 5px;
+    color: #e7e5e0;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    margin-right: 5px;
+}
+.m_tel {
+    height: 30px;
+    line-height: 30px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #413830;
+}
+.ppp  p{
+    font-size: 11px;
+    color: #413830;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+.mobile_inner {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .foot_inner{
+        display: none;
+    }
+    .mobile_inner {
+        display: block;
+    }
+}
+@media screen and (max-width: 720px) {
+    .h_bot,
+    .sns_icons,
+    .log_search {
+        display: none;
+    }
+    .h_top_L {
+        display: block;
+    }
+    .h_top_B_L {
+        background-color: #f8faf0;
+        border-bottom: 1px solid #e5e2e0;
+    }
+    body {
+        margin: 0;
+        padding-top: 0px;
+        font-family: "Noto Sans KR", sans-serif;
+    }
+}
+@media screen and (max-width: 430px){
+    #container {
+        top: 60px;
+    }
+    
+    .logo {
+        width: 120px;
+        height: 60px;
+    }
+    .logo a{
+        position: relative;
+        left: -20%;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: url(../../img/던킨도너츠/logo.png) no-repeat center / contain;
+    }
+    .m_logo_box {
+        height: 80px;
+    }
+    .m_logo_box img {
+        top: 20%;
+    }
+    .m_logo_box p {
+        bottom: 20%;
+        font-size: 6px;
+    }
+    .policy {
+        padding-bottom: 5px 0;
+    }
+    .policy > ul > li {
+        padding: 2px;
+        font-size: 6px;
+    }
+
+    .m_foot_bot {
+        margin: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .m_bot_L_t {
+        display: flex;
+        margin-bottom: 10px;
+    }
+    .m_open {
+        width: 80px;
+        height: 20px;
+        line-height: 20px;
+        background-color: #916a4c;
+        border-radius: 5px;
+        color: #e7e5e0;
+        font-size: 11px;
+        font-weight: 600;
+        text-align: center;
+        margin-right: 5px;
+    }
+    .m_tel {
+        display: none;
+    }
+    .ppp  p{
+        font-size: 7px;
+    }
+}

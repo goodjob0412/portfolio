@@ -1,0 +1,158 @@
+.write_box{
+    width: 1000px;
+    margin: 50px auto;
+}
+.txt_box{
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
+#title{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 0 10px;
+    border: none;
+    outline: none;
+}
+/* =========================================== */
+.main_box{
+    margin-bottom: 5px;
+}
+.icon_box{
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background: #fff;
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+}
+.icon_btn{
+    cursor: pointer;
+    display: flex;
+    gap: 3px;
+}
+.icon_box > div{
+    font-size: 14px;
+    font-weight: 700;
+}
+.icon_pan{
+    background: #ddd;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 0 5px;
+}
+.pan_active{
+    height: 65px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.pan_icon_img{
+    display: none;
+}
+.img_active{
+    display: inline;
+}
+/* ====================================================== */
+.tool_box{
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+.tool_icon{
+    width: 40px;
+    height: 40px;
+}
+.font_up,
+.font_down{
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+.show_size{
+    width: 40px;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+.t_icon_box{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.tool_icon:hover,
+.t_icon_box:hover{
+    background: #ddd;
+}
+.tool_active{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), #ddd, #fff);
+}
+.main_txt{
+    height: 700px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background: #fff;
+}
+/* ============================================ */
+#txt_box{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    resize: none;
+}
+.weight_900{
+    font-weight: 900;
+}
+.txt_under{
+    text-decoration: underline;
+}
+.txt_strike{
+    text-decoration: line-through;
+}
+/* ============================= */
+.finish_box{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: end;
+    font-weight: 900;
+}
+.cancle{
+    width: 200px;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.cancle a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.finish{
+    width: 200px;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background: #ebcc1a;
+}
+.finish a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
