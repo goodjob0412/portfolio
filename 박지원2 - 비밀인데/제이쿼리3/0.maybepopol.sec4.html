@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/jquery.js"></script>
+    <style>
+        
+        body{
+            
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            
+            text-decoration: none;
+            color: black;
+        }
+        .wrap{
+            width: 100%;
+            min-width: 1600px;
+            margin: 0 auto;
+        }
+        .header{
+            background-color: white;
+            z-index: 99999999;
+            position: fixed;
+            width: 100%
+        }
+        /* 탑메뉴 */
+        .popup{
+            
+            position: relative;
+
+            margin: 0 auto;
+            width: 1200px;
+            height:120px;
+            
+        }
+        .logo{
+            float: left;
+            width: 100px;
+            height: 120px;
+            background: url(../img/공차/logo_r.png) center no-repeat;
+            background-size: contain;
+        }
+        .t_menu{
+            width: 900px;
+            right: 0;
+            position: absolute;
+            top: 10px;
+        }
+        .m_text{
+            width: calc(100 / 6);
+        }
+        .m_text a{
+            color: #625957;
+            float: right;
+            font-size: 12px;
+            line-height: 20px;
+        }
+        .linebar{
+            margin: 5px 20px;
+            font-size: 13px;
+            height: 10px;
+            width: 1px;
+            border: 5px ;
+            background-color: #aaa;
+            float: right;
+        }
+        .search{
+            background: url(../img/공차/icon_search.png) center no-repeat;
+            background-size:contain;
+            width: 20px;
+            height: 20px;
+            margin-right: 20px;
+            float: right;
+        }
+        /* 바텀메뉴 */
+        .b_menu{
+            position: absolute;
+            bottom: 0;
+            height: 50px;
+            right:0;
+        }
+        .b_text{
+            line-height: 50px;
+            text-align: center;
+            float: right;
+            width: 150px;
+        }
+        .b_text:hover{
+            color: white;
+            background-color: #382d2a;
+        }
+        /* 판박스 */
+        .panbox{
+            z-index: 99999999;
+            display: none;
+            height: 400px;
+            width: 100%;
+            background-color: #382d2a;
+        }
+        .pan{
+            display: none;
+            margin: 0 auto;
+            width: 1200px;
+            height: 400px;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+        .p_text_box{
+            display: flex;
+            flex-direction: column;
+        gap: 10px;
+        }
+        .p_text{
+            color: white;
+            float: left;
+            width: 160px;
+            
+            line-height: 50px;
+        }
+            .pp_text{
+                color: white;
+                margin-right: 20px;
+                font-size: 13px;
+                width: 140px;
+                
+                float: left;
+        }
+        .pp_text:hover{
+            
+            color:  rgb(252, 215, 101);
+        
+        }
+        .title{
+            padding-top: 200px;
+            padding-bottom: 20px;
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .title_text{
+            font-size: 25px;
+            font-weight: 600;
+        }
+        .title_text2{
+            font-size: 12px;
+            float: right;
+        }
+
+        /* 메뉴설명 */
+        .menu_box{
+            width: 1200px;
+            height: 656px;
+            margin:  auto;
+            margin-bottom: 200px;
+        }
+        .menu_secret{
+            height: 100%;
+            width: 100%;
+            position: relative;
+        }
+        .menu_l{
+            margin-right: 20px;
+            width: 480px;
+            height: 100%;
+            float: left;
+        }
+        .menu_img{
+            position: relative;
+            width: 480px;
+            height: 550px;
+            background: url(../img/공차/네번쨰페이지/w4_m.jpg) center no-repeat;
+            background-size: cover;
+        }   
+        .circle{
+            position: absolute;
+            background: gray;
+            opacity: 0.5;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            bottom: 20px;
+            right: 20px;
+        }   
+        .icon{
+            width: 50px;
+            height: 50px;
+            background: url(../img/공차/네번쨰페이지/searchicon.png) no-repeat center;
+        }
+        .menu_toping{
+            margin-top: 10px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        
+        }
+        .toping{
+            background-color: #F5F4EE;
+            float: left;
+            width: 112.5px;
+            height: 95px;
+            text-align: center;
+            line-height: 95px;
+        }      
+        .toping_txt{
+            margin-top: 57px;
+            
+        }
+        .mrr_0{
+            margin-left: 0px;
+        }
+        .menu_r{
+            width: 700px;
+            float: right;
+            
+        }
+        .menu_name{
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+        .eng_name{
+            color: #797777;
+            float: left;
+            padding: 20px 0px ;
+        }
+        .my_water{
+            width: 150px;
+            height: 25px;
+            line-height: 25px;
+            text-align: center;
+            float: right;
+            color: #fff;
+            background-color: #939393;
+            font-size: 13px;
+            
+        }
+        .m_line{
+            width: 100%;
+            height: 1px;
+            background-color: black;
+            margin-top: 75px;
+        }
+        .water_sul{
+            color: #585858;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+        .water_jung{
+            margin-top: 20px;
+            float: left;
+        }
+        .water_size{
+            margin-top: 20px;
+            float: right;
+        }
+        .line_0{
+            margin-top: 60px;
+        }
+        .sul_l_box{
+            
+            float: left;
+            width: 50%;
+            height: 200px;
+            
+        }
+        .s_line{    
+            margin-top: 20px;
+            float: right;
+            height: 146px;
+            width: 1px;
+            background-color: black;
+        }
+        .sul{
+            width: 82%;
+            float: left;
+            padding: 20px 0px;
+        }
+        .sul_num{
+            text-align: right;
+            padding: 20px 30px;           
+        }
+        .sul_r_box{
+            position: absolute;
+            width: 27.2%;
+            height: 178px;
+            right: 0;
+            top: 282px;
+        }
+        .mr_r{
+            padding: 21px 0px;
+        }
+        .m_2{
+            margin-top: 185px;
+        }
+        .danger{
+            width: 176px;
+            color: #4C4C4C;
+            font-size: 12px;
+        }
+        /* 리뷰탑 */
+        .review_top{
+            margin: 0 auto;
+            width: 1200px;
+            
+        }
+        .review{
+            font-size: 22px;
+            font-weight: 600;
+        }
+        .r_line{
+            width: 100%;
+            height: 1px;
+            background-color: black;
+            margin: 20px auto;
+        }
+        .text_review{
+            width: 100%;
+            height: 100px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            resize: none;
+        }
+        .act{
+            
+            width: 100%;
+            height:35px;
+        }
+        .picture{
+            display: flex;
+            float: left;
+            height: 35px;
+            line-height: 35px;
+            font-size: 16px;
+            text-align: center;
+        }
+        .star{
+            margin-left:  20px;
+            height: 35px;
+            font-size: 16px;
+            text-align: center;
+        }
+        .r_chk{
+            float: right;
+            height: 35px;
+            line-height: 35px;
+            font-size: 16px;
+            text-align: center;
+        }
+        .comment_txt{
+            font-size: 22px;
+            font-weight: 600;
+            width: 1200px;
+            margin: 0 auto;
+            margin-top: 100px;
+        }
+
+        /* 리뷰바텀 */
+        .review_bottom{
+            width: 1200px;
+            margin: 0 auto;
+            height: 255px;
+            overflow: hidden;
+        }
+        .review_box{
+            padding: 5px;
+            position: relative;
+            height: 200px;
+            width: 538px;
+            border: 1px solid;
+            float: left;
+        }
+        .review_img{
+            margin-right: 10px;
+            height: 200px;
+            width: 200px;
+            background-size: contain;
+            float: left;
+        }
+        .a1{
+            background: url(../img/공차/네번쨰페이지/rivew_1.jpg) center;
+        }
+        .a2{
+            background: url(../img/공차/네번쨰페이지/rivew_2.jpg) center;
+        }
+        .review_txt{
+            font-size: 14px;
+            line-height: 30px;
+        }
+        .re_line{
+            margin: 0 auto;
+            margin-left: 203.5px;
+            height: 1px;
+            background-color: black;
+            
+        }
+        .like{
+            position: absolute;
+            font-size: 14px;
+            left: 210px;
+            bottom: 5px;
+        }
+        .date{
+            position: absolute;
+            font-size: 14px;
+            right: 5px;
+            bottom: 5px;
+        }
+        .r_0{
+            margin-left: 100px;
+        }
+
+        .review_more{
+            margin: 0 auto;
+            margin-top: 50px;
+            width: 50px;
+            padding: 5px 40px;
+            border-radius: 20px;
+            border:1px solid #4C4C4C;
+            text-align: center;
+            transition: all 0.5s;
+        }
+        .review_more:hover{
+            color: white;
+            background-color: #4C4C4C;
+        }
+
+        /* 이벤트 */
+        .event_box{
+            margin-top: 50px;
+            width: 100%;
+            height: 300px;
+            background-color: #CCC9BD;
+        }
+        .event_outer{
+            padding: 30px 10px;
+            width: 1200px;
+            height: 300px;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+        .event_m_l{
+            position: relative;
+            height: 260px;
+            width: 576px;
+            float: left;
+        }
+        .e_l_txt{
+            margin-bottom: 30px;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .e_l_plus{
+            width: 30px;
+            height: 30px;
+            border: 1px solid #4C4C4C;
+            border-radius: 15px;
+            text-align: center;
+            line-height: 30px;
+            font-size: 20px;
+            color: #4C4C4C;
+            position: absolute;
+            right: 50px;
+            top: -5px;
+        }
+        .e_l_no_event{
+            font-size: 13px;
+        }
+        .event_m_r{
+            right: 0;
+            float: right;
+            position: relative;
+            width: 576px;
+            height: 250px;
+        }
+        .event_img{
+            top: 35px;
+            position: absolute;
+            width: 167px;
+            height: 235px;
+            background: url(../img/공차/네번쨰페이지/membership.png);
+        }
+        .mem_txt_box{
+            top: 10px;
+            left: 186px;
+            position: absolute;
+            width: 380px;
+            height: 180px;
+        }
+        .mem_txt{
+            margin-left: 10px;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .mem_img{
+            height: 86px;
+            width: 300px;
+            background: url(../img/공차/네번쨰페이지/membership_icon.png);
+            margin-bottom: 20px;
+        }
+
+        .mem_txt2{
+            margin-left: 10px;
+            width: 319px;
+            height: 77px;
+            font-size: 13px;
+        }
+
+        /* 푸터 */
+        .footer{
+            background-color: #231815;
+            width: 100%;
+            height: 300px;
+        }
+        .f_top{
+            width: 1200px;
+            margin: 0 auto;
+            height: 70px;
+            display: flex;
+            line-height: 70px;
+            justify-content: space-around;
+        }
+        .f_txt{
+            font-size: 14px;
+            color: white;
+        }
+        .f_line{
+                width: 100%;
+            height: 1px;
+            background-color: white; 
+        }
+        .f_bot{
+            height: 208px;
+            width: 200px;
+            margin: 0 auto;
+        }
+        .f_b_logo{
+            background: url(../img/공차/logo_r.png) center no-repeat; 
+            background-size: contain;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: 100px;
+            height: 100px;
+        }
+        
+        .f_b_txt{
+            text-align: center;
+            color: #ccc;
+            font-size: 12px;
+            transform: translate(-47px);
+        }
+        .menu_img:hover .circle{
+            display: none;
+        }
+        .magnifier{
+            display: none;
+            background: url(../img/공차/네번쨰페이지/w4_m.jpg) center no-repeat ;
+            background-size: 480px 550px;
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            box-shadow: 1px 1px 5px 0 #727272;
+            pointer-events: none;
+            transform: scale(1.5);
+            position: absolute;
+        }
+         
+            
+        
+        </style>
+</head>
+<body>
+    <div class="wrap">
+        <!-- 헤더  -->
+        <div class="header">
+            <div class="popup">
+                <a class="logo" href="../제이쿼리3/index.html"></a>
+                    <div class="t_menu">
+                            <div class="m_text">
+                                <div class="search"></div>
+                                <div class="linebar"></div>
+                            </div>
+                            <div class="m_text">
+                                <a href="">Find a Store</a>
+                                <div class="linebar"></div>
+                                </div>
+                            <div class="m_text">
+                                <a href="">Customer Service & Idea</a>
+                                <div class="linebar"></div>
+                            </div>
+                            <div class="m_text">
+                                <a href="">my gongcha</a>
+                                <div class="linebar"></div>
+                            </div>
+                            <div class="m_text">
+                                <a href="">sign up</a>
+                            </div>
+                    </div>
+                <div class="b_menu">
+                    <div class="b_text">WHAT'S NEWS</div>
+                    <div class="b_text">MEMBERSHIP</div>
+                    <div class="b_text">ONLINEMALL</div>
+                    <div class="b_text">STORE</div>
+                    <div class="b_text">MENU</div>
+                    <div class="b_text">BRAND</div>
+                </div>
+            </div> 
+            <div class="panbox">
+
+                <div class="pan">
+
+                    
+                    <div class="p_text_box">
+                        <div class="p_text">프로모션 & 이벤트</div>
+                        <div class="pp_text">진행 중인 이벤트</div>
+                        <div class="pp_text">종료된 이벤트</div>
+                    </div>
+                    
+                    <div class="p_text_box">
+                        <div class="p_text">새소식</div>
+                    </div>
+                    
+                    <div class="p_text_box">
+                        <div class="p_text">자주하는 질문</div>
+                        <div class="pp_text">선물하기</div>
+                        <div class="pp_text">이용 안내</div>
+                    </div>
+                    
+                    <div class="p_text_box">
+                        <div class="p_text">공지사항</div>
+                    </div>
+
+
+                </div> 
+                <div class="pan">
+                    <div class="p_text_box">
+                    <div class="p_text">공차 멤버십</div>
+                    <div class="pp_text">혜택 안내</div>
+                    <div class="pp_text">공차 스탬프 카드</div>
+                </div>
+
+                <div class="p_text_box">
+                    <div class="p_text"> 멤버십 오더</div>
+                    <div class="pp_text">멤버십 오더 소개</div>
+                    <div class="pp_text">이용 안내</div>
+                </div>
+                
+                    <div class="p_text_box">
+                    <div class="p_text">  멤버십 금액권</div>
+                    <div class="pp_text">멤버십 금액권 소개</div>
+                    <div class="pp_text">등록 및 조회충전</div>
+                    <div class="pp_text">이용 안내</div>
+                </div>
+
+                    <div class="p_text_box">
+                    <div class="p_text"> 자주하는 질문</div>
+                    <div class="pp_text">선물하기</div>
+                    <div class="pp_text">이용 안내</div>
+                </div>
+                </div>
+                <div class="pan">
+                    <div class="p_text_box">
+                        <div class="p_text"> 온라인 몰</div>
+                        <div class="pp_text">집에서 간편하게 공차를</div>
+                        <div class="pp_text">즐겨보세요</div>
+                    </div>
+                </div>
+                <div class="pan">
+                    <div class="p_text_box">
+                        <div class="p_text"> 오프라인 STORE</div>
+                        <div class="pp_text">매장 찾기</div>
+                        <div class="pp_text">신규 매장 안내</div>
+                    </div>
+
+                </div>
+                <div class="pan">
+                    
+
+                    <div class="p_text_box">
+                        <div class="p_text">음료</div>
+                        <div class="pp_text">BEST COMBINATION</div>
+                        <div class="pp_text">SEASEON</div>
+                        <div class="pp_text">MILK TEA</div>
+                        <div class="pp_text">SMOOTHIE & CRUSH</div>
+                        <div class="pp_text">BEVERAGE</div>
+                        <div class="pp_text">ORIGINAL TEA</div>
+                        <div class="pp_text">COFFEE</div>
+
+                    </div>
+                    
+                    <div class="p_text_box">
+                        <div class="p_text">빙수</div>
+                        <div class="pp_text">몬스터 팥 빙수</div>
+                        <div class="pp_text">몬스터 망고 빙수</div>
+                        <div class="pp_text">몬스터 슈가크럼블 빙수</div>
+                    </div>
+                    
+                    <div class="p_text_box">
+                        <div class="p_text">디저트</div>
+                        <div class="pp_text">BAKERY</div>
+                        <div class="pp_text">SNACK</div>
+                        
+                        
+                    </div>
+                    
+                    <div class="p_text_box">
+                        <div class="p_text">MD상품</div>
+                        <div class="pp_text">FOOD</div>
+                        <div class="pp_text">MUG</div>
+                        <div class="pp_text">COLD CUP</div>
+                        <div class="pp_text">CANDLE</div>
+                        <div class="pp_text">TUMBLER</div>
+                        <div class="pp_text">TEA STORY</div>
+                        
+                    </div>
+                    
+                    <div class="p_text_box">
+                        <div class="p_text">TEA STORY</div>
+                    </div>
+                </div>
+                <div class="pan">
+                    <div class="p_text_box">
+                        <div class="p_text">브랜드 소개</div>
+                        <div class="pp_text">공차에 대해서 
+                            <br>알아보세요</div>
+                    </div>
+
+                    <div class="p_text_box">
+                        <div class="p_text">공차의 약속</div>
+                        <div class="pp_text">최고의 한 잔을 위한</div>
+                        <div class="pp_text">공차의 철학을 들려드립니다</div>
+                    </div>
+
+                    <div class="p_text_box">
+                        <div class="p_text">세계 속의 공차</div>
+                        <div class="pp_text">전 세계인들에게</div>
+                        <div class="pp_text">사랑받는공차의 모습을 구경하세요</div>
+                    </div>
+
+                    <div class="p_text_box">
+                        <div class="p_text">미디어 센터</div>
+                        <div class="pp_text">공차의 보도자료들을</div>
+                        <div class="pp_text">확인하세요</div>
+                    </div>
+                    
+                </div>
+                
+                </div>
+                
+            </div>  
+            <!-- 2024시즌음료 칸 -->
+        <div class="title">
+            <div class="title_text">2024 시즌 음료</div>
+            <div class="title_text2">
+                <a href="../제이쿼리3/index.html">HOME</a> >
+                <a href="../제이쿼리3/0.maybepopol.sec2.html"> 메뉴 </a> >
+                <a href="../제이쿼리3/0.maybepopol.sec3.html">음료 </a> >
+                2024 시즌음료
+            </div>
+        </div>
+        <!-- 메뉴정보 및 사진  -->
+        <div class="menu_box">
+            <div class="menu_secret">
+                <div class="menu_l">
+                    <div class="menu_img">
+                        <div class="circle">
+                            <div class="icon"></div>
+                        </div>
+                    </div>
+                    <div class="magnifier"></div>
+                    <div class="menu_toping">
+                        <div class="toping">+추천토핑</div>
+                        <div class="toping">
+                            <div class="toping_txt">타피오카펄</div>
+                        </div>
+                        <div class="toping">
+                            
+                    <div class="toping_txt">코코넛</div>
+                        </div>
+                        <div class="toping">
+                    <div class="toping_txt mrr_0">화이트펄</div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="menu_r">
+                    <div class="menu_name">요구르트 쥬얼리 망고 크러쉬</div>
+                    <div class="eng_name">Yogurt Juwerly Mango Crush</div>
+                    <div class="my_water">나만의 음료 등록</div>
+                    <div class="m_line"></div>
+                    <div class="water_sul">쫀득쫀득 요구르트 쥬얼리와 달콤한 망고가 어우러진 시즌한정 크러쉬
+                    </div>
+                    <div class="m_line"></div>
+                    <div class="water_jung">제품 영양 정보</div>
+                    <div class="water_size">Large(라지) / 454g</div>
+                    <div class="m_line line_0"></div>
+                    <div class="sul_l_box">
+                        <div class="s_line"></div>
+                        <div class="sul">칼로리(kcal)</div>
+                        <div class="sul">당류(g)</div>
+                        <div class="sul">단백질(g)</div>
+                        <div class="sul_num">328</div>
+                        <div class="sul_num">32</div>
+                        <div class="sul_num">6</div>
+                        </div>
+                        <div class="sul_r_box">
+                            <div class="sul mr_r">포화지방(g)</div>
+                            <div class="sul mr_r">나트륨(g)</div>
+                            <div class="sul mr_r">카페인(mg)</div>
+                            <div class="sul_num mr_r">7</div>
+                            <div class="sul_num mr_r">211</div>
+                            <div class="sul_num mr_r">31</div>
+                        </div>
+                        <div class="m_line m_2"></div>
+                        <div class="danger">*알레르기 유발 식품 : 우유, 대두</div>
+                    </div>
+                    
+                </div>
+            </div>
+
+ <!-- 리뷰탑 -->
+            <div class="review_top">
+            <div class="review">REVIEW</div>
+            <div class="r_line"></div>
+            <textarea class="text_review" name="review" id="review" cols="30" rows="10" placeholder="리뷰를 남겨주세요"></textarea>
+            <div class="act">
+                <button class="picture"><img  src="../img/공차/네번쨰페이지/cameraicon.png" alt="">  + 사진추가</button>
+                <select class="star" name="star" id="star">
+                    <option  value="">★★★★★ - 아주맛있어요!  </option>
+                    <option value="">★★★★ - 맛있어요  </option>
+                    <option value="">★★★ -  평범했어요  </option>
+                    <option value="">★★ -  별로였어요  </option>
+                    <option value="">★ - 최악이에요  </option>
+                </select>
+                <button class="r_chk" > 등록하기</button>
+            </div>
+            </div>
+            
+            <div class="comment_txt">COMMENT</div>
+
+            <div class="review_bottom">
+                <div class="r_line"></div>
+                <div class="review_box">
+                    <div class="review_img a1" ></div>
+                    <div class="review_txt">★★★★ - 맛있어요!</div>
+                    <div class="re_line"></div>
+                    <div class="review_txt">망고와 요구르트의 조합이 넘 잘 어울려요!</div>
+                    <div class="like">♡ 24</div>
+                    <div class="date">2024-05-15</div>
+                </div>
+                <div class="review_box r_0">
+                    <div class="review_img a2"></div>
+                    <div class="review_txt">★★★★★ - 맛있어요!</div>
+                    <div class="re_line"></div>
+                    <div class="review_txt"> 요구르트와 망고가 너무 맛있어요!! </div>
+                    <div class="like">♡ 64</div>
+                    <div class="date">2023-02-15</div>
+            </div>
+        </div>
+
+        <!-- 리뷰바텀 -->
+        <div class="review_more_box">
+            <div class="review_more">더보기</div>
+        </div>
+        <!-- 이벤트 -->
+        <div class="event_box">
+            <div class="event_outer">
+            <div class="event_m_l">
+                <div class="e_l_txt">프로모션 새소식</div>
+                <a class="e_l_plus" href="">+</a>
+                <div class="e_l_no_event">* 해당 상품과 관련된 진행 중인 프로모션이 없습니다.</div>
+            </div>
+            <div class="event_m_r">
+                <div class="event_img"></div>
+                <div class="mem_txt_box">
+                    <div class="mem_txt">멤버십 오더란?
+                    </div>
+                    <div class="mem_img"></div>
+                    <div class="mem_txt2">공차 멤버십 앱을 통해 간편하게 주문/결제를 하고 제조가 완료되면 매장에서 바로 찾아갈 수 있는 모바일 간편 주문 서비스입니다.</div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- 푸터 -->
+        <div class="footer">
+            <div class="f_top">
+                <div class="f_txt">회사 소개</div>
+                <div class="f_txt">제휴/제안</div>
+                <div class="f_txt">고객센터</div>
+                <div class="f_txt">개인정보처리방침</div>
+                <div class="f_txt">이메일무단수집거부</div>
+                <div class="f_txt">사이트맵</div>
+            </div>
+            <div class="f_line"></div>
+            <div class="f_bot">
+                <div class="f_b_logo"></div>
+                <div class="f_b_txt">㈜공차코리아</div>
+                <div class="f_b_txt">서울 종로구 종로 47(공평동, 7층)</div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+
+
+
+
+           $(document).ready(function(){
+
+            $('.b_text').hover(function(){
+        $('.panbox').stop().slideDown(300)
+ 
+        $('.pan').css({display: 'none'})
+        $('.pan').eq($(this).index()).css({
+            
+            display: 'flex'
+        })
+        console.log(this)
+    }, function(){
+        $('.panbox').stop().slideUp(300)
+    })
+
+    $('.pan').hover(function(){
+        $('.panbox').stop().slideDown(300)
+
+
+    }, function(){
+        $('.panbox').stop().slideUp(300)
+    })
+
+    for(let i = 1 ; i < $(`.toping`).length; i++){
+        
+        $(`.toping`).eq(i).css(
+            `background-image` , `url(../img/공차/네번쨰페이지/topping${i}.png) `
+    )
+    $(`.toping`).eq(i).css(
+            `background-size` , `cover`
+    )
+}
+            
+
+    $(`.text_review`).click(function(){
+        
+        alert(`로그인 후 이용 가능합니다`)
+    })
+
+
+
+    let magnifier = $('.magnifier');
+let target = $('.menu_img > img');
+
+$(document).on('mouseenter', '.menu_img', function(){
+    magnifier.fadeIn(0)
+});
+$(document).on('mouseleave', '.menu_img', function(){
+    magnifier.fadeOut(0)
+});
+$(document).on('mousemove', '.menu_img', function(e){
+    // 부모 기준 위치 잡기
+    // let pos_x = $('.img_box').position().left;
+    // let pos_y = $('.img_box').position().top;
+
+    // 1 - pageX,Y로 화면 좌상단 기준 마우스 위치 찾고 .img_box의 위치 빼기
+   
+    let mouseX = e.pageX - $('.menu_img').offset().left;
+    let mouseY = e.pageY - $('.menu_img').offset().top;
+    console.log(e.pageX ,  $('.menu_img').offset().left , mouseX)
+    // 2 - 마우스가 원의 중심에 오게 하기
+    let px = mouseX - (magnifier.width() / 2)
+    let py = mouseY - (magnifier.height() / 2)
+
+    // 3 - 배경이미지가 원의 가운데 오게 하기
+    let rx = -mouseX + (magnifier.width() / 2)
+    let ry = -mouseY + (magnifier.height() / 2)
+
+
+    // 4 - 돋보기 위치 , 배경 이동시키기
+    magnifier.css({
+        left: px,
+        top: py,
+        backgroundPosition: rx+"px " + ry+"px",
+        backgroundSize: target.width()+"px " + target.height()+"px"
+    })
+
+});
+
+
+
+        });
+    
+        
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>pictogram/icon-check</title>
+    <defs>
+        <path d="M52.9126045,7.62421659 C53.6724287,6.47137989 55.2229467,6.15278029 56.3757834,6.91260449 C57.4805853,7.64076934 57.8192214,9.0951096 57.1767744,10.2296935 L57.0873955,10.3757834 L28.0873955,54.3757834 C27.1721978,55.7643592 25.1976834,55.8786551 24.1230296,54.6517026 L24.0114207,54.515108 L8.0114207,33.515108 C7.17464964,32.416846 7.38662994,30.8481918 8.48489196,30.0114207 C9.53540346,29.211031 11.0162927,29.3701794 11.8753835,30.3466799 L11.9885793,30.484892 L25.852,48.681 L52.9126045,7.62421659 Z" id="path-1"></path>
+    </defs>
+    <g id="pictogram/icon-check" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <g id="Group" mask="url(#mask-2)">
+            <g transform="translate(0.000000, -0.000000)" id="Color">
+                <rect id="Rectangle" fill="#23BEA6" x="0" y="0" width="64" height="64"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

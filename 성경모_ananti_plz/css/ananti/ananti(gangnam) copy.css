@@ -1,0 +1,164 @@
+#wrap{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin-right: -17px;
+}
+
+.one_page_box{
+    width: 100%;
+    height: 953px;
+}
+
+.one_page1{
+    width: 100%;
+    height: 953px;
+    background: red url(../../img/ananti/gangnam/map-pc.jpg) no-repeat center / contain;
+}
+
+.banner_gangnam2{
+    background: rgb(73,135,161);
+}
+
+
+.banner_info{
+    position: absolute;
+    top: 10px;
+    right : 0px;
+    width: 100px;
+    height: 100px;
+    border: 2px solid red;
+}
+
+.banner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1100px;
+    font-size: 250px;
+    color: #fff;
+    text-align: center;
+    line-height: 650px;
+    /* opacity: 0.3; */
+}
+
+.banner_txt_box{
+    width: 1000px;
+    position: absolute;
+    top: 300px;
+    left: 300px;
+}
+
+.banner_txt{
+    
+}
+.banner_txt1{
+    font-weight: 900;
+    font-size: 120px;
+}
+
+.banner_txt2{
+    line-height: 50px;
+    font-weight: 900;
+    font-size: 30px;
+    margin: 50px 0;
+}
+
+.banner_txt3{
+    line-height: 50px;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.reser_box{
+    background: #fff;
+    width: auto;
+    height: auto;
+    /* border: 1px solid red; */
+    box-shadow: 1px 1px 10px 1px rgb(213 212 212);
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.reser_box img{
+   width: 20px;
+   padding-right: 5px;
+}
+
+.reser_L{
+    /* border: 1px solid; */
+    /* background: yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 100px 20px 20px;
+    line-height: 29px;
+}
+
+.reser_L span:nth-child(1){
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.L_btm{
+    display: flex;
+    align-items: center;
+    color : rgb(176,176,176)
+}
+
+.reser_R{
+    color: #fff;
+    border: 1px solid;
+    background: rgb(90, 211, 192);
+    padding: 0 50px;
+    align-content: center;
+}
+
+
+/* banner_gangnam2 */
+
+.bn_txt_terrace_box{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bn_txt_terrace{
+    line-height: 50px;
+    font-weight: 900;
+    font-size: 30px;
+    margin: 50px 0;
+}
+
+.banner_desc_box{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.plus_beat{
+    position: absolute;
+}
+
+.banner_round_box{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 550px;
+    border-radius: 50px 0 0 0;
+    border: 1px solid;
+    overflow: hidden;
+}
+
+.banner_round_box img{
+    width: 100%;
+}
+
+
+
+/*container*/
+

@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/jquery.js"></script>
+    <style>
+        
+        body{
+            
+            margin: 0;
+            padding: 0;
+            
+        }
+        a{
+            
+            text-decoration: none;
+            color: white;
+        }
+        .wrap{
+            width: 100%;
+            min-width: 1600px;
+            margin: 0 auto;
+        }
+        .header{
+            background-color: white;
+            z-index: 99999999;
+            position: fixed;
+            width: 100%
+        }
+        /* 탑메뉴 */
+        .popup{
+            
+            position: relative;
+
+            margin: 0 auto;
+            width: 1200px;
+            height:120px;
+            
+        }
+        .logo{
+            float: left;
+            width: 100px;
+            height: 120px;
+            background: url(../img/공차/logo_r.png) center no-repeat;
+            background-size: contain;
+        }
+        .t_menu{
+            width: 900px;
+            right: 0;
+            position: absolute;
+            top: 10px;
+        }
+        .m_text{
+            width: calc(100 / 6);
+        }
+        .m_text a{
+            color: #625957;
+            float: right;
+            font-size: 12px;
+            line-height: 20px;
+        }
+        .linebar{
+            margin: 5px 20px;
+            font-size: 13px;
+            height: 10px;
+            width: 1px;
+            border: 5px ;
+            background-color: #aaa;
+            float: right;
+        }
+        .search{
+            background: url(../img/공차/icon_search.png) center no-repeat;
+            background-size:contain;
+            width: 20px;
+            height: 20px;
+            margin-right: 20px;
+            float: right;
+        }
+        /* 바텀메뉴 */
+        .b_menu{
+            position: absolute;
+            bottom: 0;
+            height: 50px;
+            right:0;
+        }
+        .b_text{
+            line-height: 50px;
+            text-align: center;
+            float: right;
+            width: 150px;
+        }
+        .b_text:hover{
+            color: white;
+            background-color: #382d2a;
+        }
+        /* 판박스 */
+        .panbox{
+            z-index: 99999999;
+            display: none;
+            height: 400px;
+            width: 100%;
+            background-color: #382d2a;
+        }
+        .pan{
+            display: none;
+            margin: 0 auto;
+            width: 1200px;
+            height: 400px;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+        .p_text_box{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .p_text{
+            color: white;
+            float: left;
+            width: 160px;
+            
+            line-height: 50px;
+        }
+            .pp_text{
+                color: white;
+                margin-right: 20px;
+                font-size: 13px;
+                width: 140px;
+                
+                float: left;
+        }
+        .pp_text:hover{
+            color:  rgb(252, 215, 101);
+        
+        }
+        /* 메인베너 */
+        .mainbanner{
+            padding-top: 120px;
+        }
+
+        .mainbanner_img{
+            width: 100%;
+            height: 468px;
+            background: url(../img/공차/세번쨰페이지/w3_top.gif) center;
+            background-size: cover; 
+        }
+        .main_outer{
+            position: relative;
+            width: 1200px;
+            height: 468px;
+            margin: 0 auto;
+        }
+        .main_text{
+            position: absolute;
+            color: #4C4C4C;
+            left: 0px;
+        }
+        .m1{
+           
+            top: 120px;
+            
+            font-size: 40px;
+        font-weight: 700;
+        }
+        .m2{
+            top: 200px;
+            
+            font-size: 20px;
+        }
+        .menu_box{
+            position: absolute;
+            display: flex;
+            margin-top: 300px;
+        }
+        .menu_txt{
+            font-size: 18px;
+            color: #4C4C4C;
+            width: 200px;
+            height: 35px;
+            text-align: center;
+            line-height: 35px;
+            border: 1px solid;
+            border-right: none;
+        }
+        .menu_box :nth-last-child(1){
+            border: 1px solid #4C4C4C;
+        }
+        .active{
+            background-color: #4C4C4C;
+            color: white;
+            border: 1px solid #4C4C4C;
+        }
+        /* 추천메뉴 */
+        .best{
+            overflow: hidden;
+            position: relative;
+            margin: 0 auto;
+            height: 100%;
+            width: 1200px;
+        }
+        .index{
+           
+            float: right;
+            margin-top: 80px;
+            
+        }
+        .index_bt{
+            float: left;
+            font-size: 12px;
+            color: black;
+        }
+        .title_box{
+            margin-bottom: 50px;
+            width: 100%;
+            height: 25px;
+            clear: both;
+            padding-top: 50px;
+            
+        }
+        .t_txt{
+            color: black;
+            float: left;
+            line-height: 12px;
+            font-size: 20px;
+            padding: 5px 20px;
+        }
+        .t_line{
+            float: left;
+            height: 1px;
+            width: 540px;
+            margin: 10px 0 0;
+            background-color: black;
+        }
+
+        /* 슬라이드 */
+        .menu_slide{
+            width: 1200px;
+            height: 450px;;
+        }
+        .btnL{  
+            z-index: 9999;
+            position: absolute;
+            width: 50px;
+            height: 450px;
+            color: white;
+            background: #4C4C4C ;
+            opacity: 0.5;
+            font-size: 50px;
+            text-align: center;
+            line-height: 450px;
+            left: 0;
+            
+        }
+        .btnR{
+            z-index: 9999;
+            position: absolute;
+            width: 50px;
+            height: 450px;
+            color: white;
+            background-color: #4C4C4C;
+            font-size: 50px;
+            text-align: center;
+            line-height: 450px;
+            right: 0;
+            opacity: 0.5;
+        }
+        .move_menu{
+            width: calc((100% - 100px) / 3  );
+            height: 450px;
+            box-sizing: border-box;
+            position: absolute;
+        }
+        .s1{
+            background: url(../img/공차/세번쨰페이지/w3_1.jpg) no-repeat center;
+        }
+        .s2{
+        
+            background: url(../img/공차/세번쨰페이지/w3_2.7.png) no-repeat center;
+        }
+        .s3{
+            
+            background: url(../img/공차/세번쨰페이지/w3_2.8.png) no-repeat center;
+        }
+        .s4{
+            background: url(../img/공차/세번쨰페이지/w3_2.jpg) no-repeat center;
+        }
+        .s5{
+            background: url(../img/공차/세번쨰페이지/w3_3.jpg) no-repeat center;
+        }
+        .menu_chk_box{
+            padding: 0 20px;
+            border: 1px solid;
+            display: flex;
+            margin: 50px auto;
+            width: 1160px;
+            height: 50px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .drink_box{
+            display: flex;
+            margin: 0 auto;
+            width: 1200px;
+            height: 760px;
+            
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: space-between;
+            margin-bottom: 20px;
+        }
+        .drink{
+           position: relative;
+            background-color: #D6CFC9;
+            width: calc((100% - 60px) /  4) ;
+            height: 370px;
+            /* margin: 10px; */
+
+        }
+        .show_more{
+            width: 100px;
+            padding: 5px 20px;
+            border: 1px solid #4C4C4C;
+            border-radius: 20px;
+            margin: 50px auto;
+            text-align: center;
+            transition: all .5s;
+        }   
+
+        .show_more:hover{
+            background-color: #4C4C4C;
+            color: white;
+        }
+
+        .footer{
+            background-color: #231815;
+            width: 100%;
+            height: 300px;
+        }
+        .f_top{
+            width: 1200px;
+            margin: 0 auto;
+            height: 70px;
+            display: flex;
+            line-height: 70px;
+            justify-content: space-around;
+        }
+        .f_txt{
+            font-size: 14px;
+            color: white;
+        }
+        .f_line{
+             width: 100%;
+            height: 1px;
+            background-color: white; 
+        }
+        .f_bot{
+            height: 208px;
+            width: 200px;
+            margin: 0 auto;
+        }
+        .f_b_logo{
+            background: url(../img/공차/logo_r.png) center no-repeat; 
+            background-size: contain;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: 100px;
+            height: 100px;
+        }
+        
+        .f_b_txt{
+            text-align: center;
+            color: #ccc;
+            font-size: 12px;
+            transform: translate(-47px);
+        }
+        .m_txt{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            font-size: 17px;
+            font-weight: 600;
+            color: #777;
+            text-align: center;
+        }
+        .m_txt_drink{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            color: black;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="popup">
+                <a class="logo" href="../제이쿼리3/index.html"></a>
+                    <div class="t_menu">
+                            <div class="m_text">
+                                <div class="search"></div>
+                                <div class="linebar"></div>
+                            </div>
+                            <div class="m_text">
+                                <a href="">Find a Store</a>
+                                <div class="linebar"></div>
+                                </div>
+                            <div class="m_text">
+                                <a href="">Customer Service & Idea</a>
+                                <div class="linebar"></div>
+                            </div>
+                            <div class="m_text">
+                                <a href="">my gongcha</a>
+                                <div class="linebar"></div>
+                            </div>
+                            <div class="m_text">
+                                <a href="">sign up</a>
+                            </div>
+                    </div>  
+                <div class="b_menu">
+                    <div class="b_text">WHAT'S NEWS</div>
+                    <div class="b_text">MEMBERSHIP</div>
+                    <div class="b_text">ONLINEMALL</div>
+                    <div class="b_text">STORE</div>
+                    <div class="b_text">MENU</div>
+                    <div class="b_text">BRAND</div>
+                </div>
+            </div> 
+            <div class="panbox">
+
+                <div class="pan">
+
+                    
+                    <div class="p_text_box">
+                        <div class="p_text">프로모션 & 이벤트</div>
+                        <div class="pp_text">진행 중인 이벤트</div>
+                        <div class="pp_text">종료된 이벤트</div>
+                    </div>
+                    
+                    <div class="p_text_box">
+                        <div class="p_text">새소식</div>
+                    </div>
+                    
+                    <div class="p_text_box">
+                        <div class="p_text">자주하는 질문</div>
+                        <div class="pp_text">선물하기</div>
+                        <div class="pp_text">이용 안내</div>
+                    </div>
+                    
+                    <div class="p_text_box">
+                        <div class="p_text">공지사항</div>
+                    </div>
+
+
+                </div> 
+                <div class="pan">
+                    <div class="p_text_box">
+                    <div class="p_text">공차 멤버십</div>
+                    <div class="pp_text">혜택 안내</div>
+                    <div class="pp_text">공차 스탬프 카드</div>
+                </div>
+
+                <div class="p_text_box">
+                    <div class="p_text"> 멤버십 오더</div>
+                    <div class="pp_text">멤버십 오더 소개</div>
+                    <div class="pp_text">이용 안내</div>
+                </div>
+                
+                    <div class="p_text_box">
+                    <div class="p_text">  멤버십 금액권</div>
+                    <div class="pp_text">멤버십 금액권 소개</div>
+                    <div class="pp_text">등록 및 조회충전</div>
+                    <div class="pp_text">이용 안내</div>
+                </div>
+
+                    <div class="p_text_box">
+                    <div class="p_text"> 자주하는 질문</div>
+                    <div class="pp_text">선물하기</div>
+                    <div class="pp_text">이용 안내</div>
+                </div>
+                </div>
+                <div class="pan">
+                    <div class="p_text_box">
+                        <div class="p_text"> 온라인 몰</div>
+                        <div class="pp_text">집에서 간편하게 공차를</div>
+                        <div class="pp_text">즐겨보세요</div>
+                    </div>
+                </div>
+                <div class="pan">
+                    <div class="p_text_box">
+                        <div class="p_text"> 오프라인 STORE</div>
+                        <div class="pp_text">매장 찾기</div>
+                        <div class="pp_text">신규 매장 안내</div>
+                    </div>
+
+                </div>
+                <div class="pan">
+                    
+
+                    <div class="p_text_box">
+                        <div class="p_text">음료</div>
+                        <div class="pp_text">BEST COMBINATION</div>
+                        <div class="pp_text">SEASEON</div>
+                        <div class="pp_text">MILK TEA</div>
+                        <div class="pp_text">SMOOTHIE & CRUSH</div>
+                        <div class="pp_text">BEVERAGE</div>
+                        <div class="pp_text">ORIGINAL TEA</div>
+                        <div class="pp_text">COFFEE</div>
+
+                    </div>
+                    
+                    <div class="p_text_box">
+                        <div class="p_text">빙수</div>
+                        <div class="pp_text">몬스터 팥 빙수</div>
+                        <div class="pp_text">몬스터 망고 빙수</div>
+                        <div class="pp_text">몬스터 슈가크럼블 빙수</div>
+                    </div>
+                    
+                    <div class="p_text_box">
+                        <div class="p_text">디저트</div>
+                        <div class="pp_text">BAKERY</div>
+                        <div class="pp_text">SNACK</div>
+                        
+                        
+                    </div>
+                    
+                    <div class="p_text_box">
+                        <div class="p_text">MD상품</div>
+                        <div class="pp_text">FOOD</div>
+                        <div class="pp_text">MUG</div>
+                        <div class="pp_text">COLD CUP</div>
+                        <div class="pp_text">CANDLE</div>
+                        <div class="pp_text">TUMBLER</div>
+                        <div class="pp_text">TEA STORY</div>
+                        
+                    </div>
+                    
+                    <div class="p_text_box">
+                        <div class="p_text">TEA STORY</div>
+                    </div>
+                </div>
+                <div class="pan">
+                    <div class="p_text_box">
+                        <div class="p_text">브랜드 소개</div>
+                        <div class="pp_text">공차에 대해서 
+                            <br>알아보세요</div>
+                    </div>
+
+                    <div class="p_text_box">
+                        <div class="p_text">공차의 약속</div>
+                        <div class="pp_text">최고의 한 잔을 위한</div>
+                        <div class="pp_text">공차의 철학을 들려드립니다</div>
+                    </div>
+
+                    <div class="p_text_box">
+                        <div class="p_text">세계 속의 공차</div>
+                        <div class="pp_text">전 세계인들에게</div>
+                        <div class="pp_text">사랑받는공차의 모습을 구경하세요</div>
+                    </div>
+
+                    <div class="p_text_box">
+                        <div class="p_text">미디어 센터</div>
+                        <div class="pp_text">공차의 보도자료들을</div>
+                        <div class="pp_text">확인하세요</div>
+                    </div>
+                    
+                </div>
+                
+                </div>
+                
+            </div>
+            <!-- 메인베너 -->
+        <div class="mainbanner">
+            
+            
+            <div class="mainbanner_img">
+                <div class="main_outer">
+                    <div class="main_text m1">ALWAYS WITH YOU, GONGCHA</div>
+                    <div class="main_text m2">한 잔의 밀크티 그 이상의 감동을 경험하세요.</div>
+                    <div class="menu_box">
+                        <div class="menu_txt">주문 방법</div>
+                        <div class="menu_txt active">음료</div>
+                        <div class="menu_txt">빙수</div>
+                        <div class="menu_txt">디저트</div>
+                        <div class="menu_txt">MD 상품</div>
+                        <div class="menu_txt">TEA STORY</div>
+                    </div>
+                </div>
+            </div>
+          
+        </div>
+        <div class="best">
+            <div class="index">
+                <a class="index_bt" href="../제이쿼리3/index.html">HOME ></a>
+                <a class="index_bt" href="../제이쿼리3/0.maybepopol.sec2.html">메뉴 ></a>
+                <a class="index_bt" href="../제이쿼리3/0.maybepopol.sec3.html">음료</a>
+            </div>
+        <div class="title_box">
+            <div class="t_line"></div>
+            <div class="t_txt">추천상품</div>
+            <div class="t_line"></div>
+        </div>
+        <div class="menu_slide">
+            <div class="btn btnL"><</div>
+            <div class="btn btnR">></div>
+            <div class="move_menu s1">
+                <div class="m_txt">요구르트 쥬얼리 망고 크러쉬</div>
+            </div>
+            <div class="move_menu s2">
+                <div class="m_txt">망고 트로피컬 하트크러쉬</div>
+            </div>
+            <div class="move_menu s3">
+                <div class="m_txt">그린애플젤리 밀크티</div>
+            </div>
+            <div class="move_menu s4">
+                <div class="m_txt">그린애플 QQ크러쉬</div>
+            </div>
+            <div class="move_menu s5">
+                <div class="m_txt">망고 트로피컬 하트크러쉬</div>
+            </div>
+        </div>
+        </div>
+            
+
+
+        </div>
+        
+        
+        <div class="menu_chk_box">
+            <label for="menu_chk1">
+                <input id="menu_chk1" type="checkbox">BEST COMBINATION
+            </label>
+            <label for="menu_chk2">
+                <input id="menu_chk2" type="checkbox">SEASEON 
+            </label>
+            <label for="menu_chk3">
+                <input id="menu_chk3" type="checkbox">MILK TEA
+            </label>
+            <label for="menu_chk4">
+                <input id="menu_chk4" type="checkbox">SMOOTHIE & CRUSH
+            </label>
+            <label for="menu_chk5">
+                <input id="menu_chk5" type="checkbox">BEVERAGE
+            </label>
+            <label for="menu_chk6">
+                <input id="menu_chk6" type="checkbox"> ORIGINAL 
+            </label>
+            <label for="menu_chk7">
+                <input id="menu_chk7" type="checkbox">TEA COFFEE 
+            </label>
+            <label for="menu_chk8">
+                <input id="menu_chk8" type="checkbox">TOPPING
+            </label>
+            
+        </div>
+        <div class="drink_box">
+            <a class="drink" href="../제이쿼리3/0.maybepopol.sec4.html">
+                <div class="m_txt_drink">망고쥬얼리 하트크러쉬</div>
+            </a>
+            <a class="drink" href="../제이쿼리3/0.maybepopol.sec4.html">
+                <div class="m_txt_drink">망고쥬얼리 하트크러쉬</div>
+            </a>
+            <a class="drink" href="../제이쿼리3/0.maybepopol.sec4.html">
+                <div class="m_txt_drink">망고쥬얼리 하트크러쉬</div>
+            </a>
+            <a class="drink" href="../제이쿼리3/0.maybepopol.sec4.html">
+                <div class="m_txt_drink">망고쥬얼리 하트크러쉬</div>
+            </a>
+            <a class="drink" href="../제이쿼리3/0.maybepopol.sec4.html">
+                <div class="m_txt_drink">망고쥬얼리 하트크러쉬</div>
+            </a>
+            <a class="drink" href="../제이쿼리3/0.maybepopol.sec4.html">
+                <div class="m_txt_drink">망고쥬얼리 하트크러쉬</div>
+            </a>
+            <a class="drink" href="../제이쿼리3/0.maybepopol.sec4.html">
+                <div class="m_txt_drink">망고쥬얼리 하트크러쉬</div>
+            </a>
+            <a class="drink" href="../제이쿼리3/0.maybepopol.sec4.html">
+                <div class="m_txt_drink">망고쥬얼리 하트크러쉬</div>
+            </a>
+        </div>
+
+        <div class="show_more">+더보기</div>
+
+        <div class="footer">
+            <div class="f_top">
+                <div class="f_txt">회사 소개</div>
+                <div class="f_txt">제휴/제안</div>
+                <div class="f_txt">고객센터</div>
+                <div class="f_txt">개인정보처리방침</div>
+                <div class="f_txt">이메일무단수집거부</div>
+                <div class="f_txt">사이트맵</div>
+            </div>
+            <div class="f_line"></div>
+            <div class="f_bot">
+                <div class="f_b_logo"></div>
+                <div class="f_b_txt">㈜공차코리아</div>
+                <div class="f_b_txt">서울 종로구 종로 47(공평동, 7층)</div>
+            </div>
+        </div>
+
+
+        
+    <script>
+
+
+
+
+           $(document).ready(function(){
+
+            $('.b_text').hover(function(){
+        $('.panbox').stop().slideDown(300)
+ 
+        $('.pan').css({display: 'none'})
+        $('.pan').eq($(this).index()).css({
+            
+            display: 'flex'
+        })
+        console.log(this)
+    }, function(){
+        $('.panbox').stop().slideUp(300)
+    })
+
+    $('.pan').hover(function(){
+        $('.panbox').stop().slideDown(300)
+
+
+    }, function(){
+        $('.panbox').stop().slideUp(300)
+    })
+
+            
+    $(`.menu_txt`).click(function(){
+        $(`.menu_txt`).removeClass(`active`)
+        $(this).addClass(`active`) 
+    })
+    // 메뉴 한칸씩 슬라이드 
+    
+    
+    let menu_w = $(`.move_menu`).outerWidth() + 50;
+            let menu_l = $(`.move_menu`).length;
+
+    for(let i = 0;  i < menu_l; i++ ){
+        $(`.move_menu`).eq(i).css({left: menu_w * i } )
+    }       
+            
+       
+        let bang = 0;
+        
+        $(`.btnR`).click(function(){
+            
+        $(`.btn`).css({
+            pointerEvents: `none`
+        })
+        
+            setTimeout(function(){
+            $(`.btn`).css({pointerEvents:`auto`})
+
+        },1100)
+
+            
+            $(`.move_menu`).animate({
+                left: `-=${menu_w}`
+            },1000)
+
+        $(`.move_menu`).eq(bang % menu_l).animate({
+            left: menu_w * (menu_l - 1)
+        },0)
+        
+        bang +=1;
+        
+    })
+
+    
+    $(`.btnL`).click(function(){
+            
+        $(`.btn`).css({pointerEvents: `none`})
+        
+        setTimeout(function(){
+        $(`.btn`).css({pointerEvents:`auto`})
+
+        },1000)
+
+        $(`.move_menu`).eq((bang - 1) % menu_l).animate({
+            left: -menu_w
+        }, 0)
+        
+            
+            $(`.move_menu`).animate({
+                left: `+=${menu_w}`
+            },1000)
+
+        bang -=1;
+        
+    })
+
+    let interval;
+
+        function slide() {
+        interval = setInterval (function(){
+        $(`.btn`).css({pointerEvents: `none`})
+        
+        setTimeout(function(){
+            
+        $(`.btn`).css({pointerEvents:`auto`})
+        },1000)
+
+        $(`.btnR`).trigger(`click`)
+    },2000)
+}
+    slide()
+
+    $(`.menu_slide`).hover(function(){
+        
+        clearInterval(interval)
+    },function(){
+        
+        slide()
+    })
+
+    
+// 더보기
+    for(let i = 0; i < $(`.drink`).length; i++ ){
+        $(`.drink`).eq(i).css(
+        `background-image` , `url(../img/공차/세번쨰페이지/w3_2.${(i % 8)+1}.png)`
+        )
+    }
+    $(`.show_more`).click(function(){
+        $(`.drink_box`).css({
+            height:`1520px`,
+            margin:`120px auto`
+         })
+        for(let i = 0 ; i < 8 ; i++){
+    $(`.drink_box`).append(`<div class="drink"><div class="m_txt_drink">망고쥬얼리 하트크러쉬</div> </div>`)
+    $(`.drink`).eq(i + 8).css(
+        `background-image` , `url(../img/공차/세번쨰페이지/w3_2.${(i % 8)+1}.png)`
+        )
+
+    $(`.show_more`).css({display:`none`})
+}
+})
+    
+})
+
+
+    
+    </script>
+</body>
+</html>

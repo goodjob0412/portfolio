@@ -1,0 +1,98 @@
+.container {
+    padding-top: 150px;
+}
+/* 본문 공통 */
+.sec {
+    margin-bottom: 180px;
+}
+.sec_title {
+    height: 100px;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.sec_body {}
+
+.item_box {
+    display: flex;
+    gap: 5px;
+    row-gap: 100px;
+    flex-wrap: wrap;
+}
+.item img {
+    width: 100%;
+}
+.item_info {
+    padding: 0 5px;
+    box-sizing: border-box;
+
+    font-size: 13px;
+    font-weight: 300;
+}
+.item_info_title {
+    font-size: 14px;
+    font-weight: 400;
+    color: #555;
+    line-height: 30px;
+    margin-bottom: 5px;
+}
+.o_price { text-decoration: line-through;}
+.s_price{
+    font-size:19px ;
+    font-weight: 700;
+}
+
+
+ 
+/* women */ 
+#women .item {
+    width: calc((100% - (5px * 3)) / 4);
+}
+#women .item_img {
+    overflow: hidden;
+    font-size: 0;
+}
+#women .item_img img {
+    transition: all 0.5s;
+}
+#women .item_img:hover img {
+    transform: scale(1.2);
+}
+
+/* kids */
+/* #kids .item{
+    width: calc((100% - (5px * 3 )) / 3);
+}
+#kids .item_img{
+    overflow: hidden;
+    font-size: 0;
+}
+#kids .item_img img{
+    transition: all 0.5s;
+
+}
+#kids .item_img:hover img{
+    transform: scale(1.2);
+} */
+
+
+
+
+/* men */ 
+#men .item {
+    width: calc((100% - (5px * 3)) / 4);
+}
+#men .item_img {
+    position: relative;
+}
+#men .covered_img {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    opacity: 0;
+    transition: all 0.3s;
+}
+#men .item_img:hover .covered_img {
+    opacity: 1;
+}

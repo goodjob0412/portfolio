@@ -1,0 +1,226 @@
+/* main_banner 이달의 추천도서 */
+.main_banner{
+    width: 100%;
+    padding-top: 30px;
+    font-size: 30px;
+    font-family: "Nanum Pen Script", cursive;
+    background-color: rgba(192, 192, 192, 0.1);
+}
+.mb_top{
+    padding-left: 20px;
+    font-size: 40px;
+}
+.mb_bot{
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    overflow: hidden;
+}
+.mb_imgbox{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 50%;
+    height: 65%;
+    transform: translate(-50%,-50%);
+    perspective: 1800px;
+}
+.mb_img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 200%;
+    top: 0;
+    transform-style: preserve-3d;
+    transition: 0.5s all;
+}
+.mb_img>img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    transition: all 0.5s;
+    backface-visibility: hidden;
+    transform-origin: center;
+}
+.mb_front{
+    transform: rotateY(0deg) translate3d(0px, 0px, 13.5px);
+    box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.7);
+}
+.mb_back{
+    transform: rotateY(180deg) translate3d(0px, 0px, 13.5px); 
+}
+.mb_side{
+    transform: rotateY(-90deg) translateZ(13.5px);
+    z-index: 999;
+}
+
+.mb_pick{
+    font-family: "Nanum Pen Script", cursive;
+    font-size: 50px;
+    
+}
+
+.mb_under{
+    width: 100%;
+    height: 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.mb_title{
+    font-size: 25px;
+    line-height: 50px;
+    cursor: pointer;
+}
+.mb_next{
+    font-size: 16px;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+
+/* sec1 움직이는 라벨 */
+.sec1{
+    margin-top: 20px;
+    width: 100%;
+    height: 450px;
+}
+.sec1_box{
+    width: 100%;
+    height: 218px;
+}
+.sec1_box1{
+    background: url(../../../독후감/로테이션/로테이션1.png);
+}
+.sec1_box2{
+    margin: 14px 0;
+    background: url(../../../독후감/로테이션/로테이션2.png);
+}
+
+
+/* sec3 */
+.sec3{
+    padding-top: 20px;
+    width: 100%;
+    background-color: rgba(192, 192, 192, 0.2);
+}
+.sec3_top{
+    font-size: 40px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sec3_btnbox{
+    display: flex;
+}
+.sec3_btnbox>div{
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 0 0px 2px rgba(0,0,0,0.5) ;
+    background-color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.sec3_btnbox img{
+    height: 100%;
+}
+.sec3_btn_L{
+    transform: rotate(180deg);
+}
+.sec3_bot{
+    position: relative;
+    overflow: hidden;
+    margin-top: 30px;
+    padding-bottom: 135%;
+    width: 100%;
+    font-family: "Nanum Pen Script", cursive;
+}
+.sec3_item{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.sec3_img{
+    width: 100%;
+    height: 85%;
+}
+.sec3_img>img{
+    font-size: 0;
+    height: 100%;
+}
+.sec3_name{
+    width: 100%;
+    height: 15%;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px 0;
+    
+}
+
+/* sec4 */
+.sec4{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+    background-color: rgba(192, 192, 192, 0.1);
+}
+.sec4_top{
+    width: 100%;
+    height: 50px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sec4_title{
+    font-size: 25px;
+}
+.sec4_plus{
+    width: 80px;
+    height: 30px;
+    box-shadow: 0 0 2px 1px #b3b3b3;
+    text-align: center;
+
+    font-family: "Nanum Pen Script", cursive;
+
+    font-size: 25px;
+    cursor: pointer;
+}
+.sec4_bot{
+    padding: 0 10px;
+    box-sizing: border-box;
+
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.sec4_imgbox{
+    width: calc(50% - 5px);
+}
+.sec4_imgbox>a{
+    display: block;
+    width: 100%;
+}
+.sec4_imgbox img{
+    width: 100%;
+}
+
+.sec4_name{
+    width: 100%;
+    height: 50px;
+    font-family: "Nanum Pen Script", cursive;
+    font-size: 30px;
+}

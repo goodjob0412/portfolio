@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+body{
+    font-family: "Nanum Gothic", sans-serif;
+    margin: 0;
+    /* height: 8000px; */
+    /* overflow: hidden; */
+    /* background: pink; */
+ }
+ 
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.contents_area{
+    width: 100%;
+    max-width: 1800px;
+    position: relative;
+    margin: 0 auto;
+}
+
+#wrap{
+    position: relative;
+}
+
+/* header////////////////////////////////////////////// */
+
+/*h_top*/
+
+.header{
+    top: 0;
+    border-bottom: 1px solid rgb(223,223,223);
+    width: 100%;
+    height: 110px;
+    padding-top : 15px;
+    /* padding-bottom: 10px; */
+    background: #fff;
+    position: absolute;
+    z-index: 999999;
+    /* opacity: 0.1; */
+    /* background: blue; */
+}
+
+.h_top{
+    padding-bottom: 15px;
+    /* padding-left : 20px; */
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    margin-left: 30px;
+    margin-bottom: 15px;
+    width: 120px;
+    height: 100%;
+}
+
+.logo_main{
+    background:url(../../img/ananti/symbol-ananti__black.png) no-repeat left/ contain;
+}
+
+.logo_gangnam{
+    background:url(../../img/ananti/symbol-gangnam__black-primary.png) no-repeat left/ contain;
+    width: 300px;
+    height: 100%;
+}
+
+.logo a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-indent: -999px;
+}
+
+.util_box{
+    /* border: 1px solid red; */
+    padding-right: 20px;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1px;
+}
+
+.find{
+    width: 30px;
+    height: 30px;
+    background: url(../../img/ananti/icon-nav-loupe__black.svg) no-repeat center / contain;
+}
+
+.reservation{
+    width: 70px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3px;
+    
+}
+
+.reservation_icon{
+    width: 30px;
+    height: 100%;
+    background: url(../../img/ananti/검은색\ 동그라미\ 안에\ 흰색바탕\ 검은색_check.svg) no-repeat center / contain;
+}
+
+.login{
+    width: 30px;
+    height: 30px;
+    background: url(../../img/ananti/icon-person-circle__black.svg) no-repeat center / contain;
+}
+
+.language{
+    width: 50px;
+    height: 30px;
+    background: url(../../img/ananti/icon-global__black.svg) no-repeat center / contain;
+}
+
+.ham_btn{
+    width: 50px;
+    height: 30px;
+    background: url(../../img/ananti/icon-hamburger__black.svg) no-repeat center / contain;
+}
+
+/* find_pan */
+
+
+
+
+
+.find_pan{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    display: none;
+    background: #fff;
+}
+
+.find_top{
+    width: 1350px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.find_top_box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 1350px;
+    height: 60px;
+    border-bottom: 1px solid;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.find_top input{
+    padding: 0 10px;
+    box-sizing: border-box;
+    width: 1300px;
+    height: 50px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+}
+
+.find_top_icon{
+    width: 25px;
+    height: 25px;
+
+    background: url(../../img/ananti/icon-nav-loupe__black.svg) no-repeat center / contain;
+}
+
+.find_bot{
+    width: 1350px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.find_bot_icon{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 50px;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 50%;
+    background: #000 url(../../img/ananti/icon-x-large__white.svg) no-repeat center;
+    background-size: 25px;
+    cursor: pointer;
+}
+
+
+/* h_bot */
+.h_bot{
+    padding-left: 20px;
+    width: 100%;
+}
+
+.nav_box{
+    width: 100%;
+    height: 43px;
+    line-height: 43px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* gap: 23px; */
+    left: 10px;
+}
+
+.nav_items{
+    font-size: 14px;
+    padding : 0 12px;
+}
+
+.nav_items a{
+    /* border: 1px solid red; */
+    display: block;
+    height: 100%;
+    /* padding: 0 10px; */
+}
+
+.nav_item_active{
+    border-bottom: 2px solid rgb(90,211,192);
+    color : rgb(90,211,192);
+}
+
+.nav_pan{
+    /* opacity: 1; */
+    width: 100%;
+    height: 400px;
+    display: none;
+    background: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border: 2px solid rgb(223,223,223);
+}
+
+.nav_pan_items{
+    position: absolute;
+    height: 400px;
+    /* padding-top: 30px; */
+    /* margin-top: 30px; */
+    top: 0px;
+    left: 0;
+    /* background: yellow; */
+    display: flex;
+    gap: 10px;
+    padding-left:35px;
+}
+
+.nav_pan_items_title{
+    /* padding-top: 5px; */
+    height: auto;
+    width: 290px;
+    border-right: 1px solid rgb(223,223,223);
+}
+
+.nav_pan_items_sec{
+    height: auto;
+    padding-top: 10px;
+}
+
+.nav_pan_items_sec1{
+    width: 230px;
+    border-right: 1px solid rgb(223,223,223);
+}
+
+.nav_pan_items_sec1 div{
+    padding: 10px;
+}
+
+.nav_pan_items_sec2{
+    width: 220px;
+    border-right: 1px solid rgb(223,223,223);
+}
+
+.nav_pan_items_sec2 div{
+    padding: 10px;
+}
+
+.nav_pan_items_sec4{
+    display: flex;
+    gap: 20px;
+    padding-left: 20px;
+}
+
+.nav_pan_items_title_logo{
+    width: 150px;
+    height: 70px;
+}
+
+ .nav_pan_items_title_logo1{
+    background: url(../../img/ananti/symbol-chord__black.png) no-repeat center / contain;
+}
+
+.nav_pan_items_title_logo2{
+    background: url(../../img/ananti/symbol-namhae__black.png) no-repeat center / contain;
+}
+
+.nav_pan_items_title_logo3{
+    background: url(../../img/ananti/symbol-cove__black.png) no-repeat center / contain;
+}
+
+.nav_pan_items_title_logo4{
+    background: url(../../img/ananti/symbol-village__black.png) no-repeat center / contain;
+}
+
+.nav_pan_items_title_logo5{
+    background: url(../../img/ananti/symbol-jeju__black.png) no-repeat center / contain;
+}
+
+.nav_pan_items_title_logo6{
+    background: url(../../img/ananti/symbol-gangnam__black-primary.png) no-repeat center / contain;
+}
+
+.nav_pan_items_title_logo7{
+    background: url(../../img/ananti/symbol-namhae__black.png) no-repeat center / contain;
+}
+
+.nav_pan_items_title_logo8{
+    background: url(../../img/ananti/symbol-atbusan-cove.png) no-repeat center / contain;
+}
+
+.nav_pan_items_title_logo9{
+    background: url(../../img/ananti/symbol-atbusan-village.png) no-repeat center / contain;
+}
+
+.title{
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+
+
+.section{
+    padding-top: 10px;
+    font-size: 15px;
+}
+
+.section_body{
+    padding: 30px;
+    width: 200px;
+    height: 150px;
+   
+}
+
+/* 아난티 코드 */
+.section1 .section_body1{
+    background: url(../../img/ananti/CHORD1.jpg) no-repeat center / contain;
+}
+
+.section2 .section_body1{
+    background: url(../../img/ananti/CHORD2.jpg) no-repeat center / contain;
+}
+
+/* 아난티 남해 */
+.section1 .section_body2{
+    background: url(../../img/ananti/namhae.jpg) no-repeat center / contain;
+}
+
+/* 아난티 코브 */
+.section1 .section_body3{
+    background: url(../../img/ananti/cove.jpg) no-repeat center / contain;
+}
+
+.section2 .section_body3{
+    background: url(../../img/ananti/cove2.jpg) no-repeat center / contain;
+}
+
+/* 빌라쥬드 아난티 */
+.section1 .section_body4{
+    background: url(../../img/ananti/villagedeananti.jpg) no-repeat center / contain;
+}
+
+.section2 .section_body4{
+    background: url(../../img/ananti/villagedeananti2.jpg) no-repeat center / contain;
+}
+
+/* 아난티 클럽 제주 */
+.section1 .section_body5{
+    background: url(../../img/ananti/jeju.jpg) no-repeat center / contain;
+}
+
+.section2 .section_body5{
+    background: url(../../img/ananti/jeju2.jpg) no-repeat center / contain;
+}
+
+/* 아난티 앳 강남 */
+.section1 .section_body6{
+    background: url(../../img/ananti/gangnam.jpg) no-repeat center / contain;
+}
+
+.section2 .section_body6{
+    background: url(../../img/ananti/gangnam2.jpg) no-repeat center / contain;
+}
+
+/* 아난티 앳 남해 */
+.section1 .section_body6{
+    background: url(../../img/ananti/gangnam.jpg) no-repeat center / contain;
+}
+
+.section2 .section_body6{
+    background: url(../../img/ananti/gangnam2.jpg) no-repeat center / contain;
+}
+
+/* 아난티 앳 부산 코브 */
+.section1 .section_body8{
+    background: url(../../img/ananti/busan.jpg) no-repeat center / contain;
+}
+
+.section2 .section_body8{
+    background: url(../../img/ananti/busan2.jpg) no-repeat center / contain;
+}
+
+/* 아난티 앳 부산 빌리지드 */
+.section1 .section_body9{
+    background: url(../../img/ananti/village_de_busan.jpg) no-repeat center / contain;
+}
+
+.section2 .section_body9{
+    background: url(../../img/ananti/village_de_busan2.jpg) no-repeat center / contain;
+}
+
+
+.foot{
+    padding-top: 15px;
+    font-size: 11.5px;
+    line-height: 16px;
+}
+
+
+.sm_main_banner{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: red;
+    display: none;
+}
+
+.sm_banner{
+    padding-top: 20px;
+    width: 100%;
+    height: 300px;
+    background: url(../../img/ananti/banner1.png) no-repeat center / cover;
+}
+
+/* //////////////////////////////////////////////////////////////// */
+
+
+@media screen and (max-width: 1323px) and (orientation: landscape) {
+
+
+    .nav_items {
+        font-size: 11px;
+        padding: 0 5px;
+    }   
+}
+
+
+
+
+/* /////////////////////////////////////////////////////////////////////////////////// */
+
+
+@media screen and (max-width: 1024px) {
+
+    .header{
+        display: none !important ;
+    }
+
+    #wrap{
+        padding: 0 !important;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+
+}

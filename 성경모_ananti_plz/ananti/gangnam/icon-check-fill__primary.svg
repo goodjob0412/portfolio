@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>pictogram/icon-form-negative-message</title>
+    <defs>
+        <path d="M32,4 C47.463973,4 60,16.536027 60,32 C60,47.463973 47.463973,60 32,60 C16.536027,60 4,47.463973 4,32 C4,16.536027 16.536027,4 32,4 Z M42.2483229,21.2582809 C41.4881273,20.7729749 40.4756996,20.9915406 39.9870025,21.7464611 L39.9870025,21.7464611 L26.5905601,42.4394696 L18.9849097,31.4545078 L18.9044084,31.347736 C18.3717321,30.6979711 17.4169333,30.5530394 16.7094599,31.0360522 C15.9647511,31.5444868 15.776093,32.556171 16.2880803,33.2957122 L16.2880803,33.2957122 L25.287963,46.2956117 L25.3677181,46.4016793 C26.0592484,47.2493984 27.4048301,47.192954 28.0128336,46.2537337 L28.0128336,46.2537337 L42.7399143,23.5039097 L42.807924,23.3888893 C43.2052519,22.6497492 42.9705087,21.7193216 42.2483229,21.2582809 Z" id="path-1"></path>
+    </defs>
+    <g id="88" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="modal/global-alert-message" transform="translate(-200.000000, -116.000000)">
+            <g id="Group" transform="translate(61.000000, 66.000000)">
+                <g id="pictogram/icon-form-negative-message" transform="translate(139.000000, 50.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#5AD3C0" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

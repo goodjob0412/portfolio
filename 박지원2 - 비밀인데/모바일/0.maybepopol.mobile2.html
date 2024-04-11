@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-1.12.4.js"></script>
+<style>
+    body{
+        margin: 0 ;
+        padding: 0;
+        
+    }
+
+    a{
+        color: black;
+        text-decoration: none;
+    }
+    ul{ 
+        padding: 0;
+        
+        list-style: none;
+    }
+    li{
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+    }
+    .wrap{
+        width: 425px;
+        min-width: 320px;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    .top{
+        width: 100%;
+        height: 80px;
+        background-color: #fff;
+        border-bottom: 1px solid #ddd;
+        box-sizing: border-box;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99999999999999;
+    }
+    .logo_img{
+        
+        float: left;
+        width: 80PX;
+        height: 60px;
+        background: url(../img/공차/logo_r.png) center no-repeat;
+        background-size: contain ;
+    }
+    
+    .top_box{
+        margin: 0 auto;
+    width: 100%;
+    max-width: 425px;
+    height: 80px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 3px;
+    box-sizing: border-box;
+    z-index: 99999999999999;
+    }
+
+    .icon{
+        margin-left: 5px;
+        margin-top: 15px;
+        line-height: 130px;
+        float: right;
+        width: 30px;
+        height: 30px; 
+    }
+
+
+
+        .ham_pan{
+            overflow-y: auto;
+            transition: all ;
+            position: fixed;
+            top: 80px;
+            right: -100%;
+            z-index: 99999;
+            width: 80%;
+            max-width: 380px;
+            height: 1000px;
+            background-color: skyblue;
+            
+        }
+        .searchbar_box{
+            box-sizing: border-box;
+            border-bottom: 1px solid;
+            
+            width: 100%;
+            height: 50px;
+        }
+        .search_box{
+            float: left;
+            margin: 5px;
+            margin-left: 15px;
+            width: 200px;
+            height: 30px;
+        }
+        .search{
+            line-height: 20px;
+            text-align: center;
+            margin: 5px;
+            font-size: 20px;
+            padding: 8.1px 20px;
+            background-color: gray;
+            float: left;
+        }
+        .ham_box{
+            line-height: 65px;
+            margin-left: 15px;
+            font-size: 23px;
+            width: 100%;
+            height: 65px;
+        }
+        .ham1{
+            border-top: none;
+        }
+        .ham_txt{
+            float: left;
+        }
+        .ham_m_box{
+            display: none;
+            width: 100%;
+        }
+        .ham_m_pan{
+            margin-left: 15px;
+            width: 100%;
+            font-size: 18px;
+            line-height: 35px;
+            height: 35px;
+        }
+        .ham_img{
+            margin-top: 10px;
+            margin-right: 50px;
+            float: right;
+            width: 50px;
+            height: 50px;
+            background: url(../img/공차/모바일1페이지/down.png) no-repeat center;
+        }
+        .h_1{
+            font-size: 18px;
+            line-height: 35px;
+            height: 35px;
+        }
+
+        .mainbanner{
+            margin-top: 60px;
+            width: 100%;
+            height: 275px;
+            background: url(../img/공차/모바일2페이지/m2-main.jpg) no-repeat center;
+            background-size: contain;
+        }
+
+        .menu_box{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .menu_txt{
+            font-size: 18px;
+            color: #4C4C4C;
+            width: calc(100% / 2);
+            height: 35px;
+            text-align: center;
+            line-height: 35px;
+            box-sizing: border-box;
+            border: 1px solid;
+        }
+        .menu_box :nth-last-child(1){
+            border: 1px solid #4C4C4C;
+        }
+        .active{
+            background-color: #4C4C4C;
+            color: white;
+            border: 1px solid #4C4C4C;
+        }
+
+        
+        .t_line{
+            float: left;
+            height: 1px;
+            width: 170.5px;
+            margin: 10px 0 0;
+            background-color: black;
+
+        }
+        .title_box{
+            margin-top: 40px;
+        }
+        .t_txt{
+            margin: 0px 10px;
+            float: left;
+        }
+        .left{
+            float: left;
+        }
+        .right{
+            float: right;
+        }
+        .menu_slide{
+            position: relative;
+            margin-top: 100px;
+            width: 100%;
+            height: 100%;
+        }
+
+
+        /* 메뉴슬라이드 */
+        .menu_slide{
+            width: 100%;
+            height: 280px;;
+        }
+        .btnL{  
+            z-index: 9999;
+            position: absolute;
+            width: 25px;
+            height:280px;
+            color: white;
+            background: #4C4C4C ;
+            opacity: 0.5;
+            font-size: 25px;
+            text-align: center;
+            line-height: 280px;
+            left: 0;
+            
+        }
+        .btnR{
+            z-index: 9999;
+            position: absolute;
+            width: 25px;
+            height: 280px;
+            color: white;
+            background-color: #4C4C4C;
+            font-size: 25px;
+            text-align: center;
+            line-height: 280px;
+            right: 0;
+            opacity: 0.5;
+        }
+        .move_menu{
+            width: calc((100% - -10px) / 2  );
+            height: 280px;
+            box-sizing: border-box;
+            position: absolute;
+            background-size: contain;
+        }
+
+        .s1{
+            background: url(../img/공차/세번쨰페이지/w3_1.jpg) no-repeat center / contain;
+        }
+        .s2{
+        
+            background: url(../img/공차/세번쨰페이지/w3_2.7.png) no-repeat center / contain;
+        }
+        .s3{
+            
+            background: url(../img/공차/세번쨰페이지/w3_2.8.png) no-repeat center / contain;
+        }
+        .s4{
+            background: url(../img/공차/세번쨰페이지/w3_2.jpg) no-repeat center / contain;
+        }
+        .s5{
+            background: url(../img/공차/세번쨰페이지/w3_3.jpg) no-repeat center / contain;
+        }
+        .m_txt{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            font-size: 15px;
+            font-weight: 600;
+            color: #777;
+            text-align: center;
+        }
+
+
+        .menu_chk_box{
+            margin: 20px auto;
+    width: 100%;
+    border: 1px solid;
+    height: 160px;
+    box-sizing: border-box;
+        }
+        .labelbox{
+            margin-left: 25px;
+            width: calc(50% - 25px) ;
+    display: block;
+    float: left;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px 0px;
+        }
+
+
+        .drink_box{
+            display: flex;
+    margin: 0 auto;
+    width: 425px;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+}
+        
+        .drink{
+            
+            position: relative;
+    background-color: #D6CFC9;
+    width: calc((100% - 20px) / 2);
+    height: 280px;
+    background-size: contain;
+    text-align: center;
+    
+    /* margin: 10px; */
+}
+.m_txt_drink{
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+}
+
+.show_more{
+            width: 100px;
+            padding: 5px 20px;
+            border: 1px solid #4C4C4C;
+            border-radius: 20px;
+            margin: 50px auto;
+            text-align: center;
+            transition: all .5s;
+        }   
+        
+        .show_more:hover{
+            background-color: #4C4C4C;
+            color: white;
+        }
+
+
+
+        .footer{
+            height: 240px;
+            width: 100%;
+            background-color:#231815;
+            margin: 0 auto;
+        }
+        .foot_txt_box{
+            display: flex;
+            margin: 0 auto;
+            width: 90%;
+            height: 100px;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-content: space-around;
+        }
+        .footer_txt{
+            color: white;
+            font-size: 14px;
+        }
+        .foot_logo{
+            width: 70px;
+            height: 90px;
+            background: url(../img/공차/모바일1페이지/logo_r.png) center no-repeat;
+            background-size: cover;
+            margin: 0 auto;
+        }
+        .foot_txt{
+            text-align: center;
+            color: #fff;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+        .f_txt{
+            margin-left: -150px;
+        }
+</style>    
+</head>
+<body>
+    <div class="wrap">
+    
+        <div class="top">
+            <div class="top_box">
+            <a class="logo_img" href="../제이쿼리3/0.maybepopol.mobile.html"></a>
+            <div class="icon ham"></div>
+            <div class="icon"></div>
+            <div class="icon"></div>
+        </div>
+    </div>
+
+        
+
+        <div class="ham_pan">
+            <div class="searchbar_box">
+                <input class="search_box" type="text" placeholder="검색할 정보를 입력해주세요" >
+                <div class="search">search</div>
+            </div>
+                <div class="ham_box ham1">
+                    <div class="ham_txt">BRAND</div>
+                    <div class="ham_img"></div>
+                </div>
+
+
+                <div class="ham_m_box">
+                <div class="ham_m_pan h_1">브랜드 소개</div>
+                <div class="ham_m_pan h_1">공차의 약속</div>
+                <div class="ham_m_pan h_1">세계 속의 공차</div>
+                <div class="ham_m_pan h_1">미디어 센터</div>
+                </div>
+
+                <div class="ham_box">   
+                    <div class="ham_txt">MENU</div>
+                    <div class="ham_img"></div>
+                </div>  
+
+                <div class="ham_m_box">
+                <div class="ham_m_pan h_1">음료</div>
+                <div class="ham_m_pan h_1">빙수</div>
+                <div class="ham_m_pan h_1">디저트</div>
+                <div class="ham_m_pan h_1">MD상품</div>
+                <div class="ham_m_pan h_1">TEA STORY</div>
+                    </div>
+
+
+                <div class="ham_box">
+                    <div class="ham_txt">STORE</div>
+                    <div class="ham_img"></div>
+                </div>
+
+                <div class="ham_m_box">
+                <div class="ham_m_pan h_1">오프라인 STORE</div>
+                </div>
+
+                <div class="ham_box">
+                    <div class="ham_txt">ONLINEMALL</div>
+                    <div class="ham_img"></div>
+                </div>
+
+                <div class="ham_m_box">
+                <div class="ham_m_pan h_1">온라인 몰</div>
+                </div>
+
+                <div class="ham_box">
+                    <div class="ham_txt">MEMBERSHIP</div>
+                    <div class="ham_img"></div>
+                </div>
+                
+                <div class="ham_m_box">
+                <div class="ham_m_pan h_1">공차 멤버십</div>
+                <div class="ham_m_pan h_1">멤버십 오더</div>
+                <div class="ham_m_pan h_1">멤버십 금액권</div>
+                <div class="ham_m_pan h_1">자주하는 질문</div>
+                </div>
+
+
+                <div class="ham_box">
+                    <div class="ham_txt">WHAT'S NEWS</div>
+                    <div class="ham_img"></div>
+                </div>
+
+                <div class="ham_m_box">
+                <div class="ham_m_pan h_1">프로모션 & 이벤트</div>
+                <div class="ham_m_pan h_1">새소식</div>
+                <div class="ham_m_pan h_1">자주하는 질문</div>
+                <div class="ham_m_pan h_1">공지사항</div>
+            </div>
+
+            </div>
+        
+            
+            <div class="mainbanner">
+
+            </div>
+
+            <div class="menu_box">
+                <div class="menu_txt">주문 방법</div>   
+                <div class="menu_txt active">음료</div>
+                <div class="menu_txt">빙수</div>
+                <div class="menu_txt">디저트</div>
+                <div class="menu_txt">MD 상품</div>
+                <div class="menu_txt">TEA STORY</div>
+            </div>
+
+        <div class="title_box">
+            <div class="t_line left"></div>
+            <div class="t_txt">추천상품</div>
+            <div class="t_line right"></div>
+        </div>
+
+        <div class="menu_slide">
+            <div class="btn btnL"></div>
+            <div class="btn btnR">></div>
+            <div class="move_menu s1">
+                <div class="m_txt">요구르트 쥬얼리 망고 크러쉬</div>
+            </div>
+            <div class="move_menu s2">
+                <div class="m_txt">망고 트로피컬 하트크러쉬</div>
+            </div>
+            <div class="move_menu s3">
+                <div class="m_txt">그린애플젤리 밀크티</div>
+            </div>
+            <div class="move_menu s4">
+                <div class="m_txt">그린애플 QQ크러쉬</div>
+            </div>
+            <div class="move_menu s5">
+                <div class="m_txt">망고 트로피컬 하트크러쉬</div>
+            </div>
+        </div>
+        
+
+        <div class="menu_chk_box">
+            <div class="labelbox">
+            <label for="menu_chk1">
+                <input  class="topping_flex" id="menu_chk1" type="checkbox">BEST COMBINATION
+            </label>
+        </div>
+
+        <div class="labelbox">
+            <label for="menu_chk2">
+                <input class="topping_flex"  id="menu_chk2" type="checkbox">SEASEON 
+            </label>
+            </div>
+
+            <div class="labelbox">
+            <label for="menu_chk3">
+                <input class="topping_flex"  id="menu_chk3" type="checkbox">MILK TEA
+            </label>
+            </div>
+
+            <div class="labelbox">
+            <label for="menu_chk4">
+                <input class="topping_flex"  id="menu_chk4" type="checkbox">SMOOTHIE & CRUSH
+            </label>
+            </div>
+
+            <div class="labelbox">
+            <label for="menu_chk5">
+                <input class="topping_flex"  id="menu_chk5" type="checkbox">BEVERAGE
+            </label>
+            </div>
+
+            <div class="labelbox">
+            <label for="menu_chk6">
+                <input class="topping_flex"  id="menu_chk6" type="checkbox">ORIGINAL 
+            </label>
+            </div>
+
+            <div class="labelbox">
+            <label for="menu_chk7">
+                <input class="topping_flex"  id="menu_chk7" type="checkbox">TEA COFFEE 
+            </label>
+            </div>
+
+            <div class="labelbox">
+            <label for="menu_chk8">
+                <input class="topping_flex"  id="menu_chk8" type="checkbox">TOPPING
+            </label>
+            </div>
+            
+        </div>
+
+        <div class="drink_box">
+            <a class="drink" href="../제이쿼리3/0.maybepopol.mobile3.html">
+                <div class="m_txt_drink">요구르트  망고 크러쉬</div>
+            </a>
+            <a class="drink" href="../제이쿼리3/0.maybepopol.mobile3.html">
+                <div class="m_txt_drink">요구르트 폼&쥬얼리 밀크티</div>
+            </a>
+            <a class="drink" href="../제이쿼리3/0.maybepopol.mobile3.html">
+                <div class="m_txt_drink">망고 QQ 밀크티</div>
+            </a>
+            <a class="drink" href="../제이쿼리3/0.maybepopol.mobile3.html">
+                <div class="m_txt_drink">망고 트로피컬 하트크러쉬</div>
+            </a>
+            <a class="drink" href="../제이쿼리3/0.maybepopol.mobile3.html">
+                <div class="m_txt_drink">그린애플 포도 크러쉬</div>
+            </a>
+            <a class="drink" href="../제이쿼리3/0.maybepopol.mobile3.html">
+                <div class="m_txt_drink">그린애플 요구르트 크러쉬</div>
+            </a>
+            <a class="drink" href="../제이쿼리3/0.maybepopol.mobile3.html">
+                <div class="m_txt_drink">그린애플 QQ크러쉬</div>
+            </a>
+            <a class="drink" href="../제이쿼리3/0.maybepopol.mobile3.html">
+                <div class="m_txt_drink">그린애플젤리 밀크티</div>
+            </a>
+        </div>
+
+        <div class="show_more">+더보기</div>
+
+        <div class="footer">
+            <ul class="foot_txt_box">
+                    <li class="footer_txt">회사 소개</li>
+                    <li class="footer_txt">제휴/제안</li>
+                    <li class="footer_txt">고객센터</li>
+                    <li class="footer_txt">개인정보처리방침</li>
+                    <li class="footer_txt">이메일무단수집거부</li>
+                    <li class="footer_txt f_txt">사이트맵</li>
+            </ul>
+            <div class="foot_logo"></div>
+            <div class="foot_txt">㈜공차코리아</div>
+            <div class="foot_txt">서울 종로구 종로 47(공평동, 7층)</div>
+        </div>
+
+        
+
+
+    </div>
+
+
+
+
+
+
+
+    <script>
+           $(document).ready(function(){
+            for(let i = 0; i < $(`.icon`).length; i++ ){
+        $(`.icon`).eq(i).css(
+        `background` , `url(../img/공차/모바일1페이지/m_ham${(i % $(`.icon`).length)+1}.png) no-repeat center / cover `
+        )
+    }
+        
+
+
+
+$(`.ham_img`).click(function(){
+        $(this).parent('.ham_box').next('.ham_m_box').slideToggle()
+    })
+
+
+
+        let bang3 = 0
+        $(`.ham`).click(function(){
+            if(bang3 == 0){
+            $(`.ham_pan`).animate({
+                right:0
+            },500)
+            bang3 = bang3 + 1
+        }
+
+        else if  (bang3 == 1){
+            $(`.ham_pan`).animate({
+                right:`-100%`
+            },500)
+            bang3 = bang3 - 1
+        }
+        })
+
+        $(`.menu_txt`).click(function(){
+        $(`.menu_txt`).removeClass(`active`)
+        $(this).addClass(`active`) 
+    })
+
+
+
+
+
+    let menu_w = $(`.move_menu`).outerWidth() ;
+            let menu_l = $(`.move_menu`).length;
+
+    for(let i = 0;  i < menu_l; i++ ){
+        $(`.move_menu`).eq(i).css({left: menu_w * i } )
+    }       
+            
+       
+        let bang = 0;
+        
+        $(`.btnR`).click(function(){
+            
+        $(`.btn`).css({
+            pointerEvents: `none`
+        })
+        
+            setTimeout(function(){
+            $(`.btn`).css({pointerEvents:`auto`})
+
+        },1100)
+
+            
+            $(`.move_menu`).animate({
+                left: `-=${menu_w}`
+            },1000)
+
+        $(`.move_menu`).eq(bang % menu_l).animate({
+            left: menu_w * (menu_l - 1)
+        },0)
+        
+        bang +=1;
+        
+    })
+
+    
+    $(`.btnL`).click(function(){
+            
+        $(`.btn`).css({pointerEvents: `none`})
+        
+        setTimeout(function(){
+        $(`.btn`).css({pointerEvents:`auto`})
+
+        },1000)
+
+        $(`.move_menu`).eq((bang - 1) % menu_l).animate({
+            left: -menu_w
+        }, 0)
+        
+            
+            $(`.move_menu`).animate({
+                left: `+=${menu_w}`
+            },1000)
+
+        bang -=1;
+        
+    })
+
+    let interval;
+
+        function slide() {
+        interval = setInterval (function(){
+        $(`.btn`).css({pointerEvents: `none`})
+        
+        setTimeout(function(){
+            
+        $(`.btn`).css({pointerEvents:`auto`})
+        },1000)
+
+        $(`.btnR`).trigger(`click`)
+    },2000)
+}
+    slide()
+
+    $(`.menu_slide`).hover(function(){
+        
+        clearInterval(interval)
+    },function(){
+        
+        slide()
+    })
+
+
+
+
+    for(let i = 0; i < $(`.drink`).length; i++ ){
+        $(`.drink`).eq(i).css(
+        `background-image` , `url(../img/공차/세번쨰페이지/w3_2.${(i % 8)+1}.png)`
+        )
+    }
+
+});
+
+
+    </script>
+</body>
+</html>
