@@ -1,0 +1,210 @@
+.main{
+    padding-top: 130px;
+    width: 100%;
+    padding-bottom: 5%;
+}
+.main_banner{
+    width: 100%;
+    background: url(https://www.waffleuniv.com/child/img/sub/sv3.png) no-repeat center center /cover;
+    padding-bottom: 37%;
+}
+
+.text_area{
+    width: 100%;
+    height: 20vw;
+    position: relative;
+    background-color: rgb(255, 233, 133);
+}
+.p{
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url(../img/와플&토스트.png)no-repeat center center/ cover;
+    width: 15%;
+    padding-bottom: 8%;
+}
+.character{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.L_character{
+    left: 30%;
+    width: 8.5%;
+    padding-bottom: 8.6%;
+    background: url("https://www.waffleuniv.com/child/img/sub/brand/identity/sec03_ai01__pose02.png") no-repeat center center /cover;
+    animation: rotate1 4s infinite linear;
+}
+.R_character{
+    right: 30%;
+    width: 9.5%;
+    padding-bottom: 9.2%;
+    background: url("https://www.waffleuniv.com/child/img/sub/brand/identity/sec03_ai02__pose02.png") no-repeat center center /cover;
+    animation: rotate2 4s infinite linear;
+}
+
+@keyframes rotate1 {
+    0%{transform: translateY(-50%) rotateZ(0deg);}
+    20%{transform: translateY(-50%) rotateZ(30deg);}
+    40%{transform: translateY(-50%) rotateZ(-30deg);}
+    60%{transform: translateY(-50%) rotateZ(30deg);}
+    80%{transform: translateY(-50%) rotateZ(-30deg);}
+    100%{transform: translateY(-50%) rotateZ(0deg);}
+}
+@keyframes rotate2 {
+    0%{transform: translateY(-50%) rotateZ(0deg);}
+    20%{transform: translateY(-50%) rotateZ(-30deg);}
+    40%{transform: translateY(-50%) rotateZ(30deg);}
+    60%{transform: translateY(-50%) rotateZ(-30deg);}
+    80%{transform: translateY(-50%) rotateZ(30deg);}
+    100%{transform: translateY(-50%) rotateZ(0deg);}
+}
+.event_bar span{
+    top: 50%;
+    left: 50%;
+    padding: 1%;
+    font-size: 2vw;
+    border-radius: 30px;
+    display: flex;
+}
+.event_bar{
+    position: absolute;
+    width: 100%;
+    display: flex;
+}
+.top_event{
+    top: 0%;
+    left: 100%;
+    animation: top_move1  12s infinite linear;
+}
+.bot_event{
+    bottom: 0%;
+    right: 100%;
+    animation: bot_move1 12s infinite linear;
+}
+@keyframes top_move1 {
+    0%{left : 100%}
+    100%{left: -100%}
+}
+@keyframes bot_move1 {
+    0%{right : 100%}
+    100%{right: -100%}
+}
+.text_area span:nth-child(2n-1){
+    background-color: #ffde04;
+    color: black;
+
+}
+.text_area span:nth-child(2n){
+    background-color: rgb(42, 86, 182);
+    color: white;
+}
+.notice{
+    margin: auto;
+    max-width: 1480px;
+    text-align: center;
+    padding-top: 3%;
+}
+.notice h1{
+    font-size: 1.5vw;
+    margin-top: 0;
+}
+.notice_content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-left: 20px;
+}
+.notice_outer{
+    width: calc((100% - (10px * 5))/ 4);
+    overflow: hidden;
+}
+.notice_img{
+    width: 100%;
+    padding-bottom: 100%;
+    transition: 0.3s;
+}
+.notice_img:hover{
+    transform:scale(1.1);
+    transition: 0.3s;
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+    .pan,
+    .h_top,
+    .nav_ul_L,
+    .nav_ul_R{
+        display: none;
+    }
+    .Responsive_hem,
+    .Responsive_pan{
+        display: block;
+    }
+    .h_bot{
+        height: 100px;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+    }
+    .main{
+        padding-top: 100px;
+    }
+    .f_info_text span{
+        font-size: 1.4vw;
+    }
+}
+
+@media screen and (max-width:1024px){
+    .f_info_text span{
+        font-size: 1.6vw;
+    }
+}
+
+@media screen and (max-width:768px){
+    .h_bot{
+        height: 80px;
+    }
+    .main{
+        padding-top: 80px;
+    }
+    .logo{
+        width: 100px;
+        height: 100px;
+    }
+    .notice_outer{
+        width: calc((100% - (10px * 4))/ 3);
+        overflow: hidden;
+    }
+    .f_info_text span{
+        font-size: 2vw;
+    }
+
+}@media screen and (max-width:468px) {
+    .logo{
+        width: 50px;
+        height: 50px;
+    }
+    .h_bot{
+        height: 50px;
+    }
+    .Responsive_hem{
+        width: 20px;
+        height: 20px;
+    }
+    .line{
+        height: 5px;
+    }
+    .main{
+        padding-top: 50px;
+    }
+    .notice_outer{
+        width: calc((100% - (10px * 3))/ 2);
+        overflow: hidden;
+    }
+    .f_info_text span{
+        font-size: 2.2vw;
+    }
+}

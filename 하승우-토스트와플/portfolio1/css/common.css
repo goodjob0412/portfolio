@@ -1,0 +1,223 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 252, 232);
+    overflow-x: hidden;
+}
+body *{
+    font-family: SOYOMapleBoldTTF;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+@font-face {
+font-family: 'SOYOMapleBoldTTF';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/SOYOMapleBoldTTF.woff2') format('woff2');
+font-weight: 700;
+font-style: normal;
+}
+
+/* 헤더 부분 */
+header{
+width: 100%;
+background-color: white;
+position: fixed;
+z-index: 20;
+}
+.h_top{
+    width: 100%;
+    height: 30px;
+    background-color: rgb(245, 167, 0);
+}
+.h_top_ul{
+    margin: auto;
+    max-width: 1280px;
+    display: flex;
+    justify-content: right;
+    gap: 15px;
+    color: white;
+    font-weight: 900;
+    line-height: 30px;
+}
+.h_top_ul li{
+    height: 30px;
+}
+.h_top_ul li img{
+    margin-top: 3px;
+    width: 24px;
+    height: 24px;
+}
+.h_bot{
+    margin: auto;
+    max-width: 1280px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.logo{
+    width: 135px;
+    height: 135px;
+    position: absolute;
+    background: url(../img/와플&\토스트.png)no-repeat center center /cover;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+}
+.nav_ul_L,
+.nav_ul_R{
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+}
+.nav_li{
+    height: 100px;
+    line-height: 100px;
+    margin: 0px 30px;
+    position: relative;
+}
+.nav_ul_L .nav_li:nth-child(1),
+.nav_ul_R .nav_li:nth-child(1){
+    margin-left: 0;
+}
+.nav_ul_L .nav_li:nth-child(3),
+.nav_ul_R .nav_li:nth-child(3){
+    margin-right: 0;
+}
+.sub_nav{
+    position: absolute;
+    transform: translateX(-50%);
+    top: calc(100% + 1px);
+    height: 0px;
+    left: 50%;
+    z-index: 20;
+    transition: all 0.5s;
+    overflow: hidden;
+}
+.sub_nav li:hover{
+    color: rgb(218, 128, 44);
+    cursor: pointer;
+}
+.sub_nav li{
+    color: black;
+    width: 175px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 17px;
+    text-align: center;
+}
+.pan{
+    position: absolute;   
+    top: 100%;
+    width: 100%;
+    height: 0px;
+    background-color: white;
+    transition: all 0.5s;
+    border-top: 1px solid rgba(128, 128, 128, 0.5);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+    z-index: 19;
+}
+
+
+/* 푸터 영역 */
+.footer{
+    width: 100%;
+    background-color: rgb(255, 190, 159);  
+    padding: 3% 0;
+}
+.f_info_box{
+    position: relative;
+    margin: auto;
+    max-width: 1280px;
+    color: white;
+    text-align: center;
+}
+.f_logo{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50% , -50%);
+    width: 10%;
+    padding-bottom: 7%;
+    background: url(../img/와플&\토스트.png) no-repeat center center / cover;
+    
+}
+.f_info_box span{
+    display: block;
+    font-size: 1vw;
+    margin: 0.4% auto;
+}
+
+
+
+
+
+/* 반응형 css */
+
+/* 햄버거 버튼 */
+.Responsive_hem{
+    width: 25px;
+    height: 25px;
+    box-sizing: border-box;
+    position: absolute;
+    right: 3%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+    background-color: inherit;
+}
+.line{
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: rgb(218, 128, 44);
+    transition: all 0.5s;
+    border-radius: 30px;
+}
+.line_top { 
+    top: 0px; 
+}
+.line_mid { 
+    top: 50%; 
+    transform: translateY(-50%); 
+    transition: all 0s;
+}
+.line_bot {
+    top: calc(100% - 5px) 
+}
+
+.mid_setting {top: 50%;transform: translateY(-50%); }
+.rotate45 { transform: translateY(-50%) rotate(45deg);}
+.rotate_45 { transform: translateY(-50%) rotate(-45deg);}
+
+
+
+/* nav바 */
+.Responsive_pan{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    top: 100%;
+    left: 100%;
+    display: none;
+    border-top: 1px solid rgb(202, 180, 180);
+}
+.R_nav_li{
+    height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    transition: all 0.3s;
+    overflow: hidden;
+    color: rgb(218, 128, 44);
+}
+.R_sub_nav li{
+    color: black;
+}
