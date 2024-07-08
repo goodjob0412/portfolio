@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <link rel="stylesheet" href="./인벤_모바일_지도.css" >
+</head>
+
+<body>
+    <script src="./인벤_모바일_지도.js"></script>
+    <div class="map_wrap">
+        <div class="map_header">
+            <a href="./index.html"><div class="header_logo"></div></a>
+            <div class="right_hideable">
+                <a href="./index.html">
+                    로스트 아크 인벤 바로가기
+                </a>
+            </div>
+            <div class="zoom_box">
+                <ul>
+                    <li class="zoom_li zoom_li5">+</li>
+                    <li class="zoom_li zoom_li4">-</li>
+                    <li class="zoom_li zoom_li3">-</li>
+                    <li class="zoom_li zoom_li2">-</li>
+                    <li class="zoom_li zoom_li1">-</li>
+                    <li class="zoom_li zoom_li0">-</li>
+                    <li class="zoom_li zoom_li_1">-</li>
+                </ul>
+            </div>
+        </div>
+        <div class="map_bot">
+            <div class="img_wrap">
+                <div class="map_img_wrap">
+                    <div class="map_img">
+                        <div class="map_icon hidden hidden_que_img hidden_que_img1">
+                            <div class="map_icon_txt hidden_txt1">바루투의 숨겨진 과거</div>
+                        </div>
+                        <div class="map_icon hidden hidden_que_img hidden_que_img2">
+                            <div class="map_icon_txt hidden_txt2">코룸바의 고양이</div>
+                            
+                        </div>
+                        <div class="map_icon hidden hidden_que_img hidden_que_img3">
+                            <div class="map_icon_txt hidden_txt3">해바라기 같은 사랑 #3/3</div>
+                        </div>
+                        <div class="map_icon hidden hidden_que_img hidden_que_img4">
+                            <div class="map_icon_txt hidden_txt4">해바라기 같은 사랑 #1/3</div>
+                        </div>
+
+                        <div class="map_icon another another_que_img">
+                            <div class="map_icon_txt another_txt">영웅을 위한 노래</div>
+                        </div>
+
+                        <div class="map_icon view viewpoint_img">
+                            <div class="map_icon_txt view_txt">사슬전쟁 종전 기념수</div>
+                        </div>
+
+                        <div class="map_icon cook cooking_img cooking_img1">
+                            <div class="map_icon_txt cook_txt1">베다의 레온하트 가정식 (구매)</div>
+                        </div>
+                        <div class="map_icon cook cooking_img cooking_img2">
+                            <div class="map_icon_txt cook_txt2">성흔과 자국이 새겨진 감자 (호감도)</div>
+                        </div>
+                        <div class="map_icon cook cooking_img cooking_img3">
+                            <div class="map_icon_txt cook_txt3">레그리아 밀 빵 (재료)</div>
+                        </div>
+
+                        <div class="map_icon np npc_img npc_img1">
+                            <div class="map_icon_txt npc_txt1">네리아</div>
+                        </div>
+                        <div class="map_icon np npc_img npc_img2">
+                            <div class="map_icon_txt npc_txt2">시이라</div>
+                        </div>
+
+                        <div class="map_icon moco mococo_img mococo_img1"></div>
+                        <div class="map_icon moco mococo_img mococo_img2"></div>
+                        <div class="map_icon moco mococo_img mococo_img3"></div>
+                        <div class="map_icon moco mococo_img mococo_img4"></div>
+                        <div class="map_icon moco mococo_img mococo_img5"></div>
+                        <div class="map_icon moco mococo_img mococo_img6"></div>
+                        <div class="map_icon moco mococo_img mococo_img7"></div>
+                        <div class="map_icon moco mococo_img mococo_img8"></div>
+                        <div class="map_icon moco mococo_img mococo_img9"></div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="menu_group">
+        <ul class="option_ul">
+            <li class="option_li notice" style="background-color: #ddd;">
+                <div class="option_img"></div>
+                <div class="option_txt">주의사항</div>
+                <div class="tool_box">
+                    <div class="tooltip_txt">
+                        주의사항을 표시하거나 숨깁니다.
+                    </div>
+                </div>
+            </li>
+            <li class="option_li  hidden_que">
+                <div class="option_img"></div>
+                <div class="option_txt">숨겨진 이야기 (4)</div>
+                <div class="tool_box">
+                    <div class="tooltip_txt">
+                        숨겨진 이야기를 표시하거나 숨깁니다.
+                    </div>
+                </div>
+            </li>
+            <li class="option_li  another_que">
+                <div class="option_img"></div>
+                <div class="option_txt">또 다른 이야기 (1)</div>
+                <div class="tool_box">
+                    <div class="tooltip_txt">
+                        또다른 이야기를 표시하거나 숨깁니다.
+                    </div>
+                </div>
+            </li>
+            <li class="option_li monster" style="background-color: #ddd;" >
+                <div class="option_img"></div>
+                <div class="option_txt">몬스터 위치</div>
+                <div class="tool_box">
+                    <div class="tooltip_txt">
+                        몬스터 위치를 표시하거나 숨깁니다.
+                    </div>
+                </div>
+            </li>
+            <li class="option_li fieldboss" style="background-color: #ddd;"
+            >
+                <div class="option_img"></div>
+                <div class="option_txt">필드 보스 위치</div>
+                <div class="tool_box">
+                    <div class="tooltip_txt">
+                        필드 보스 위치를 표시하거나 숨깁니다.
+                    </div>
+                </div>
+            </li>
+            <li class="option_li  viewpoint">
+                <div class="option_img"></div>
+                <div class="option_txt">뷰 포인트 (1)</div>
+                <div class="tool_box">
+                    <div class="tooltip_txt">
+                        뷰 포인트를 표시하거나 숨깁니다.
+                    </div>
+                </div>
+            </li>
+            <li class="option_li  cooking">
+                <div class="option_img"></div>
+                <div class="option_txt">요리&요리 재료 (3)</div>
+                <div class="tool_box">
+                    <div class="tooltip_txt">
+                        요리&요리 재료를 표시하거나 숨깁니다.
+                    </div>
+                </div>
+            </li>
+            <li class="option_li  npc">
+                <div class="option_img"></div>
+                <div class="option_txt">호감도 NPC (2)</div>
+                <div class="tool_box">
+                    <div class="tooltip_txt">
+                        호감도 NPC를 표시하거나 숨깁니다.
+                    </div>
+                </div>
+            </li>
+            <li class="option_li  mococo">
+                <div class="option_img"></div>
+                <div class="option_txt">모코코 씨앗 (9)</div>
+                <div class="tool_box">
+                    <div class="tooltip_txt">
+                        모코코 씨앗을 표시하거나 숨깁니다.
+                    </div>
+                </div>
+            </li>
+            <li class="option_li minuet" style="background-color: #ddd;"
+            >
+                <div class="option_img"></div>
+                <div class="option_txt">숲의 미뉴에트</div>
+                <div class="tool_box">
+                    <div class="tooltip_txt">
+                        숲의 미뉴에트를 표시하거나 숨깁니다.
+                    </div>
+                </div>
+            </li>
+            <li class="option_li resonance" style="background-color: #ddd;"
+            >
+                <div class="option_img"></div>
+                <div class="option_txt">공명의 노래</div>
+                <div class="tool_box">
+                    <div class="tooltip_txt">
+                        공명의 노래를 표시하거나 숨깁니다.
+                    </div>
+                </div>
+            </li>
+            <li class="option_li merchant" style="background-color: #ddd;"
+            >
+                <div class="option_img"></div>
+                <div class="option_txt">떠돌이 상인</div>
+                <div class="tool_box">
+                    <div class="tooltip_txt">
+                        떠돌이 상인을 표시하거나 숨깁니다.
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,370 @@
+/* 탑배너 */
+.top_banner_container {
+    background: #fff;
+}
+
+
+/* 헤더 */
+.header_container {
+    background: #fff;
+    color: black;
+    height: 85px;
+}
+
+.header_inner {
+    border-top: 1px solid #c1c1c1;
+}
+
+.search_box>input::placeholder {
+    color: #343434;
+    opacity: 0.5;
+    font-size: 13px;
+}
+
+.line {
+    background: black;
+}
+
+
+/* 버튼 */
+.detail_wrap .top_btn {
+    color: black;
+    z-index: 9999999999;
+}
+
+
+
+
+
+/* detail_container */
+
+.detail_container {
+    width: 100%;
+    padding: 0 20px;
+    padding-top: 85px;
+    /* margin-bottom: 100px; */
+
+    position: relative;
+}
+
+.d_wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.d_img_wrap {
+    width: calc(100% - 616px);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.d_img_box {
+    overflow: hidden;
+    width: calc(50% - 16px);
+    margin: 0 16px 16px 0;
+}
+
+.d_img_item {
+    width: 100%;
+}
+
+.detail_container_768 {
+    display: none;
+}
+
+.d_info_wrap {
+    width: 616px;
+    padding: 50px 104px 0 100px;
+    box-sizing: border-box;
+
+    position: relative;
+}
+.d_info_pan {
+    width: 100%;
+    /* height: 100vh; */
+    /* height: 370px; */
+
+    position: sticky;
+    top: 130px;
+}
+.d_info_title h2,h4{
+    margin-top: 0;
+}
+.d_info_select_wrap {
+    width: 100%;
+    margin-bottom: 35px;
+}
+.d_info_select {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* overflow: hidden; */
+}
+.select_li {
+    width: calc((100% - (3px * 4))/ 4);
+    height: 100px;
+    margin-right: 3px;
+}
+.sel_li {
+    width: 100%;
+    height: 100%;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+.sel_li_img1{
+    background: url(../img/items/sunglasses/1.black.jpg) center / cover;
+}
+.sel_li_img2{
+    background: url(../img/items/sunglasses/1.red.jpg) center / cover;
+}
+.sel_li_img3{
+    background: url(../img/items/sunglasses/1.white.jpg) center / cover;
+}
+.sel_li_img4{
+    background: url(../img/items/sunglasses/1.yellow.jpg) center / cover;
+}
+.sel_li:hover {
+    border: 1px solid #000;
+}
+
+/* .select_li img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid;
+    border-color: transparent;
+} */
+
+.d_info_desc {
+    line-height: 25px;
+    margin-bottom: 35px;
+    font-size: 14px;
+}
+.d_info_pan {
+    padding: 2px 0 24px;
+}
+.d_info_btn {
+    font-size: 13px;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+.d_btn {
+    height: 56px;
+    line-height: 54px;
+    text-align: center;
+    z-index: 1;
+    cursor: pointer;
+    border: 1px solid #000;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.shop_btn {
+    color: #fff;
+    background-color: #000;
+}
+.d_info_delivery {
+    font-size: 12px;
+}
+.d_info_pickup {
+    height: 56px;
+    line-height: 54px;
+    text-align: center;
+    z-index: 1;
+    cursor: pointer;
+    border: 1px solid #000;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 900;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 20px 0;
+    margin-bottom: 100px;
+}
+.d_info_pickup span {
+    margin-left: 5px;
+}
+
+.d_info_detail {
+    width: 100%;
+    height: 610px;
+    overflow: hidden;
+}
+
+.d_sec {
+    border-top: 1px solid #ddd;
+}
+.qna {
+    border-bottom: 1px solid #ddd;
+}
+.d_sec_top {
+    display: flex;
+    justify-content: space-between;
+
+    text-indent: 8px;
+    line-height: 64px;
+    height: 64px;
+    cursor: pointer;
+
+    position: relative;
+}
+
+.d_sec_top_btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.d_arrow {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    border-bottom: 3px solid #000;
+    border-right: 3px solid #000;
+    transform-origin: center;
+
+    overflow: hidden;
+}
+
+.arrow_down {
+    margin-top: -6px;
+    transform: rotate(45deg) ;
+
+}
+.arrow_up {
+    margin-top: -1px;
+    transform: rotate(225deg) ;
+}
+
+.d_sec_desc {
+    padding: 10px 30px 19px 8px;
+
+    display: none;
+}
+.d_desc_ul{
+    list-style: disc;
+    list-style-position: inside;
+}
+.d_desc_ul li {
+    font-size: 13px;
+    line-height: 26px;
+}
+li::marker {
+    font-size: 0.7em;
+}
+
+
+
+
+
+
+
+
+
+/* 화면 변경 */
+
+@media screen and (max-width: 1680px) {
+    .d_img_wrap {
+        width: calc(100% - 470px);
+    }
+
+    .d_info_wrap {
+        width: 470px;
+        padding: 50px 16px 0 68px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1100px) {
+    .h_right {
+        padding-top: 13px;
+    }
+
+    .search_icon {
+        display: inline-block;
+    }
+
+    .search_box {
+        display: none;
+    }
+
+    .search_box>input {
+        display: none;
+    }
+}
+
+@media screen and (max-width : 1024px) {
+    .d_img_wrap {
+        width: calc(100% - 350px);
+    }
+
+    .d_img_box {
+        overflow: hidden;
+        width: 100%;
+        margin: 0 16px 16px 0;
+    }
+
+    .d_info_wrap {
+        width: 350px;
+        padding: 50px 0 0 34px;
+        box-sizing: border-box;
+    }
+    .d_info_detail{
+        height: 682px;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    html,
+    body {
+        position: relative;
+        height: 100%;
+    }
+
+    .detail_container {
+        display: none;
+        padding: 0;
+    }
+
+    .detail_container_768 {
+        display: block;
+    }
+
+    .detail_container_768 .d_wrap {
+        width: 100%;
+    }
+
+    .detail_container_768 .d_img_wrap {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .detail_container_768 .d_img_box {
+        margin: 0;
+    }
+
+    .detail_container_768 .d_info_wrap {
+        margin-top: 35px;
+        width: 100%;
+        padding: 0 15px 30px;
+    }
+    .detail_container_768 .d_info_title {
+        padding-bottom: 30px;
+    }
+    .detail_container_768 .d_info_title h2,h4 {
+        margin: 0;
+        margin-bottom: 8px;
+    }
+    .detail_container_768 .d_info_pickup {
+        margin-bottom: 50px;
+    }
+    .detail_container_768 .d_info_detail {
+        height: auto;
+    }
+}

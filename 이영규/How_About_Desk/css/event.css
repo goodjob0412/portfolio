@@ -1,0 +1,67 @@
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/* 이벤트 네비  */
+.event_top{
+    padding-bottom: 30px;
+}
+.event_nav_div{
+    border-bottom: 1px solid #cbc5c5;
+}
+.event_nav{
+    display: flex;
+    font-size: 22px;
+    align-items: flex-end;
+}
+
+.event_nav_li{
+    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 3px solid rgb(18 115 228 / 0%);
+}
+
+.event_nav_li_active{
+    color: rgb(18 115 228);
+    border-bottom: 3px solid rgb(18 115 228);
+}
+
+
+/* 이벤트 본문 */
+
+.event_main{
+    position: relative;
+    margin-bottom: 800px;
+}
+
+.event{
+    position: absolute;
+    display: flex;
+    gap:20px;
+    flex-wrap: wrap;    
+    opacity: 0;
+}
+.event_box{
+    width: calc((100% - 20px * 2) / 3);
+
+}
+
+.event_box_img{
+    width: 100%;
+    border-radius: 10%;
+}
+h4{
+    margin: 0;
+    padding: 0;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+
+.active_event{
+    opacity: 1;
+}

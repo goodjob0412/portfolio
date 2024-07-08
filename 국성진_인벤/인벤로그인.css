@@ -1,0 +1,191 @@
+@font-face {
+    font-family: 'SUITE-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+input{
+    font-family: inherit;
+    }
+    body{margin: 0;
+        font-family: 'SUITE-Regular';}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.header {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#wrap {
+    width: 500px;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, .12);;
+    margin: 0 auto;
+    padding: 40px 50px 50px 50px;
+}
+.admin_wrap{
+    display: flex;
+    justify-content: space-evenly;
+}
+.input_admin{
+    width: 450px;
+    height: 50px;
+    font-size: 18px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid#555;
+}
+#input_btn{
+    width: 464px;
+    margin: 0 auto;
+    padding: 0;
+
+
+    background-color: #c6d7fb;
+    border: none;
+    border-radius: 5px;
+    
+    font-size: 18px;
+    line-height: 50px;
+    text-align: center;
+
+    cursor: pointer;
+}
+.chk_box{
+    width: 110px;
+    height: 100%;
+    display: flex;
+    margin-left: 20px;
+    justify-content: flex-start;
+    gap: 10px;
+    cursor: pointer;
+}
+.chk_circle{
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    box-shadow: 0 0 0 1.5px #000;
+    border-radius: 50%;
+    text-align: center;
+    
+}
+.login_info_wrap{
+    width: 464px;
+    line-height: 40px;
+    text-align: center;
+    
+
+    background-color: #f2dede;
+    border-color: #eed3d7;
+    color: #b94a48;
+    border-radius: 5px;
+
+    position: relative;
+    margin: 0 auto;
+
+    display: none;
+}
+.close_btn{
+    width: 20px;
+   
+    line-height: 40px;
+    text-align: center;
+
+    color: #555;
+    border-radius: 3px;
+
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+.hr_sect {
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    color: rgb(0 0 0);
+    font-size: 16px;
+    margin: 8px 0px;
+}
+.hr_sect::before,
+.hr_sect::after {
+    content: "";
+    flex-grow: 1;
+    background: rgba(0, 0, 0, 0.35);
+    height: 1px;
+    font-size: 0px;
+    line-height: 0px;
+    margin: 0px 16px;
+}
+
+#input_btn_sec{
+    width: 464px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.acount_wrap{
+    display: flex;
+    justify-content: space-around;
+    gap: 200px;
+}
+
+.other_way{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    width: 100%;
+    height: 100%;
+
+    margin-top: 12px;
+}
+.other_way>a {
+    width: calc((100% - 60px)/3);
+}
+.other_btn{
+    
+    line-height: 40px;
+    text-align: center;
+    
+    border: 1px solid #9f9f9f;
+
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    font-weight: bold;
+    
+}
+.naver {
+    background-color: #62c462;
+}
+.kakao {
+    background-color:#fee500;
+}
+.google {
+    background-color:#ee5f5b;
+}
+.facebook {
+    background-color:#0b82ed
+}
+.apple {
+    background-color:#e6e6e6;
+}
+.discord {
+    background-color:#5865f2
+}
+.footer{
+    width: 100%;
+    background-color: #EBEBEB;
+    border-top: 1px solid #DBDBDB;
+}
+.footer_txt{
+    line-height: 50px;
+    text-align: center;
+    color: #999
+}

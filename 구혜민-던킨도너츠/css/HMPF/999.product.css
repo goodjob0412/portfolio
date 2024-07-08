@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+#container {
+    width: 100%;
+    height: 100%;
+    max-width: 2100px;
+    margin: 0 auto;
+
+    /* background-color: plum; */
+}
+.sec {
+    margin-top: 100px;
+}
+.h_bot {
+    border-bottom: 1px solid #957f70;
+}
+/* --아이템헤더-- */
+.item_header {
+    background: url(../../img/던킨도너츠/item/bg_body.jpg) center;
+}
+.item_banner {
+    background: url(../../img/던킨도너츠/item/mainbanner.jpg) no-repeat center;
+    height: 439px;
+}
+
+/* new item */
+.new_item_box {
+    border-radius: 5px;
+    border: 1px solid #e0c2ac;
+    border-top: 0;
+    background: #fcfaf1;
+}
+.new_item_box .new_title {
+    position: relative;
+    top: -12px;
+    margin-bottom: -25px;
+}
+.new_title {
+    overflow: hidden;
+    position: relative;
+    height: 27px;
+    background: url(../../img/던킨도너츠/item/icon/line_title.png) no-repeat center;
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+}
+.new_title a {
+    color: #fcfaf1;
+    font-size: 13px;
+    font-weight: 800;
+    display: inline-block;
+    height: 27px;
+    line-height: 27px;
+    padding-left: 5px;
+}
+.new_banner{
+    width: 100%;
+    padding-bottom: 27%;
+    background: url(../../img/던킨도너츠/item/new/newbanner.jpg)no-repeat center / cover;
+}
+
+.new_list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 20px 10px;
+    box-sizing: border-box;
+}
+.new_list li {
+    width: calc((100% - (5px * 4)) / 5);
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    padding: 25px 30px 0 28px;
+    
+}
+.new_list > li > a {
+    text-align: center;
+}
+.item_img {
+    width: 100%;
+    border: 1px solid #fcfaf1;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+.new_list li:hover img {
+    transform:translate(10px, -10%) scale(1.1);
+    box-shadow: -10px 10px 18px #cebea2;
+
+}
+h4{
+    color: #392213;
+    text-align: center;
+    font-size: 18px;
+    font-weight: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 10px 0;
+}
+.new_list > li:hover h4{
+    font-weight: bold;
+}
+.menu_p{
+    width: 80px;
+    margin: 0 auto;
+    font-size: 12px;
+    color: #b9ac92;
+    border: 1px solid #b9ac92;
+    border-radius: 5px;
+}
+.new_list > li:hover .menu_p {
+    color: #392213; 
+    font-weight: bold;
+    font-size: 12px;
+    width: 90px;
+    border: 1px solid #392213;
+}
+.basic_item_box {
+    margin-top: 150px;
+    border: none;
+    background-color: #fff;
+}
+.nomal_item_box {
+    margin-top: 100px;
+}
+
+@media screen and (max-width: 1024px){
+    .new_list{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3px;
+        padding: 20px 10px;
+        box-sizing: border-box;
+    }
+    .new_list li {
+        width: calc((100% - (3px * 3)) / 4);
+        overflow: hidden;
+        position: relative;
+        box-sizing: border-box;
+        padding: 25px 30px 0 28px;
+        
+    }
+}
+@media screen and (max-width: 768px) {
+    .new_list{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2px;
+        padding: 20px 10px;
+        box-sizing: border-box;
+    }
+    .new_list li {
+        width: calc((100% - (2px * 2)) / 3);
+        overflow: hidden;
+        position: relative;
+        box-sizing: border-box;
+        padding: 25px 30px 0 28px;
+        
+    }
+}

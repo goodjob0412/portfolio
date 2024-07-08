@@ -1,0 +1,34 @@
+
+
+- 깃허브 주소: https://0hangyeol0.github.io/NETFLIX_portfolio/html/index.html
+
+- 타입: 반응형
+
+- 페이지별 설명
+
+*** index.html ***
+
+ == header ==
+ 스크롤 해도 따라다니고 window.scrollTop()값이 100이상일때 header의 배경색 block으로 바뀜
+
+ -head_L
+ 메뉴들 hover 했을때 글씨들 흰색으로 바뀜. 메뉴들 클릭했을 때 메뉴에 새겨진 글에 맞는 장르 페이지로
+넘어감.
+ 화면 줄었을 때 header에 걸려있던 li들 사라지고 메뉴 버튼이 생겨남. 메뉴 버튼 hover
+시 판 하나가 바로 아래 생겨나고 그 판 안에 사라졌던 li들 정렬되어 있음.
+
+ -head_R
+ 전체화면에서 돋보기 아이콘 클릭했을때 검색바가 튀어나온다.
+
+
+ == container ==
+ -main_banner
+ 메인배너 fadeIn,Out 이벤트: 5초마다 메인배너들의 이미지와 텍스트들이 바뀜.
+
+ -sec들
+ section hover 이벤트: 마우스 가져다 대면  section 양 끝단에 좌우 가리키는 화살표 드러남.
+ 		     화살표를 클릭했을때 클릭한 화살표가 가리키는 방향으로 이미지들이 움직임.
+ li click이벤트: 이미지 클릭하면 그 이미지에 맞는 모달창이 화면에 생겨난다.(모달창은 esc 누르면 닫힌다.)
+ window 스크롤 이벤트: 스크롤 했을 때 footer에 닿기 전에 새로운 섹션이 2개씩 2번 생겨난다.
+
+

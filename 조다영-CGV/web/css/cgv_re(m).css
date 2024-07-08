@@ -1,0 +1,258 @@
+
+/* 280~480 */
+body { margin: 0;}
+
+.contents_area {
+    width: 100%;
+    height: 100%;
+    max-width: 480px;
+    min-width: 280px;
+    margin: 0 auto;
+    position: relative;
+}
+
+li { 
+    list-style: none;
+    float: left;
+}
+
+/* //////////////////헤더//////////////// */
+.top_head  > img {
+    width: 100%;
+}
+
+
+/* //////////헤더//////////// */
+.logo {
+    width: 30%;
+    height: 74px;
+    background: url(../cgv/sprite@3x.png) no-repeat 2px -14px / 350px;
+    margin: 0 auto;
+
+}
+
+
+/* /////////////////메인/////////////////// */
+.th_cho {
+    width: 100%;
+    height: 100px;
+}
+.th_cho_li{ 
+    text-align: center;
+    width: 53px;
+    height: 61px;
+    border: 1px solid #d5cdcd;
+    line-height: 61px;
+    margin: 10px 10px 0 0 ;
+    border-radius: 10px;
+    font-weight: 999;
+}
+
+.today {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+.today > span {
+    color: skyblue;
+}
+
+.day_top {
+    height: 27px;
+    text-align: center;
+}
+.day_top_li {
+    margin-right: 30px;
+    color: #acacac;
+    font-weight: 999;
+}
+.fir_top {
+    width: 25px;
+    color: white;
+    background-color:  #f6826e;
+    font-weight: 999;
+    border-radius: 5px;
+}
+
+.day_bot {
+    height: 32px;
+    text-align: center;
+    border-bottom: 1px solid #acacac;
+}
+.day_bot_li {
+    margin-right: 30px;
+    color: #acacac;
+    font-size: 14px;
+}
+.fir_bot {
+    width: 28px;
+    color: #f6826e;
+    font-weight: 999;
+    border-radius: 5px;
+}
+
+.cho_order {
+    width: 100%;
+    height: 36px;
+    border-bottom: 1px solid #acacac;
+}
+.or_li {
+    margin-right: 20px;
+    font-size: 14px;
+}
+.or_fir {
+    font-weight: 999;
+}
+
+
+
+
+
+
+
+
+
+/* /////////////팝업?/////////////////// */
+.mo_menu {
+    background-color: #e9e7e7;
+}
+.fir_box {
+    background-color: rgba(0, 0, 0, 0.7);
+
+    width: 100%;
+    height: 87vh;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.menu_box {
+    display: flex;
+    justify-content: space-between;
+    margin: 9px 27px;
+    display: flex;
+}
+.mo_x {
+    width: 28px;
+    height: 30px;
+    background: url(../cgv/subSprite@2x.png);
+    background-position: -23px 333px;
+    scale: 0.5;
+}
+.mo_cha{
+    font-size: 23px;
+    text-align: center;
+}
+.mov_sec {
+    width: calc((100% - (20px* 3)) / 3);
+}
+.pop_box {
+    height: calc(100vh - 65px - 44px - 55px);
+    overflow-y: auto;
+}
+.mo_box { 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0 10px;
+}
+.mov_sec > img {
+    width: 120px;
+    height: 170px;
+    border-radius: 5px;
+}
+.reser {
+    width: 97px;
+    height: 26px;
+    color: white;
+    background-color: #fb4357;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 17px;
+}
+.title {
+    font-size: 12px;
+    margin-bottom: 3px;
+}
+
+
+.choice {
+    width: 100%;
+    height: 300px;
+    background-color: #fb4357;
+}
+
+.mo_popcorn{ 
+    height: 261px;
+    }
+.mo_popcorn > img {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 39%;
+    padding-top: 55px;
+
+}
+.pop_t {
+    text-align: center;
+}
+
+.pop_cho {
+    margin: 0 auto;
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    border: 1px solid #acacac;
+    border-radius: 15px;
+    line-height: 25px;
+    margin: 8px 157px;
+}
+
+
+
+
+
+
+
+
+/* /////////////푸터////////////// */
+.footer {
+    width: 100%;
+    height: 200px;
+    background-color: #f2f2f2;
+}
+
+.foot_t {
+    line-height: 36px;
+    height: 36px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #d8d8d8;
+    margin: 0;
+    text-align: center;
+    font-size: 14px
+}
+.foot_t > div {
+    height: 38px;
+    margin: 0 23px;
+
+}
+.cine_font_R,
+.s_dx_font_R  {
+    font-size: 11px;
+    background-color: #f6f6f6;
+}
+
+.foot_box {
+    margin: 22px;
+    background-color: #f2f2f2;
+    font-weight: 999;
+}
+.foot_s_box {
+    display: flex;
+    margin: 0px 20px;
+    font-size: 12px;
+}

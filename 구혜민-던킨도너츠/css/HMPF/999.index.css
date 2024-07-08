@@ -1,0 +1,549 @@
+
+/*본문*/
+#container {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.sec {
+    margin-top: 50px;
+}
+
+/* ----메인배너---- */
+.main_banner {
+    width: 100%;
+    /* height: 660px; */
+    padding-bottom: 33%;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.banner {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+.banner1 {
+    background: url(../../img/던킨도너츠/main_banner/banner0.png) no-repeat center/contain;
+}
+.banner2 {
+    background: url(../../img/던킨도너츠/main_banner/banner1.png) no-repeat center/contain;
+}
+.banner3 {
+    background: url(../../img/던킨도너츠/main_banner/banner2.png) no-repeat center/contain;
+}
+.banner4 {
+    background: url(../../img/던킨도너츠/main_banner/banner4.png) no-repeat center/contain;
+}
+.banner5 {
+    background: url(../../img/던킨도너츠/main_banner/banner5.jpg) no-repeat center/contain;
+}
+.btn_slide {
+    width: 80px;
+    height: 100%;
+    cursor: pointer;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#btn_L {
+    position: absolute;
+    left: 50%;
+    margin-left: -680px;
+    background:  url(../../img/던킨도너츠/main_banner/btn_prev.png) no-repeat center/contain;
+}
+#btn_R {
+    position: absolute;
+    right: 50%;
+    margin-right: -680px;
+    background:  url(../../img/던킨도너츠/main_banner/btn_next.png) no-repeat center/contain;
+}
+
+.indi {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%); 
+    display: flex;
+    gap: 10px;
+}
+.line {
+    width: 20px;
+    height: 6px;
+    background-color: #75675c;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+.line_active {
+    width: 45px;
+    background-color: rgb(255, 255, 255);
+}
+
+
+/* ------메인메뉴------ */
+.main_menu {
+    margin-top: 100px;
+    text-align: center;
+}
+.main_menu img {
+    width: 400px;
+}
+.txt_box {
+    margin-top: 30px;
+}
+.txt_box strong {
+    color: #392213;
+    font-size: 18px;
+    font-weight: normal;
+}
+.txt_box p {
+    color: #a19e99;
+    margin-top: 10px;
+    font-size: 13px;
+}
+.menu_list_container {
+    width: 100%;
+    overflow-x: auto;
+
+    background-color: #fff;
+}
+.menu_list {
+    width: 1300px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 20px 10px;
+    box-sizing: border-box;
+}
+.menu_list li {
+    width: calc((100% - (5px * 4)) / 5);
+    overflow: hidden;
+    position: relative;
+    left: -40px;
+}
+.menu_list li img {
+    width: 100%;
+    transition: all 0.3s;
+}
+.menu_list li:hover img {
+    transform: scale(1.2);
+}
+.menu_list li b {
+    color: #392213;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+}
+.menu_p {
+    width: 110px;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 12px;
+
+    color: #c8bfb0;
+    border: 1px solid #c8bfb0;
+    border-radius: 5px;
+}
+.menu_list > li:hover .menu_p {
+    color: #392213; 
+    font-weight: bold;
+    font-size: 14px;
+    width: 150px;
+    border: 1px solid #392213;
+}
+
+/* ----스크롤배너---- */
+.scroll_banner {
+    margin: 100px 0;
+}
+.box {
+    width: 100%;
+    height: 400px;
+
+    position: relative;
+}
+.box1 {
+    background: url(../../img/던킨도너츠/scroll_banner/img_banner_1_1.jpg) no-repeat fixed center / cover; 
+}
+.content {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    height: 100%;
+
+    position: relative;
+}
+.box1  .box1_img1 {
+    position: absolute;
+    left: -100vw;
+    top: 100px;
+    transition: all 1.0s;
+}
+.box1_img1_active {
+    position: absolute !important;
+    left: 120px !important;
+    top: 100px !important; 
+}
+
+.box1  .box1_img2 {
+    position: absolute;
+    left: -100vw;
+    bottom: 80px;
+    transition: all 1.0s;
+}
+.box1_img2_active {
+    position: absolute !important;
+    left: 250px !important;
+    bottom: 80px !important;
+}
+
+/* ------뉴스&이벤트------- */
+.contents_box {}
+.new {
+    width: 100%;
+    height: 250px;
+    border: 3px solid #fc681957;
+    border-radius: 30px;
+
+    margin-top: 50px;
+}
+.txt_new_event {
+    padding-top: 25px;
+    padding-left: 50px;
+}
+.txt_new_event p {
+    padding-left: 40px;
+} 
+.new ul {
+    display: flex;
+    justify-content: space-between;
+}
+iframe {
+    border-radius: 30px;
+    padding-top: 3px;
+}
+.new_img {
+    display: flex;
+}
+.new_img a {
+    display: block;
+}
+
+.event_all_btn {
+    position: relative;
+    padding: 50px 0 60px 0;
+}
+.event_all_btn a {
+    position: absolute;
+    left: 10px;
+    width: 154px;
+    height: 43px;
+    line-height: 43px;
+    border: 1px solid #c8bfb0;
+    border-radius: 5px;
+    color: #ab9b7f;
+    text-align: center;
+}
+.event_all_btn:hover .all_btn_a {
+    color: #392213;
+    border: 1px solid #392213;
+    font-weight: 700;
+} 
+
+.swiper-slide a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 20px;
+} 
+.event_all_box {
+    height: 440px;
+    margin-bottom: 5px;
+    border: 1px solid #d1cccb;
+    border-radius: 5px 5px 0 0;
+}
+.event_img {
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+}
+.event_img img {
+    width: 100%;
+    height: 50%;
+}
+.event_txt_box {
+    position: relative;
+    text-align: left;
+    padding: 15px 8px;
+    box-sizing: border-box;
+}
+.title {
+    margin: 0;
+    overflow: hidden;
+    font-size: 19px;
+    font-weight: normal;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.icon {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+}
+.icon img {
+    width: auto;
+    height: auto;
+}
+.period {
+    font-size: 12px;
+    margin: 0;
+}
+.desc {
+    margin: 0;
+    padding: 10px 5px;
+    text-align: left;
+
+    border-top: 1px solid #d1cccb;
+    font-size: 16px;
+}
+
+
+/*---스크롤배너2---*/
+.circle_banner {
+    margin-top: 160px;
+}
+.box2 {
+    background: url(../../img/던킨도너츠/circle_banner/img_banner.jpg) no-repeat fixed center / cover; 
+}        
+
+.contents2 {
+    width: 800px;
+    height: 100%;
+    margin: 0 auto;
+}
+.circle {
+    position: relative;
+    width: 380px;
+    height: 380px;
+    margin-top: 10px;
+    border-radius: 50%;
+    
+    font-size: 60px;
+    text-align: center;
+    line-height: 380px;
+    color: #fff;
+
+    opacity: 0;
+    transition: all 1s;
+}
+.circle_L { 
+    float: left;
+    background: url(../../img/던킨도너츠/circle_banner/bg_map.png) no-repeat;
+    transform: translateY(-100px) rotateY(180deg);
+
+    position: relative;
+    
+}
+.circle_L_active {
+    opacity: 1;
+    transform: translateY(-100px) rotateY(0); 
+}
+.circle_R { 
+    float: right;
+    background: url(../../img/던킨도너츠/circle_banner/bg_catering.png) no-repeat;
+    transform: translateY(100px) rotateY(180deg); 
+    
+    position: relative;
+}
+.circle_R_active {
+    opacity: 1;
+    transform: translateY(100px) rotateY(0); 
+}
+
+.circle_L a {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 60px;
+    text-align: left;
+    
+    position: relative;
+}
+.circle_L > a > h3 {
+    color: #ebe3de;
+    font-size: 15px;
+    font-weight: 700;
+    
+    position: absolute;
+    top: -20px;
+    left: 40px;
+    margin: 0;
+    padding: 0;
+}
+.p1 {
+    color: #ebe3de;
+    font-size: 15px;
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    margin: 0;
+    padding: 0;
+}
+.p2 {
+    color: #ebe3de;
+    font-size: 15px;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    margin: 0;
+    padding: 0;
+}
+.p2 span {
+    color: rgb(252 103 25);
+}
+
+.circle_R a {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: -110px;
+    text-align: left;
+
+    position: relative;
+}
+.circle_R > a > h3 {
+    color: #372317;
+    font-size: 15px;
+    font-weight: 700;
+    
+    position: absolute;
+    top: -20px;
+    left: 40px;
+    margin: 0;
+    padding: 0;
+}
+.p3 {
+    color: #372317;
+    font-size: 15px;
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    margin: 0;
+    padding: 0;
+}
+.p4 {
+    color: #372317;
+    font-size: 15px;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .menu_list {
+        width: 100%;
+        max-width: 1000px;
+        gap: 2px;
+    }
+    .menu_list li {
+        width: calc((100% - (2px * 2)) / 3);
+        overflow: hidden;
+        
+    }
+    .txt_new_event {
+        display: none;
+    }
+    .main_banner {
+        width: 100%;
+        padding-bottom: 132%;
+        /* height: 928px; */
+    }
+    .banner1 {
+        background: url(../../img/모바일_던킨도너츠/메인배너1.png) no-repeat center/cover;
+    }
+    .banner2 {
+        background: url(../../img/모바일_던킨도너츠/메인배너2.png) no-repeat center/cover;
+    }
+    .banner3 {
+        background: url(../../img/모바일_던킨도너츠/메인배너3.png) no-repeat center/cover;
+    }
+    .banner4 {
+        background: url(../../img/모바일_던킨도너츠/메인배너4.jpg) no-repeat center/cover;
+    }
+    .banner5 {
+        background: url(../../img/모바일_던킨도너츠/메인배너5.png) no-repeat center/cover;
+    }
+    .line_active {
+        width: 30px;
+    }
+
+}
+@media screen and (max-width: 768px) {
+    .menu_list {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 700px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        box-sizing: border-box;
+        
+    }
+    .menu_list li {
+        width: calc((100% - (5px * 1)) / 2);
+        overflow: hidden;
+        position: relative;
+        left: 0;
+    }
+    .scroll_banner,
+    .contents_box,
+    .circle_banner {
+        display: none;
+    }
+}
+@media screen and (max-width: 430px){
+    .main_menu img {
+        width: 300px;
+    }
+    .txt_box {
+        margin-top: 20px;
+    }
+    .txt_box strong {
+        color: #392213;
+        font-size: 15px;
+        font-weight: normal;
+    }
+    .txt_box p {
+        font-size: 9.5px;
+        padding: 0 5px;
+    }
+
+
+    .main_banner {
+        width: 100%;
+        padding-bottom: 132%;
+        /* height: 928px; */
+        position: relative;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    .banner {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 100%;
+    }
+    .line {
+        width: 6px;
+    }
+    .line_active {
+        width: 6px;
+    }
+
+}

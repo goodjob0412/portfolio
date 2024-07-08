@@ -1,0 +1,332 @@
+body{margin: 0;}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+/* ============================= */
+#wrap{
+    margin-top: 30px;
+}
+.top_banner{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #3b4890;
+    font-size: 12px;
+    font-weight: 900;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999999;
+}
+.tb_txt{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.header{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.h_left{
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+.ham{
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    position: relative;
+}
+.ham_line{
+    height: 5px;
+    background: #000;
+    position: absolute;
+    left: 5px;
+    right: 5px;
+    transition: all 0.5s;
+}
+.h_top{
+    top: 10px;
+}
+.h_mid{
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.5s;
+}
+.h_bot{
+    top: calc(100% - 15px);
+}
+.mid_set{
+    top: 50%;
+    transform: translateY(-50%);
+}
+.ham_45deg{
+    transform: translateY(-50%) rotate(45deg);
+}
+.ham_m45deg{
+    transform: translateY(-50%) rotate(-45deg);
+}
+.opa_0{
+    opacity: 0;
+}
+.ham_pan{
+    width: 250px;
+    height: calc(100vh - 80px);
+    position: absolute;
+    top: 100%;
+    left: -250%;
+    background: #ddd;
+    z-index: 99999;
+}
+/* ==================================================== */
+.back_dark{
+    width: 100%;
+    height: calc(100vh - 80px);
+    background: rgba(0, 0, 0, 0.5);
+    position:absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+}
+.back_opa{
+    display: block;
+    z-index: 9999;
+}
+/* =============================================== */
+.login_box{
+    width: 100%;
+    height: 100px;
+    background: #fff;
+    /* padding: 5px; */
+    border: 5px solid #3b4890;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+.input_box{
+    width: 160px;
+    height: 60px;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.login_txt{
+    width: 100%;
+    height: 20px;
+    box-sizing: border-box;
+}
+.btn_box{
+    width: 80px;
+    height: 60px;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+.login_btn{
+    width: 80px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 900;
+    color: #fff;
+    background: #3b4890;
+    border-radius: 5px;
+}
+.search_idx_box{
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    display: flex;
+    justify-content: end;
+    gap: 5px;
+    padding-right: 5px;
+}
+.chk_box{
+    display: flex;
+}
+.b_line{
+    width: 1px;
+    height: 10px;
+    background: #000;
+    margin: 5px 0;
+}
+/* ==================================================== */
+.gesipan_list{
+    width: 100%;
+    margin-top: 30px;
+    box-sizing: border-box;
+    border: 1px solid #777777;
+}
+.list_guide{
+    width: 100%;
+    height: 30px;
+    background: #ebebeb;
+    box-sizing: border-box;
+    line-height: 30px;
+    padding-left: 5px;
+    font-weight: 900;
+    color: #000;
+}
+.list_item{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background: #3b4890;
+    padding-left: 5px;
+    box-sizing: border-box;
+    border: 1px solid #777777;
+    color: #fff;
+    font-weight: 900;
+    font-size: 14px;
+}
+/* ================================================= */
+.sub_banner{
+    margin-top: 72px;
+    width: 100%;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+}
+.s_banner{
+    width: 100%;
+    height: 100%;
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    color: #fff;
+}
+.red{background: red;}
+.green{background: green;}
+.gray{background: gray;}
+.violet{background: violet;}
+.skyblue{background: skyblue;}
+.s_indi_box{
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+}
+.s_indi{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #b1b1b1;
+}
+.s_indi_active{
+    background: #fff;
+}
+/* =================================== */
+.logo{
+    width: 40px;
+    height: 40px;
+}
+.logo a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(../img/logomak_logo_m.png) no-repeat center / contain;
+}
+/* ============================= */
+.search_box{
+    width: 230px;
+    height: 30px;
+    border: 3px solid #3b4890;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    background: #3b4890;
+    margin-right: 10px;
+}
+#search_txt{
+    width: calc(100% - 40px);
+    height: 100%;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    padding: 0 5px;
+}
+.search_icon{
+    width: 40px;
+    height: 30px;
+    line-height: 30px;
+    background: #3b4890;
+    text-align: center;
+    color: #fff;
+}
+/* ============================== */
+.nav{
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    background: #3b4890;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 900;
+}
+.nav_item{
+    height: 100%;
+}
+.nav_item a{
+    display: block;
+    height: 100%;
+    margin: 0 10px;
+}
+/* =================================== */
+.footer{
+    width: 100%;
+    height: 200px;
+    background: #2a3261;
+    position: relative;
+}
+.goto{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 25px;
+    font-weight: 900;
+    color: #fff;
+    background-color: #3b4890;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.goto a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.goto a:hover{
+    text-decoration: underline;
+}

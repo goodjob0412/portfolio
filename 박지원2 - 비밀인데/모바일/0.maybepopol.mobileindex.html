@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-1.12.4.js"></script>
+<style>
+    html{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        padding: 0;
+        margin: 0;
+    }
+    ul{ 
+        padding: 0;
+        
+        list-style: none;
+    }
+    li{
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+    }
+    .wrap{
+        width: 425px;
+        min-width: 320px;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    .top{
+        width: 100%;
+        height: 80px;
+        background-color: #fff;
+        border-bottom: 1px solid #ddd;
+        box-sizing: border-box;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99999999999999;
+    }
+    .logo_img{
+        
+        float: left;
+        width: 80PX;
+        height: 60px;
+        background: url(../img/공차/logo_r.png) center no-repeat;
+        background-size: contain ;
+    }
+    
+    .top_box{
+        margin: 0 auto;
+    width: 100%;
+    max-width: 425px;
+    height: 80px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 3px;
+    box-sizing: border-box;
+    z-index: 99999999999999;
+    }
+
+    .icon{
+        margin-left: 5px;
+        margin-top: 15px;
+        line-height: 130px;
+        float: right;
+        width: 30px;
+        height: 30px; 
+    }
+    .mainbanner{
+        position: relative;
+        margin-top: 60px;
+        width: 100%;
+        max-width: 425px;
+        height: 1030px;
+        background: url(../img/공차/모바일1페이지/m1-main.jpg) center no-repeat;
+        background-size: cover;
+    }
+    .m_show_more{
+        
+        border: 2px solid #78BCE0;
+    padding: 5px 20px;
+    line-height: 20px;
+    color: #78BCE0;
+    font-weight: 700;
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    transform: translateX(-50%);
+    }
+
+    /* 돌아가는 공지사항 */
+    .notice{
+            box-sizing: border-box;
+            height: 70px;
+            width: 100%;
+            max-width: 425px;
+        }
+        .m_notice{
+            height: 70px;
+            background-color: #382d2a;
+        }
+        .mm_notice{
+            max-width: 425px;
+            width: 425px;
+            height: 100%;
+            position: relative;
+            float: right;
+        }
+        .slide_box{
+            overflow: hidden;
+            position: relative;
+            right: -99px;
+            height: 70px;;
+        }
+        .slide{
+            color: white;
+            height: 70px;
+            position: absolute;
+            top: 100%;
+            line-height: 70px;
+        }
+        .b1{
+            top: 0;
+        }
+        .promotion{
+            float: left;
+            height: 70px;
+            width: 50%;
+            position: relative;
+            background-color: #f6f3eb;
+        }
+        .plus{
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            border-radius: 50%;
+            border: 1px solid white;
+            top: 20px;
+            right: 9px;
+        }
+        .m_plus{    
+            right: 9px;
+            top: 4px;
+            position: absolute;
+            color: white;
+            font-size: 40px;
+            width: 30px;
+            height: 30px;
+        }
+        .promotion_box{
+            position: relative;
+            line-height: 70px;
+            text-align: center;
+            background-color: #F4F3ED;
+            box-sizing: border-box;
+            height: 70px;
+            width: 100%;
+            max-width: 425px;
+        }
+        .a1{
+            top: -4.7px;
+            color: black;
+        }
+        .p1{
+            border: 1px solid black;
+        }
+        .membership{
+            position: relative;
+            height: 700px;
+            background: url(../img/공차/모바일1페이지/m1-member.jpg);
+            background-size: cover;
+            width: 100%;
+        }
+        .text_box{
+            position: absolute;
+            transform: translateX(-50%);
+            left: 50%;
+            bottom: 0;
+            width: 100%;
+            margin: 0 auto;
+            height: 230px;
+        }
+
+        .mem_pont{
+            width: 110px;
+            border: 3px solid #8b0000;;
+            height: 38px;
+            line-height: 38px;
+            text-align: center;
+            
+        }
+        .m1{
+            margin-right: 89px;
+            margin-top: 110px;
+            float: right;
+        }
+        .m2{
+            margin-left: 90px;
+            margin-top: 110px;
+            float: left;
+        }
+        .m3{
+            color: white;
+            background-color:#8b0000 ;
+            width: 240px;
+            margin-left: 90px;
+            margin-top: 160px;
+        }
+        .how_order{
+            position: relative;
+            background: url(../img/공차/모바일1페이지/wm1-order.jpg) no-repeat center;
+            width: 100%;
+            height: 650px;
+            background-size: cover;
+        }
+        .h1{
+            bottom: 45px;
+            padding: 5px 50px;
+            color: black;
+            border: 1px solid black;
+        }
+        .coldcup{
+            position: relative;
+            height: 830px;
+            width: 100%;
+            background: url(../img/공차/모바일1페이지/m1-md.jpg) center no-repeat;
+            background-size: cover;
+        }
+        .c1{
+            border: 1px solid #F2B025;
+            color: #F2B025;
+            bottom: 325px;
+        }
+        .home_box{
+            margin: 0 auto;
+            margin-top: 50px;
+            width: 90%;
+            height: 70px;
+            
+        }
+        .home_txt{
+            float: left;
+            font-size: 30px;
+        }
+        .home_img{
+            margin-left: 20px;
+            float: left;
+            background: url(../img/공차/모바일1페이지/truck.png) center no-repeat;
+            background-size: cover;
+            width: 110px;
+            height: 60px;
+        }
+        .online_box{
+            height: 530px;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .online_img{
+            width: 100%;
+            height: 370px;
+            background: no-repeat center;
+            background-size: cover;
+        }
+        .online_name{
+            font-size: 16px;
+            font-weight:700;
+            margin: 10px 0px;
+        }
+        .online_sul{
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+        .online_sale{
+            color: #ff3131;
+            text-decoration: line-through;
+            font-size: 12px;
+            margin-right: 20px;
+            float: left;
+        }
+        .online_price{
+            color:#000;
+            margin-top: -5px;
+        }
+        .o1{
+            height: 440px;
+        }
+
+        .o_b1{  
+            margin-top: 50px;
+        }
+        .always{
+            position: relative;
+            width: 100%;
+            height: 1330px;
+            background: url(../img/공차/모바일1페이지/m1-new.jpg) center no-repeat;
+            background-size: cover;
+        }
+        .a_1{
+            bottom: 575px;
+        }
+        .brand_banner{
+            position: relative;
+            margin-top: 30px;
+            width: 100%;
+            height: 830px;
+            background: url(../img/공차/모바일1페이지/m1-brand.jpg) center no-repeat;
+            background-size: cover; 
+        }
+
+        .brand_1{   
+            color: #888;
+            border: 1px solid #888;
+            bottom: 55px;
+        }
+        .brand_text_box{
+            transform: rotate(-90deg);
+            position: absolute;
+            top: 110px;
+            left: -70px;
+            display: flex;
+        }
+        .br_text{
+            margin-left: 20px;
+            font-size: 30px;
+            font-weight: 100;
+            color: #aaa;
+        }
+
+        .dot_box{
+            position: absolute;
+            top: 40px;
+            left: 9px;
+            display: flex;
+            gap: 46px;
+            flex-direction: column;
+        }
+            .dot{
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background-color: #aaa;
+            margin-right: 46px;
+        }
+        .footer{
+            height: 240px;
+            width: 100%;
+            background-color:#231815;
+        }
+        .foot_txt_box{
+            display: flex;
+            margin: 0 auto;
+            width: 90%;
+            height: 100px;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-content: space-around;
+        }
+        .footer_txt{
+            color: white;
+            font-size: 14px;
+        }
+        .foot_logo{
+            width: 70px;
+            height: 90px;
+            background: url(../img/공차/모바일1페이지/logo_r.png) center no-repeat;
+            background-size: cover;
+            margin: 0 auto;
+        }
+        .foot_txt{
+            text-align: center;
+            color: #fff;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+        .f_txt{
+            margin-left: -150px;
+        }
+        .ham_pan{
+            overflow-y: auto;
+            transition: all ;
+            position: fixed;
+            top: 80px;
+            right: -100%;
+            z-index: 99999;
+            width: 80%;
+            max-width: 380px;
+            height: 1000px;
+            background-color: skyblue;
+        }
+        .searchbar_box{
+            box-sizing: border-box;
+            border-bottom: 1px solid;
+            
+            width: 100%;
+            height: 50px;
+        }
+        .search_box{
+            float: left;
+            margin: 5px;
+            margin-left: 15px;
+            width: 200px;
+            height: 30px;
+        }
+        .search{
+            line-height: 20px;
+            text-align: center;
+            margin: 5px;
+            font-size: 20px;
+            padding: 8.1px 20px;
+            background-color: gray;
+            float: left;
+        }
+        .ham_box{
+            line-height: 65px;
+            margin-left: 15px;
+            font-size: 23px;
+            width: 100%;
+            height: 65px;
+        }
+        .ham1{
+            border-top: none;
+        }
+        .ham_txt{
+            float: left;
+        }
+        .ham_m_box{
+            display: none;
+            width: 100%;
+        }
+        .ham_m_pan{
+            margin-left: 15px;
+            width: 100%;
+            font-size: 18px;
+            line-height: 35px;
+            height: 35px;
+        }
+        .ham_img{
+            margin-top: 10px;
+            margin-right: 50px;
+            float: right;
+            width: 50px;
+            height: 50px;
+            background: url(../img/공차/모바일1페이지/down.png) no-repeat center;
+        }
+        .h_1{
+            font-size: 18px;
+            line-height: 35px;
+            height: 35px;
+        }
+        .fff{
+            
+            transform: translateX(100%)
+        }
+</style>
+</head>
+<body>
+    <div class="wrap">
+    
+        <div class="top">
+            <div class="top_box">
+            <a class="logo_img" href="../모바일/0.maybepopol.mobileindex.html"></a>
+            <div class="icon ham"></div>
+            <div class="icon"></div>
+            <div class="icon"></div>
+        </div>
+    </div>
+
+        
+
+        <div class="ham_pan">
+            <div class="searchbar_box">
+                <input class="search_box" type="text" placeholder="검색할 정보를 입력해주세요" >
+                <div class="search">search</div>
+            </div>
+                <div class="ham_box ham1">
+                    <div class="ham_txt">BRAND</div>
+                    <div class="ham_img"></div>
+                </div>
+
+
+                <div class="ham_m_box">
+                <div class="ham_m_pan h_1">브랜드 소개</div>
+                <div class="ham_m_pan h_1">공차의 약속</div>
+                <div class="ham_m_pan h_1">세계 속의 공차</div>
+                <div class="ham_m_pan h_1">미디어 센터</div>
+                </div>
+
+                <div class="ham_box">   
+                    <div class="ham_txt">MENU</div>
+                    <div class="ham_img"></div>
+                </div>  
+
+                <div class="ham_m_box">
+                <div class="ham_m_pan h_1">음료</div>
+                <div class="ham_m_pan h_1">빙수</div>
+                <div class="ham_m_pan h_1">디저트</div>
+                <div class="ham_m_pan h_1">MD상품</div>
+                <div class="ham_m_pan h_1">TEA STORY</div>
+                    </div>
+
+
+                <div class="ham_box">
+                    <div class="ham_txt">STORE</div>
+                    <div class="ham_img"></div>
+                </div>
+
+                <div class="ham_m_box">
+                <div class="ham_m_pan h_1">오프라인 STORE</div>
+                </div>
+
+                <div class="ham_box">
+                    <div class="ham_txt">ONLINEMALL</div>
+                    <div class="ham_img"></div>
+                </div>
+
+                <div class="ham_m_box">
+                <div class="ham_m_pan h_1">온라인 몰</div>
+                </div>
+
+                <div class="ham_box">
+                    <div class="ham_txt">MEMBERSHIP</div>
+                    <div class="ham_img"></div>
+                </div>
+                
+                <div class="ham_m_box">
+                <div class="ham_m_pan h_1">공차 멤버십</div>
+                <div class="ham_m_pan h_1">멤버십 오더</div>
+                <div class="ham_m_pan h_1">멤버십 금액권</div>
+                <div class="ham_m_pan h_1">자주하는 질문</div>
+                </div>
+
+
+                <div class="ham_box">
+                    <div class="ham_txt">WHAT'S NEWS</div>
+                    <div class="ham_img"></div>
+                </div>
+
+                <div class="ham_m_box">
+                <div class="ham_m_pan h_1">프로모션 & 이벤트</div>
+                <div class="ham_m_pan h_1">새소식</div>
+                <div class="ham_m_pan h_1">자주하는 질문</div>
+                <div class="ham_m_pan h_1">공지사항</div>
+            </div>
+
+            </div>
+        
+
+        <div class="mainbanner">
+            <a class="m_show_more" href="../모바일/0.maybepopol.mobile2.html">자세히보기</a>
+        </div>
+        <div class="notice">
+            <div class="m_notice">
+                <div class="mm_notice">
+                <div class="plus">  </div>
+                
+                <div class="m_plus">+</div>
+            
+
+                <div class="slide_box">
+                    <div class="slide b1">카카오톡 선물하기 15%할인</div>
+                    <div class="slide">배달의 민족 신제품 5% 할인</div>
+                    <div class="slide">카네이버페이 신제품 15% 할인</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="promotion_box">공차프로모션
+        <div class="plus p1">  </div>
+                
+        <div class="m_plus a1">+</div>
+    </div>
+    <div class="membership">
+        <div class="text_box">
+            <div class="mem_pont m1">회원가입</div>
+            <div class="mem_pont m2">로그인</div>
+            <div class="mem_pont m3">앱다운로드</div>
+        </div>
+    </div>
+    <div class="how_order">
+            <a  href="../모바일/0.maybepopol.mobile2.html" class="m_show_more h1">자세히보기</a>
+    </div>
+    
+    <div class="coldcup">
+        <a  href="../모바일/0.maybepopol.mobile2.html" class="m_show_more c1">자세히보기</a>
+    </div>
+    <div class="home_box">
+        <div class="home_txt">Gongcha at Home</div>
+        <div class="home_img"></div>
+    </div>
+    
+
+    <div class="online_box">
+        <div class="online_img"></div>
+        <div class="online_name">제주말차스틱</div>
+        <div class="online_sul">제주 말차 스틱는 믿을 수 있는 보성산 찻잎만을 담았어요. 공차에서 맛보던 제주그린밀크티를 언제 어디서든 편하고 맛있게 즐겨보세요</div>
+        <div class="online_price_box"></div>
+        <div class="online_sale">20,000원</div>
+        <div class="online_price">14,000원</div>
+    </div>
+    <div class="online_box">
+        <div class="online_img o1"></div>
+        <div class="online_name">TEA EXPERT POUCH GIFT SET</div>
+        <div class="online_sul">간편하게 즐길 수 있는 파우치 타입의 공차 오리지널 티 2종을 고급스러운 패키지로 구성한 선물세트</div>
+        <div class="online_price_box"></div>
+        <div class="online_sale">10,000원</div>
+        <div class="online_price">16,000원</div>
+    </div>
+    <div class="online_box o_b1">
+        <div class="online_img"></div>
+        <div class="online_name">티마스터 머그(레드 시그니처)</div>
+        <div class="online_sul">진주같이 은은한 광택에 부드러운 촉감과 손에 편안하게 잡히는 디자인으로 차(茶)를 즐기기 더없이 좋은 머그컵</div>
+        <div class="online_price_box"></div>
+        <div class="online_sale">15,000원</div>
+        <div class="online_price">12,000원</div>
+    </div>
+    <div class="always">
+        <a href="../모바일/0.maybepopol.mobile2.html" class="m_show_more a_1">자세히보기</a>
+    </div>
+    <div  class="brand_banner">
+        <a href="../모바일/0.maybepopol.mobile2.html" class="m_show_more brand_1">자세히보기</a>
+        <div class="dot_box">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+        <div class="brand_text_box">
+            <div class="br_text">茶</div>
+            <div class="br_text">人</div>
+            <div class="br_text">水</div>
+            <div class="br_text">時</div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <ul class="foot_txt_box">
+                <li class="footer_txt">회사 소개</li>
+                <li class="footer_txt">제휴/제안</li>
+                <li class="footer_txt">고객센터</li>
+                <li class="footer_txt">개인정보처리방침</li>
+                <li class="footer_txt">이메일무단수집거부</li>
+                <li class="footer_txt f_txt">사이트맵</li>
+        </ul>
+        <div class="foot_logo"></div>
+        <div class="foot_txt">㈜공차코리아</div>
+        <div class="foot_txt">서울 종로구 종로 47(공평동, 7층)</div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <script>
+           $(document).ready(function(){
+            for(let i = 0; i < $(`.icon`).length; i++ ){
+        $(`.icon`).eq(i).css(
+        `background` , `url(../img/공차/모바일1페이지/m_ham${(i % $(`.icon`).length)+1}.png) no-repeat center / cover `
+        )
+    }
+        
+
+
+        let bang2 = 0;
+let slide_leg = $(`.slide`).length;
+
+setInterval(function(){
+//나갈판
+        $(`.slide`).eq(bang2 % slide_leg).animate({
+        top:`-100%`
+        },1000)
+
+        //들어올판
+        
+        $(`.slide`).eq((bang2 +1)% slide_leg).css({
+            top:`100%` 
+        }).animate({
+            top:`0%`
+        },1000)
+
+        bang2= (bang2+1) % slide_leg
+},2000)
+
+
+for(let i = 0; i < $(`.online_img`).length; i++ ){
+        $(`.online_img`).eq(i).css(
+        `background-image` , `url(../img/공차/모바일1페이지/main_product_${(i % $(`.icon`).length)+1}.png) `
+        )
+    }
+
+});
+
+    $(`.ham_img`).click(function(){
+        $(this).parent('.ham_box').next('.ham_m_box').slideToggle()
+    })
+
+    // $(`.ham`).click(function(){
+    //     $(`.ham_pan`).toggleClass(`fff`)
+    // })
+
+        let bang3 = 0
+        $(`.ham`).click(function(){
+            if(bang3 == 0){
+            $(`.ham_pan`).animate({
+                right:0
+            }, 500)
+            bang3 = bang3 + 1
+        }
+
+        else if  (bang3 == 1){
+            $(`.ham_pan`).animate({
+                right:`-100%`
+            }, 500)
+            bang3 = bang3 - 1
+        }
+        })
+
+    </script>
+</body>
+</html>

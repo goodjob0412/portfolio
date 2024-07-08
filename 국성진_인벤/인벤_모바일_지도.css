@@ -1,0 +1,305 @@
+@font-face {
+    font-family: 'SUITE-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+    margin: 0;
+    font-family: 'SUITE-Regular';
+    overflow: hidden;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+.map_header{
+    width: 100%;
+    height: 41px;
+    background-color: black;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+}
+.map_wrap{
+    overflow: hidden;
+}
+.header_logo{
+    width: 121px;
+    height: 100%;
+    background-image: url(./img/지도/로아_로고.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0px 9px;
+}
+.right_hideable {
+    line-height: 41px;
+    margin-right: 20px;
+    font-size: 10px;
+}
+.option_ul{
+    position: absolute;
+    top: 41px;
+    left: 0;
+    box-shadow: 1px 1px 1px rgba(51, 51, 51, 0.6);
+    display: flex;
+    flex-wrap: wrap;
+}
+.option_li {
+    width: calc((100%) / 6);
+    height: 20px;
+    border: 1px solid #bbb;
+    background-color: skyblue;
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: left;
+    font-size: 7px;
+    box-sizing: border-box;
+    align-items: center;
+    cursor: pointer;
+}
+.option_img{
+    width: 10px;
+    height: 18px;
+
+    /* position: absolute; */
+}
+.option_txt{
+    z-index: 100;
+    pointer-events: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.map_bot{
+    width: 100%;
+    height: calc(100vh - 41px);
+    background-color: #555;
+    position: relative;
+}
+.img_wrap{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    transition: 0.5s;
+}
+.map_img_wrap{
+    width: 100%;
+    height: 100%;
+}
+.map_img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    background: url(./img/지도/레온하트.png);
+    background-size: cover;
+    z-index: -1;
+
+}
+.map_icon_txt {
+    width: 200px;
+    color: #fff;
+    text-shadow: -0.5px 0px #000, 0px 0.5px #000, 0.5px 0px #000, 0px -0.5px #000;
+    font-size: 6px;
+}
+
+.hidden_que_img { background: url(./img/지도/히든퀘스트.jpg);}
+
+.hidden_que_img1{
+    top: 38%;
+    left: 24%;
+}
+.hidden_txt1{
+    transform: translateX(6%);
+}
+.hidden_que_img2{
+    top: 68.5%;
+    left: 65%;
+}
+.hidden_txt2{
+    transform: translateX(-18%);
+}
+.hidden_que_img3{
+    top: 56.5%;
+    left: 68%;
+}
+.hidden_txt3{
+    transform: translateX(-30%);
+}
+.hidden_que_img4{
+    top: 55.5%;
+    left: 67%;
+}
+.hidden_txt4{
+    transform: translateX(6%);
+}
+.another_que_img{
+    background: url(./img/지도/또다른이야기.jpg);
+    top: 62%;
+    left: 46%;
+}
+.another_txt{
+    margin-right: 1%;
+    transform: translateX(-9%) translateY(-86%);
+}
+.viewpoint_img {
+    background: url(./img/지도/뷰포인트.jpg);
+    top: 40%;
+    left: 38.5%;
+}
+.view_txt{
+    transform: translateX(4%);
+}
+.cooking_img{ background: url(./img/지도/요리&재료.jpg);}
+.cooking_img1{
+    top: 35%;
+    left: 49.5%;
+}
+.cook_txt1{
+    transform: translateX(-36%);
+}
+
+.cooking_img2{
+    top: 62.5%;
+    left: 45.7%;
+}
+.cook_txt2 {
+    transform:  translateX(-41%) translateY(14%);
+}
+.cooking_img3{
+    top: 71.5%;
+    left: 70.5%;
+}
+.cook_txt3{
+    transform: translateX(6%);
+}
+.npc_img{ background: url(./img/지도/호감도.jpg);}
+.npc_img1{
+    top: 33.6%;
+    left: 54%;
+}
+.npc_txt1{
+    transform: translateX(5%);
+}
+.npc_img2{
+    top: 62.3%;
+    left: 46.7%;
+}
+.npc_txt2{
+    transform: translateX(4%);
+}
+.mococo_img{ background: url(./img/지도/모코코.jpg);}
+.mococo_img1{
+    top: 50%;
+    left: 17%;
+}
+.mococo_img2{
+    top: 48%;
+    left: 16%;
+}
+.mococo_img3{
+    top: 40%;
+    left: 38%;
+    
+}
+.mococo_img4{
+    top: 49%;
+    left: 44%;
+}
+.mococo_img5{
+    top: 40.5%;
+    left: 51%;
+}
+.mococo_img6{
+    top: 36%;
+    left: 53.3%;
+}
+.mococo_img7{
+    top: 48.3%;
+    left: 60%;
+}
+.mococo_img8{
+    top: 62%;
+    left: 76%;
+}
+.mococo_img9{
+    top: 70.5%;
+    left: 66.5%;
+}
+.map_icon{
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-size: cover;
+    z-index: 10;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.5s;
+
+}
+
+.zoom_box{
+    position: absolute;
+    top: 81px;
+    right: 0;
+
+    z-index: 1;
+}
+.zoom_box>ul>li{
+
+    border: 1px solid;
+    color: black;
+
+    
+    /* font-size: 30px; */
+    line-height: 21px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: -0.5px 0px #fff, 0px 0.5px #fff, 0.5px 0px #fff, 0px -0.5px #fff;
+
+}
+.zoom_li{
+    width: 21px;
+    height: 21px;
+    font-size: 14px;
+    background-color: #fff;
+    border: 1px solid #000;
+    text-shadow: -0px 0px #fff, 0px 0px #fff, 0px 0px #fff, 0px -0px #fff;
+}
+.zoom_li:nth-child(5){
+    background-color: #393939;
+}
+.zoom_li:nth-child(1){
+    background-color: dodgerblue;
+}
+.zoom_li:nth-child(7){
+    background-color: dodgerblue;
+}
+.tool_box{
+    width: 250px;
+    line-height: 25px;
+    display: none;
+    position: absolute;
+    z-index: 1000;
+}
+
+.tooltip_txt{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    background-color: rgba(4, 4, 4, 0.5);
+    border-radius: 5px;
+}

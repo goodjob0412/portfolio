@@ -1,0 +1,16 @@
+
+.banner1 {
+  /* linear-gradient(rgba(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)) */
+  background: linear-gradient(to top, #141414 1%, rgba(0, 0, 0, 0.3) 15%), 
+  url(../img/NETFLEX/banner/main_banner1.webp) no-repeat center / cover;
+
+  /* left: 0; */
+}
+.banner2 {
+  background: linear-gradient(to top, #141414 1%, rgba(0, 0, 0, 0.3) 15%), 
+  url(../img/NETFLEX/banner/main_banner2.webp) no-repeat center / cover;
+}
+.banner3 {
+  background: linear-gradient(to top, #141414 1%, rgba(0, 0, 0, 0.3) 15%), 
+  url(../img/NETFLEX/banner/main_banner3.webp) no-repeat center / cover;
+}

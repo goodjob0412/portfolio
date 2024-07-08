@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/게시판_list.js"></script>
+    <script src="./js/포트폴리오_메인.js"></script>
+    <script src="./js/포트폴리오_h_f.js"></script>
+    <link rel="stylesheet" href="./css/포트폴리오_h_f.css">
+    <link rel="stylesheet" href="./css/포트폴리오_메인.css">
+</head>
+<body>
+<div class="top_banner">
+    <div class="tb_txt">이 웹페이지는</div>
+    <div class="tb_txt">제가 만든 포트폴리오용</div>
+    <div class="tb_txt">웹페이지입니다.</div>
+    <div class="tb_txt">제 이름은 김두인이고</div>
+</div>
+<div id="wrap">
+    <header class="header contents_area">
+        <div class="logo"><a href="./포트폴리오_메인.html"></a></div>
+        <div class="search_box">
+            <input type="text" id="search_txt" placeholder="검색어를 입력하세요">
+            <div class="search_icon">검색/게시판 찾기</div>
+        </div>
+    </header>
+    <div class="nav">
+        <div class="contents_area">
+            <div class="nav_item"><a href="포트폴리오_게시판.html?cateNo=0&page=1">뉴스</a></div>
+            <div class="nav_item"><a href="포트폴리오_게시판.html?cateNo=1&page=1">정보게시판</a></div>
+            <div class="nav_item"><a href="포트폴리오_게시판.html?cateNo=2&page=1">유저게시판</a></div>
+            <div class="nav_item"><a href="포트폴리오_게시판.html?cateNo=3&page=1">커뮤니티</a></div>
+            <div class="nav_item"><a href="포트폴리오_게시판.html?cateNo=4&page=1">공지사항</a></div>
+        </div>
+    </div>
+    <div class="container contents_area">
+        <div class="main_banner">
+            <div class="banner red">1</div>
+            <div class="banner green">2</div>
+            <div class="banner violet">3</div>
+            <div class="banner gray">4</div>
+            <input type="button" value="《" class="slide_btn" id="slide_btn_L">
+            <input type="button" value="》" class="slide_btn" id="slide_btn_R">
+            <div class="indi_box"></div>
+        </div>
+        <div class="gesipan_box">
+            <div class="gesipan">
+                <div class="g_pan news_pan">
+                    <div class="pan_head">
+                        <div class="title">뉴스</div>
+                        <div class="more"><a href="포트폴리오_게시판.html?cateNo=0&page=1">+</a></div>
+                    </div>
+                    <div class="item_box news"></div>
+                </div>
+                <div class="g_pan index_pan">
+                    <div class="pan_head">
+                        <div class="title">정보게시판</div>
+                        <div class="more"><a href="포트폴리오_게시판.html?cateNo=1&page=1">+</a></div>
+                    </div>
+                    <div class="item_box info"></div>
+                </div>
+                <div class="g_pan user_pan">
+                    <div class="pan_head">
+                        <div class="title">유저게시판</div>
+                        <div class="more"><a href="포트폴리오_게시판.html?cateNo=2&page=1">+</a></div>
+                    </div>
+                    <div class="item_box user"></div>
+                </div>
+                <div class="g_pan commu_pan">
+                    <div class="pan_head">
+                        <div class="title">커뮤니티</div>
+                        <div class="more"><a href="포트폴리오_게시판.html?cateNo=3&page=1">+</a></div>
+                    </div>
+                    <div class="item_box commu"></div>
+                </div>
+                <div class="g_pan gonzi_pan">
+                    <div class="pan_head">
+                        <div class="title">공지사항</div>
+                        <div class="more"><a href="포트폴리오_게시판.html?cateNo=4&page=1">+</a></div>
+                    </div>
+                    <div class="item_box noti"></div>
+                    <div class="item_box noti"></div>
+                </div>
+            </div>
+            <div class="side_box">
+                <div class="login_box">
+                    <div class="login_idx_box">
+                        <input type="text" id="login_id" class="login_idx" placeholder="아이디">
+                        <input type="text" id="login_pass" class="login_idx" placeholder="비밀번호">
+                    </div>
+                    <div class="login_btn_box">
+                        <div class="login_btn"><a href="#">로그인</a></div>
+                        <div class="login_chk_box">
+                            <input type="checkbox" id="login_chk">
+                            <span>아이디 저장</span>
+                        </div>
+                    </div>
+                    <div class="login_menu_box">
+                        <div class="login_menu"><a href="#">아이디 찾기</a></div>
+                        <div class="dot_point"></div>
+                        <div class="login_menu"><a href="#">회원가입</a></div>
+                    </div>
+                </div>
+                <div class="best_box">
+                    <div class="title_box">
+                        <div class="hot_title">연예</div>
+                        <div class="hot_title">스포츠</div>
+                        <div class="hot_title">자유</div>
+                    </div>
+                    <div class="top10_box">
+                        <ul class="ul_top10 idol_top ul_active">
+                            <li class="top_item">idol top1</li>
+                            <li class="top_item">idol top2</li>
+                            <li class="top_item">idol top3</li>
+                            <li class="top_item">idol top4</li>
+                            <li class="top_item">idol top5</li>
+                            <li class="top_item">idol top6</li>
+                            <li class="top_item">idol top7</li>
+                            <li class="top_item">idol top8</li>
+                            <li class="top_item">idol top9</li>
+                            <li class="top_item">idol top10</li>
+                        </ul>
+                        <ul class="ul_top10 sport_top">
+                            <li class="top_item">sprot top1</li>
+                            <li class="top_item">sprot top2</li>
+                            <li class="top_item">sprot top3</li>
+                            <li class="top_item">sprot top4</li>
+                            <li class="top_item">sprot top5</li>
+                            <li class="top_item">sprot top6</li>
+                            <li class="top_item">sprot top7</li>
+                            <li class="top_item">sprot top8</li>
+                            <li class="top_item">sprot top9</li>
+                            <li class="top_item">sprot top10</li>
+                        </ul>
+                        <ul class="ul_top10 free_top">
+                            <li class="top_item">free top1</li>
+                            <li class="top_item">free top2</li>
+                            <li class="top_item">free top3</li>
+                            <li class="top_item">free top4</li>
+                            <li class="top_item">free top5</li>
+                            <li class="top_item">free top6</li>
+                            <li class="top_item">free top7</li>
+                            <li class="top_item">free top8</li>
+                            <li class="top_item">free top9</li>
+                            <li class="top_item">free top10</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="goto"><a href="./포트폴리오_메인(스마트폰).html">모바일로 가기</a></div>
+    </footer>
+</div>
+</body>
+</html>

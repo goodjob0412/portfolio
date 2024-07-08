@@ -1,0 +1,396 @@
+ul {
+    float: left;
+
+}
+li {
+    list-style: none;
+}
+.main_sec{
+    display: flex;
+}
+.reser_nav {
+    margin-top: 30px;
+    width: 996px;
+    display: flex;
+    gap: 5px;
+    justify-content: right;
+}
+.nav_L {
+    width: 81px;
+    height: 30px;
+    background: url(../cgv/top_buttons.png);
+    background-position: 0 0;
+    cursor: pointer;
+}
+.mov_head {
+    width: 284px;
+    height: 33px;
+    background-color: #333;
+    color: #d6d6d6;
+    font-size: 16px;
+    text-align: center;
+    line-height: 33px;
+}
+
+.mov_body {
+    background-color: #f2f0e5;
+}
+.nav_E {
+    width: 101px;
+    height: 30px;
+    background: url(../cgv/top_buttons.png);
+    background-position: 0px 450px;
+    cursor: pointer;
+}
+.nav_R {
+    width: 113px;
+    height: 30px;
+    background: url(../cgv/top_buttons.png);
+    background-position: 0px 150px;
+    cursor: pointer;
+    padding-right: 24px;
+}
+.menu_chk {
+    margin-top: 20px;
+    display: flex;
+}
+.mov_chk {
+    border-right: 2px solid #d4d3c9;
+    background-color: #f2f0e5;
+}
+
+.mov_sel {   
+    display: flex;
+    padding: 9px 15px 0px 15px;
+}
+.mov_sel > select {
+    border-bottom: 2px solid rgb(54, 54, 54);
+    background-color: #f2f0e5;
+}
+.mov_all {
+    border-top: 1.5px solid black;
+    border-left: 1.5px solid black;
+    border-right: 1.5px solid black;
+    font-size: 15px;
+    cursor: pointer;
+}
+.mov_all_box {
+    /* display: flex; */
+}
+.art {
+    line-height: 21px;
+    text-align: center;
+    width: 92px;
+    height: 21px;
+    border: 2px solid #acaba2;
+    border-bottom: 2px solid rgb(54, 54, 54);
+    font-size: 13px;
+    cursor: pointer;
+}
+.mo_or {
+    margin: 10px 0 0 15px;
+    display: flex;
+    gap: 11px;
+    font-size: 13px;
+}
+
+.or_bot {
+    margin-left: 12px;
+    height: 10px;
+    width: 56px;
+    background: url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/step1/sortmenu_btn_on.png) no-repeat 50% 100%;
+    }
+.mo_list {
+    margin: 10px 4px 0 5px;
+    font-size: 15px;
+    height: 450px;
+    overflow: auto;
+}
+
+.mo_list > div {
+    display: flex;
+    gap: 10px;
+    padding: 5px;
+    cursor: pointer;
+
+}
+.mo_name:hover {
+    text-decoration:underline;
+}
+.mo_color_all {
+    width: 20px;
+    height: 20px;
+    background-color:#35a362;
+    color: white;
+    font-size: 13px;
+    border-radius: 5px;
+    font-weight: 999;
+    }
+.mo_color_12 {
+    width: 20px;
+    height: 20px;
+    background-color: #e9b62f;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 999;
+}
+.mo_color_15 {
+    width: 20px;
+    height: 20px;
+    background-color: #dd742f;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 999;
+}
+.mo_color_18 {
+    width: 20px;
+    height: 20px;
+    background-color: #d92c36;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 999;
+}
+
+.mov_head_tea{
+    width: 265px;
+    height: 33px;
+    background-color: #333;
+    color: #d6d6d6;
+    font-size: 16px;
+    text-align: center;
+    line-height: 33px;
+}
+
+.mov_head_wea {
+    width: 90px;
+    height: 33px;
+    background-color: #333;
+    color: #d6d6d6;
+    font-size: 16px;
+    text-align: center;
+    line-height: 33px;
+}
+.mov_head_time {
+    width: 334px;
+    height: 33px;
+    background-color: #333;
+    color: #d6d6d6;
+    font-size: 16px;
+    text-align: center;
+    line-height: 33px;
+}
+
+.mo_list_tea {
+    display: flex;
+
+}
+.town {
+}
+.town > div {
+    margin: 2px 9px 0 13px;
+    width: 101px;
+    height: 34px;
+    text-align: right;
+    font-size: 11px;
+    background-color: #e6e4d9;
+    line-height: 34px;
+    cursor: pointer;
+}
+
+.town_img {
+    margin-top: 16px;
+
+}
+.town_in {
+    margin-top: 5px;
+    height: 470px;
+    padding: 5px;
+    font-size: 14px;
+    overflow: auto;
+    font-weight: 600;
+    cursor: pointer;
+}
+.town_in > div {
+    margin-bottom: 10px;
+}
+.day_box {
+    height: 520px;
+    overflow: auto;
+    margin-top: 15px;
+}
+.year {
+    width: 64px;
+    height: 11px;
+    font-size: 14px;
+    text-align: center;
+    color: #666;
+    font-weight: 999;
+}
+
+.mon {
+    width: 64px;
+    height: 11px;
+    font-size: 30px;
+    text-align: center;
+    color: #666;
+    font-weight: 999;
+    margin: 10px 0 37px 0;
+}
+.day {
+    display: flex;
+    justify-content: space-evenly
+    
+}
+.day_L > div {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.day_R > div {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.to_blue {
+    color: #31597e;
+}
+.il_red {
+    color: #ad2727;
+}
+
+.time_in {
+    margin-top: 20px;
+}
+.dnn {
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+    padding: 0 0 0 15px;
+}
+.d_mor {
+    width: 52px;
+    text-align: right;
+    background: url(../cgv/icon_morning_night.png) no-repeat left;
+    cursor: pointer;
+    background-position: 0px 3px;
+}
+.d_nig {
+    width: 52px;
+    text-align: right;
+    background: url(../cgv/icon_morning_night.png) no-repeat left;
+    cursor: pointer;
+    background-position: 5px -17px;
+}
+
+.choice {
+    width: 78%;
+    border-top: 2px solid;
+    margin: 7px 52px 7px 16px;
+    font-size: 15px;
+    color: #666;
+    padding: 127px 0 49px 33px;
+}
+.mov_cho_box {
+    width: 100%;
+    height: 128px;
+    background-color: #1d1d1c;
+    margin-bottom: 30px;
+}
+.mov_cho_in {
+    display: flex;
+    height: 128px;
+}
+
+.mo_btb {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #d6d6d6;
+    font-size: 16px;
+}
+.mo_btb > img {
+    width: 74px;
+    height: 104px;
+}
+.tea_cho {
+    margin: 22px 14px;
+    width: 116px;
+    background: url(../cgv/tnb_steps.png) no-repeat;
+    background-position: -5px -77px;
+    border-right: 2px solid #2d2d2b;
+    height: 59px;
+    padding: 14px 13px;
+    border-left: 2px solid #2d2d2b;
+}
+.seat_cho {
+    width: 168px;
+    background: url(../cgv/tnb_steps.png) no-repeat;
+    background-position: 7px -162px;
+}
+.pay {
+    width: 88px;
+    background: url(../cgv/tnb_steps.png) no-repeat left;
+    background-position: -33px -271px;
+}
+.seat_pay {
+    height: 112px;
+    width: 408px;
+    background: url(../cgv/tnb_buttons.png) no-repeat;
+    background-position: 239px -216px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+
+
+
+/* /////////스크롤바///////////// */
+  .mo_list::-webkit-scrollbar {
+    width: 10px;
+  }
+  .mo_list::-webkit-scrollbar-thumb {
+    background-color: #2f3542;
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+  }
+  .mo_list::-webkit-scrollbar-track {
+    background-color: grey;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 5px white;
+  }
+
+  .town_in::-webkit-scrollbar {
+    width: 10px;
+  }
+  .town_in::-webkit-scrollbar-thumb {
+    background-color: #2f3542;
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+  }
+  .town_in::-webkit-scrollbar-track {
+    background-color: grey;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 5px white;
+  }
+
+  .day_box::-webkit-scrollbar {
+    width: 10px;
+  }
+  .day_box::-webkit-scrollbar-thumb {
+    background-color: #2f3542;
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+  }
+  .day_box::-webkit-scrollbar-track {
+    background-color: grey;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 5px white;
+  }
+

@@ -1,0 +1,398 @@
+
+.img_box { 
+    
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0; 
+  /* display: none; */
+}
+
+.img_box img { width: 100%;}
+
+.sm_img_box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+
+    background: #fff;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 12px;
+}
+.sm_item {
+    width: calc((100% - (5px* 2)) / 3);
+    height: 100px;
+    border: 1px solid;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close_btn_box {
+    width: 100%;
+    background: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    padding: 2px 5px;
+    box-sizing: border-box;
+}
+.btn_close_today {}
+.btn_close {}
+
+
+
+
+
+
+/* 본문 */
+.container {}
+
+.main_banner {
+    width: 100%;
+    height: 600px;
+    position: relative; 
+    overflow: hidden;
+    
+}
+.banner {
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+.banner img{
+    width: 100%;
+}
+.banner1 {
+    background: url(../../newbalance/items/realbanner1.jpg) no-repeat center / cover;
+    position: relative;
+}
+.banner2 {
+    background: url(../..//newbalance/items/realbanner2.jpg) no-repeat center / cover ;
+}
+.banner3 {
+    background: url(../../newbalance/items/realbanner3.jpg) no-repeat center / cover;
+}
+
+.banner_box{
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 35%;
+}
+.banner_box h2{
+    border: 5px solid #fff;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    font-size: 40px;
+}
+.banner_box p {
+    margin-top: 50px;
+    text-align: center;
+    font-weight: 700;
+    
+}
+
+.btn_slide {
+    width: 56px;
+    height: 90px;
+    cursor: pointer;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#btn_L {
+    left: 20px;
+    background:  url(../../newbalance/btn_slide_left6.png) no-repeat center;
+}
+#btn_R {
+    right: 20px;
+    background:  url(../../newbalance/btn_slide_right6.png)no-repeat center
+}
+
+.indi {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%); 
+    display: flex;
+    gap: 5px;
+}
+.line {
+    width: 30px;
+    height: 10px;
+    background-color: #fff;
+
+    border-radius: 3px;
+    transition: all 0.3s;
+}
+.line_active {
+    width: 50px;
+    background-color: rgb(82, 119, 151);
+}
+.txt_box{
+    text-align: center;
+    
+}
+.txt_box_title{
+    font-weight: 900;
+    font-size: 50px;
+}
+.txt_box_desc{
+    margin-top: 30px;
+    font-size: 20px;
+}
+.btn_more_box{
+   margin-top: 40px;
+   display: flex;
+   justify-content: center;
+}
+.btn_more_box_left{
+
+}
+
+.btn_more_box_right {
+
+}
+
+.btn_more_box_left a{
+    padding: 15px 10px;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 15px 10px;
+    min-width: 120px;
+    display: inline-block;
+    color: black;
+    background-color: #fff;
+    
+}
+.btn_more_box_right a{
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 15px 10px;
+    min-width: 120px;
+    display: inline-block;
+    color: #fff;
+    background-color: black;
+    
+}
+
+
+
+/* 본문 공통 */
+.sec {
+    margin-bottom: 180px;
+}
+.sec_title {
+    height: 100px;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 200px;
+}
+.sec_body {}
+
+.item_box {
+    display: flex;
+    /* gap: 5px; */
+    row-gap: 100px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 100px
+}
+.item img {
+    width: 100%;
+}
+.item_info {
+    padding: 0 5px;
+    box-sizing: border-box;
+
+    font-size: 13px;
+    font-weight: 300;
+}
+.item_info_title {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #777575;
+    margin-bottom: 5px;
+}
+.s_price{
+    font-size: 17px;
+    font-weight: 900;
+}
+
+
+.pos_init1 {
+    transform: translateX(150px);
+    opacity: 0;
+}
+.pos_init1_active {
+    transform: translateX(0);
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+
+
+
+
+/*  top3 */
+#top3 .item {
+    width: calc((100% - (5px * 4)) / 3);
+}
+#top3 .item_img {
+    position: relative;
+    width: 100%;
+}
+.first_contents_hover{
+
+}
+.black{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: all 0.5s;
+    display: none;
+}
+:hover .black{
+    display: block;
+}
+.item_img :hover .black{
+    display: block;
+}
+.top3_no {
+    width: 100%;
+    height: 100%;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0,0,0,0.7);
+    font-size: 20px;
+    border-radius: 5px;
+    display: none;
+    
+
+
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+/* women */ 
+#women .item {
+    width: calc((100% - (5px * 3)) / 4);
+}
+#women .item_img {
+    overflow: hidden;
+    font-size: 0;
+}
+#women .item_img img {
+    transition: all 0.5s;
+}
+#women .item_img:hover img {
+    transform: scale(1.2);
+}
+
+
+
+/* men */ 
+#men .item {
+    width: calc((100% - (5px * 3)) / 4);
+}
+#men .item_img {
+    position: relative;
+}
+#men .covered_img {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    opacity: 0;
+    transition: all 0.3s;
+}
+#men .item_img:hover .covered_img {
+    opacity: 1;
+}
+/*kids*/
+/* #kids .item {
+    width: calc((100% - (5px * 3)) / 4);
+}
+#kids .item_img {
+    position: relative;
+}
+#kids .covered_img {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    opacity: 0;
+    transition: all 0.3s;
+}
+#kids .item_img:hover .covered_img {
+    opacity: 1;
+} */
+
+
+/*스와이퍼 실험용*/
+  /* html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    } */
+    .any{
+        width: 100%;
+        position: relative;
+        height: 400px;
+        background: #fff;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+
+
+    }
+
+    swiper-container {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 300px;
+      height: 300px;
+    }
+
+    swiper-slide img {
+      display: block;
+      width: 100%;
+    }

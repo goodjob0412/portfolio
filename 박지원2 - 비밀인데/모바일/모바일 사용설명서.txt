@@ -1,0 +1,21 @@
+
+
+
+ 
+1. 포트폴리오 폴더 통째로 압축해서 이메일 보내기
+   (goodjob0412@gmail.com)
+2. 본인 포폴 간략하게 설명
+     - 깃허브 주소:https://jiwonjiwonjiwonjiwon.github.io/jiwon/모바일/0.maybepopol.mobileindex.html
+     - 타입: 데탑
+     	
+	메인페이지 
+	헤더 헴버거 버튼 클릭시 메뉴 
+	
+	sec1 
+	자세히보기 클릭시 다음페이지 
+	
+	페이지2 
+	sec1 메뉴 슬라이드  
+		
+	sec2 메뉴사진 클릭시 다음페이지 
+

@@ -1,0 +1,238 @@
+.main_banner{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+.banner{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    text-align: center;
+    font-size: 80px;
+    font-weight: 900;
+    color: #fff;
+}
+.red{ background-color: red;}
+.green{ background-color: green;}
+.violet{ background-color: violet;}
+.gray{ background-color: gray;}
+.slide_btn{
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border: none;
+    background: none;
+    font-size: 40px;
+    color: #fff;
+}
+#slide_btn_L{
+    left: 0;
+}
+#slide_btn_R{
+    right: 0;
+}
+.main_banner:hover > #slide_btn_L{
+    background: linear-gradient(to right, rgba(0,0,0,0.5), transparent);
+}
+.main_banner:hover > #slide_btn_R{
+    background: linear-gradient(to left, rgba(0,0,0,0.5), transparent);
+}
+.indi_box{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.indi{
+    width: 30px;
+    height: 10px;
+    background: #fff;
+    border-radius: 5px;
+}
+.indi_active{
+    width: 50px;
+    background: black;
+}
+.banner_close{
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border: 1px solid;
+    position: absolute;
+    top: 0;
+    right: 50px;
+    cursor: pointer;
+}
+.banner_close:hover{
+    background: #fff;
+}
+/* ==================================== */
+.data_list{
+    margin: 50px 0;
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+}
+.data_idx{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background: #717f9a;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 0 0.5px rgba(0, 0, 0, 0.5);
+    font-size: 15px;
+}
+.data_item{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0 0 0 0.5px rgba(0, 0, 0, 0.5);
+}
+.list_number{
+    width: 70px;
+    height: 100%;
+}
+.item_name{
+    width: 900px;
+    height: 100%;
+}
+.user_name{
+    width: 215px;
+    height: 100%;
+}
+.write_day{
+    width: 115px;
+    height: 100%;
+}
+/* ======================================== */
+.data_num{
+    width: 70px;
+    height: 100%;
+}
+.data_title{
+    width: 900px;
+    height: 100%;
+    font-size: 18px;
+}
+.data_title a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.data_title a{
+    cursor: pointer;
+}
+.data_title a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+.data_user{
+    width: 215px;
+    height: 100%;
+    font-size: 16px;
+}
+.data_day{
+    width: 115px;
+    height: 100%;
+    font-size: 14px;
+}
+/* =========================================== */
+.data_page{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+.page_num{
+    width: 20px;
+    height: 20px;
+    border: 1px solid #969696;
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+.page_num a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.page_forward{
+    width: 40px;
+    height: 20px;
+    border: 1px solid #969696;
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 900;
+}
+.page_forward a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.page_next{
+    width: 40px;
+    height: 20px;
+    border: 1px solid #969696;
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 900;
+}
+.page_next a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.page_num a:hover,
+.page_forward a:hover,
+.page_next a:hover{
+    color: blue;
+}
+.num_active{
+    color: blue;
+}
+/* ========================================== */
+.creat_data{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background: #3b4890;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 900;
+    cursor: pointer;
+}
+.creat_data a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.creat_data:hover{
+    text-decoration: underline;
+}

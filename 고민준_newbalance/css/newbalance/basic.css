@@ -1,0 +1,346 @@
+
+
+
+
+body {
+    margin: 0;
+    
+}
+.contents_area {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* ///////////////////////////////// */
+
+/* top banner */
+.top_banner {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background: #e5e5e5;;
+    text-align: center;
+    
+    overflow: hidden;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+.tb_left{
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    left: 0;
+}
+.tb_right{
+float: right;
+}
+.tb_right li{
+    float: left;
+    padding: 0 15px;
+   
+}
+.mini1{
+    background: url(../../newbalance/btn_made_99x16.png)no-repeat center / cover;
+   display: block;
+   height: 16px;
+   width: 99px;
+   position: absolute;
+   top: 10px;
+   left: 55px;
+}
+.mini2 {
+    background: url(../../newbalance/logo_mynb.png) no-repeat center / cover;
+    display: block;
+    height: 16px;
+    width: 48px;
+    position: absolute;
+    top: 12px;
+    left: 200px;
+}
+
+.tb_item {
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100%;
+}   
+
+
+#wrap {
+    margin-top: 40px;
+}
+/* header */
+.header { 
+    /* border-bottom: 1px solid #ddd;  */
+    position: relative;
+    z-index: 999999999;
+}
+.h_top {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    width: 210px;
+    height: 40px;
+
+} 
+.logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-indent: -9999px;
+    padding: 5px;
+    background: url(../../newbalance/logo_60x29.png) no-repeat center / contain;
+}
+
+.nav {
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    line-height: 50px; 
+}
+.nav_red{
+    color: red
+}
+.nav_active {
+    position: fixed;
+    top: 40px;
+    left: 0;
+}
+.nav_item {
+    padding: 0 30px; 
+    font-size: 15px;
+    font-weight: 900;
+}
+.pan {
+    width: 100%;
+    height: 430px;;
+    background: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 9999;
+    display: none;
+}
+.pan_item {
+    width: 100%;
+    height: 100%;
+    background-color: pink;
+    font-size: 150px;
+    text-align: center;
+    cursor: pointer;
+    display: none;
+}
+.pan_item_L{
+    width: 100%;
+    height: 100%;
+    background-color: pink;
+    
+}
+.pan_item_L > .c_pan {
+    width: 100%;
+    height: 100%;
+    background-color: #fff; 
+    float: left;
+    
+}
+
+
+.pan_item > .c_pan {
+    width: 60%;
+    height: 100%;
+}
+
+
+.pan_item5 > .c_pan,
+.pan_item6 > .c_pan,
+.pan_item7 > .c_pan {
+    width: 100%;
+    height: 100%;
+ 
+}
+.c_pan_txt_box{
+    width: calc(100% / 3);
+    float: left;
+    
+}
+.c_pan_txt_box_line {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+   
+}
+
+.c_pan_txt_box_line > li {
+    width: 100px;
+    height: 100%;
+    font-size: 14px;
+    font-weight: 300;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding-top: 11px;    
+}
+.c_pan_txt_box_line > li:nth-child(1){
+    font-weight: 900;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.top_banner, .nav, .pan {
+    z-index: 9999999999;
+}
+.d_pan1 {
+    width: 40%;
+    height: 100%;
+    background: url(../../newbalance/menu1001.jpg)no-repeat center / cover;
+    z-index: 999999;
+  
+}
+.d_pan2 {
+    width: 40%;
+    height: 100%;
+    background: url(../../newbalance/menu1002.jpg)no-repeat center / cover;
+    z-index: 999999;
+   
+}
+.d_pan3 {
+    width: 40%;
+    height: 100%;
+    background: url(../../newbalance/menu1003.jpg)no-repeat center / cover;
+    z-index: 999999;
+   
+}
+.d_pan4 {
+    width: 40%;
+    height: 100%;
+    background: url(../../newbalance/menu1004.jpg)no-repeat center / cover;
+    z-index: 999999;
+  
+}
+.d_pan5 {
+    width: 40%;
+    height: 100%;
+    background: url(../../newbalance/menu1005.jpg)no-repeat center / cover;
+    z-index: 999999;
+    
+}
+.d_pan6 {
+    width: 40%;
+    height: 100%;
+    background: url(../../newbalance/menu1006.jpg)no-repeat center / cover;
+    z-index: 999999;
+    
+}
+
+
+
+/*footer*/
+
+.footer {
+    width: 100%;
+    margin-top: 150px;
+    background: black;
+    color: #bdbdbd;
+}
+.footer_top{
+    height: 130px;
+    max-width: 1300px;
+    margin: 0 auto;
+    border-bottom: 1px solid #393939;
+    
+
+}
+.footer_top ul{
+    width: 100%;
+    margin: 0 auto;
+}
+.footer_top li{
+    float: left;
+    width: calc(100% / 4);
+    box-sizing: border-box;
+    padding-top: 30px;
+}
+.footer_top li a p{
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1;
+}
+.footer_top li a span{
+    color: #d3d3d3;
+    font-size: 14px;
+    line-height: 1;
+}
+.footer_bot{
+    width: 100%;
+    max-width: 1300px;
+    height: 330px;
+    padding-top: 70px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.footer_bot_L{
+    float: left;
+    overflow: hidden;
+}
+.footer_bot_L_list{
+    float: left;
+    margin-right: 80px;
+}
+.footer_bot_L_list p{
+    display: block;
+    padding-bottom: 18px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+}
+.footer_bot_L_list li{
+    display: block;
+    margin-top: 15px;
+    color: #bdbdbd;
+    font-size: 14px;
+
+}
+.footer_bot_R {
+    float: right;
+    font-size: 15px;
+}
+.footer_bot_R p{
+    margin: 1px;
+}
+
+
+
+

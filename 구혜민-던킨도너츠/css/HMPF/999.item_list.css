@@ -1,0 +1,159 @@
+.item_header {
+    background: url(../../img/던킨도너츠/item/bg_body.jpg) center;
+}
+.item_banner {
+    background: url(../../img/던킨도너츠/item/mainbanner.jpg) no-repeat center;
+    height: 439px;
+}
+.sec {
+    margin-bottom: 100px;
+}
+.sec_title {     /*new_title*/
+    overflow: hidden;
+    position: relative;
+    height: 27px;
+    background: url(../../img/던킨도너츠/item/icon/line_title.png) no-repeat center;
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+}
+.item_box {     /*new_list*/
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+.pos_init {
+    padding-bottom: 20px;
+}
+.item img {
+    width: 100%;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+.item_box li:hover img {
+    transform:translate(10px, -10%);
+    box-shadow: -10px 10px 18px #cebea2;
+}
+.item_info {
+    padding: 0 5px;
+    box-sizing: border-box;
+
+    font-size: 13px;
+    font-weight: 300;
+}
+.item_info_title {    /*figcaption*/
+    color: #392213;
+    text-align: center;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 10px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.item_box li:hover .item_info_title {
+    font-weight: bold;
+}
+.item_desc { /*menu_p*/
+    width: 80px;
+    margin: 0 auto;
+    font-size: 12px;
+    color: #b9ac92;
+    border: 1px solid #b9ac92;
+    border-radius: 5px;
+    text-align: center;
+}
+.item_box li:hover .item_desc {
+    color: #392213; 
+    font-weight: bold;
+    font-size: 12px;
+    width: 90px;
+    border: 1px solid #392213;
+}
+
+/* new */ 
+#new .item {
+    width: calc((100% - (10px * 4)) / 5);
+}
+#new .item_img {
+    overflow: hidden;
+    font-size: 0;
+}
+
+
+/* basic */ 
+#basic .item {
+    width: calc((100% - (10px * 4)) / 5);
+}
+#basic .item_img {
+    position: relative;
+}
+
+/* bagel */ 
+#bagel .item {
+    width: calc((100% - (10px * 4)) / 5);
+}
+#bagel .item_img {
+    overflow: hidden;
+    font-size: 0;
+}
+
+/* etc */ 
+#etc .item {
+    width: calc((100% - (10px * 4)) / 5);
+}
+#etc .item_img {
+    overflow: hidden;
+    font-size: 0;
+}
+
+
+
+
+@media screen and (max-width: 1024px){
+    /* new */ 
+#new .item {
+    width: calc((100% - (10px * 3)) / 4);
+}
+
+/* basic */ 
+#basic .item {
+    width: calc((100% - (10px * 3)) / 4);
+}
+
+/* bagel */ 
+#bagel .item {
+    width: calc((100% - (10px * 3)) / 4);
+}
+
+/* etc */ 
+#etc .item {
+    width: calc((100% - (10px * 3)) / 4);
+}
+}
+
+
+@media screen and (max-width: 768px) {
+        /* new */ 
+#new .item {
+    width: calc((100% - (10px * 2)) / 3);
+}
+
+/* basic */ 
+#basic .item {
+    width: calc((100% - (10px * 2)) / 3);
+}
+
+/* bagel */ 
+#bagel .item {
+    width: calc((100% - (10px * 2)) / 3);
+}
+
+/* etc */ 
+#etc .item {
+    width: calc((100% - (10px * 2)) / 3);
+}
+}

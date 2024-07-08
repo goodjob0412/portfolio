@@ -1,0 +1,343 @@
+선생님 혹시 질문이 2개 있는데 
+
+제가 이미지의 넓이는 100센트로 잡고 높이는 px를 넣어줘서  css를 만들었는데 
+이게 높이를 100센트로 해서 width가 변하면 높이도 같이 변하게 하고 싶은데 방법을 잘 모르겠습니다.
+
+그리고  
+제가 정보불러오기 방식으로 for 문을 돌려서 
+사진이랑 텍스트를  넣는 방식으로  페이지를 만들었는데 
+
+이게 반응형으로 어느 넓이 지점이 될때 사진을 변경하고 싶은데 잘 몰라서 질문드립니다.
+
+
+
+
+
+
+Nike
+(W) Nike Shox R4 Black 2024
+
+195,000원
+즉시 구매가
+
+
+Converse
+Converse x A-Cold-Wall Gale Jacket Rust Oxide
+
+299,000원
+즉시 구매가
+
+
+Jordan
+Jordan x Awake NY Air Ship PE SP Sail University Red
+
+192,000원
+즉시 구매가
+
+
+Adidas
+Adidas Yeezy Foam RNNR MX Granite
+
+144,000원
+즉시 구매가
+
+
+STU
+[예약 배송] STU High Neck Suede Jacket Brown
+
+단독
+적립
+무료배송
+336,000원
+구매가
+
+
+IAB Studio
+IAB Studio x Obey Faded Posters Sweater Grey Multi
+
+빠른배송
+173,000원
+즉시 구매가
+
+
+
+Recto
+Recto Drilled Cotton Oversize Hunting Jacket Beige
+
+단독
+적립
+무료배송
+598,000원
+구매가
+
+Recto
+Recto Women Rc Logo Embellishment T-Shirt Black
+
+단독
+적립
+무료배송
+158,000원
+구매가
+
+
+Haleine
+[예약 배송] Haleine Roundneck Bomber Black
+
+적립
+무료배송
+10%268,200원
+구매가
+New Balance x Pottery 574 Premium Hard Navy
+Asics
+Asics GT-2160 Oyster Grey Carbon
+
+빠른배송
+132,000원
+
+New Balance
+New Balance x Pottery 574 Premium Hard Navy
+
+138,000원
+즉시 구매가
+
+Asics
+Asics Gel-1130 White Cloud Grey
+
+103,000원
+즉시 구매가
+
+
+Stussy
+Stussy 8 Ball Pigment Dyed T-Shirt Natural
+
+93,000원
+즉시 구매가
+
+Say Touche
+Say Touche Liquified Persian Mouse Pad Black
+
+적립
+22,000원
+구매가
+
+
+BLUNDSTONE
+BLUNDSTONE Originals #510 Chelsea Boots Black
+
+쿠폰
+적립
+무료배송
+269,000원
+구매가
+
+
+
+Porter
+Porter x Toga Backpack Black
+
+1,600,000원
+
+
+
+
+
+
+
+
+
+
+
+
+
+top-item
+
+
+
+
+
+
+
+
+
+
+
+COS  1
+COS Nylon Crossbody Saddle Bag Light Grey Stone
+
+빠른배송
+64,000원
+즉시 구매가
+
+거래 1,7832
+
+Apple2
+Apple Airpods Pro 2nd Gen with MagSafe Charging Case USB C Type (Korean Ver.)
+
+빠른배송
+298,000원
+즉시 구매가
+
+거래1.1만
+
+IAB Studio3
+IAB Studio Hoodie Black
+
+빠른배송
+179,000원
+즉시 구매가
+
+거래 1766
+
+Arc'teryx4
+Arc'teryx Mantis 2 Waistpack 24K Black
+
+빠른배송
+110,000원
+즉시 구매가
+거래 3034
+
+Apple5
+Apple iPad Air 5th Gen Wifi 64GB Space Gray (Korean Ver.)
+
+애플 아이패드 에어 5세대 와이파이 64기가 스페이스 그레이 (국내 정식 발매 제품)
+
+빠른배송
+767,000원
+
+즉시 구매가
+거래 4.6만
+
+Apple6
+Apple AirPods Max Silver (Korean Ver.)
+
+애플 에어팟 맥스 실버 (국내 정식 발매 제품)
+
+빠른배송
+668,000원
+
+즉시 구매가
+거래 14.8만
+
+Nike7
+Nike NSW Big Swoosh Woven Jacket Black - Asia
+
+나이키 NSW 빅 스우시 우븐 자켓 블랙 - 아시아
+
+빠른배송
+91,000원
+
+즉시 구매가
+거래 3432
+
+Stussy8
+Stussy Wave Dye Beach Shell Jacket Black
+
+스투시 웨이브 다이 비치 쉘 자켓 블랙
+
+빠른배송
+445,000원
+
+즉시 구매가
+
+거래 6816
+
+Nike9
+Nike Cable Knit LS Sweater Rattan - Asia
+
+나이키 케이블 니트 롱슬리브 스웨터 라탄 - 아시아
+
+빠른배송
+140,000원
+
+즉시 구매가
+
+거래 1092
+
+Adidas10
+Adidas German Beckenbauer Track Top Off White -KR Sizing
+
+빠른배송
+149,000원
+즉시 구매가
+
+거래 1617
+
+COS11
+COS Quilted Mini Bag Light Green
+
+빠른배송
+89,000원
+즉시 구매가
+
+거래 3181
+
+Bottega Veneta12
+Bottega Veneta Nappa Bracelet Black
+
+보테가 베네타 나파 브레이슬릿 블랙
+
+303,000원
+
+즉시 구매가
+거래 652
+
+
+Nike 13
+Nike Air Force 1 '07 WB Flax
+
+빠른배송
+161,000원
+즉시 구매가
+
+거래 16.2
+
+
+Stussy14
+Stussy World Tour Crew Ash Heather 2023
+
+스투시 월드투어 크루넥 애쉬 헤더 2023
+
+빠른배송
+216,000원
+
+즉시 구매가
+
+거래량 206
+
+
+Nike15
+Nike Air Force 1 '07 Low White
+
+빠른배송
+121,000원
+즉시 구매가
+
+거래 46.2
+
+
+Vivienne Westwood16
+Vivienne Westwood Mayfair Bas Relief Pendant Silver
+
+비비안 웨스트우드 메이페어 바스 릴리프 펜던트 실버
+
+빠른배송
+162,000원
+
+즉시 구매가
+
+
+Adidas17
+Adidas Samba OG Cloud White
+
+빠른배송
+121,000원
+즉시 구매가
+
+거래6.9만
+
+
+
+
+
+
+
